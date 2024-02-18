@@ -1,0 +1,26 @@
+{
+        "loading_priority": 12,
+	"powers": [
+                "medievalorigins:revenant/cronch",
+                "medievalorigins:revenant/transfer_item",
+                "medievalorigins:revenant/putrid_communion",
+                "medievalorigins:revenant/skeleton_summons",
+                "medievalorigins:revenant/zombie_summons",
+                "medievalorigins:revenant/hellraiser",
+                "medievalorigins:revenant/siphon",
+                "medievalorigins:revenant/unwitherable",
+                "medievalorigins:revenant/undeadge",
+                "medievalorigins:revenant/poor_reputation",
+                "medievalorigins:revenant/black_thumb",
+                "medievalorigins:revenant/disturbed",
+                "medievalorigins:revenant/evocation_magic",
+                "medievalorigins:revenant/unguarded",
+		"origins:difficulty_3"
+	],
+        "icon": {
+                "item": "minecraft:ink_sac",
+                "tag": "{CustomModelData:360}"
+        },
+	"impact": 3,
+        "order": 1
+}

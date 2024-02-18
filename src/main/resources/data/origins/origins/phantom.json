@@ -1,0 +1,20 @@
+{
+	"loading_priority":1,
+	"powers": [
+		"origins:phantomize",
+		"origins:ascension",
+		"origins:translucent",
+		"origins:phasing",
+		"origins:invisibility",
+		"origins:hunger_over_time",
+		"origins:fragile",
+		"origins:thunder_magic",
+		"origins:phantomize_overlay",
+		"origins:difficulty_3"
+	],
+	"icon": {
+		"item": "minecraft:phantom_membrane"
+	},
+	"order": 2,
+	"impact": 3
+}

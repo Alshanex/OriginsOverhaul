@@ -1,0 +1,18 @@
+{
+	"loading_priority":1,
+	"type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:execute_command",
+    	"command": "cast @p firebolt 3"
+    },
+	"cooldown": 100,
+	"hud_render": {
+		"should_render": true,
+		"sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+		"bar_index": 7
+	},
+	"key": {
+		"key": "key.origins.primary_active",
+		"continuous": false
+	}
+}

@@ -1,0 +1,43 @@
+{
+	"loading_priority":1,
+	"type": "origins:active_self",
+    "entity_action": {
+		"type": "origins:and",
+    	"actions": [
+        {
+            "type": "origins:execute_command",
+    		"command": "cast @p arrow_volley 2"
+        },
+        {    
+            "type": "origins:apply_effect",
+			"effects": [{
+				"effect": "minecraft:resistance",
+				"is_ambient": true,
+				"show_particles": false,
+				"show_icon": false,
+				"amplifier": 6,
+				"duration": 40
+			},
+			{
+				"effect": "minecraft:levitation",
+				"is_ambient": true,
+				"show_particles": false,
+				"show_icon": false,
+				"amplifier": 1,
+				"duration": 30
+			}
+			]
+        }
+    	]
+    },
+	"cooldown": 400,
+	"hud_render": {
+		"should_render": true,
+		"sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+		"bar_index": 2
+	},
+	"key": {
+		"key": "key.origins.primary_active",
+		"continuous": false
+	}
+}

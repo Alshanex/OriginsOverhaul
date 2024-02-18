@@ -1,0 +1,13 @@
+{
+    "type": "origins:multiple",
+    "magic_power": {
+        "type": "origins:attribute",
+        "modifiers": [
+            {
+                "attribute": "irons_spellbooks:spell_power",
+                "operation": "MULTIPLY_BASE",
+                "value": 0.15
+            }
+        ]
+    }
+}

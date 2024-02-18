@@ -1,0 +1,8 @@
+{
+  "type": "origins:action_on_callback",
+    "entity_action_chosen": {
+        "type": "origins:execute_command",
+        "command": "hostility player @p difficulty base add 30"
+    },
+    "execute_chosen_when_orb": false
+}

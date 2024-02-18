@@ -1,0 +1,23 @@
+{
+        "loading_priority": 12,
+	"powers": [
+		"medievalorigins:incubus/hellborne",
+                "medievalorigins:incubus/carnivore",
+                "medievalorigins:incubus/demon_fire",
+                "medievalorigins:incubus/unholy_deal",
+                "medievalorigins:incubus/hydrophobe",
+                "medievalorigins:incubus/impure",
+                "medievalorigins:incubus/dimension_strength",
+                "medievalorigins:incubus/lava_swim",
+                "medievalorigins:incubus/red",
+                "medievalorigins:incubus/fire_magic",
+                "origins:nether_spawn",
+		"origins:difficulty_2"
+	],
+        "icon": {
+		"item": "minecraft:ink_sac",
+		"tag": "{CustomModelData:353}"
+	},
+	"impact": 2,
+        "order": 1
+}

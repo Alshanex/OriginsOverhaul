@@ -1,0 +1,10 @@
+{
+	"type": "origins:attribute",
+        "modifiers": [
+            {
+                "attribute": "attributeslib:experience_gained",
+                "operation": "addition",
+                "value": 0.5
+            }
+        ]
+}

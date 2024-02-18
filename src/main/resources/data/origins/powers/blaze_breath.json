@@ -1,0 +1,17 @@
+{
+	"loading_priority":1,
+	"type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:execute_command",
+    	"command": "cast @p blaze_storm 3"
+    },
+	"cooldown": 600,
+	"hud_render": {
+		"should_render": true,
+		"sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+		"bar_index": 15
+	},
+	"key": {
+		"key": "key.origins.secondary_active"
+	}
+}

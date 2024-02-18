@@ -1,0 +1,19 @@
+{
+	"loading_priority":1,
+	"powers": [
+		"origins:elytra",
+		"origins:gust",
+		"origins:launch_into_air",
+		"origins:aerial_combatant",
+		"origins:claustrophobia",
+		"origins:projectile_damage",
+		"origins:dodge_chance",
+		"origins:more_kinetic_damage",
+		"origins:difficulty_1"
+	],
+	"icon": {
+		"item": "minecraft:elytra"
+	},
+	"order": 3,
+	"impact": 1
+}

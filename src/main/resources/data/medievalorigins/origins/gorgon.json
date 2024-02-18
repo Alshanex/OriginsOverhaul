@@ -1,0 +1,23 @@
+{
+        "loading_priority": 12,
+	"powers": [
+                "medievalorigins:gorgon/petrifying_gaze",
+                "medievalorigins:gorgon/revenge",
+                "medievalorigins:gorgon/to_stone",
+                "medievalorigins:gorgon/silver_aversion",
+                "medievalorigins:gorgon/poison_breath",
+                "medievalorigins:gorgon/poison_blood",
+                "medievalorigins:gorgon/poison_immune",
+                "medievalorigins:gorgon/ancient_magic",
+                "medievalorigins:gorgon/magic_resistance",
+                "medievalorigins:gorgon/stats",
+                "origins_env_deh:thirst_resistance",
+		"origins:difficulty_3"
+	],
+        "icon": {
+		"item": "minecraft:ink_sac",
+		"tag": "{CustomModelData:352}"
+	},
+	"impact": 3,
+        "order": 1
+}

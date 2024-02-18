@@ -1,0 +1,23 @@
+{
+    "type": "origins:multiple",
+    "mana_regen": {
+        "type": "origins:attribute",
+        "modifiers": [
+            {
+                "attribute": "irons_spellbooks:mana_regen",
+                "operation": "MULTIPLY_BASE",
+                "value": 0.1
+            }
+        ]
+    },
+    "max_mana": {
+        "type": "origins:attribute",
+        "modifiers": [
+            {
+                "attribute": "irons_spellbooks:max_mana",
+                "operation": "MULTIPLY_BASE",
+                "value": 0.2
+            }
+        ]
+    }
+}

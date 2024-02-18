@@ -1,0 +1,10 @@
+{
+    "type": "origins:attribute",
+    "modifiers": [
+        {
+            "attribute": "attributeslib:crit_chance",
+            "operation": "addition",
+            "value": 0.5
+        }
+    ]
+}

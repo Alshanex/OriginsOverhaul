@@ -1,0 +1,22 @@
+{
+        "loading_priority": 12,
+	"powers": [
+                "medievalorigins:plague_victim/foul_aura",
+		"medievalorigins:plague_victim/plague_immunity",
+                "medievalorigins:plague_victim/blood_needles",
+                "medievalorigins:plague_victim/blood_ray",
+                "medievalorigins:plague_victim/risk_of_transmission",
+                "medievalorigins:plague_victim/contagious",
+                "medievalorigins:plague_victim/insomniac",
+                "medievalorigins:plague_victim/blood_magic",
+                "medievalorigins:plague_victim/fire_damage",
+                "medievalorigins:plague_victim/skin_and_bones",
+		"origins:difficulty_3"
+	],
+        "icon": {
+		"item": "minecraft:ink_sac",
+		"tag": "{CustomModelData:368}"
+},
+	"impact": 3,
+        "order": 1
+}

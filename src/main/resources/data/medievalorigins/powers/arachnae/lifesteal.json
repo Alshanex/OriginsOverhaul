@@ -1,0 +1,10 @@
+{
+    "type": "origins:attribute",
+    "modifiers": [
+        {
+            "attribute": "attributeslib:life_steal",
+            "operation": "addition",
+            "value": 0.1
+        }
+    ]
+}

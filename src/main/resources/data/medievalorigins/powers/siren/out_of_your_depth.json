@@ -1,0 +1,24 @@
+{
+	"type": "origins:disable_regen",
+	"condition": {
+		"type": "origins:and",
+		"conditions": [
+			{
+				"type": "apoli:submerged_in",
+				"fluid": "minecraft:water",
+				"inverted": true
+			},
+			{    
+				"type": "apoli:in_rain",
+				"inverted": true
+			},
+			{    
+				"type": "apoli:fluid_height",
+				"fluid": "minecraft:water",
+				"comparison": ">",
+				"compare_to": 0,
+				"inverted": true
+			}
+		]
+	}
+}

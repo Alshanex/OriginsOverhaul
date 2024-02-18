@@ -1,0 +1,19 @@
+{
+	"loading_priority":1,
+	"powers": [
+		"origins:throw_ender_pearl",
+		"origins:magic_arrow",
+		"origins:pumpkin_hate",
+		"origins:extra_reach",
+		"origins:ender_particles",
+		"origins:water_weakened",
+		"origins:ender_magic",
+		"origins:damage_from_potions",
+		"origins:difficulty_2"
+	],
+	"icon": {
+		"item": "minecraft:ender_pearl"
+	},
+	"order": 1,
+	"impact": 2
+}

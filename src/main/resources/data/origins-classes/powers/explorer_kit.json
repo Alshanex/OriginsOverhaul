@@ -1,0 +1,19 @@
+{
+  "loading_priority":1,
+  "type": "apoli:starting_equipment",
+  "stacks": [
+    {
+      "item": "minecraft:compass"
+    },
+    {
+      "item": "minecraft:clock"
+    },
+    {
+      "item": "minecraft:map",
+      "amount": 9
+    },
+    {
+      "item": "paraglider:paraglider"
+    }
+  ]
+}
