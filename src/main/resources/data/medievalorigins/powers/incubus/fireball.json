@@ -51,6 +51,14 @@
 					"type": "origins:execute_command",
 					"command": "power grant @p medievalorigins:incubus/demon_fire"
 				}
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 10,
+				"action": {
+					"type": "origins:trigger_cooldown",
+					"power": "medievalorigins:incubus/demon_fire"
+				}
 			}
 		]
     },
