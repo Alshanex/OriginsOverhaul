@@ -1,9 +1,10 @@
 {
         "loading_priority": 12,
-	"powers": [
+	    "powers": [
                 "medievalorigins:wood_elf/archer",
-		"medievalorigins:wood_elf/forest_vision",
-                "medievalorigins:wood_elf/arrow_storm",
+		        "medievalorigins:wood_elf/forest_vision",
+                "medievalorigins:wood_elf/magic_arrow",
+                "medievalorigins:wood_elf/reset_combo",
                 "medievalorigins:wood_elf/root",
                 "medievalorigins:wood_elf/eagle_eyed",
                 "medievalorigins:wood_elf/towering",
@@ -11,12 +12,12 @@
                 "medievalorigins:wood_elf/graceful",
                 "medievalorigins:wood_elf/hunter",
                 "medievalorigins:wood_elf/gear_spawn",
-		"origins:difficulty_1"
-	],
-        "icon": {
-		"item": "minecraft:ink_sac",
-		"tag": "{CustomModelData:354}"
-	},
-        "impact": 1,
-        "order": 0
+		        "origins:difficulty_1"
+        ],
+            "icon": {
+            "item": "minecraft:ink_sac",
+            "tag": "{CustomModelData:354}"
+        },
+            "impact": 1,
+            "order": 0
 }

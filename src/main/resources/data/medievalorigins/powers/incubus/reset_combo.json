@@ -39,6 +39,14 @@
 					"type": "origins:trigger_cooldown",
 					"power": "medievalorigins:incubus/demon_fire"
 				}
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 12,
+				"action": {
+					"type": "origins:execute_command",
+					"command": "power remove @p origins:fall_immunity"
+				}
 			}
 		]
     },
