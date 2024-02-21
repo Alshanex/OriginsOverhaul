@@ -11,7 +11,6 @@
                 "medievalorigins:gorgon/ancient_magic",
                 "medievalorigins:gorgon/magic_resistance",
                 "medievalorigins:gorgon/stats",
-                "origins_env_deh:thirst_resistance",
 		"origins:difficulty_3"
 	],
         "icon": {

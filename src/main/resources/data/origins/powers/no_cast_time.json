@@ -1,13 +1,10 @@
 {
-	"type": "origins:multiple",
-    "no_cast_time": {
-        "type": "origins:attribute",
-        "modifiers": [
-            {
-                "attribute": "irons_spellbooks:cast_time_reduction",
-                "operation": "MULTIPLY_BASE",
-                "value": 1
-            }
-        ]
-    }
+    "type": "origins:attribute",
+    "modifiers": [
+        {
+            "attribute": "irons_spellbooks:cast_time_reduction",
+            "operation": "MULTIPLY_BASE",
+            "value": 1
+        }
+    ]
 }

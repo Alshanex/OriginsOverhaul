@@ -1,22 +1,13 @@
 {
         "loading_priority": 12,
 	"powers": [
-		"medievalorigins:banshee/spectral",
-                "medievalorigins:banshee/sonic_shriek",
-                "medievalorigins:banshee/lunar_nexus",
-                "medievalorigins:banshee/dimeritium_shackles",
-                "medievalorigins:banshee/hexed",
-                "medievalorigins:banshee/immaterial",
-                "medievalorigins:banshee/ancient_magic",
-                "medievalorigins:banshee/magic_resistance",
-                "medievalorigins:banshee/stats",
-                "medievalorigins:banshee/overwhelmed",
-		"origins:difficulty_3"
+
 	],
         "icon": {
                 "item": "minecraft:ink_sac",
                 "tag": "{CustomModelData:358}"
         },
 	"impact": 3,
-        "order": 1
+        "order": 1,
+  "unchoosable": true
 }
