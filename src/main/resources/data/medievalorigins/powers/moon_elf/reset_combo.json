@@ -1,0 +1,34 @@
+{
+	"loading_priority":1,
+	"type": "origins:active_self",
+    "entity_action": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:execute_command",
+				"command": "power grant @p medievalorigins:moon_elf/first_dash"
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 2,
+				"action": {
+					"type": "origins:execute_command",
+					"command": "power remove @p medievalorigins:moon_elf/slash"
+				}
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 4,
+				"action": {
+					"type": "origins:execute_command",
+					"command": "power remove @p medievalorigins:moon_elf/second_dash"
+				}
+			}
+		]
+    },
+	"cooldown": 6,
+	"key": {
+		"key": "key.sprint",
+		"continuous": false
+	}
+}
