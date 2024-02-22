@@ -2,8 +2,9 @@
         "loading_priority": 12,
         "powers": [
                 "medievalorigins:ogre/gargantuan",
-                "medievalorigins:ogre/bloodlust",
+                "medievalorigins:ogre/combo",
                 "medievalorigins:ogre/earthquake",
+                "medievalorigins:ogre/reset_combo",
                 "medievalorigins:ogre/ravager",
                 "medievalorigins:ogre/lead_belly",
                 "medievalorigins:ogre/stocky",
@@ -12,7 +13,6 @@
                 "medievalorigins:ogre/unwieldy",
                 "medievalorigins:ogre/ogre_properties",
                 "medievalorigins:ogre/non_magic",
-                "medievalorigins:ogre/bloodlust_camera",
                 "medievalorigins:ogre/magic_resistance",
 		"origins:difficulty_3"
         ],

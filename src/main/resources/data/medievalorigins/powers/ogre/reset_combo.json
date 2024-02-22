@@ -6,14 +6,14 @@
 		"actions": [
 			{
 				"type": "origins:execute_command",
-				"command": "power grant @p origins:no_cast_time"
+				"command": "power remove @p medievalorigins:ogre/third_strike"
 			},
 			{
 				"type": "origins:delay",
 				"ticks": 4,
 				"action": {
-					"type": "origins:add_velocity",
-					"y": 2
+					"type": "origins:execute_command",
+					"command": "power remove @p origins:no_cast_time"
 				}
 			},
 			{
@@ -21,7 +21,7 @@
 				"ticks": 6,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power grant @p medievalorigins:ogre/slam"
+					"command": "power remove @p medievalorigins:ogre/first_strike"
 				}
 			},
 			{
@@ -29,35 +29,38 @@
 				"ticks": 8,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power remove @p medievalorigins:ogre/earthquake"
+					"command": "power remove @p medievalorigins:ogre/second_strike"
 				}
 			},
 			{
 				"type": "origins:delay",
 				"ticks": 10,
 				"action": {
-					"type": "origins:execute_command",
-					"command": "power grant @p origins:fall_immunity"
+					"type": "origins:trigger_cooldown",
+					"power": "medievalorigins:ogre/combo"
 				}
 			},
 			{
 				"type": "origins:delay",
-				"ticks": 80,
+				"ticks": 12,
 				"action": {
 					"type": "origins:execute_command",
 					"command": "power remove @p origins:fall_immunity"
 				}
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 14,
+				"action": {
+					"type": "origins:execute_command",
+					"command": "power grant @p medievalorigins:ogre/combo"
+				}
 			}
 		]
     },
-	"cooldown": 300,
-	"hud_render": {
-		"should_render": true,
-		"sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
-		"bar_index": 16
-	},
+	"cooldown": 8,
 	"key": {
-		"key": "key.origins.secondary_active",
+		"key": "key.sprint",
 		"continuous": false
 	}
 }

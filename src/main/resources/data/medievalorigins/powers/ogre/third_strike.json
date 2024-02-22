@@ -1,0 +1,82 @@
+{
+	"loading_priority":1,
+	"type": "origins:action_on_hit",
+	"bientity_action": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:target_action",
+				"action": {
+					"type": "origins:clear_effect",
+					"effect": "minecraft:levitation"
+				}
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 1,
+				"action": {
+					"type": "origins:target_action",
+					"action": {
+						"type": "origins:add_velocity",
+						"y": -3
+					}
+				}
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 6,
+				"action": {
+					"type": "origins:actor_action",
+					"action": {
+						"type": "origins:execute_command",
+						"command": "power grant @p medievalorigins:ogre/combo"
+					}
+				}
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 4,
+				"action": {
+					"type": "origins:actor_action",
+					"action": {
+						"type": "origins:execute_command",
+						"command": "power remove @p medievalorigins:ogre/third_strike"
+					}
+				}
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 8,
+				"action": {
+					"type": "origins:actor_action",
+					"action": {
+						"type": "origins:trigger_cooldown",
+						"power": "medievalorigins:ogre/combo"
+					}
+				}
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 10,
+				"action": {
+					"type": "origins:actor_action",
+					"action": {
+						"type": "origins:execute_command",
+						"command": "power grant @p origins:fall_immunity"
+					}
+				}
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 80,
+				"action": {
+					"type": "origins:actor_action",
+					"action": {
+						"type": "origins:execute_command",
+						"command": "power remove @p origins:fall_immunity"
+					}
+				}
+			}
+		]
+	}
+}

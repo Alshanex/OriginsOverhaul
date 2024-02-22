@@ -1,0 +1,72 @@
+{
+	"loading_priority":1,
+	"type": "origins:action_on_hit",
+	"bientity_action": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:add_velocity",
+				"z": 2
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 2,
+				"action": {
+					"type": "origins:actor_action",
+					"action": {
+						"type": "origins:execute_command",
+						"command": "power grant @p medievalorigins:ogre/second_strike"
+					}
+				}
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 4,
+				"action": {
+					"type": "origins:actor_action",
+					"action": {
+						"type": "origins:execute_command",
+						"command": "power remove @p medievalorigins:ogre/first_strike"
+					}
+				}
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 6,
+				"action": {
+					"type": "origins:target_action",
+					"action": {
+						"type": "origins:apply_effect",
+						"effect": {
+							"effect": "minecraft:slowness",
+							"duration": 100,
+							"amplifier": 6
+						}
+					}
+				}
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 20,
+				"action": {
+					"type": "origins:actor_action",
+					"action": {
+						"type": "origins:execute_command",
+						"command": "cast @p blood_step 2"
+					}
+				}
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 22,
+				"action": {
+					"type": "origins:actor_action",
+					"action": {
+						"type": "origins:clear_effect",
+						"effect": "irons_spellbooks:true_invisibility"
+					}
+				}
+			}
+		]
+	}
+}
