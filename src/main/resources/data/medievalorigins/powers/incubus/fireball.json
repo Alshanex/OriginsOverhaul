@@ -6,7 +6,7 @@
 		"actions": [
 			{
 				"type": "origins:execute_command",
-				"command": "cast @p firebolt 3"
+				"command": "cast @p fireball 3"
 			},
 			{
 				"type": "origins:add_velocity",
