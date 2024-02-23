@@ -1,0 +1,42 @@
+{
+	"loading_priority":1,
+	"type": "origins:multiple",
+
+	"power": {
+		"type": "origins:active_self",
+		"entity_action": {
+			"type": "origins:execute_command",
+			"command": "cast @p ray_of_frost 5"
+		},
+		"cooldown": 1,
+		"key": {
+			"key": "key.origins.primary_active",
+			"continuous": false
+		}
+	},
+
+	"cooldown": {
+		"type": "origins:action_on_callback",
+		"entity_action_added": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:delay",
+					"ticks": 100,
+					"action": {
+						"type": "origins:execute_command",
+						"command": "power remove @p medievalorigins:high_elf/frostray"
+					}
+				},
+				{
+					"type": "origins:delay",
+					"ticks": 102,
+					"action": {
+						"type": "origins:execute_command",
+						"command": "power grant @p medievalorigins:high_elf/electrocute"
+					}
+				}
+			]
+		}
+	}
+}
