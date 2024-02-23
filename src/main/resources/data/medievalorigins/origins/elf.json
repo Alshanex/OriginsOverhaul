@@ -1,0 +1,19 @@
+{
+        "loading_priority": 12,
+	    "powers": [
+                "medievalorigins:elf/archer",
+                "medievalorigins:elf/poison_arrow",
+                "medievalorigins:elf/swarm",
+                "medievalorigins:elf/eagle_eyed",
+                "medievalorigins:elf/towering",
+                "medievalorigins:elf/steward",
+                "medievalorigins:elf/graceful",
+		        "origins:difficulty_1"
+        ],
+            "icon": {
+            "item": "minecraft:ink_sac",
+            "tag": "{CustomModelData:354}"
+        },
+            "impact": 1,
+            "order": 0
+}
