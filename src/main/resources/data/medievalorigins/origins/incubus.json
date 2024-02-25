@@ -5,15 +5,11 @@
                 "medievalorigins:incubus/carnivore",
                 "medievalorigins:incubus/demon_fire",
                 "medievalorigins:incubus/unholy_deal",
-                "medievalorigins:incubus/hydrophobe",
                 "medievalorigins:incubus/impure",
-                "medievalorigins:incubus/dimension_strength",
                 "medievalorigins:incubus/lava_swim",
                 "medievalorigins:incubus/red",
                 "medievalorigins:incubus/fire_magic",
-                "medievalorigins:incubus/reset_combo",
-                "origins:nether_spawn",
-		        "origins:difficulty_2"
+                "medievalorigins:incubus/reset_combo"
 	    ],
         "icon": {
 		"item": "minecraft:ink_sac",
