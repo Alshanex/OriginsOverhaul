@@ -1,0 +1,16 @@
+{
+  "type": "origins:self_action_on_kill",
+  "entity_action": {
+    "type": "origins:execute_command",
+    "command": "give @p originsoverhaulmod:impevo"
+  },
+  "cooldown": 1,
+  "condition": {
+    "type": "origins:origin",
+    "origin": "origins:blazeborn"
+  },
+  "target_condition": {
+    "type": "origins:entity_type",
+    "entity_type": "cataclysm:ignis"
+  }
+}

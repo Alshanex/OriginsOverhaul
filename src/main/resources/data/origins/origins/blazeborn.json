@@ -1,5 +1,5 @@
 {
-	"loading_priority":1,
+	"loading_priority":2,
 	"powers": [
 		"origins:fire_immunity",
 		"origins:nether_spawn",
@@ -13,6 +13,7 @@
 		"origins:fire_magic",
 		"origins:damage_from_potions",
 		"origins:imp_evo",
+		"origins:imp_evolution",
 		"origins:difficulty_3"
 	],
 	"icon": {
