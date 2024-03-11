@@ -19,6 +19,8 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ELFMOONEVO = ITEMS.register("elfmoonevo",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ELFHIGHEVO = ITEMS.register("elfhighevo",
+            () -> new Item(new Item.Properties()));
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }
