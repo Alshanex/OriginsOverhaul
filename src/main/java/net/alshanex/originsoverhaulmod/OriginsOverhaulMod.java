@@ -52,6 +52,7 @@ public class OriginsOverhaulMod
             event.accept(ModItems.IMPEVO);
             event.accept(ModItems.GOBLINEVO);
             event.accept(ModItems.ELFWOODEVO);
+            event.accept(ModItems.ELFMOONEVO);
         }
     }
 
