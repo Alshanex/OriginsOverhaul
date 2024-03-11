@@ -51,6 +51,7 @@ public class OriginsOverhaulMod
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.IMPEVO);
             event.accept(ModItems.GOBLINEVO);
+            event.accept(ModItems.ELFWOODEVO);
         }
     }
 
