@@ -13,6 +13,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> IMPEVO = ITEMS.register("impevo",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> GOBLINEVO = ITEMS.register("goblinevo",
+            () -> new Item(new Item.Properties()));
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }
