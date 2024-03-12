@@ -57,6 +57,7 @@ public class OriginsOverhaulMod
             event.accept(ModItems.ENDERIANEVO);
             event.accept(ModItems.FELINEEVO);
             event.accept(ModItems.SIRENEVO);
+            event.accept(ModItems.YETIEVO);
         }
     }
 
