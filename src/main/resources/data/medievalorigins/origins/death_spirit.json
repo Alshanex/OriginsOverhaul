@@ -1,0 +1,12 @@
+{
+	"loading_priority":12,
+	"powers": [
+		"origins:translucent",
+		"origins:thunder_magic"
+	],
+	"icon": {
+		"item": "minecraft:phantom_membrane"
+	},
+	"order": 2,
+	"impact": 3
+}

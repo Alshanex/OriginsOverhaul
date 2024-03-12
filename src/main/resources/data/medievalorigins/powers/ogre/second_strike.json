@@ -92,6 +92,17 @@
 			},
 			{
 				"type": "origins:delay",
+				"ticks": 90,
+				"action": {
+					"type": "origins:actor_action",
+					"action": {
+						"type": "origins:clear_effect",
+						"effect": "irons_spellbooks:heartstop"
+					}
+				}
+			},
+			{
+				"type": "origins:delay",
 				"ticks": 14,
 				"action": {
 					"type": "origins:actor_action",

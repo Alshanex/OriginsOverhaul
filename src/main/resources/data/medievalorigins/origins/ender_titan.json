@@ -1,0 +1,13 @@
+{
+        "loading_priority": 12,
+	"powers": [
+      "origins:extra_reach",
+      "origins:ender_particles",
+      "origins:ender_magic"
+    ],
+        "icon": {
+                "item": "minecraft:end_crystal"
+        },
+	"impact": 2,
+    "order": 1
+}

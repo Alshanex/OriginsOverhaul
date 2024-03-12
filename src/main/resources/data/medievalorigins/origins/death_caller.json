@@ -1,0 +1,15 @@
+{
+        "loading_priority": 12,
+	"powers": [
+      "medievalorigins:revenant/unwitherable",
+      "medievalorigins:revenant/disturbed",
+      "medievalorigins:revenant/evocation_magic",
+      "medievalorigins:revenant/undeadge"
+    ],
+        "icon": {
+          "item": "minecraft:ink_sac",
+          "tag": "{CustomModelData:360}"
+        },
+	"impact": 2,
+    "order": 1
+}

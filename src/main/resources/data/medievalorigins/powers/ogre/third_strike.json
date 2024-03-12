@@ -24,6 +24,17 @@
 			},
 			{
 				"type": "origins:delay",
+				"ticks": 2,
+				"action": {
+					"type": "origins:actor_action",
+					"action": {
+						"type": "origins:clear_effect",
+						"effect": "minecraft:levitation"
+					}
+				}
+			},
+			{
+				"type": "origins:delay",
 				"ticks": 6,
 				"action": {
 					"type": "origins:actor_action",
@@ -63,6 +74,17 @@
 					"action": {
 						"type": "origins:execute_command",
 						"command": "power grant @p origins:fall_immunity"
+					}
+				}
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 5,
+				"action": {
+					"type": "origins:actor_action",
+					"action": {
+						"type": "origins:clear_effect",
+						"effect": "irons_spellbooks:heartstop"
 					}
 				}
 			},

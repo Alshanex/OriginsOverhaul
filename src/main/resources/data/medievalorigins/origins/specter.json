@@ -1,0 +1,13 @@
+{
+	"loading_priority":12,
+	"powers": [
+		"origins:elytra",
+		"origins:aerial_combatant",
+		"origins:dodge_chance"
+	],
+	"icon": {
+		"item": "minecraft:elytra"
+	},
+	"order": 3,
+	"impact": 1
+}

@@ -1,0 +1,17 @@
+{
+        "loading_priority": 12,
+	"powers": [
+                "medievalorigins:gorgon/petrifying_gaze",
+                "medievalorigins:gorgon/poison_blood",
+                "medievalorigins:gorgon/poison_immune",
+                "medievalorigins:gorgon/ancient_magic",
+                "medievalorigins:gorgon/magic_resistance",
+                "medievalorigins:gorgon/stats"
+	],
+        "icon": {
+		"item": "minecraft:ink_sac",
+		"tag": "{CustomModelData:352}"
+	},
+	"impact": 3,
+        "order": 1
+}

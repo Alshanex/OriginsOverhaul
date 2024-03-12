@@ -1,0 +1,14 @@
+{
+        "loading_priority": 12,
+	"powers": [
+      "medievalorigins:siren/amphibious",
+      "medievalorigins:siren/holy_water",
+      "medievalorigins:siren/water_vision",
+      "medievalorigins:siren/damage_underwater"
+    ],
+        "icon": {
+                "item": "minecraft:heart_of_the_sea"
+        },
+	"impact": 2,
+    "order": 1
+}

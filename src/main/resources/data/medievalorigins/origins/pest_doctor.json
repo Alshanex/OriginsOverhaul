@@ -1,0 +1,16 @@
+{
+        "loading_priority": 12,
+	"powers": [
+      "medievalorigins:plague_victim/foul_aura",
+      "medievalorigins:plague_victim/plague_immunity",
+      "medievalorigins:plague_victim/risk_of_transmission",
+      "medievalorigins:plague_victim/blood_magic",
+      "origins:venom_magic"
+    ],
+        "icon": {
+          "item": "minecraft:ink_sac",
+          "tag": "{CustomModelData:368}"
+        },
+	"impact": 2,
+    "order": 1
+}

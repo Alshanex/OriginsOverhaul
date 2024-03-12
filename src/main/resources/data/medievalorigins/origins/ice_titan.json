@@ -1,0 +1,16 @@
+{
+        "loading_priority": 12,
+	"powers": [
+      "medievalorigins:yeti/frosty_breath",
+      "medievalorigins:yeti/titanic",
+      "medievalorigins:yeti/unstoppable",
+      "medievalorigins:yeti/winter_body",
+      "medievalorigins:yeti/ice_magic"
+    ],
+        "icon": {
+          "item": "minecraft:ink_sac",
+          "tag": "{CustomModelData:365}"
+        },
+	"impact": 2,
+    "order": 1
+}
