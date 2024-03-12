@@ -33,6 +33,8 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ELYTRIANEVO = ITEMS.register("elytrianevo",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> PHANTOMEVO = ITEMS.register("phantomevo",
+            () -> new Item(new Item.Properties()));
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }
