@@ -54,6 +54,7 @@ public class OriginsOverhaulMod
             event.accept(ModItems.ELFWOODEVO);
             event.accept(ModItems.ELFMOONEVO);
             event.accept(ModItems.ELFHIGHEVO);
+            event.accept(ModItems.ENDERIANEVO);
         }
     }
 
