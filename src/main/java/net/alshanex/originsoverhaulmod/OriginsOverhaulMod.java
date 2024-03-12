@@ -62,6 +62,7 @@ public class OriginsOverhaulMod
             event.accept(ModItems.ELYTRIANEVO);
             event.accept(ModItems.PHANTOMEVO);
             event.accept(ModItems.GORGONEVO);
+            event.accept(ModItems.DWARFEVO);
         }
     }
 
