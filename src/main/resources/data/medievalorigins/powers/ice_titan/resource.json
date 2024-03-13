@@ -1,0 +1,64 @@
+{
+	"loading_priority":1,
+	"type": "origins:resource",
+	"min": 0,
+	"max": 9,
+	"max_action": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:modify_resource",
+				"modifier": {
+					"operation": "multiply_total_multiplicative",
+					"value": -1
+				},
+				"resource": "medievalorigins:ice_titan/resource"
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 2,
+				"action": {
+					"type": "origins:execute_command",
+					"command": "power grant @p origins:no_cast_time"
+				}
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 4,
+				"action": {
+					"type": "origins:execute_command",
+					"command": "cast @p ice_block 5"
+				}
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 6,
+				"action": {
+					"type": "origins:execute_command",
+					"command": "power remove @p medievalorigins:ice_titan/primary"
+				}
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 20,
+				"action": {
+					"type": "origins:execute_command",
+					"command": "power remove @p origins:no_cast_time"
+				}
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 80,
+				"action": {
+					"type": "origins:execute_command",
+					"command": "power grant @p medievalorigins:ice_titan/primary"
+				}
+			}
+		]
+	},
+	"hud_render": {
+		"should_render": true,
+		"sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+		"bar_index": 9
+	}
+}

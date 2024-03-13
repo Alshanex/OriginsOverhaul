@@ -5,7 +5,11 @@
       "medievalorigins:yeti/titanic",
       "medievalorigins:yeti/unstoppable",
       "medievalorigins:yeti/winter_body",
-      "medievalorigins:yeti/ice_magic"
+      "medievalorigins:yeti/ice_magic",
+      "medievalorigins:ice_titan/resource",
+      "medievalorigins:ice_titan/primary",
+      "medievalorigins:ice_titan/secondary",
+      "medievalorigins:ice_titan/reset_combo"
     ],
         "icon": {
           "item": "minecraft:ink_sac",
