@@ -1,0 +1,65 @@
+{
+	"loading_priority":1,
+	"type": "origins:active_self",
+    "entity_action": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:if_else_list",
+				"actions": [
+					{
+						"condition": {
+							"type": "origins:power",
+							"power": "medievalorigins:ender_titan/secondary"
+						},
+						"action": {
+							"type": "origins:and",
+							"actions": [
+								{
+									"type": "origins:execute_command",
+									"command": "power remove @p medievalorigins:ender_titan/secondary"
+								},
+								{
+									"type": "origins:delay",
+									"ticks": 2,
+									"action": {
+										"type": "origins:execute_command",
+										"command": "power grant @p medievalorigins:ender_titan/third"
+									}
+								}
+							]
+						}
+					},
+					{
+						"condition": {
+							"type": "origins:power",
+							"power": "medievalorigins:ender_titan/third"
+						},
+						"action": {
+							"type": "origins:and",
+							"actions": [
+								{
+									"type": "origins:execute_command",
+									"command": "power remove @p medievalorigins:ender_titan/third"
+								},
+								{
+									"type": "origins:delay",
+									"ticks": 2,
+									"action": {
+										"type": "origins:execute_command",
+										"command": "power grant @p medievalorigins:ender_titan/secondary"
+									}
+								}
+							]
+						}
+					}
+				]
+			}
+		]
+    },
+	"cooldown": 10,
+	"key": {
+		"key": "key.sprint",
+		"continuous": false
+	}
+}

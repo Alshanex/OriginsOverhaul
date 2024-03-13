@@ -1,0 +1,71 @@
+{
+	"loading_priority":1,
+	"type": "origins:active_self",
+    "entity_action": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:execute_command",
+				"command": "power grant @p origins:no_cast_time"
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 2,
+				"action": {
+					"type": "origins:execute_command",
+					"command": "cast @p stomp 3"
+				}
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 4,
+				"action": {
+					"type": "origins:execute_command",
+					"command": "power remove @p origins:no_cast_time"
+				}
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 6,
+				"action": {
+					"type": "origins:area_of_effect",
+					"radius": 10,
+					"shape": "sphere",
+					"bientity_action": {
+						"type": "origins:target_action",
+						"action": {
+							"type": "origins:apply_effect",
+							"effects": [
+								{
+									"effect": "minecraft:levitation",
+									"duration": 50,
+									"is_ambient": false,
+									"show_particles": false,
+									"show_icon": false
+								},
+								{
+									"effect": "minecraft:slowness",
+									"duration": 50,
+									"amplifier": 6,
+									"is_ambient": false,
+									"show_particles": false,
+									"show_icon": false
+								}
+							]
+						}
+					}
+				}
+			}
+		]
+    },
+	"cooldown": 200,
+	"hud_render": {
+		"should_render": true,
+		"sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+		"bar_index": 1
+	},
+	"key": {
+		"key": "key.origins.secondary_active",
+		"continuous": false
+	}
+}

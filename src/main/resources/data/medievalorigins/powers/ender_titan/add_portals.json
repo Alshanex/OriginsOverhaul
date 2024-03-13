@@ -1,0 +1,19 @@
+{
+	"loading_priority":1,
+	"type": "origins:action_over_time",
+	"entity_action": {
+		"type": "origins:modify_resource",
+		"modifier": {
+			"operation": "add_base_early",
+			"value": 1
+		},
+		"resource": "medievalorigins:ender_titan/portals"
+	},
+	"interval": 3000,
+	"condition": {
+		"type": "origins:resource",
+		"resource": "medievalorigins:ender_titan/portals",
+		"comparison": "==",
+		"compare_to": 0
+	}
+}
