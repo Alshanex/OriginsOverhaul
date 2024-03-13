@@ -7,14 +7,20 @@
 			{
 				"type": "origins:execute_command",
 				"command": "cast @p blood_slash 5"
+			},
+			{
+				"type": "origins:modify_resource",
+				"modifier": {
+					"operation": "add_base_early",
+					"value": 1
+				},
+				"resource": "medievalorigins:bastet/evil"
 			}
 		]
     },
-	"cooldown": 12,
+	"cooldown": 15,
 	"hud_render": {
-		"should_render": true,
-		"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
-		"bar_index": 5
+		"should_render": false
 	},
 	"key": {
 		"key": "key.origins.primary_active",

@@ -6,7 +6,7 @@
 		"actions": [
 			{
 				"type": "origins:execute_command",
-				"command": "cast @p guiding_bolt 10"
+				"command": "cast @p blood_step 3"
 			},
 			{
 				"type": "origins:modify_resource",
@@ -14,16 +14,18 @@
 					"operation": "add_base_early",
 					"value": 1
 				},
-				"resource": "medievalorigins:bastet/good"
+				"resource": "medievalorigins:bastet/evil"
 			}
 		]
     },
-	"cooldown": 15,
+	"cooldown": 200,
 	"hud_render": {
-		"should_render": false
+		"should_render": true,
+		"sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+		"bar_index": 20
 	},
 	"key": {
-		"key": "key.origins.primary_active",
+		"key": "key.origins.secondary_active",
 		"continuous": false
 	}
 }

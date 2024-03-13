@@ -6,7 +6,15 @@
 		"actions": [
 			{
 				"type": "origins:execute_command",
-				"command": "cast @p guiding_bolt 10"
+				"command": "cast @p heal 8"
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 2,
+				"action": {
+					"type": "origins:execute_command",
+					"command": "cast @p charge 2"
+				}
 			},
 			{
 				"type": "origins:modify_resource",
@@ -18,12 +26,14 @@
 			}
 		]
     },
-	"cooldown": 15,
+	"cooldown": 1200,
 	"hud_render": {
-		"should_render": false
+		"should_render": true,
+		"sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+		"bar_index": 4
 	},
 	"key": {
-		"key": "key.origins.primary_active",
+		"key": "key.origins.secondary_active",
 		"continuous": false
 	}
 }
