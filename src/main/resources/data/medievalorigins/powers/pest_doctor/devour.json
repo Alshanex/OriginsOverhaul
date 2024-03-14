@@ -1,0 +1,78 @@
+{
+	"loading_priority":1,
+	"type": "origins:active_self",
+    "entity_action": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:execute_command",
+				"command": "power grant @p origins:no_cast_time"
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 2,
+				"action": {
+					"type": "origins:execute_command",
+					"command": "cast @p devour 10"
+				}
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 4,
+				"action": {
+					"type": "origins:execute_command",
+					"command": "power remove @p origins:no_cast_time"
+				}
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 6,
+				"action": {
+					"type": "origins:execute_command",
+					"command": "power remove @p medievalorigins:pest_doctor/devour"
+				}
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 8,
+				"action": {
+					"type": "origins:execute_command",
+					"command": "power grant @p medievalorigins:pest_doctor/acid_orb"
+				}
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 10,
+				"action": {
+					"type": "origins:trigger_cooldown",
+					"power": "medievalorigins:pest_doctor/acid_orb"
+				}
+			},
+			{
+				"type": "origins:if_else",
+				"condition": {
+					"type": "origins:resource",
+					"resource": "medievalorigins:pest_doctor/resource",
+					"comparison": "<",
+					"compare_to": 20
+				},
+				"if_action": {
+					"type": "origins:modify_resource",
+					"modifier": {
+						"operation": "add_base_early",
+						"value": 1
+					},
+					"resource": "medievalorigins:pest_doctor/resource"
+				}
+			}
+		]
+    },
+	"cooldown": 1,
+	"hud_render": {
+		"should_render": false
+	},
+	"key": {
+		"key": "key.origins.primary_active",
+		"continuous": false
+	}
+}
