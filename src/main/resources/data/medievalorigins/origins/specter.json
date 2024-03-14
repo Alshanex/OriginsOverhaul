@@ -3,7 +3,9 @@
 	"powers": [
 		"origins:elytra",
 		"origins:aerial_combatant",
-		"origins:dodge_chance"
+		"origins:dodge_chance",
+		"medievalorigins:specter/jump",
+		"medievalorigins:specter/dash"
 	],
 	"icon": {
 		"item": "minecraft:elytra"
