@@ -6,14 +6,14 @@
 		"actions": [
 			{
 				"type": "origins:execute_command",
-				"command": "cast @p chain_lightning 10"
+				"command": "cast @p ascension 3"
 			},
 			{
 				"type": "origins:delay",
 				"ticks": 2,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power remove @p medievalorigins:death_spirit/electric"
+					"command": "power remove @p medievalorigins:death_spirit/jump"
 				}
 			},
 			{
@@ -21,19 +21,17 @@
 				"ticks": 2,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power grant @p medievalorigins:death_spirit/jump"
+					"command": "power grant @p medievalorigins:death_spirit/lance"
 				}
 			}
 		]
 	},
-	"cooldown": 40,
+	"cooldown": 1,
 	"key": {
 		"key": "key.origins.secondary_active",
 		"continuous": false
 	},
 	"hud_render": {
-		"should_render": true,
-		"sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
-		"bar_index": 5
+		"should_render": false
 	}
 }

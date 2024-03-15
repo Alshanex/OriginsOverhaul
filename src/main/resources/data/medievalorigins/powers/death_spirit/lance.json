@@ -1,0 +1,61 @@
+{
+	"loading_priority":1,
+	"type": "origins:active_self",
+	"entity_action": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:execute_command",
+				"command": "power grant @p origins:no_cast_time"
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 2,
+				"action": {
+					"type": "origins:execute_command",
+					"command": "cast @p lightning_lance 10"
+				}
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 4,
+				"action": {
+					"type": "origins:execute_command",
+					"command": "power remove @p medievalorigins:death_spirit/lance"
+				}
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 6,
+				"action": {
+					"type": "origins:execute_command",
+					"command": "power grant @p medievalorigins:death_spirit/electric"
+				}
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 8,
+				"action": {
+					"type": "origins:trigger_cooldown",
+					"power": "medievalorigins:death_spirit/electric"
+				}
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 20,
+				"action": {
+					"type": "origins:execute_command",
+					"command": "power remove @p origins:no_cast_time"
+				}
+			}
+		]
+	},
+	"cooldown": 1,
+	"key": {
+		"key": "key.origins.secondary_active",
+		"continuous": false
+	},
+	"hud_render": {
+		"should_render": false
+	}
+}
