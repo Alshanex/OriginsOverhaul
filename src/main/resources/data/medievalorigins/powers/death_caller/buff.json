@@ -24,21 +24,21 @@
 					"effects": [
 						{
 							"effect": "minecraft:strength",
-							"duration": 600,
+							"duration": 1200,
 							"is_ambient": false,
 							"show_particles": false,
 							"show_icon": false
 						},
 						{
 							"effect": "minecraft:haste",
-							"duration": 600,
+							"duration": 1200,
 							"is_ambient": false,
 							"show_particles": false,
 							"show_icon": false
 						},
 						{
 							"effect": "minecraft:speed",
-							"duration": 600,
+							"duration": 1200,
 							"is_ambient": false,
 							"show_particles": false,
 							"show_icon": false
@@ -66,35 +66,35 @@
 								"effects": [
 									{
 										"effect": "minecraft:strength",
-										"duration": 600,
+										"duration": 1200,
 										"is_ambient": false,
 										"show_particles": false,
 										"show_icon": false
 									},
 									{
 										"effect": "minecraft:fire_resistance",
-										"duration": 600,
+										"duration": 1200,
 										"is_ambient": false,
 										"show_particles": false,
 										"show_icon": false
 									},
 									{
 										"effect": "minecraft:haste",
-										"duration": 600,
+										"duration": 1200,
 										"is_ambient": false,
 										"show_particles": false,
 										"show_icon": false
 									},
 									{
 										"effect": "minecraft:resistance",
-										"duration": 600,
+										"duration": 1200,
 										"is_ambient": false,
 										"show_particles": false,
 										"show_icon": false
 									},
 									{
 										"effect": "minecraft:speed",
-										"duration": 600,
+										"duration": 1200,
 										"is_ambient": false,
 										"show_particles": false,
 										"show_icon": false
