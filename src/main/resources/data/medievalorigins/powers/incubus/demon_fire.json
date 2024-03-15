@@ -21,7 +21,7 @@
 				"ticks": 4,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power grant @p medievalorigins:incubus/jump"
+					"command": "power grant @p medievalorigins:incubus/slash"
 				}
 			}
 		]
