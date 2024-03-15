@@ -4,7 +4,10 @@
       "medievalorigins:revenant/unwitherable",
       "medievalorigins:revenant/disturbed",
       "medievalorigins:revenant/evocation_magic",
-      "medievalorigins:revenant/undeadge"
+      "medievalorigins:revenant/undeadge",
+      "medievalorigins:death_caller/buff",
+      "medievalorigins:death_caller/summon",
+      "medievalorigins:death_caller/swap"
     ],
         "icon": {
           "item": "minecraft:ink_sac",

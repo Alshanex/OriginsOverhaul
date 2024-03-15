@@ -1,0 +1,28 @@
+{
+	"loading_priority":1,
+	"type": "origins:active_self",
+    "entity_action": {
+		"type": "origins:if_else",
+		"condition": {
+			"type": "origins:sneaking"
+		},
+		"if_action": {
+			"type": "origins:execute_command",
+			"command": "cast @p raise_dead 4"
+		},
+		"else_action": {
+			"type": "origins:execute_command",
+			"command": "cast @p summon_vex 4"
+		}
+    },
+	"cooldown": 6000,
+	"hud_render": {
+		"should_render": true,
+		"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+		"bar_index": 19
+	},
+	"key": {
+		"key": "key.origins.secondary_active",
+		"continuous": false
+	}
+}
