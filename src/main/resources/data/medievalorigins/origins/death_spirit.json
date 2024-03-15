@@ -2,7 +2,15 @@
 	"loading_priority":12,
 	"powers": [
 		"origins:translucent",
-		"origins:thunder_magic"
+		"origins:thunder_magic",
+		"medievalorigins:death_spirit/phantom_stacks",
+		"medievalorigins:death_spirit/buff",
+		"medievalorigins:death_spirit/stack_down",
+		"medievalorigins:death_spirit/phantomize",
+		"medievalorigins:death_spirit/phasing",
+		"medievalorigins:death_spirit/phantomize_overlay",
+		"medievalorigins:death_spirit/electric",
+		"medievalorigins:death_spirit/charges"
 	],
 	"icon": {
 		"item": "minecraft:phantom_membrane"
