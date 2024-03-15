@@ -6,7 +6,11 @@
                 "medievalorigins:dwarf/damage_reduction",
                 "medievalorigins:dwarf/experience",
                 "medievalorigins:dwarf/pickaxeless_stone",
-		"origins:difficulty_1"
+                "medievalorigins:king_under_mountain/shields",
+                "medievalorigins:king_under_mountain/charges",
+      "medievalorigins:king_under_mountain/buff",
+      "medievalorigins:king_under_mountain/secondary",
+      "medievalorigins:king_under_mountain/primary"
 	],
         "icon": {
                 "item": "minecraft:ink_sac",

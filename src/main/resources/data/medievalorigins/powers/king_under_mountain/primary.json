@@ -28,6 +28,22 @@
 				"type": "origins:delay",
 				"ticks": 6,
 				"action": {
+					"type": "origins:execute_command",
+					"command": "power remove @p medievalorigins:king_under_mountain/primary"
+				}
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 8,
+				"action": {
+					"type": "origins:execute_command",
+					"command": "power grant @p medievalorigins:king_under_mountain/secondprim"
+				}
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 10,
+				"action": {
 					"type": "origins:area_of_effect",
 					"radius": 10,
 					"shape": "sphere",
@@ -38,14 +54,14 @@
 							"effects": [
 								{
 									"effect": "minecraft:levitation",
-									"duration": 50,
+									"duration": 60,
 									"is_ambient": false,
 									"show_particles": false,
 									"show_icon": false
 								},
 								{
 									"effect": "minecraft:slowness",
-									"duration": 50,
+									"duration": 60,
 									"amplifier": 6,
 									"is_ambient": false,
 									"show_particles": false,
@@ -65,7 +81,7 @@
 		"bar_index": 1
 	},
 	"key": {
-		"key": "key.origins.secondary_active",
+		"key": "key.origins.primary_active",
 		"continuous": false
 	}
 }

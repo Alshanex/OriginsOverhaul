@@ -1,0 +1,106 @@
+{
+	"loading_priority":1,
+	"type": "origins:active_self",
+    "entity_action": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:execute_command",
+				"command": "power grant @p origins:no_cast_time"
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 2,
+				"action": {
+					"type": "origins:execute_command",
+					"command": "cast @p divine_smite 5"
+				}
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 4,
+				"action": {
+					"type": "origins:execute_command",
+					"command": "power remove @p origins:no_cast_time"
+				}
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 6,
+				"action": {
+					"type": "origins:execute_command",
+					"command": "power remove @p medievalorigins:king_under_mountain/secondprim"
+				}
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 8,
+				"action": {
+					"type": "origins:execute_command",
+					"command": "power grant @p medievalorigins:king_under_mountain/primary"
+				}
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 10,
+				"action": {
+					"type": "origins:trigger_cooldown",
+					"power": "medievalorigins:king_under_mountain/primary"
+				}
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 16,
+				"action": {
+					"type": "origins:area_of_effect",
+					"radius": 10,
+					"shape": "sphere",
+					"bientity_action": {
+						"type": "origins:target_action",
+						"action": {
+							"type": "origins:and",
+							"actions": [
+								{
+									"type": "origins:add_velocity",
+									"y": -2
+								},
+								{
+									"type": "origins:clear_effect",
+									"effect": "minecraft:levitation"
+								},
+								{
+									"type": "origins:apply_effect",
+									"effects": [
+										{
+											"effect": "minecraft:weakness",
+											"duration": 60,
+											"is_ambient": false,
+											"show_particles": false,
+											"show_icon": false
+										},
+										{
+											"effect": "minecraft:slowness",
+											"duration": 60,
+											"amplifier": 6,
+											"is_ambient": false,
+											"show_particles": false,
+											"show_icon": false
+										}
+									]
+								}
+							]
+						}
+					}
+				}
+			}
+		]
+    },
+	"cooldown": 1,
+	"hud_render": {
+		"should_render": false
+	},
+	"key": {
+		"key": "key.origins.primary_active",
+		"continuous": false
+	}
+}
