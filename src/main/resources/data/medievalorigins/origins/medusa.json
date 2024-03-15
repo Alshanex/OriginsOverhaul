@@ -1,17 +1,20 @@
 {
         "loading_priority": 12,
-	"powers": [
-                "medievalorigins:gorgon/petrifying_gaze",
+        "powers": [
                 "medievalorigins:gorgon/poison_blood",
                 "medievalorigins:gorgon/poison_immune",
                 "medievalorigins:gorgon/ancient_magic",
                 "medievalorigins:gorgon/magic_resistance",
-                "medievalorigins:gorgon/stats"
-	],
+                "medievalorigins:gorgon/stats",
+                "medievalorigins:medusa/root",
+                "medievalorigins:medusa/lethal",
+                "medievalorigins:medusa/secondary",
+                "medievalorigins:medusa/reset_combo"
+	    ],
         "icon": {
-		"item": "minecraft:ink_sac",
-		"tag": "{CustomModelData:352}"
-	},
-	"impact": 3,
+            "item": "minecraft:ink_sac",
+            "tag": "{CustomModelData:352}"
+        },
+        "impact": 3,
         "order": 1
 }
