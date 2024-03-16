@@ -1,13 +1,19 @@
 package net.alshanex.originsoverhaulmod.entity.custom;
 
 import net.alshanex.originsoverhaulmod.entity.ModEntities;
-import net.alshanex.originsoverhaulmod.item.ModItems;
-import net.minecraft.util.RandomSource;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.projectile.ThrowableItemProjectile;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.level.Level;
+import io.redspace.ironsspellbooks.api.events.SpellHealEvent;
+import io.redspace.ironsspellbooks.api.magic.MagicData;
+import io.redspace.ironsspellbooks.api.registry.SpellRegistry;
+import io.redspace.ironsspellbooks.api.util.Utils;
+import io.redspace.ironsspellbooks.capabilities.magic.MagicManager;
+import io.redspace.ironsspellbooks.damage.DamageSources;
+import io.redspace.ironsspellbooks.entity.spells.AbstractShieldEntity;
+import io.redspace.ironsspellbooks.entity.spells.ShieldPart;
+import io.redspace.ironsspellbooks.entity.mobs.AntiMagicSusceptible;
+import io.redspace.ironsspellbooks.registries.EntityRegistry;
+import io.redspace.ironsspellbooks.api.spells.SchoolType;
+import io.redspace.ironsspellbooks.util.ParticleHelper;
+import net.alshanex.originsoverhaulmod.registry.ExampleSpellRegistry;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
@@ -27,7 +33,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class WaterSlashEntity extends Projectile {
+public class WaterSlashEntity extends Projectile implements AntiMagicSusceptible{
     private static final EntityDataAccessor<Float> DATA_RADIUS = SynchedEntityData.defineId(WaterSlashEntity.class, EntityDataSerializers.FLOAT);
     private static final double SPEED = 1d;
     private static final int EXPIRE_TIME = 4 * 20;
@@ -39,12 +45,11 @@ public class WaterSlashEntity extends Projectile {
     public int animationTime;
     private List<Entity> victims;
 
-    public static final RandomSource random = RandomSource.createThreadSafe();
-
     public WaterSlashEntity(EntityType<? extends WaterSlashEntity> entityType, Level level) {
         super(entityType, level);
-        animationSeed = random.nextInt(9999);
+        animationSeed = Utils.random.nextInt(9999);
 
+        setRadius(.6f);
         maxRadius = 3;
         oldBB = getBoundingBox();
         victims = new ArrayList<>();
@@ -66,13 +71,16 @@ public class WaterSlashEntity extends Projectile {
         this.damage = damage;
     }
 
-    //TODO: override "doWaterSplashEffect"
     @Override
     protected void defineSynchedData() {
         this.getEntityData().define(DATA_RADIUS, 0.5F);
     }
 
-
+    public void setRadius(float newRadius) {
+        if (newRadius <= maxRadius && !this.level().isClientSide) {
+            this.getEntityData().set(DATA_RADIUS, Mth.clamp(newRadius, 0.0F, maxRadius));
+        }
+    }
 
     public float getRadius() {
         return this.getEntityData().get(DATA_RADIUS);
@@ -84,5 +92,106 @@ public class WaterSlashEntity extends Projectile {
         double d2 = this.getZ();
         super.refreshDimensions();
         this.setPos(d0, d1, d2);
+    }
+
+    @Override
+    public void tick() {
+        super.tick();
+        if (++age > EXPIRE_TIME) {
+            discard();
+            return;
+        }
+        oldBB = getBoundingBox();
+        setRadius(getRadius() + 0.12f);
+
+        if (!level().isClientSide) {
+            HitResult hitresult = ProjectileUtil.getHitResultOnMoveVector(this, this::canHitEntity);
+            if (hitresult.getType() == HitResult.Type.BLOCK) {
+                onHitBlock((BlockHitResult) hitresult);
+            }
+            for (Entity entity : level().getEntities(this, this.getBoundingBox()).stream().filter(target -> canHitEntity(target) && !victims.contains(target)).collect(Collectors.toSet())) {
+                damageEntity(entity);
+                //IronsSpellbooks.LOGGER.info(entity.getName().getString());
+                MagicManager.spawnParticles(level(), ParticleHelper.BLOOD, entity.getX(), entity.getY(), entity.getZ(), 50, 0, 0, 0, .5, true);
+                if (entity instanceof ShieldPart || entity instanceof AbstractShieldEntity) {
+                    discard();
+                    return;
+                }
+            }
+        }
+
+        setPos(position().add(getDeltaMovement()));
+        spawnParticles();
+    }
+    public EntityDimensions getDimensions(Pose p_19721_) {
+        //irons_spellbooks.LOGGER.info("Accessing Blood Slash Dimensions. Age: {}", age);
+        this.getBoundingBox();
+        return EntityDimensions.scalable(this.getRadius() * 2.0F, 0.5F);
+    }
+
+    public void onSyncedDataUpdated(EntityDataAccessor<?> p_19729_) {
+        //irons_spellbooks.LOGGER.info("onSynchedDataUpdated");
+
+        if (DATA_RADIUS.equals(p_19729_)) {
+            this.refreshDimensions();
+        }
+
+        super.onSyncedDataUpdated(p_19729_);
+    }
+
+    @Override
+    protected void onHitBlock(BlockHitResult blockHitResult) {
+        super.onHitBlock(blockHitResult);
+        discard();
+    }
+
+    private void damageEntity(Entity entity) {
+        if (!victims.contains(entity)) {
+            DamageSources.applyDamage(entity, damage, ExampleSpellRegistry.WATER_SLASH.get().getDamageSource(this, getOwner()));
+            victims.add(entity);
+        }
+    }
+
+    //https://forge.gemwire.uk/wiki/Particles
+    public void spawnParticles() {
+        if (level().isClientSide) {
+
+            float width = (float) getBoundingBox().getXsize();
+            float step = .25f;
+            float radians = Mth.DEG_TO_RAD * getYRot();
+            float speed = .1f;
+            for (int i = 0; i < width / step; i++) {
+                double x = getX();
+                double y = getY();
+                double z = getZ();
+                double offset = step * (i - width / step / 2);
+                double rotX = offset * Math.cos(radians);
+                double rotZ = -offset * Math.sin(radians);
+
+                double dx = Math.random() * speed * 2 - speed;
+                double dy = Math.random() * speed * 2 - speed;
+                double dz = Math.random() * speed * 2 - speed;
+                level().addParticle(ParticleHelper.SNOWFLAKE, false, x + rotX + dx, y + dy, z + rotZ + dz, dx, dy, dz);
+            }
+        }
+    }
+    @Override
+    protected boolean canHitEntity(Entity entity) {
+        return entity != getOwner() && super.canHitEntity(entity);
+    }
+    @Override
+    public void onAntiMagic(MagicData playerMagicData) {
+        this.discard();
+    }
+    @Override
+    protected void addAdditionalSaveData(CompoundTag pCompound) {
+        super.addAdditionalSaveData(pCompound);
+        pCompound.putFloat("Damage", this.damage);
+    }
+
+    @Override
+    protected void readAdditionalSaveData(CompoundTag pCompound) {
+        super.readAdditionalSaveData(pCompound);
+        this.damage = pCompound.getFloat("Damage");
     }
 }
