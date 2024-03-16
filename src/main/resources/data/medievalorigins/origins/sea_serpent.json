@@ -4,7 +4,9 @@
       "medievalorigins:siren/amphibious",
       "medievalorigins:siren/holy_water",
       "medievalorigins:siren/water_vision",
-      "medievalorigins:siren/damage_underwater"
+      "medievalorigins:siren/damage_underwater",
+      "medievalorigins:sea_serpent/blink",
+      "medievalorigins:sea_serpent/buff"
     ],
         "icon": {
                 "item": "minecraft:heart_of_the_sea"

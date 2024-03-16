@@ -1,7 +1,10 @@
 package net.alshanex.originsoverhaulmod;
 
 import com.mojang.logging.LogUtils;
+import net.alshanex.originsoverhaulmod.entity.ModEntities;
 import net.alshanex.originsoverhaulmod.item.ModItems;
+import net.minecraft.client.renderer.entity.EntityRenderers;
+import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -30,6 +33,8 @@ public class OriginsOverhaulMod
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+
+        ModEntities.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

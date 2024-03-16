@@ -9,19 +9,10 @@
 	  "conditions": [
 		{
 			"type": "apoli:submerged_in",
-			"fluid": "minecraft:water",
-			"inverted": false
+			"fluid": "minecraft:water"
 		},
 		{    
-		  "type": "apoli:in_rain",
-		  "inverted": false
-		},
-		{    
-		  "type": "apoli:fluid_height",
-		  "fluid": "minecraft:water",
-		  "comparison": ">",
-		  "compare_to": 0,
-		  "inverted": false
+		  "type": "apoli:in_rain"
 		}
 	  ]
 	},
