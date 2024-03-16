@@ -12,7 +12,7 @@ public class ModEntities {
     public static final DeferredRegister<EntityType<?>> ENTITY_TYPES =
             DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, OriginsOverhaulMod.MOD_ID);
 
-    public static final RegistryObject<EntityType<WaterSlashEntity>> WATER_SLASH =
+    public static final RegistryObject<EntityType<WaterSlashEntity>> WATER_SLASH_ENTITY =
             ENTITY_TYPES.register("water_slash", () -> EntityType.Builder.<WaterSlashEntity>of(WaterSlashEntity::new, MobCategory.MISC)
                     .sized(0.5f, 0.5f).build("water_slash"));
 

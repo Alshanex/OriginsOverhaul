@@ -1,98 +1,88 @@
 package net.alshanex.originsoverhaulmod.entity.custom;
 
-import net.alshanex.originsoverhaulmod.OriginsOverhaulMod;
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.mojang.blaze3d.vertex.PoseStack.Pose;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import org.joml.Matrix3f;
-import org.joml.Matrix4f;
 import com.mojang.math.Axis;
+import net.minecraft.client.model.EvokerFangsModel;
+import net.minecraft.client.model.geom.ModelLayers;
+import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.entity.EntityRenderer;
-import net.minecraft.client.renderer.entity.EntityRendererProvider.Context;
+import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
 import org.jetbrains.annotations.NotNull;
 
+
 public class WaterSlashRenderer extends EntityRenderer<WaterSlashEntity> {
-    public static ResourceLocation getResource(@NotNull String path) {
-        return new ResourceLocation(OriginsOverhaulMod.MOD_ID, path);
+    private final WaterSplashModel model;
+    public WaterSlashRenderer(EntityRendererProvider.Context pContext) {
+        super(pContext);
+        this.model = new WaterSplashModel(pContext.bakeLayer(ModelLayers.EVOKER_FANGS));
     }
-    private static ResourceLocation TEXTURE = getResource("textures/entity/water_slash/water_slash.png");
-    private static ResourceLocation TEXTURES[] = {
-            new ResourceLocation("textures/particle/sweep_0.png"),
-            new ResourceLocation("textures/particle/sweep_1.png"),
-            new ResourceLocation("textures/particle/sweep_2.png"),
-            new ResourceLocation("textures/particle/sweep_3.png"),
-            new ResourceLocation("textures/particle/sweep_4.png"),
-            new ResourceLocation("textures/particle/sweep_5.png"),
-            new ResourceLocation("textures/particle/sweep_6.png"),
-            new ResourceLocation("textures/particle/sweep_7.png")
-    };
-
-    public WaterSlashRenderer(Context context) {
-        super(context);
-    }
-
-    @Override
-    public void render(WaterSlashEntity entity, float yaw, float partialTicks, PoseStack poseStack, MultiBufferSource bufferSource, int light) {
+    public void render(WaterSlashEntity entity, float yaw, float partialTicks, PoseStack poseStack, MultiBufferSource multiBufferSource, int light) {
+        if (entity.tickCount < entity.waitTime)
+            return;
+        float f = entity.tickCount + partialTicks;
         poseStack.pushPose();
-
-        Pose pose = poseStack.last();
-        Matrix4f poseMatrix = pose.pose();
-        Matrix3f normalMatrix = pose.normal();
-        poseStack.mulPose(Axis.YP.rotationDegrees(Mth.lerp(partialTicks, entity.yRotO, entity.getYRot())));
-        poseStack.mulPose(Axis.XP.rotationDegrees(-Mth.lerp(partialTicks, entity.xRotO, entity.getXRot())));
-        entity.animationTime++;
-        poseStack.mulPose(Axis.ZP.rotationDegrees(((entity.animationSeed % 30) - 15) * (float) Math.sin(entity.animationTime * .015)));
-
-        //VertexConsumer consumer = bufferSource.getBuffer(RenderType.entityCutoutNoCull(getTextureLocation(entity)));
-
-        float oldWith = (float) entity.oldBB.getXsize();
-        float width = entity.getBbWidth();
-        width = oldWith + (width - oldWith) * Math.min(partialTicks, 1);
-        //float halfWidth = width * .5f;
-        //old color: 125, 0, 10
-
-        //drawSlash(pose, bufferSource, light, width, 2);
-
-        poseStack.mulPose(Axis.YP.rotationDegrees(-15));
-        poseStack.mulPose(Axis.ZP.rotationDegrees(-10));
-        drawSlash(pose,entity, bufferSource, light, width, 4);
-
-        poseStack.mulPose(Axis.YP.rotationDegrees(30));
-        poseStack.mulPose(Axis.ZP.rotationDegrees(20));
-        drawSlash(pose,entity, bufferSource, light, width, 0);
-
+        poseStack.mulPose(Axis.YP.rotationDegrees(-entity.getYRot()));
+        poseStack.scale(-1, -1, 1);
+        poseStack.scale(1.85f, 1.85f, 1.85f);
+        this.model.setupAnim(entity, f, 0.0F, 0.0F, entity.getYRot(), entity.getXRot());
+        VertexConsumer vertexconsumer = multiBufferSource.getBuffer(RenderType.entityCutoutNoCull(getTextureLocation(entity)));
+        this.model.renderToBuffer(poseStack, vertexconsumer, light, OverlayTexture.NO_OVERLAY, 1.0F, 1.0F, 1.0F, 1.0F);
         poseStack.popPose();
-
-        super.render(entity, yaw, partialTicks, poseStack, bufferSource, light);
+        super.render(entity, yaw, partialTicks, poseStack, multiBufferSource, light);
     }
-
-    private void drawSlash(Pose pose, WaterSlashEntity entity, MultiBufferSource bufferSource, int light, float width, int offset) {
-        Matrix4f poseMatrix = pose.pose();
-        Matrix3f normalMatrix = pose.normal();
-
-        VertexConsumer consumer = bufferSource.getBuffer(RenderType.entityCutoutNoCull(getTextureLocation(entity,offset)));
-        float halfWidth = width * .5f;
-        //old color: 125, 0, 10
-        consumer.vertex(poseMatrix, -halfWidth, -.1f, -halfWidth).color(90, 0, 10, 255).uv(0f, 1f).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(light).normal(normalMatrix, 0f, 1f, 0f).endVertex();
-        consumer.vertex(poseMatrix, halfWidth, -.1f, -halfWidth).color(90, 0, 10, 255).uv(1f, 1f).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(light).normal(normalMatrix, 0f, 1f, 0f).endVertex();
-        consumer.vertex(poseMatrix, halfWidth, -.1f, halfWidth).color(90, 0, 10, 255).uv(1f, 0f).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(light).normal(normalMatrix, 0f, 1f, 0f).endVertex();
-        consumer.vertex(poseMatrix, -halfWidth, -.1f, halfWidth).color(90, 0, 10, 255).uv(0f, 0f).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(light).normal(normalMatrix, 0f, 1f, 0f).endVertex();
+    public static ResourceLocation id(@NotNull String path) {
+        return new ResourceLocation("originsoverhaulmod", path);
     }
-
     @Override
-    public ResourceLocation getTextureLocation(WaterSlashEntity entity) {
-        int frame = (entity.animationTime / 4) % TEXTURES.length;
-        return TEXTURES[frame];
-        //return TEXTURE;
+    public ResourceLocation getTextureLocation(WaterSlashEntity pEntity) {
+        return id("textures/entity/water_splash.png");
     }
+    static class WaterSplashModel extends EvokerFangsModel<WaterSlashEntity> {
+        private final ModelPart root;
+        private final ModelPart base;
+        private final ModelPart upperJaw;
+        private final ModelPart lowerJaw;
 
-    private ResourceLocation getTextureLocation(WaterSlashEntity entity,int offset) {
-        int frame = (entity.animationTime / 6 + offset) % TEXTURES.length;
-        return TEXTURES[frame];
+        public WaterSplashModel(ModelPart pRoot) {
+            super(pRoot);
+            this.root = pRoot;
+            this.base = pRoot.getChild("base");
+            this.upperJaw = pRoot.getChild("upper_jaw");
+            this.lowerJaw = pRoot.getChild("lower_jaw");
+        }
+
+        @Override
+        public void setupAnim(WaterSlashEntity entity, float time, float pLimbSwingAmount, float pAgeInTicks, float pNetHeadYaw, float pHeadPitch) {
+            this.upperJaw.zRot = (float) Math.PI;
+            this.lowerJaw.zRot = (float) Math.PI;
+
+            this.upperJaw.y = -18F;
+            this.lowerJaw.y = this.upperJaw.y;
+            this.base.y = this.upperJaw.y;
+        }
+
+        /*@Override
+        public void setupAnim(WaterSlashEntity entity, float time, float pLimbSwingAmount, float pAgeInTicks, float pNetHeadYaw, float pHeadPitch) {
+            time -= entity.waitTime;
+            float interval = entity.warmupTime - entity.waitTime;
+
+            float f = Mth.clamp(time / interval, 0, 1);
+            f = 1 - f * f * f * f;
+            this.upperJaw.zRot = (float) Math.PI - f * 0.35F * (float) Math.PI;
+            this.lowerJaw.zRot = (float) Math.PI + f * 0.35F * (float) Math.PI;
+
+            float f2 = (time / interval);
+            f2 = .5f * Mth.cos(.5f * Mth.PI * (f2 - 1)) + .5f;
+            f2 *= f2;
+            this.upperJaw.y = -18F * f2 + 16f;
+            this.lowerJaw.y = this.upperJaw.y;
+            this.base.y = this.upperJaw.y;
+        }*/
     }
 }
