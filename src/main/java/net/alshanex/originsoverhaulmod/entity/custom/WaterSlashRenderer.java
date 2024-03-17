@@ -59,12 +59,23 @@ public class WaterSlashRenderer extends EntityRenderer<WaterSlashEntity> {
 
         @Override
         public void setupAnim(WaterSlashEntity entity, float time, float pLimbSwingAmount, float pAgeInTicks, float pNetHeadYaw, float pHeadPitch) {
+            time -= entity.waitTime;
+            float interval = entity.warmupTime - entity.waitTime;
+
+            // Calcula la progresión de la animación de salida del suelo
+            float f2 = (time / interval);
+            f2 = .5f * Mth.cos(.5f * Mth.PI * (f2 - 1)) + .5f;
+            f2 *= f2;
+
+            // Aplica la animación de salida del suelo al objeto
+            float yOffset = -18F * f2 + 16f;
+            this.upperJaw.y = yOffset;
+            this.lowerJaw.y = yOffset;
+            this.base.y = yOffset;
+
+            // Evita que las mandíbulas se roten durante la animación de salida del suelo
             this.upperJaw.zRot = (float) Math.PI;
             this.lowerJaw.zRot = (float) Math.PI;
-
-            this.upperJaw.y = -18F;
-            this.lowerJaw.y = this.upperJaw.y;
-            this.base.y = this.upperJaw.y;
         }
 
         /*@Override

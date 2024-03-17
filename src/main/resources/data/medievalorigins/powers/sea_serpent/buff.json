@@ -20,14 +20,14 @@
 			"effects": [
 				{
 					"effect": "minecraft:speed",
-					"duration": 100,
+					"duration": 120,
 					"is_ambient": false,
 					"show_particles": false,
 					"show_icon": true
 				},
 				{
 					"effect": "minecraft:haste",
-					"duration": 100,
+					"duration": 120,
 					"is_ambient": false,
 					"show_particles": false,
 					"show_icon": true

@@ -32,7 +32,7 @@ public class WaterSlashEntity extends AoeEntity{
     public void applyEffect(LivingEntity target) {
         if (target == this.target) {
             if (DamageSources.applyDamage(target, getDamage(), ExampleSpellRegistry.WATER_SLASH.get().getDamageSource(this, getOwner())) && getOwner() instanceof LivingEntity livingOwner) {
-                target.setDeltaMovement(target.getDeltaMovement().add(0, 4.5f, 0));
+                target.setDeltaMovement(target.getDeltaMovement().add(0, 1.5f, 0));
                 target.hurtMarked = true;
             }
         }
