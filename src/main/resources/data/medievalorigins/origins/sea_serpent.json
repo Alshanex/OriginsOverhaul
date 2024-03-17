@@ -6,7 +6,11 @@
       "medievalorigins:siren/water_vision",
       "medievalorigins:siren/damage_underwater",
       "medievalorigins:sea_serpent/blink",
-      "medievalorigins:sea_serpent/buff"
+      "medievalorigins:sea_serpent/buff",
+      "medievalorigins:sea_serpent/secondary",
+      "medievalorigins:sea_serpent/sea_heart",
+      "medievalorigins:sea_serpent/storm",
+      "medievalorigins:sea_serpent/resource"
     ],
         "icon": {
                 "item": "minecraft:heart_of_the_sea"
