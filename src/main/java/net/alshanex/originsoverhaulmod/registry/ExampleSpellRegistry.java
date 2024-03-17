@@ -4,6 +4,7 @@ import io.redspace.ironsspellbooks.IronsSpellbooks;
 import io.redspace.ironsspellbooks.api.registry.SpellRegistry;
 import io.redspace.ironsspellbooks.api.spells.AbstractSpell;
 import net.alshanex.originsoverhaulmod.OriginsOverhaulMod;
+import net.alshanex.originsoverhaulmod.spells.WaterCut;
 import net.alshanex.originsoverhaulmod.spells.WaterSlash;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceKey;
@@ -22,4 +23,5 @@ public class ExampleSpellRegistry {
         return SPELLS.register(spell.getSpellName(), () -> spell);
     }
     public static final RegistryObject<AbstractSpell> WATER_SLASH = registerSpell(new WaterSlash());
+    public static final RegistryObject<AbstractSpell> WATER_CUT = registerSpell(new WaterCut());
 }
