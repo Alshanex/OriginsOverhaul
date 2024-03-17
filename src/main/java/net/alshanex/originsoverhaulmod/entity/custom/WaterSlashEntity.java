@@ -89,8 +89,8 @@ public class WaterSlashEntity extends AoeEntity{
     }
 
     @Override
-    public ParticleOptions getParticle() {
-        return ParticleHelper.ICY_FOG;
+    public Optional<ParticleOptions> getParticle() {
+        return Optional.empty();
     }
 
     @Override

@@ -54,6 +54,36 @@ description='''${mod_description}'''
     ordering="NONE"
     # Side this dependency is applied on - BOTH, CLIENT, or SERVER
     side="BOTH"
+[[dependencies.${mod_id}]]
+    modId="irons_spellbooks" #mandatory
+    mandatory = true #mandatory
+    versionRange = "[1.0,),[SNAPSHOT,)" #mandatory
+    ordering = "AFTER"
+    side = "BOTH"
+[[dependencies.${mod_id}]]
+    modId="playeranimator" #mandatory
+    mandatory=true #mandatory
+    versionRange="[${player_animator_version},)" #mandatory
+    ordering="AFTER"
+    side="BOTH"
+[[dependencies.${mod_id}]]
+    modId="geckolib" #mandatory
+    mandatory=true #mandatory
+    versionRange="[${geckolib_version},)" #mandatory
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.${mod_id}]]
+    modId="curios" #mandatory
+    mandatory=true #mandatory
+    versionRange="[${curios_version},)" #mandatory
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.${mod_id}]]
+    modId="caelus" #mandatory
+    mandatory=true #mandatory
+    versionRange="[${caelus_version},)" #mandatory
+    ordering="NONE"
+    side="BOTH"
 # Here's another dependency
 [[dependencies.${mod_id}]]
     modId="minecraft"
