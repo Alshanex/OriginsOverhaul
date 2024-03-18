@@ -172,7 +172,7 @@
   "power.medievalorigins.incubus/carnivore.description": "An incubus' bloodlust is insatiable. If it isn't the flesh of an animal, its worthless.",
 
   "power.medievalorigins.incubus/demon_fire.name": "Burning Dash",
-  "power.medievalorigins.incubus/demon_fire.description": "An incubus can perform a fiery dash that cuts trough enemies and settles them on fire.",
+  "power.medievalorigins.incubus/demon_fire.description": "4 steps combo, fire magic damage with high movility. Triggered with Primary Ability key.",
 
   "power.medievalorigins.incubus/hellborne.name": "Hellborne",
   "power.medievalorigins.incubus/hellborne.description": "Having spent eternities in the depths of hell, fire feels like home - it deals no damage to Incubi and satiates them.",
@@ -191,6 +191,9 @@
 
   "power.medievalorigins.incubus/fire_magic.name": "Hell's Power",
   "power.medievalorigins.incubus/fire_magic.description": "Your managed to learn how to control the Nether's wild fire, making your fire spells very powerful.",
+
+  "power.medievalorigins.incubus/reset_combo.name": "Reset Combo",
+  "power.medievalorigins.incubus/reset_combo.description": "You can reset your combo at any step pressing Sprint keybind.",
 
   "power.medievalorigins.dwarf/darkness_dweller.name": "Darkness Dweller",
   "power.medievalorigins.dwarf/darkness_dweller.description": "Dwarven eyes are adapted for the dark. Direct sunlight burns their sensitive retinas, blinding them until darkness returns. Prevented by wearing a gold helmet or with an enchantment.",
@@ -221,6 +224,10 @@
 
   "power.medievalorigins.dwarf/shield.name": "Strong Defense",
   "power.medievalorigins.dwarf/shield.description": "Dwarves are able to use a spell that has been passed through incontable dwarven generations to create a protective shield for a short period of time.",
+
+  "power.medievalorigins.dwarf/dwarf_evo.name": "Evolution",
+  "power.medievalorigins.dwarf/dwarf_evo.description": "Find the Dwarven Crown to evolve.",
+
 
   "power.medievalorigins.human/description.name": "Note",
   "power.medievalorigins.human/description.description": "Humans have no changes from the base game.",
@@ -255,11 +262,14 @@
   "power.medievalorigins.wood_elf/hunter.name": "Sniper",
   "power.medievalorigins.wood_elf/hunter.description": "Your incredible dexterity with ranged weapons allow you to deal devastating amounts of damage with your shots.",
 
-  "power.medievalorigins.wood_elf/arrow_storm.name": "Arrow Storm",
-  "power.medievalorigins.wood_elf/arrow_storm.description": "Wood Elves can combine their elven magic with their archery skills to unleash a storm of magical arrows towards their enemies.",
+  "power.medievalorigins.wood_elf/magic_arrow.name": "Combo",
+  "power.medievalorigins.wood_elf/magic_arrow.description": "Wood Elves have a 3 step combo, triggered with Primary Ability key. Combo uses ender and evocation spell damage, and the combo offers long range magic damage with some movility.",
 
   "power.medievalorigins.wood_elf/root.name": "Rooted",
   "power.medievalorigins.wood_elf/root.description": "Wood Elves use elven magic to summon roots from the ground that makes their target unable to move for a short period of time.",
+
+  "power.medievalorigins.wood_elf/reset_combo.name": "Reset Combo",
+  "power.medievalorigins.wood_elf/reset_combo.description": "To reset the combo at any step press Sprint keybind.",
 
   "power.medievalorigins.fae/allure.name": "Allure",
   "power.medievalorigins.fae/allure.description": "Fae are naturally alluring. Unfortunately, this means that mobs will pursue them from much further away than they would other creatures.",
@@ -309,6 +319,9 @@
   "power.medievalorigins.goblin/invisible.name": "My Precious",
   "power.medievalorigins.goblin/invisible.description": "You equip a strange looking ring that you encounterend in a lake some time ago. What do you think will happen?",
 
+  "power.medievalorigins.goblin/goblin_evo.name": "Evolution",
+  "power.medievalorigins.goblin/goblin_evo.description": "Find the Mutation Potion to evolve.",
+
   "power.medievalorigins.gorgon/hydrophobe.name": "Hydrophobe",
   "power.medievalorigins.gorgon/hydrophobe.description": "Gorgons can not tolerate the purity of water and take damage from it.",
 
@@ -338,6 +351,9 @@
 
   "power.medievalorigins.gorgon/poison_breath.name": "Poisonous Breath",
   "power.medievalorigins.gorgon/poison_breath.description": "The snakes attached to your head throw a venomous and lethal breath to the target.",
+
+  "power.medievalorigins.gorgon/gorgon_evo.name": "Evolution",
+  "power.medievalorigins.gorgon/gorgon_evo.description": "Find the Basilisk Fang to evolve.",
 
   "power.medievalorigins.high_elf/elegant.name": "Elegant",
   "power.medievalorigins.high_elf/elegant.description": "Due to their slender nature, High Elves can not wear armor heavier than iron (This can be prevented with an enchantment), and have less health.",
@@ -372,6 +388,15 @@
   "power.medievalorigins.high_elf/void_warp.name": "Void Warp",
   "power.medievalorigins.high_elf/void_warp.description": "Rip through the fabric of reality to teleport yourself a short distance in any direction. Press the secondary active key while holding an ender pearl.",
 
+  "power.medievalorigins.high_elf/starfall.name": "Starfall",
+  "power.medievalorigins.high_elf/starfall.description": "Jump into the air and cast your most powerful spell, the starfall. Deals ender magic damage and is triggered with Secondary Ability key.",
+
+  "power.medievalorigins.high_elf/electrocute.name": "Combo",
+  "power.medievalorigins.high_elf/electrocute.description": "3 steps combo, dealing ice and electric magic damage mid-long range with good movility. Triggered with Primary Ability key.",
+
+  "power.medievalorigins.high_elf/reset_combo.name": "Reset Combo",
+  "power.medievalorigins.high_elf/reset_combo.description": "You can reset your combo at any step pressing Sprint keybind.",
+
   "power.medievalorigins.moon_elf/crazed.name": "Foreign World",
   "power.medievalorigins.moon_elf/crazed.description": "Try as they might, Moon Elves can not sleep in the overworld.",
 
@@ -399,11 +424,14 @@
   "power.medievalorigins.moon_elf/stats.name": "Lethal Shadow",
   "power.medievalorigins.moon_elf/stats.description": "Your training with fast and precise weapons made your attacks inflict lethal damage very often.",
 
-  "power.medievalorigins.moon_elf/blood_step.name": "Into the Shadows",
-  "power.medievalorigins.moon_elf/blood_step.description": "Moon Elves are able to perform fast dashes to enter into the shadows, making them invisible for a couple of seconds.",
-
   "power.medievalorigins.moon_elf/haste.name": "Moonlight Power",
-  "power.medievalorigins.moon_elf/haste.description": "Moon Elves have the ability to burn all the moonlight stored in their bodies to gain a buff for a short period of time.",
+  "power.medievalorigins.moon_elf/haste.description": "Moon Elves have the ability to burn all the moonlight stored in their bodies to gain a buff for a short period of time. Triggered with your Secondary Ability key.",
+
+  "power.medievalorigins.moon_elf/first_dash.name": "Combo",
+  "power.medievalorigins.moon_elf/first_dash.description": "3 steps combo with very high movility and mid range blood magic damage. Triggered with the Primary Ability key.",
+
+  "power.medievalorigins.moon_elf/reset_combo.name": "Reset Combo",
+  "power.medievalorigins.moon_elf/reset_combo.description": "You can reset your combo at any step pressing Sprint keybind.",
 
   "power.medievalorigins.ogre/gargantuan.name": "Gargantuan",
   "power.medievalorigins.ogre/gargantuan.description": "Ogres are massive, and can't fit through doors or even in many small structures.  ",
@@ -434,6 +462,12 @@
 
   "power.medievalorigins.ogre/earthquake.name": "Stomp",
   "power.medievalorigins.ogre/earthquake.description": "Ogres natural strength allows them to make a powerful stomp that damages all the entities around them and slows them down.",
+
+  "power.medievalorigins.ogre/combo.name": "Combo",
+  "power.medievalorigins.ogre/combo.description": "Upon pressing your Primary Ability key, you activate a 3 steps combo, dealing short range physical damage.",
+
+  "power.medievalorigins.ogre/damage_resource.name": "Consecutive Hits",
+  "power.medievalorigins.ogre/damage_resource.description": "For each hit ogres make, they get more and more infuriated. For each hit you make, your hits bar will increase, allowing you to deal more damage when specific amounts of charges are reached, but they reset if you don't hit an enemy for 5 seconds.",
 
   "power.medievalorigins.pixie/curse_of_flight.name": "Curse of Flight",
   "power.medievalorigins.pixie/curse_of_flight.description": "The very wings which allows pixies to fly also prevent them from flying using any other wings, or wearing any chestplates more substantial than leather.",
@@ -501,6 +535,9 @@
   "power.medievalorigins.plague_victim/blood_ray.name": "Vampiric Ray",
   "power.medievalorigins.plague_victim/blood_ray.description": "Plague Victims can unleash a blood ray towards their enemies, leeching some of their life if they die.",
 
+  "power.medievalorigins.plague_victim/plague_evo.name": "Evolution",
+  "power.medievalorigins.plague_victim/plague_evo.description": "Find the Blood Serum to evolve.",
+
   "power.medievalorigins.siren/amphibious.name": "Amphibious",
   "power.medievalorigins.siren/amphibious.description": "Sirens, being a subset of Mer, can survive in water, and swim with increased speed.",
 
@@ -527,6 +564,9 @@
 
   "power.medievalorigins.siren/damage_underwater.name": "Warrior of the Seas",
   "power.medievalorigins.siren/damage_underwater.description": "You have always lived under the water, so when it touches your body you will make more damage.",
+
+  "power.medievalorigins.siren/siren_evo.name": "Evolution",
+  "power.medievalorigins.siren/siren_evo.description": "Find the Sea Essence to evolve.",
 
   "power.medievalorigins.troll/apex_predator.name": "Apex Predator",
   "power.medievalorigins.troll/apex_predator.description": "Trolls cannot eat regular foodstuffs, and can only satiate their hunger by slaughtering other creautres.",
@@ -585,6 +625,9 @@
   "power.medievalorigins.yeti/ice_block.name": "Icicle Crash",
   "power.medievalorigins.yeti/ice_block.description": "Yetis can summon big ice boulders that can be launched to their enemies.",
 
+  "power.medievalorigins.yeti/yeti_evo.name": "Evolution",
+  "power.medievalorigins.yeti/yeti_evo.description": "Find the Cold Essence to evolve.",
+
   "power.medievalorigins.revenant/black_thumb.name": "Black Thumb",
   "power.medievalorigins.revenant/black_thumb.description": "A Revenant can not harvest any crops; they wilt at their deathly touch.",
 
@@ -614,6 +657,124 @@
 
   "power.medievalorigins.revenant/evocation_magic.name": "The Puppeteer",
   "power.medievalorigins.revenant/evocation_magic.description": "Your precise control of summoning magic allowed your summons to use all the power they had when they were alive.",
+
+  "power.medievalorigins.revenant/revenant_evo.name": "Evolution",
+  "power.medievalorigins.revenant/revenant_evo.description": "Find the Summoning Tome to evolve.",
+
+  "power.medievalorigins.specter/jump.name": "Into the air!",
+  "power.medievalorigins.specter/jump.description": "2 steps combo, launch enemies into the air and destroy them there, triggered with Primary Ability key. The combo uses evocation magic damage. Short range combo with very high movility.",
+
+  "power.medievalorigins.specter/dash.name": "Dash",
+  "power.medievalorigins.specter/dash.description": "Simple dash that boosts your flying speed, triggered with Secondary Ability key.",
+
+  "power.medievalorigins.sea_serpent/blink.name": "Movility",
+  "power.medievalorigins.sea_serpent/blink.description": "When out of water, you push yourself into the air hitting the ground with your tail. When in water, you can move freely with swift movements. Triggered with Primary Ability key.",
+
+  "power.medievalorigins.sea_serpent/secondary.name": "Combo",
+  "power.medievalorigins.sea_serpent/secondary.description": "Simple 2 steps combo, pushing enemy into air and then throw powerful slash. The combo uses ice magic damage, and is mid-long range. Triggered with Secondary Ability key.",
+
+  "power.medievalorigins.sea_serpent/buff.name": "Recover strength",
+  "power.medievalorigins.sea_serpent/buff.description": "When water is present around you, you recover your original power, becoming stronger than before.",
+
+  "power.medievalorigins.sea_serpent/sea_heart.name": "Shedding",
+  "power.medievalorigins.sea_serpent/sea_heart.description": "Every 5 minutes, you shed your skin, which reacts with the air forming a heart of the sea. Upon right clicking a heart of the sea, a storm will be summoned, helping you survive better on land.",
+
+  "power.medievalorigins.pest_doctor/acid_orb.name": "Combo",
+  "power.medievalorigins.pest_doctor/acid_orb.description": "4 steps combo combining blood magic with nature (poison) magic, with short-mid range high magic damage. Triggered with Primary Ability key.",
+
+  "power.medievalorigins.pest_doctor/secondary.name": "Poison Charged",
+  "power.medievalorigins.pest_doctor/secondary.description": "When you charge up enough poison stacks, you can trigger a powerfull poison attack with your Secondary Ability key.",
+
+  "power.medievalorigins.pest_doctor/reset_combo.name": "Reset Combo",
+  "power.medievalorigins.pest_doctor/reset_combo.description": "You can reset your combo at any step with your Sprint keybind.",
+
+  "power.medievalorigins.medusa/root.name": "Combo",
+  "power.medievalorigins.medusa/root.description": "3 steps combo, dealing nature (poison) magic damage mid-short range. Triggered with Primary Ability key.",
+
+  "power.medievalorigins.medusa/lethal.name": "Lethal",
+  "power.medievalorigins.medusa/lethal.description": "Your snake-like body allows you to always do increased damage to poisoned entities.",
+
+  "power.medievalorigins.medusa/secondary.name": "Expanding Poison",
+  "power.medievalorigins.medusa/secondary.description": "Upon pressing your Secondary Ability key, you spread poison everywhere around you.",
+
+  "power.medievalorigins.medusa/reset_combo.name": "Reset Combo",
+  "power.medievalorigins.medusa/reset_combo.description": "You can reset your combo at any step pressing your Sprint keybind.",
+
+  "power.medievalorigins.death_caller/buff.name": "Blood Ritual",
+  "power.medievalorigins.death_caller/buff.description": "Upon pressing your Sprint keybind, you perform an ancient ritual to buff yourself and all your summons.",
+
+  "power.medievalorigins.death_caller/summon.name": "Summoning Ritual",
+  "power.medievalorigins.death_caller/summon.description": "You can press Secondary Ability key to perform a summoning ritual that will bring you powerful allies. If you crouch you will summon undead creatures from the dephts of the earth, but if you don't crouch you will summon powerful vexes instead.",
+
+  "power.medievalorigins.death_caller/swap.name": "Trickster",
+  "power.medievalorigins.death_caller/swap.description": "Upon pressing your Primary Ability key aiming at one of your summons, you will swap your position with the aimed summon.",
+
+  "power.medievalorigins.king_under_mountain/secondary.name": "Protecting Your Territory",
+  "power.medievalorigins.king_under_mountain/secondary.description": "Every short period of time, you will get a shield charge, which you can use to summon a powerful shield by pressing your Secondary Ability key.",
+
+  "power.medievalorigins.king_under_mountain/buff.name": "War Scream",
+  "power.medievalorigins.king_under_mountain/buff.description": "Upon pressing your Sprint keybind, you will perform a war scream that will empower yourself and your close allies.",
+
+  "power.medievalorigins.king_under_mountain/primary.name": "Stomp",
+  "power.medievalorigins.king_under_mountain/primary.description": "You can make a powerful stomp to stun and launch your enemies into the ir, which then you can follow up with a smash to finish off your enemies. Triggered with Primary Ability key.",
+
+  "power.medievalorigins.bastet/evil.name": "Two-faced",
+  "power.medievalorigins.bastet/evil.description": "You have two sides, each one having different powers. When you stack up enough power you change your side.",
+
+  "power.medievalorigins.bastet/slash.name": "Primary Ability",
+  "power.medievalorigins.bastet/slash.description": "Good side: Fire a guiding holy magic projectile at your enemies.\nEvil side: Deal a powerful blood magic slash at your enemies.",
+
+  "power.medievalorigins.bastet/dash.name": "Secondary Ability",
+  "power.medievalorigins.bastet/dash.description": "Good side: Heal and buff yourself with your holy magic powers.\nEvil side: Make a swift dash to get behind your enemies without them even noticing.",
+
+  "power.medievalorigins.death_spirit/buff.name": "Thunder Blessing",
+  "power.medievalorigins.death_spirit/buff.description": "Upon pressing Sprint keybind, you will get the thunder blessing, empowering you and allowing you to glide.",
+
+  "power.medievalorigins.death_spirit/phantomize.name": "Phantomize",
+  "power.medievalorigins.death_spirit/phantomize.description": "You can use all your Phantom Stacks you get over time to phase through enemies and blocks, triggered with your Primary Ability key.",
+
+  "power.medievalorigins.death_spirit/electric.name": "Electricity",
+  "power.medievalorigins.death_spirit/electric.description": "3 steps combo with mid-long range thunder magic power and good movility. Triggered with your Secondary Ability key.",
+
+  "power.medievalorigins.elf/archer.name": "Natural Archer",
+  "power.medievalorigins.elf/archer.description": "Elves spend their whole lives training with bows - their arrows are always more deadly.",
+
+  "power.medievalorigins.elf/eagle_eyed.name": "Eagle Eyed",
+  "power.medievalorigins.elf/eagle_eyed.description": "Elves' enhanced perception allows them to keep track of an enemy for a while after hitting them, even when they aren't in view.",
+
+  "power.medievalorigins.elf/steward.name": "Steward",
+  "power.medievalorigins.elf/steward.description": "Elves live off of the forest and in harmony with it. They can not digest meat.",
+
+  "power.medievalorigins.elf/towering.name": "Towering",
+  "power.medievalorigins.elf/towering.description": "Elves are taller than the average human. Despite this, they are just as thin.",
+
+  "power.medievalorigins.elf/graceful.name": "Graceful",
+  "power.medievalorigins.elf/graceful.description": "Elven arms are not as powerful, but they are quick. They deal reduced damage but attack slightly faster.",
+
+  "power.medievalorigins.elf/poison_arrow.name": "Poisoned Arrow",
+  "power.medievalorigins.elf/poison_arrow.description": "You can shoot a poisoned arrow that will damage and poison your enemy. Triggered with Primary Ability key.",
+
+  "power.medievalorigins.elf/swarm.name": "Insect Swarm",
+  "power.medievalorigins.elf/swarm.description": "Elves can communicate with other animals in the woods, being able to command an insect swarm to hurt their enemies. Triggered with Secondary Ability key.",
+
+  "power.medievalorigins.elf/elfwood_evo.name": "Evolution",
+  "power.medievalorigins.elf/elfwood_evo.description": "Find a Forest Essence to evolve into a Wood Elf.\nFind a Moon Shard to evolve into a Moon Elf.\nFind a Wisdom Shard to evolve into a High Elf.",
+
+  "power.medievalorigins.ender_titan/primary.name": "Teleportation",
+  "power.medievalorigins.ender_titan/primary.description": "If you have enough portals stacked, you will summon a first portal where you are looking and, shortly after, a second portal connected to the first where you are looking. If not enough portal stacks, you will teleport normally. Triggered with Primary Ability key.",
+
+  "power.medievalorigins.ender_titan/secondary.name": "Secondary Ability",
+  "power.medievalorigins.ender_titan/secondary.description": "If you are on the short range mode, you will make a stomp launching enemies into air. If you are on the long range mode, you will fire small ender magic projectiles at your enemies. You can change mode pressing Sprint keybind.",
+
+  "power.medievalorigins.ice_titan/primary.name": "Combo",
+  "power.medievalorigins.ice_titan/primary.description": "9 steps buildup combo, mid-long range ice magic damage. Triggered with Primary Ability key.",
+
+  "power.medievalorigins.ice_titan/secondary.name": "Frigid Pulse",
+  "power.medievalorigins.ice_titan/secondary.description": "With your Secondary Ability key you releas a freezing pulse.",
+
+  "power.medievalorigins.ice_titan/reset_combo.name": "Reset Combo",
+  "power.medievalorigins.ice_titan/reset_combo.description": "You can reset your combo at any step pressing Sprint keybind.",
+
 
   "enchantment.medievalorigins.featherweight": "Featherweight",
   "enchantment.medievalorigins.featherweight.desc": "With this enchantment applied to heavy armor, it can be worn by Arachnae, Elves, and Alfiq.",

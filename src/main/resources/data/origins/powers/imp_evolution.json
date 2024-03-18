@@ -1,8 +1,12 @@
 {
   "type": "origins:self_action_on_kill",
+  "hidden": true,
   "entity_action": {
-    "type": "origins:execute_command",
-    "command": "give @p originsoverhaulmod:impevo"
+    "type": "origins:give",
+    "stack": {
+      "item": "originsoverhaulmod:impevo",
+      "amount": 1
+    }
   },
   "cooldown": 1,
   "condition": {

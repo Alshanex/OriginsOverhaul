@@ -1,5 +1,6 @@
 {
   "type": "origins:action_on_hit",
+  "hidden": true,
   "bientity_action": {
     "type": "origins:actor_action",
     "action": {

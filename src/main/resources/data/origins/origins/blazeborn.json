@@ -1,5 +1,7 @@
 {
 	"loading_priority":2,
+	"name": "Imp",
+	"description": "Creatures born in the dephts of hell, the Imps are naturally immune to the perils of the Nether.",
 	"powers": [
 		"origins:fire_immunity",
 		"origins:nether_spawn",

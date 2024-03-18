@@ -8,8 +8,8 @@
   "origin.origins.arachnid.name": "Arachnid",
   "origin.origins.arachnid.description": "Their climbing abilities and the ability to trap their foes in spiderweb make the Arachnid perfect hunters.",
 
-  "origin.origins.blazeborn.name": "Blazeborn",
-  "origin.origins.blazeborn.description": "Late descendants of the Blaze, the Blazeborn are naturally immune to the perils of the Nether.",
+  "origin.origins.blazeborn.name": "Imp",
+  "origin.origins.blazeborn.description": "Creatures born in the dephts of hell, the Imps are naturally immune to the perils of the Nether.",
 
   "origin.origins.avian.name": "Avian",
   "origin.origins.avian.description": "The Avian race has lost their ability to fly a long time ago. Now these peaceful creatures can be seen gliding from one place to another.",
@@ -130,6 +130,21 @@
 
   "power.origins.aerial_combatant.name": "Aerial Combatant",
   "power.origins.aerial_combatant.description": "You deal substantially more damage while in Elytra flight.",
+
+  "power.origins.elytrian_evo.name": "Evolution",
+  "power.origins.elytrian_evo.description": "Find the Celestial Cloak to evolve.",
+
+  "power.origins.enderian_evo.name": "Evolution",
+  "power.origins.enderian_evo.description": "Find the Void Gem to evolve.",
+
+  "power.origins.feline_evo.name": "Evolution",
+  "power.origins.feline_evo.description": "Find the Ceremonial Staff to evolve.",
+
+  "power.origins.imp_evo.name": "Evolution",
+  "power.origins.imp_evo.description": "Find the Fire Shard to evolve.",
+
+  "power.origins.phantom_evo.name": "Evolution",
+  "power.origins.phantom_evo.description": "Find the Spectral Essence to evolve.",
 
   "power.origins.throw_ender_pearl.name": "Teleportation",
   "power.origins.throw_ender_pearl.description": "You use your innate enderman abilities to teleport wherever you looking at.",
