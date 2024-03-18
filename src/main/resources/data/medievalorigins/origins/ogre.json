@@ -4,7 +4,6 @@
                 "medievalorigins:ogre/gargantuan",
                 "medievalorigins:ogre/combo",
                 "medievalorigins:ogre/earthquake",
-                "medievalorigins:ogre/reset_combo",
                 "medievalorigins:ogre/ravager",
                 "medievalorigins:ogre/lead_belly",
                 "medievalorigins:ogre/stocky",
@@ -14,7 +13,10 @@
                 "medievalorigins:ogre/ogre_properties",
                 "medievalorigins:ogre/non_magic",
                 "medievalorigins:ogre/magic_resistance",
-		"origins:difficulty_3"
+                "medievalorigins:ogre/damage_resource",
+                "medievalorigins:ogre/combo_counter",
+                "medievalorigins:ogre/combo_link",
+                "medievalorigins:ogre/hit_counter"
         ],
         "icon": {
                 "item": "minecraft:ink_sac",
