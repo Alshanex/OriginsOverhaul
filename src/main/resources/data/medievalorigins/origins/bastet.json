@@ -11,7 +11,8 @@
       "medievalorigins:bastet/slash",
       "medievalorigins:bastet/dash",
       "origins:crit_chance",
-      "origins:cat_vision"
+      "origins:cat_vision",
+      "origins:evo_stats"
     ],
         "icon": {
                 "item": "minecraft:ink_sac",

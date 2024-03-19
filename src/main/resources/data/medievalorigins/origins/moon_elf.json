@@ -13,7 +13,7 @@
                 "medievalorigins:moon_elf/fragile",
                 "medievalorigins:moon_elf/stats",
                 "medievalorigins:moon_elf/towering",
-		"origins:difficulty_3"
+                "origins:evo_stats"
         ],
         "icon": {
                 "item": "minecraft:ink_sac",

@@ -12,7 +12,7 @@
                 "medievalorigins:high_elf/extrusive_movement",
                 "medievalorigins:high_elf/instant_cure",
                 "medievalorigins:high_elf/void_warp",
-		        "origins:difficulty_2"
+      "origins:evo_stats"
 	],
         "icon": {
                 "item": "minecraft:ink_sac",

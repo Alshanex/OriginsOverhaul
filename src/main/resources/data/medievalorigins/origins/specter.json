@@ -6,7 +6,8 @@
 		"origins:aerial_combatant",
 		"origins:dodge_chance",
 		"medievalorigins:specter/jump",
-		"medievalorigins:specter/dash"
+		"medievalorigins:specter/dash",
+		"origins:evo_stats"
 	],
 	"icon": {
 		"item": "minecraft:elytra"

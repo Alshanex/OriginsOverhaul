@@ -11,7 +11,8 @@
                 "medievalorigins:king_under_mountain/charges",
       "medievalorigins:king_under_mountain/buff",
       "medievalorigins:king_under_mountain/secondary",
-      "medievalorigins:king_under_mountain/primary"
+      "medievalorigins:king_under_mountain/primary",
+      "origins:evo_stats"
 	],
         "icon": {
                 "item": "minecraft:ink_sac",

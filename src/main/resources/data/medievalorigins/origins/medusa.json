@@ -10,7 +10,8 @@
                 "medievalorigins:medusa/root",
                 "medievalorigins:medusa/lethal",
                 "medievalorigins:medusa/secondary",
-                "medievalorigins:medusa/reset_combo"
+                "medievalorigins:medusa/reset_combo",
+                "origins:evo_stats"
 	    ],
         "icon": {
             "item": "minecraft:ink_sac",

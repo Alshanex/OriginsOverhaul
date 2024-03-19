@@ -12,7 +12,7 @@
                 "medievalorigins:wood_elf/steward",
                 "medievalorigins:wood_elf/graceful",
                 "medievalorigins:wood_elf/hunter",
-		        "origins:difficulty_1"
+		        "origins:evo_stats"
         ],
             "icon": {
             "item": "minecraft:ink_sac",

@@ -11,7 +11,8 @@
       "medievalorigins:sea_serpent/secondary",
       "medievalorigins:sea_serpent/sea_heart",
       "medievalorigins:sea_serpent/storm",
-      "medievalorigins:sea_serpent/resource"
+      "medievalorigins:sea_serpent/resource",
+      "origins:evo_stats"
     ],
         "icon": {
                 "item": "minecraft:heart_of_the_sea"

@@ -8,7 +8,8 @@
       "medievalorigins:revenant/undeadge",
       "medievalorigins:death_caller/buff",
       "medievalorigins:death_caller/summon",
-      "medievalorigins:death_caller/swap"
+      "medievalorigins:death_caller/swap",
+      "origins:evo_stats"
     ],
         "icon": {
           "item": "minecraft:ink_sac",

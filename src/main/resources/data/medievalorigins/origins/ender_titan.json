@@ -9,7 +9,8 @@
       "medievalorigins:ender_titan/add_portals",
       "medievalorigins:ender_titan/primary",
       "medievalorigins:ender_titan/secondary",
-      "medievalorigins:ender_titan/ability_change"
+      "medievalorigins:ender_titan/ability_change",
+      "origins:evo_stats"
     ],
         "icon": {
                 "item": "minecraft:end_crystal"

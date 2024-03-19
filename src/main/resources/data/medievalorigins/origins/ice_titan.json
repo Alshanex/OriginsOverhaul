@@ -10,7 +10,8 @@
       "medievalorigins:ice_titan/resource",
       "medievalorigins:ice_titan/primary",
       "medievalorigins:ice_titan/secondary",
-      "medievalorigins:ice_titan/reset_combo"
+      "medievalorigins:ice_titan/reset_combo",
+      "origins:evo_stats"
     ],
         "icon": {
           "item": "minecraft:ink_sac",

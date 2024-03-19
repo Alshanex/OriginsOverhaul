@@ -17,7 +17,8 @@
                 "medievalorigins:ogre/damage_resource",
                 "medievalorigins:ogre/combo_counter",
                 "medievalorigins:ogre/combo_link",
-                "medievalorigins:ogre/hit_counter"
+                "medievalorigins:ogre/hit_counter",
+                "origins:evo_stats"
         ],
         "icon": {
                 "item": "minecraft:ink_sac",
