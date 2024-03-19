@@ -1,0 +1,20 @@
+{
+  "type": "origins:self_action_on_kill",
+  "hidden": true,
+  "entity_action": {
+    "type": "origins:give",
+    "stack": {
+      "item": "originsoverhaulmod:goblinevo",
+      "amount": 1
+    }
+  },
+  "cooldown": 1,
+  "condition": {
+    "type": "origins:origin",
+    "origin": "medievalorigins:goblin"
+  },
+  "target_condition": {
+    "type": "origins:entity_type",
+    "entity_type": "bosses_of_mass_destruction:void_blossom"
+  }
+}

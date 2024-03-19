@@ -11,6 +11,9 @@
                 "medievalorigins:elf/elfwood_evo",
                 "medievalorigins:elf/elfmoon_evo",
                 "medievalorigins:elf/elfhigh_evo",
+          "origins:elfwood_evolution",
+          "origins:elfmoon_evolution",
+          "origins:elfhigh_evolution",
 		        "origins:difficulty_1"
         ],
             "icon": {

@@ -12,6 +12,7 @@
                 "medievalorigins:gorgon/magic_resistance",
                 "medievalorigins:gorgon/stats",
                 "medievalorigins:gorgon/gorgon_evo",
+      "origins:gorgon_evolution",
 		"origins:difficulty_3"
 	],
         "icon": {

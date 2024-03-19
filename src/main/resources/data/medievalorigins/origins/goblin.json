@@ -12,6 +12,7 @@
                 "medievalorigins:goblin/goblin_evo",
                 "medievalorigins:goblin/lethal",
 		"medievalorigins:goblin/frail",
+      "origins:goblin_evolution",
 		"origins:difficulty_1"
 	],
         "icon": {

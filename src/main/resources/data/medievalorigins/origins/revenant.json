@@ -15,6 +15,7 @@
                 "medievalorigins:revenant/evocation_magic",
                 "medievalorigins:revenant/unguarded",
             "medievalorigins:revenant/revenant_evo",
+            "origins:revenant_evolution",
 		"origins:difficulty_3"
 	],
         "icon": {

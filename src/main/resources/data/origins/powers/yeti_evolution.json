@@ -1,0 +1,20 @@
+{
+  "type": "origins:self_action_on_kill",
+  "hidden": true,
+  "entity_action": {
+    "type": "origins:give",
+    "stack": {
+      "item": "originsoverhaulmod:yetievo",
+      "amount": 1
+    }
+  },
+  "cooldown": 1,
+  "condition": {
+    "type": "origins:origin",
+    "origin": "medievalorigins:yeti"
+  },
+  "target_condition": {
+    "type": "origins:entity_type",
+    "entity_type": "twilightforest:alpha_yeti"
+  }
+}

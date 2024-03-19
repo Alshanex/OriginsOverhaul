@@ -1,0 +1,20 @@
+{
+  "type": "origins:self_action_on_kill",
+  "hidden": true,
+  "entity_action": {
+    "type": "origins:give",
+    "stack": {
+      "item": "originsoverhaulmod:plagueevo",
+      "amount": 1
+    }
+  },
+  "cooldown": 1,
+  "condition": {
+    "type": "origins:origin",
+    "origin": "medievalorigins:plague_victim"
+  },
+  "target_condition": {
+    "type": "origins:entity_type",
+    "entity_type": "alexscaves:tremorzilla"
+  }
+}

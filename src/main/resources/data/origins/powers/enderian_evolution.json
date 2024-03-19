@@ -1,0 +1,20 @@
+{
+  "type": "origins:self_action_on_kill",
+  "hidden": true,
+  "entity_action": {
+    "type": "origins:give",
+    "stack": {
+      "item": "originsoverhaulmod:enderianevo",
+      "amount": 1
+    }
+  },
+  "cooldown": 1,
+  "condition": {
+    "type": "origins:origin",
+    "origin": "origins:enderian"
+  },
+  "target_condition": {
+    "type": "origins:entity_type",
+    "entity_type": "cataclysm:ender_guardian"
+  }
+}
