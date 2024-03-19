@@ -1,5 +1,6 @@
 {
         "loading_priority": 12,
+        "unchoosable": true,
         "powers": [
                 "medievalorigins:ogre/gargantuan",
                 "medievalorigins:ogre/combo",

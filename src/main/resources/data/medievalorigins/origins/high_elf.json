@@ -1,5 +1,6 @@
 {
         "loading_priority": 12,
+  "unchoosable": true,
 	"powers": [
                 "medievalorigins:high_elf/mystic_affinity",
 		        "medievalorigins:high_elf/fragile",

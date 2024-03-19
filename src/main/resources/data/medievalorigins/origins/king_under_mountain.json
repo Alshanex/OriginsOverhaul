@@ -1,5 +1,6 @@
 {
         "loading_priority": 12,
+  "unchoosable": true,
 	"powers": [
                 "medievalorigins:dwarf/miniature",
 		        "medievalorigins:dwarf/nocturnal_eyes",

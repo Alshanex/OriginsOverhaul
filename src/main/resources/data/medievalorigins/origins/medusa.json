@@ -1,5 +1,6 @@
 {
         "loading_priority": 12,
+        "unchoosable": true,
         "powers": [
                 "medievalorigins:gorgon/poison_blood",
                 "medievalorigins:gorgon/poison_immune",

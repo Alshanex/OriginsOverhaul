@@ -1,5 +1,6 @@
 {
         "loading_priority": 12,
+  "unchoosable": true,
 	"powers": [
       "medievalorigins:siren/amphibious",
       "medievalorigins:siren/holy_water",
