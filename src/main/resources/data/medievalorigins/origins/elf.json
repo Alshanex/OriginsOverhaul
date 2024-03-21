@@ -13,13 +13,12 @@
                 "medievalorigins:elf/elfhigh_evo",
           "origins:elfwood_evolution",
           "origins:elfmoon_evolution",
-          "origins:elfhigh_evolution",
-		        "origins:difficulty_1"
+          "origins:elfhigh_evolution"
         ],
             "icon": {
             "item": "minecraft:ink_sac",
             "tag": "{CustomModelData:354}"
         },
-            "impact": 1,
+            "impact": 0,
             "order": 0
 }

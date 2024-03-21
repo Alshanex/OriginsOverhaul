@@ -10,12 +10,11 @@
 		"origins:dodge_chance",
 		"origins:more_kinetic_damage",
 		"origins:elytrian_evo",
-		"origins:elytrian_evolution",
-		"origins:difficulty_1"
+		"origins:elytrian_evolution"
 	],
 	"icon": {
 		"item": "minecraft:elytra"
 	},
 	"order": 3,
-	"impact": 1
+	"impact": 0
 }

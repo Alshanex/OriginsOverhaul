@@ -15,12 +15,11 @@
 		"origins:fire_magic",
 		"origins:damage_from_potions",
 		"origins:imp_evo",
-		"origins:imp_evolution",
-		"origins:difficulty_3"
+		"origins:imp_evolution"
 	],
 	"icon": {
 		"item": "minecraft:blaze_powder"
 	},
 	"order": 1,
-	"impact": 3
+	"impact": 0
 }

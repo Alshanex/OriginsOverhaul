@@ -9,13 +9,12 @@
                 "medievalorigins:siren/damage_underwater",
                 "medievalorigins:siren/seduce",
       "medievalorigins:siren/siren_evo",
-      "origins:siren_evolution",
-		"origins:difficulty_2"
+      "origins:siren_evolution"
 	],
         "icon": {
                 "item": "minecraft:ink_sac",
                 "tag": "{CustomModelData:366}"
         },
-	"impact": 2,
+	"impact": 0,
         "order": 1
 }

@@ -11,12 +11,11 @@
 		"origins:thunder_magic",
 		"origins:phantomize_overlay",
 		"origins:phantom_evo",
-		"origins:phantom_evolution",
-		"origins:difficulty_3"
+		"origins:phantom_evolution"
 	],
 	"icon": {
 		"item": "minecraft:phantom_membrane"
 	},
 	"order": 2,
-	"impact": 3
+	"impact": 0
 }

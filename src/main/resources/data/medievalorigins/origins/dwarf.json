@@ -10,13 +10,12 @@
                 "medievalorigins:dwarf/experience",
                 "medievalorigins:dwarf/pickaxeless_stone",
       "medievalorigins:dwarf/dwarf_evo",
-      "origins:dwarf_evolution",
-		"origins:difficulty_1"
+      "origins:dwarf_evolution"
 	],
         "icon": {
                 "item": "minecraft:ink_sac",
                 "tag": "{CustomModelData:356}"
         },
-	"impact": 1,
+	"impact": 0,
         "order": 1
 }

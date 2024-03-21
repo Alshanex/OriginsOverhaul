@@ -12,12 +12,11 @@
 		"origins:crit_chance",
 		"origins:cat_vision",
 		"origins:feline_evo",
-		"origins:feline_evolution",
-		"origins:difficulty_2"
+		"origins:feline_evolution"
 	],
 	"icon": {
 		"item": "minecraft:orange_wool"
 	},
 	"order": 0,
-	"impact": 2
+	"impact": 0
 }

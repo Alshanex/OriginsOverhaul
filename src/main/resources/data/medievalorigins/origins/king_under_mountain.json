@@ -18,6 +18,6 @@
                 "item": "minecraft:ink_sac",
                 "tag": "{CustomModelData:356}"
         },
-	"impact": 1,
+	"impact": 0,
         "order": 1
 }

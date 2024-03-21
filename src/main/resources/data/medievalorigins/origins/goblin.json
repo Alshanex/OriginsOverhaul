@@ -12,13 +12,12 @@
                 "medievalorigins:goblin/goblin_evo",
                 "medievalorigins:goblin/lethal",
 		"medievalorigins:goblin/frail",
-      "origins:goblin_evolution",
-		"origins:difficulty_1"
+      "origins:goblin_evolution"
 	],
         "icon": {
                 "item": "minecraft:ink_sac",
                 "tag": "{CustomModelData:362}"
         },
-	"impact": 1,
+	"impact": 0,
         "order": 10
 }

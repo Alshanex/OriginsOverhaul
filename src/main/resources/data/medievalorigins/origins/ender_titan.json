@@ -15,6 +15,6 @@
         "icon": {
                 "item": "minecraft:end_crystal"
         },
-	"impact": 2,
+	"impact": 0,
     "order": 1
 }

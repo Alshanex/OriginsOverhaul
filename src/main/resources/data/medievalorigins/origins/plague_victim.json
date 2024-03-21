@@ -12,13 +12,12 @@
                 "medievalorigins:plague_victim/fire_damage",
                 "medievalorigins:plague_victim/skin_and_bones",
       "medievalorigins:plague_victim/plague_evo",
-      "origins:plague_evolution",
-		"origins:difficulty_3"
+      "origins:plague_evolution"
 	],
         "icon": {
 		"item": "minecraft:ink_sac",
 		"tag": "{CustomModelData:368}"
 },
-	"impact": 3,
+	"impact": 0,
         "order": 1
 }

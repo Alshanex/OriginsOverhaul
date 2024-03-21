@@ -11,13 +11,12 @@
 		"medievalorigins:yeti/ice_magic",
 		"medievalorigins:yeti/flammable",
 		"medievalorigins:yeti/yeti_evo",
-		"origins:yeti_evolution",
-		"origins:difficulty_2"
+		"origins:yeti_evolution"
 	],
 	"icon": {
 		"item": "minecraft:ink_sac",
 		"tag": "{CustomModelData:365}"
 },
-	"impact": 2,
+	"impact": 0,
 	"order": 1
 }

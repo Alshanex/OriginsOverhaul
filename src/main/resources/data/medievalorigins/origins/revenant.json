@@ -15,13 +15,12 @@
                 "medievalorigins:revenant/evocation_magic",
                 "medievalorigins:revenant/unguarded",
             "medievalorigins:revenant/revenant_evo",
-            "origins:revenant_evolution",
-		"origins:difficulty_3"
+            "origins:revenant_evolution"
 	],
         "icon": {
                 "item": "minecraft:ink_sac",
                 "tag": "{CustomModelData:360}"
         },
-	"impact": 3,
+	"impact": 0,
         "order": 1
 }

@@ -17,6 +17,6 @@
         "icon": {
                 "item": "minecraft:heart_of_the_sea"
         },
-	"impact": 2,
+	"impact": 0,
     "order": 1
 }
