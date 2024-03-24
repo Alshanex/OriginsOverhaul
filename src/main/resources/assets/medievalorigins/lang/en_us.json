@@ -226,7 +226,7 @@
   "power.medievalorigins.dwarf/shield.description": "Dwarves are able to use a spell that has been passed through incontable dwarven generations to create a protective shield for a short period of time.",
 
   "power.medievalorigins.dwarf/dwarf_evo.name": "Evolution",
-  "power.medievalorigins.dwarf/dwarf_evo.description": "Find the Dwarven Crown to evolve.",
+  "power.medievalorigins.dwarf/dwarf_evo.description": "Find the Dwarven Crown to evolve. Legends say that it is found in a long lost forge located in the Nether, guarded by a dwarven creation that gained consciousness and went mad, killing everyone in there.",
 
 
   "power.medievalorigins.human/description.name": "Note",
@@ -320,7 +320,7 @@
   "power.medievalorigins.goblin/invisible.description": "You equip a strange looking ring that you encounterend in a lake some time ago. What do you think will happen?",
 
   "power.medievalorigins.goblin/goblin_evo.name": "Evolution",
-  "power.medievalorigins.goblin/goblin_evo.description": "Find the Mutation Potion to evolve.",
+  "power.medievalorigins.goblin/goblin_evo.description": "Find the Mutation Potion to evolve. It is said that the content of this potion comes from a really strange flower, and people say that all the adventurers and alchemists that went to find it never came back.",
 
   "power.medievalorigins.gorgon/hydrophobe.name": "Hydrophobe",
   "power.medievalorigins.gorgon/hydrophobe.description": "Gorgons can not tolerate the purity of water and take damage from it.",
@@ -353,7 +353,7 @@
   "power.medievalorigins.gorgon/poison_breath.description": "The snakes attached to your head throw a venomous and lethal breath to the target.",
 
   "power.medievalorigins.gorgon/gorgon_evo.name": "Evolution",
-  "power.medievalorigins.gorgon/gorgon_evo.description": "Find the Basilisk Fang to evolve.",
+  "power.medievalorigins.gorgon/gorgon_evo.description": "Find the Basilisk Fang to evolve. You might need to go into the Twilight Forest to find it.",
 
   "power.medievalorigins.high_elf/elegant.name": "Elegant",
   "power.medievalorigins.high_elf/elegant.description": "Due to their slender nature, High Elves can not wear armor heavier than iron (This can be prevented with an enchantment), and have less health.",
@@ -536,7 +536,7 @@
   "power.medievalorigins.plague_victim/blood_ray.description": "Plague Victims can unleash a blood ray towards their enemies, leeching some of their life if they die.",
 
   "power.medievalorigins.plague_victim/plague_evo.name": "Evolution",
-  "power.medievalorigins.plague_victim/plague_evo.description": "Find the Blood Serum to evolve.",
+  "power.medievalorigins.plague_victim/plague_evo.description": "Find the Blood Serum to evolve. It is guarded by the ruler of the wastes, living in the dephts of the world.",
 
   "power.medievalorigins.siren/amphibious.name": "Amphibious",
   "power.medievalorigins.siren/amphibious.description": "Sirens, being a subset of Mer, can survive in water, and swim with increased speed.",
@@ -566,7 +566,7 @@
   "power.medievalorigins.siren/damage_underwater.description": "You have always lived under the water, so when it touches your body you will make more damage.",
 
   "power.medievalorigins.siren/siren_evo.name": "Evolution",
-  "power.medievalorigins.siren/siren_evo.description": "Find the Sea Essence to evolve.",
+  "power.medievalorigins.siren/siren_evo.description": "Find the Sea Essence to evolve. This item was guarded by an ancient civilization that lived underwater, but an ancient abyssal beast took control of the place.",
 
   "power.medievalorigins.troll/apex_predator.name": "Apex Predator",
   "power.medievalorigins.troll/apex_predator.description": "Trolls cannot eat regular foodstuffs, and can only satiate their hunger by slaughtering other creautres.",
@@ -626,7 +626,7 @@
   "power.medievalorigins.yeti/ice_block.description": "Yetis can summon big ice boulders that can be launched to their enemies.",
 
   "power.medievalorigins.yeti/yeti_evo.name": "Evolution",
-  "power.medievalorigins.yeti/yeti_evo.description": "Find the Cold Essence to evolve.",
+  "power.medievalorigins.yeti/yeti_evo.description": "Find the Cold Essence to evolve. You might need to go into the Twilight Forest to find it.",
 
   "power.medievalorigins.revenant/black_thumb.name": "Black Thumb",
   "power.medievalorigins.revenant/black_thumb.description": "A Revenant can not harvest any crops; they wilt at their deathly touch.",
@@ -659,7 +659,7 @@
   "power.medievalorigins.revenant/evocation_magic.description": "Your precise control of summoning magic allowed your summons to use all the power they had when they were alive.",
 
   "power.medievalorigins.revenant/revenant_evo.name": "Evolution",
-  "power.medievalorigins.revenant/revenant_evo.description": "Find the Summoning Tome to evolve.",
+  "power.medievalorigins.revenant/revenant_evo.description": "Find the Summoning Tome to evolve. This book is currently in the king of death spellbooks' collection.",
 
   "power.medievalorigins.specter/jump.name": "Into the air!",
   "power.medievalorigins.specter/jump.description": "2 steps combo, launch enemies into the air and destroy them there, triggered with Primary Ability key. The combo uses evocation magic damage. Short range combo with very high movility.",
@@ -758,7 +758,7 @@
   "power.medievalorigins.elf/swarm.description": "Elves can communicate with other animals in the woods, being able to command an insect swarm to hurt their enemies. Triggered with Secondary Ability key.",
 
   "power.medievalorigins.elf/elfwood_evo.name": "Evolution",
-  "power.medievalorigins.elf/elfwood_evo.description": "Find a Forest Essence to evolve into a Wood Elf.\nFind a Moon Shard to evolve into a Moon Elf.\nFind a Wisdom Shard to evolve into a High Elf.",
+  "power.medievalorigins.elf/elfwood_evo.description": "Find a Forest Essence to evolve into a Wood Elf.\nFind a Moon Shard to evolve into a Moon Elf.\nFind a Wisdom Shard to evolve into a High Elf.\nYou might need to explore the Blue Skies dimension in order to find them.",
 
   "power.medievalorigins.ender_titan/primary.name": "Teleportation",
   "power.medievalorigins.ender_titan/primary.description": "If you have enough portals stacked, you will summon a first portal where you are looking and, shortly after, a second portal connected to the first where you are looking. If not enough portal stacks, you will teleport normally. Triggered with Primary Ability key.",
