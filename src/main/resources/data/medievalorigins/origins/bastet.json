@@ -7,9 +7,9 @@
       "origins:velvet_paws",
       "origins:nine_lives",
       "origins:scare_creepers",
-      "medievalorigins:bastet/evil",
-      "medievalorigins:bastet/slash",
-      "medievalorigins:bastet/dash",
+      "medievalorigins:bastet/good",
+      "medievalorigins:bastet/bolt",
+      "medievalorigins:bastet/heal",
       "origins:crit_chance",
       "origins:cat_vision",
       "origins:evo_stats"

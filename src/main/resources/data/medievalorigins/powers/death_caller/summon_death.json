@@ -1,0 +1,13 @@
+{
+	"loading_priority":1,
+	"type": "origins:action_over_time",
+	"entity_action": {
+		"type": "origins:modify_resource",
+		"modifier": {
+			"operation": "multiply_total_multiplicative",
+			"value": -1
+		},
+		"resource": "medievalorigins:death_caller/resource"
+	},
+	"interval": 12000
+}

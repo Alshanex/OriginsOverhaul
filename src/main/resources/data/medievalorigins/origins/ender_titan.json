@@ -7,8 +7,8 @@
       "origins:ender_magic",
       "medievalorigins:ender_titan/portals",
       "medievalorigins:ender_titan/add_portals",
-      "medievalorigins:ender_titan/primary",
       "medievalorigins:ender_titan/secondary",
+      "medievalorigins:ender_titan/primary",
       "medievalorigins:ender_titan/ability_change",
       "origins:evo_stats"
     ],

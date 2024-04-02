@@ -15,7 +15,7 @@
 				"is_ambient": true,
 				"show_particles": false,
 				"show_icon": false,
-				"amplifier": 2,
+				"amplifier": 4,
 				"duration": 400
 			},
 			{
@@ -30,7 +30,7 @@
         }
     	]
 	},
-	"cooldown": 1800,
+	"cooldown": 700,
 	"key": {
 		"key": "key.origins.secondary_active",
 		"continuous": false

@@ -11,7 +11,7 @@
   "origin.medievalorigins.banshee.description": "§lBanshees§r are anguished spirits whose cries can shatter glass and drive people to madness. In myth, their presence is often considered an omen of death.",
 
   "origin.medievalorigins.incubus.name": "Incubus",
-  "origin.medievalorigins.incubus.description": "§lIncubi§r are evil servants of a dark power. They are powerful in their own realm, but in exchange for this they have given up their soul, and are weak to pure sources.",
+  "origin.medievalorigins.incubus.description": "§lIncubus§r are evil servants of a dark power. They are powerful in their own realm, but in exchange for this they have given up their soul, and are weak to pure sources.",
 
   "origin.medievalorigins.dwarf.name": "Dwarf",
   "origin.medievalorigins.dwarf.description": "§lDwarves§r are practical, stocky, and prideful. They excel at mining and living underground, but struggle with the daylight. Rock and stone, brother.",
@@ -175,16 +175,16 @@
   "power.medievalorigins.incubus/demon_fire.description": "4 steps combo, fire magic damage with high movility. Triggered with Primary Ability key.",
 
   "power.medievalorigins.incubus/hellborne.name": "Hellborne",
-  "power.medievalorigins.incubus/hellborne.description": "Having spent eternities in the depths of hell, fire feels like home - it deals no damage to Incubi and satiates them.",
+  "power.medievalorigins.incubus/hellborne.description": "Having spent eternities in the depths of hell, fire feels like home - it deals no damage to Incubus and satiates them.",
 
   "power.medievalorigins.incubus/hydrophobe.name": "Hydrophobe",
-  "power.medievalorigins.incubus/hydrophobe.description": "Water scalds Incubi, damaging them on contact.",
+  "power.medievalorigins.incubus/hydrophobe.description": "Water scalds Incubus, damaging them on contact.",
 
   "power.medievalorigins.incubus/impure.name": "Impure",
-  "power.medievalorigins.incubus/impure.description": "Much like the undead, incubi are saturated with dark energy and can not receive healing from potions.",
+  "power.medievalorigins.incubus/impure.description": "Much like the undead, Incubus are saturated with dark energy and can not receive healing from potions.",
 
   "power.medievalorigins.incubus/dimension_strength.name": "Realm Advantage",
-  "power.medievalorigins.incubus/dimension_strength.description": "As agents of hell, Incubi are not accustomed to dimensions where the sun shines and are weaker there. But they are considerably stronger in the Nether.",
+  "power.medievalorigins.incubus/dimension_strength.description": "As agents of hell, Incubus are not accustomed to dimensions where the sun shines and are weaker there. But they are considerably stronger in the Nether.",
 
   "power.medievalorigins.incubus/unholy_deal.name": "Unholy Deal",
   "power.medievalorigins.incubus/unholy_deal.description": "An incubus can exchange some of their life force for raw power for a short time, making a small outburst in the process.",
@@ -521,7 +521,7 @@
   "power.medievalorigins.plague_victim/sensitive_skin.description": "The Plagued are covered in welts and lesions upon the skin, tender and painful to touch. Its victims cannot wear armor for the pain it causes.",
 
   "power.medievalorigins.plague_victim/skin_and_bones.name": "Skin and Bones",
-  "power.medievalorigins.plague_victim/skin_and_bones.description": "This illness drains the spirit, resulting in reduced health and speed.",
+  "power.medievalorigins.plague_victim/skin_and_bones.description": "This illness drains the spirit, resulting in reduced health.",
 
   "power.medievalorigins.plague_victim/blood_magic.name": "Forbidden Magic",
   "power.medievalorigins.plague_victim/blood_magic.description": "Every living thing you encounter dies and only his blood is left, so you decided to walk the path of Blood Magic. Using this malevolous arts you can cast deadly blood spells and even use your enemies blood against them.",
@@ -563,7 +563,7 @@
   "power.medievalorigins.siren/water_vision.description": "Sirens have superior underwater vision compared to other creatures.",
 
   "power.medievalorigins.siren/damage_underwater.name": "Warrior of the Seas",
-  "power.medievalorigins.siren/damage_underwater.description": "You have always lived under the water, so when it touches your body you will make more damage.",
+  "power.medievalorigins.siren/damage_underwater.description": "You have always lived under the water, so when it touches your body you will deal more damage.",
 
   "power.medievalorigins.siren/siren_evo.name": "Evolution",
   "power.medievalorigins.siren/siren_evo.description": "Find the Sea Essence to evolve. This item was guarded by an ancient civilization that lived underwater, but an ancient abyssal beast took control of the place.",
@@ -716,7 +716,7 @@
   "power.medievalorigins.king_under_mountain/buff.description": "Upon pressing your Sprint keybind, you will perform a war scream that will empower yourself and your close allies.",
 
   "power.medievalorigins.king_under_mountain/primary.name": "Stomp",
-  "power.medievalorigins.king_under_mountain/primary.description": "You can make a powerful stomp to stun and launch your enemies into the ir, which then you can follow up with a smash to finish off your enemies. Triggered with Primary Ability key.",
+  "power.medievalorigins.king_under_mountain/primary.description": "You can make a powerful stomp to stun and launch your enemies into the air, which then you can follow up with a smash to finish off your enemies. Triggered with Primary Ability key.",
 
   "power.medievalorigins.bastet/evil.name": "Two-faced",
   "power.medievalorigins.bastet/evil.description": "You have two sides, each one having different powers. When you stack up enough power you change your side.",
@@ -749,7 +749,7 @@
   "power.medievalorigins.elf/towering.description": "Elves are taller than the average human. Despite this, they are just as thin.",
 
   "power.medievalorigins.elf/graceful.name": "Graceful",
-  "power.medievalorigins.elf/graceful.description": "Elven arms are not as powerful, but they are quick. They deal reduced damage but attack slightly faster.",
+  "power.medievalorigins.elf/graceful.description": "Elven arms are not as powerful, but they are quick. They deal reduced damage but attack slightly faster. Elves are also quicker than normal humans.",
 
   "power.medievalorigins.elf/poison_arrow.name": "Poisoned Arrow",
   "power.medievalorigins.elf/poison_arrow.description": "You can shoot a poisoned arrow that will damage and poison your enemy. Triggered with Primary Ability key.",
@@ -761,9 +761,9 @@
   "power.medievalorigins.elf/elfwood_evo.description": "Find a Forest Essence to evolve into a Wood Elf.\nFind a Moon Shard to evolve into a Moon Elf.\nFind a Wisdom Shard to evolve into a High Elf.\nYou might need to explore the Blue Skies dimension in order to find them.",
 
   "power.medievalorigins.ender_titan/primary.name": "Teleportation",
-  "power.medievalorigins.ender_titan/primary.description": "If you have enough portals stacked, you will summon a first portal where you are looking and, shortly after, a second portal connected to the first where you are looking. If not enough portal stacks, you will teleport normally. Triggered with Primary Ability key.",
+  "power.medievalorigins.ender_titan/primary.description": "If you have enough portals stacked (portals recharge over time), you will summon a first portal where you are looking and, shortly after, a second portal connected to the first where you are looking. If not enough portal stacks, you will teleport normally. Triggered with Secondary Ability key.",
 
-  "power.medievalorigins.ender_titan/secondary.name": "Secondary Ability",
+  "power.medievalorigins.ender_titan/secondary.name": "Primary Ability",
   "power.medievalorigins.ender_titan/secondary.description": "If you are on the short range mode, you will make a stomp launching enemies into air. If you are on the long range mode, you will fire small ender magic projectiles at your enemies. You can change mode pressing Sprint keybind.",
 
   "power.medievalorigins.ice_titan/primary.name": "Combo",

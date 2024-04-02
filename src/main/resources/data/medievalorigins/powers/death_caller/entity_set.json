@@ -1,0 +1,27 @@
+{
+	"loading_priority":1,
+	"hidden": true,
+	"type": "origins:entity_set",
+	"action_on_remove": {
+		"type": "origins:actor_action",
+		"action": {
+			"type": "origins:modify_resource",
+			"modifier": {
+				"operation": "add_base_early",
+				"value": -1
+			},
+			"resource": "medievalorigins:death_caller/resource"
+		}
+	},
+	"action_on_add": {
+		"type": "origins:actor_action",
+		"action": {
+			"type": "origins:modify_resource",
+			"modifier": {
+				"operation": "add_base_early",
+				"value": 1
+			},
+			"resource": "medievalorigins:death_caller/resource"
+		}
+	}
+}

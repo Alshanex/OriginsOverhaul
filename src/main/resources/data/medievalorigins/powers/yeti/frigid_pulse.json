@@ -5,7 +5,7 @@
 		"type": "origins:execute_command",
 		"command": "cast @p cone_of_cold 3"
 	},
-	"cooldown": 600,
+	"cooldown": 300,
 	"key": {
 		"key": "key.origins.secondary_active"
 	},

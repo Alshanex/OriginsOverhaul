@@ -2,7 +2,6 @@
         "loading_priority": 12,
 	"powers": [
                 "medievalorigins:revenant/transfer_item",
-                "medievalorigins:revenant/putrid_communion",
                 "medievalorigins:revenant/skeleton_summons",
                 "medievalorigins:revenant/zombie_summons",
                 "medievalorigins:revenant/hellraiser",

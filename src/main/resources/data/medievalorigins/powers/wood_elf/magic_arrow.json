@@ -13,7 +13,7 @@
 				"ticks": 2,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "cast @p magic_arrow 8"
+					"command": "cast @p magic_arrow 5"
 				}
 			},
 			{
