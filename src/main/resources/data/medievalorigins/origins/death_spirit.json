@@ -12,6 +12,7 @@
 		"medievalorigins:death_spirit/phantomize_overlay",
 		"medievalorigins:death_spirit/electric",
 		"medievalorigins:death_spirit/charges",
+		"medievalorigins:death_spirit/reset_cds",
 		"origins:evo_stats"
 	],
 	"icon": {

@@ -11,7 +11,8 @@
 		"origins:thunder_magic",
 		"origins:phantomize_overlay",
 		"origins:phantom_evo",
-		"origins:phantom_evolution"
+		"origins:phantom_evolution",
+		"origins:reset_cds_phantom"
 	],
 	"icon": {
 		"item": "minecraft:phantom_membrane"

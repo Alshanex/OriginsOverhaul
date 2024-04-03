@@ -42,5 +42,15 @@
 			"value": 0.5,
 			"operation": "addition"
 		}
+	},
+	"speed":
+	{
+		"type": "origins:attribute",
+		"modifier": {
+			"name": "Speed bonus",
+			"attribute": "minecraft:generic.movement_speed",
+			"value": 0.03,
+			"operation": "addition"
+		}
 	}
 }

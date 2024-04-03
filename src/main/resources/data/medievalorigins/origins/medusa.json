@@ -11,6 +11,7 @@
                 "medievalorigins:medusa/lethal",
                 "medievalorigins:medusa/secondary",
                 "medievalorigins:medusa/reset_combo",
+                "medievalorigins:medusa/reset_cds",
                 "origins:evo_stats"
 	    ],
         "icon": {

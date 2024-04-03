@@ -12,6 +12,7 @@
                 "medievalorigins:goblin/goblin_evo",
                 "medievalorigins:goblin/lethal",
 		"medievalorigins:goblin/frail",
+      "medievalorigins:goblin/reset_cds",
       "origins:goblin_evolution"
 	],
         "icon": {

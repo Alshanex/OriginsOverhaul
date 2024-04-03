@@ -1,0 +1,29 @@
+{
+	"loading_priority":1,
+	"hidden": true,
+	"type": "origins:action_on_callback",
+	"entity_action_gained": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:change_resource",
+				"resource": "medievalorigins:sea_serpent/blink",
+				"operation": "set",
+				"change": 0
+			},
+			{
+				"type": "origins:change_resource",
+				"resource": "medievalorigins:sea_serpent/buff",
+				"operation": "set",
+				"change": 0
+			},
+			{
+				"type": "origins:change_resource",
+				"resource": "medievalorigins:sea_serpent/secondary",
+				"operation": "set",
+				"change": 0
+			}
+		]
+	},
+	"execute_chosen_when_orb": true
+}

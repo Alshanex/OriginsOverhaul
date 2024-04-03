@@ -10,8 +10,7 @@
       "medievalorigins:death_caller/summon",
       "medievalorigins:death_caller/swap",
       "medievalorigins:death_caller/resource",
-      "medievalorigins:death_caller/summon_death",
-      "medievalorigins:death_caller/entity_set",
+      "medievalorigins:death_caller/reset_cds",
       "origins:evo_stats"
     ],
         "icon": {

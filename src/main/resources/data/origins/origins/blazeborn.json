@@ -15,7 +15,8 @@
 		"origins:fire_magic",
 		"origins:damage_from_potions",
 		"origins:imp_evo",
-		"origins:imp_evolution"
+		"origins:imp_evolution",
+		"origins:reset_cds_imp"
 	],
 	"icon": {
 		"item": "minecraft:blaze_powder"

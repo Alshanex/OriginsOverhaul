@@ -10,6 +10,7 @@
       "medievalorigins:bastet/good",
       "medievalorigins:bastet/bolt",
       "medievalorigins:bastet/heal",
+      "medievalorigins:bastet/reset_cds",
       "origins:crit_chance",
       "origins:cat_vision",
       "origins:evo_stats"

@@ -10,7 +10,8 @@
 		"origins:dodge_chance",
 		"origins:more_kinetic_damage",
 		"origins:elytrian_evo",
-		"origins:elytrian_evolution"
+		"origins:elytrian_evolution",
+		"origins:reset_cds_elytrian"
 	],
 	"icon": {
 		"item": "minecraft:elytra"

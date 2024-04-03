@@ -12,7 +12,8 @@
 		"origins:crit_chance",
 		"origins:cat_vision",
 		"origins:feline_evo",
-		"origins:feline_evolution"
+		"origins:feline_evolution",
+		"origins:reset_cds_feline"
 	],
 	"icon": {
 		"item": "minecraft:orange_wool"

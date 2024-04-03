@@ -7,6 +7,7 @@
 		"origins:dodge_chance",
 		"medievalorigins:specter/jump",
 		"medievalorigins:specter/dash",
+		"medievalorigins:specter/reset_cds",
 		"origins:evo_stats"
 	],
 	"icon": {

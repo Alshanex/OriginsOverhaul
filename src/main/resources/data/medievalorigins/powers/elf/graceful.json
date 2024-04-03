@@ -49,7 +49,7 @@
 		"modifier": {
 			"name": "Speed bonus",
 			"attribute": "minecraft:generic.movement_speed",
-			"value": 0.03,
+			"value": 0.025,
 			"operation": "addition"
 		}
 	}

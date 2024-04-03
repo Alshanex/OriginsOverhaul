@@ -12,6 +12,7 @@
                 "medievalorigins:gorgon/magic_resistance",
                 "medievalorigins:gorgon/stats",
                 "medievalorigins:gorgon/gorgon_evo",
+      "medievalorigins:gorgon/reset_cds",
       "origins:gorgon_evolution"
 	],
         "icon": {

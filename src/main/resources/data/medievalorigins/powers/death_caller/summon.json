@@ -25,34 +25,11 @@
 						"type": "origins:execute_command",
 						"command": "cast @p summon_vex 4"
 					}
-				},
-				{
-					"type": "origins:delay",
-					"ticks": 120,
-					"action": {
-						"type": "origins:area_of_effect",
-						"radius": 10,
-						"shape": "cube",
-						"bientity_action": {
-							"type": "origins:if_else",
-							"condition": {
-								"type": "origins:target_condition",
-								"condition": {
-									"type": "origins:in_tag",
-									"tag": "irons_spellbooks:summons"
-								}
-							},
-							"if_action": {
-								"type": "origins:add_to_set",
-								"set": "medievalorigins:death_caller/entity_set"
-							}
-						}
-					}
 				}
 			]
 		}
     },
-	"cooldown": 400,
+	"cooldown": 800,
 	"hud_render": {
 		"should_render": true,
 		"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",

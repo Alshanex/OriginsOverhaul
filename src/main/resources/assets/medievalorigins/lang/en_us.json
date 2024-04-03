@@ -257,7 +257,7 @@
   "power.medievalorigins.wood_elf/towering.description": "Wood elves are taller than the average human. Despite this, they are just as thin.",
 
   "power.medievalorigins.wood_elf/graceful.name": "Graceful",
-  "power.medievalorigins.wood_elf/graceful.description": "Elven arms are not as powerful, but they are quick. They deal reduced damage but attack slightly faster.",
+  "power.medievalorigins.wood_elf/graceful.description": "Elven arms are not as powerful, but they are quick. They deal reduced damage but attack slightly faster. Wood Elves are also faster than normal elves.",
 
   "power.medievalorigins.wood_elf/hunter.name": "Sniper",
   "power.medievalorigins.wood_elf/hunter.description": "Your incredible dexterity with ranged weapons allow you to deal devastating amounts of damage with your shots.",
@@ -422,7 +422,7 @@
   "power.medievalorigins.moon_elf/towering.description": "Moon Elves are about the same height as their distant relatives of the forest, making them slightly taller than humans.",
 
   "power.medievalorigins.moon_elf/stats.name": "Lethal Shadow",
-  "power.medievalorigins.moon_elf/stats.description": "Your training with fast and precise weapons made your attacks inflict lethal damage very often.",
+  "power.medievalorigins.moon_elf/stats.description": "Your training with fast and precise weapons made your attacks inflict more critical hits and increased critical hit damage. Moon Elves are also faster than any other elven race.",
 
   "power.medievalorigins.moon_elf/haste.name": "Moonlight Power",
   "power.medievalorigins.moon_elf/haste.description": "Moon Elves have the ability to burn all the moonlight stored in their bodies to gain a buff for a short period of time. Triggered with your Secondary Ability key.",
@@ -749,7 +749,7 @@
   "power.medievalorigins.elf/towering.description": "Elves are taller than the average human. Despite this, they are just as thin.",
 
   "power.medievalorigins.elf/graceful.name": "Graceful",
-  "power.medievalorigins.elf/graceful.description": "Elven arms are not as powerful, but they are quick. They deal reduced damage but attack slightly faster. Elves are also quicker than normal humans.",
+  "power.medievalorigins.elf/graceful.description": "Elven arms are not as powerful, but they are quick. They deal reduced damage but attack slightly faster. Elves are also faster than normal humans.",
 
   "power.medievalorigins.elf/poison_arrow.name": "Poisoned Arrow",
   "power.medievalorigins.elf/poison_arrow.description": "You can shoot a poisoned arrow that will damage and poison your enemy. Triggered with Primary Ability key.",

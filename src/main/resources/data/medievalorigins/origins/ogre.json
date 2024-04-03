@@ -18,6 +18,7 @@
                 "medievalorigins:ogre/combo_counter",
                 "medievalorigins:ogre/combo_link",
                 "medievalorigins:ogre/hit_counter",
+                "medievalorigins:ogre/reset_cds",
                 "origins:evo_stats"
         ],
         "icon": {
