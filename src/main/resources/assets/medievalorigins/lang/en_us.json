@@ -410,7 +410,7 @@
   "power.medievalorigins.moon_elf/ethereal.description": "Moon elves are thin and even slightly translucent, and their skin has a peculiar blue hue.",
 
   "power.medievalorigins.moon_elf/fragile.name": "Fragile",
-  "power.medievalorigins.moon_elf/fragile.description": "Moon Elves have to stay lightweight to maintain their agility. They have reduced health and take increased physical damage.",
+  "power.medievalorigins.moon_elf/fragile.description": "Moon Elves have to stay lightweight to maintain their agility. They have reduced health and take increased magical damage.",
   
   "power.medievalorigins.moon_elf/moonlight_rogue.name": "Moonlight Rogue",
   "power.medievalorigins.moon_elf/moonlight_rogue.description": "Moon Elves are most efficient wielding a light and easy to conceal weapon. They deal more damage with daggers and knives.",
@@ -427,8 +427,8 @@
   "power.medievalorigins.moon_elf/haste.name": "Moonlight Power",
   "power.medievalorigins.moon_elf/haste.description": "Moon Elves have the ability to burn all the moonlight stored in their bodies to gain a buff for a short period of time. Triggered with your Secondary Ability key.",
 
-  "power.medievalorigins.moon_elf/first_dash.name": "Combo",
-  "power.medievalorigins.moon_elf/first_dash.description": "3 steps combo with very high movility and mid range blood magic damage. Triggered with the Primary Ability key.",
+  "power.medievalorigins.moon_elf/first_dash.name": "Backstab",
+  "power.medievalorigins.moon_elf/first_dash.description": "You sneak to the enemy's back, becoming invisible and making your next attack deal a critical hit, then you will retreat back and send a powerful blood slash to the enemy. Triggered with the Primary Ability key.",
 
   "power.medievalorigins.moon_elf/reset_combo.name": "Reset Combo",
   "power.medievalorigins.moon_elf/reset_combo.description": "You can reset your combo at any step pressing Sprint keybind.",

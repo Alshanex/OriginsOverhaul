@@ -13,7 +13,7 @@
 				"ticks": 2,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power remove @p medievalorigins:moon_elf/first_dash"
+					"command": "power grant @p medievalorigins:moon_elf/slash"
 				}
 			},
 			{
@@ -21,12 +21,12 @@
 				"ticks": 4,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power grant @p medievalorigins:moon_elf/slash"
+					"command": "power grant @p medievalorigins:moon_elf/crit"
 				}
 			}
 		]
     },
-	"cooldown": 50,
+	"cooldown": 60,
 	"hud_render": {
 		"should_render": true,
 		"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",

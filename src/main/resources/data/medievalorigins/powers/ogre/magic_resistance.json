@@ -2,7 +2,8 @@
 	"type": "origins:modify_damage_taken",
 	"damage_condition": {
 		"type": "medievalorigins:in_tag",
-		"tag": "minecraft:witch_resistant_to"
+		"tag": "minecraft:witch_resistant_to",
+		"inverted": true
 	},
 	"modifier": {
 		"name": "Origin Magic Resistance",
