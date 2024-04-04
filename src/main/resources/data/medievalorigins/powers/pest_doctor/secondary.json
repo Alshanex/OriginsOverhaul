@@ -24,7 +24,7 @@
 							"ticks": 2,
 							"action": {
 								"type": "origins:execute_command",
-								"command": "cast @p poison_splash 10"
+								"command": "cast @p poison_splash 16"
 							}
 						},
 						{
@@ -40,7 +40,7 @@
 							"ticks": 10,
 							"action": {
 								"type": "origins:execute_command",
-								"command": "cast @p poison_breath 10"
+								"command": "cast @p poison_breath 16"
 							}
 						},
 						{
@@ -50,7 +50,7 @@
 								"type": "origins:modify_resource",
 								"modifier": {
 									"operation": "add_base_early",
-									"value": -20
+									"value": -17
 								},
 								"resource": "medievalorigins:pest_doctor/resource"
 							}
