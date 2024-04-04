@@ -73,7 +73,7 @@
   "origin.medievalorigins.ice_titan.name": "Ice Titan",
   "origin.medievalorigins.ice_titan.description": "After defeating the Alpha Yeti, you became the new Alpha Yeti, gaining new powers and abilities.",
 
-  "origin.medievalorigins.king_under_mountain.name": "King Under The Mountain",
+  "origin.medievalorigins.king_under_mountain.name": "King of Dwarves",
   "origin.medievalorigins.king_under_mountain.description": "In your battle with the Nether Gauntlet you found the long lost Dwarven Crown, which lets the dwarf that wears it rule among the rest of the dwarves.",
 
   "origin.medievalorigins.medusa.name": "Medusa",
@@ -205,7 +205,7 @@
   "power.medievalorigins.dwarf/dwarven_tech.description": "Dwarves are capable of mining stone without a pickaxe, and mine anything faster than others.",
 
   "power.medievalorigins.dwarf/miniature.name": "Stocky",
-  "power.medievalorigins.dwarf/miniature.description": "Dwarves are just short enough to fit into a 1 meter tall tunnel (and almost as wide as one).",
+  "power.medievalorigins.dwarf/miniature.description": "Dwarves are just short enough to fit into a 1 meter tall tunnel (and almost as wide as one). They are also more tanky than other races, having increased life points.",
 
   "power.medievalorigins.dwarf/mythril_resonance.name": "Mythril Resonance",
   "power.medievalorigins.dwarf/mythril_resonance.description": "Powerful metals which carry the spirit of your people fill you with might.",
@@ -611,7 +611,7 @@
   "power.medievalorigins.yeti/thick_fur.description": "The blessing of thick fur becomes a curse in deserts. Their movement is slowed and health reduced.",
 
   "power.medievalorigins.yeti/titanic.name": "Titanic",
-  "power.medievalorigins.yeti/titanic.description": "Yetis have far more health than a regular human.",
+  "power.medievalorigins.yeti/titanic.description": "Yetis have far more health and raw damage than a regular human.",
 
   "power.medievalorigins.yeti/unstoppable.name": "Unstoppable",
   "power.medievalorigins.yeti/unstoppable.description": "Yetis are immune to the slowness effect.",
