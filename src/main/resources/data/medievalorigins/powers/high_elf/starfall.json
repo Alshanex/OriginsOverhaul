@@ -29,7 +29,7 @@
 				"ticks": 22,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "cast @p starfall 10"
+					"command": "cast @p starfall 30"
 				}
 			},
 			{
