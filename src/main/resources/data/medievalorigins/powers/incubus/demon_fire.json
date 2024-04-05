@@ -6,7 +6,7 @@
 		"actions": [
 			{
 				"type": "origins:execute_command",
-				"command": "cast @p burning_dash 3"
+				"command": "cast @p burning_dash 5"
 			},
 			{
 				"type": "origins:delay",
@@ -21,17 +21,12 @@
 				"ticks": 4,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power grant @p medievalorigins:incubus/slash"
+					"command": "power grant @p medievalorigins:incubus/fireball"
 				}
 			}
 		]
     },
-	"cooldown": 40,
-	"hud_render": {
-		"should_render": true,
-		"sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
-		"bar_index": 15
-	},
+	"cooldown": 5,
 	"key": {
 		"key": "key.origins.primary_active",
 		"continuous": false

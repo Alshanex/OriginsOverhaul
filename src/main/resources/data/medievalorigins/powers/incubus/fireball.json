@@ -6,7 +6,7 @@
 		"actions": [
 			{
 				"type": "origins:execute_command",
-				"command": "cast @p fireball 3"
+				"command": "cast @p fireball 8"
 			},
 			{
 				"type": "origins:add_velocity",
@@ -41,7 +41,7 @@
 				"ticks": 4,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power grant @p medievalorigins:incubus/demon_fire"
+					"command": "power grant @p medievalorigins:incubus/slash"
 				}
 			},
 			{
@@ -49,7 +49,7 @@
 				"ticks": 10,
 				"action": {
 					"type": "origins:trigger_cooldown",
-					"power": "medievalorigins:incubus/demon_fire"
+					"power": "medievalorigins:incubus/slash"
 				}
 			}
 		]

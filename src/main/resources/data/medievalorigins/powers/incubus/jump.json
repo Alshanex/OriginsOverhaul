@@ -13,7 +13,7 @@
 				"ticks": 2,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "cast @p heat_surge 2"
+					"command": "cast @p heat_surge 5"
 				}
 			},
 			{
@@ -37,7 +37,7 @@
 				"ticks": 8,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power grant @p medievalorigins:incubus/fireball"
+					"command": "power grant @p medievalorigins:incubus/demon_fire"
 				}
 			},
 			{

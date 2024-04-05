@@ -13,7 +13,7 @@
 				"ticks": 2,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "cast @p flaming_strike 5"
+					"command": "cast @p flaming_strike 10"
 				}
 			},
 			{
@@ -42,7 +42,12 @@
 			}
 		]
     },
-	"cooldown": 5,
+	"cooldown": 40,
+	"hud_render": {
+		"should_render": true,
+		"sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+		"bar_index": 15
+	},
 	"key": {
 		"key": "key.origins.primary_active",
 		"continuous": false
