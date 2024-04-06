@@ -5,19 +5,55 @@
 		"type": "origins:and",
 		"actions": [
 			{
+				"type": "origins:delay",
+				"ticks": 10,
+				"action": {
+					"type": "origins:execute_command",
+					"command": "summon cataclysm:void_howitzer"
+				}
+			},
+			{
 				"type": "origins:execute_command",
-				"command": "cast @p magic_missile 10"
+				"command": "cast @p ender_stomp 10"
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 2,
+				"action": {
+					"type": "origins:execute_command",
+					"command": "power remove @p medievalorigins:ender_titan/third"
+				}
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 4,
+				"action": {
+					"type": "origins:execute_command",
+					"command": "power grant @p medievalorigins:ender_titan/secondary"
+				}
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 6,
+				"action": {
+					"type": "origins:apply_effect",
+					"effect": {
+						"effect": "minecraft:resistance",
+						"duration": 20,
+						"amplifier": 6
+					}
+				}
 			}
 		]
     },
-	"cooldown": 20,
+	"cooldown": 160,
 	"hud_render": {
 		"should_render": true,
-		"sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+		"sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
 		"bar_index": 19
 	},
 	"key": {
-		"key": "key.origins.secondary_active",
+		"key": "key.origins.primary_active",
 		"continuous": false
 	}
 }

@@ -35,8 +35,19 @@
 			]
 		},
 		"else_action": {
-			"type": "origins:execute_command",
-			"command": "cast @p teleport 2"
+			"type": "origins:raycast",
+			"distance": 30,
+			"block": true,
+			"entity": true,
+			"shape_type": "visual",
+			"fluid_handling": "none",
+			"command_along_ray": "particle minecraft:portal",
+			"command_along_ray_only_on_hit": false,
+			"command_at_hit": "tp @s ~ ~ ~",
+			"miss_action": {
+				"type": "origins:execute_command",
+				"command": "cast @p teleport 3"
+			}
 		}
     },
 	"cooldown": 100,
