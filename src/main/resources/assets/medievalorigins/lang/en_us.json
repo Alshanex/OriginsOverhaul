@@ -763,8 +763,8 @@
   "power.medievalorigins.ender_titan/primary.name": "Teleportation",
   "power.medievalorigins.ender_titan/primary.description": "If you have enough portals stacked (portals recharge over time), you will summon a first portal where you are looking and, shortly after, a second portal connected to the first where you are looking. If not enough portal stacks, you will teleport normally. Triggered with Secondary Ability key.",
 
-  "power.medievalorigins.ender_titan/secondary.name": "Primary Ability",
-  "power.medievalorigins.ender_titan/secondary.description": "If you are on the short range mode, you will make a stomp launching enemies into air. If you are on the long range mode, you will fire small ender magic projectiles at your enemies. You can change mode pressing Sprint keybind.",
+  "power.medievalorigins.ender_titan/secondary.name": "Void Power",
+  "power.medievalorigins.ender_titan/secondary.description": "You first summon a void vortex that attracts nearby enemies and explode them, then you summon ender powered spikes at your surroundings. Triggered with Primary Ability key.",
 
   "power.medievalorigins.ender_titan/ability_change.name": "Regression",
   "power.medievalorigins.ender_titan/ability_change.description": "You can travel back to the position you were at 10 seconds ago. You can change mode pressing Sprint keybind.",
