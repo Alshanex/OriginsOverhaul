@@ -688,8 +688,8 @@
   "power.medievalorigins.pest_doctor/reset_combo.name": "Reset Combo",
   "power.medievalorigins.pest_doctor/reset_combo.description": "You can reset your combo at any step with your Sprint keybind.",
 
-  "power.medievalorigins.medusa/root.name": "Combo",
-  "power.medievalorigins.medusa/root.description": "3 steps combo, dealing nature (poison) magic damage mid-short range. Triggered with Primary Ability key.",
+  "power.medievalorigins.medusa/root.name": "Petrifying Gaze",
+  "power.medievalorigins.medusa/root.description": "You can petrify any entity that dares to look directly into your eyes.",
 
   "power.medievalorigins.medusa/lethal.name": "Lethal",
   "power.medievalorigins.medusa/lethal.description": "Your snake-like body allows you to always do increased damage to poisoned entities.",

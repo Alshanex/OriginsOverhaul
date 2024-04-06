@@ -6,7 +6,7 @@
 		"actions": [
 			{
 				"type": "origins:delay",
-				"ticks": 10,
+				"ticks": 1,
 				"action": {
 					"type": "origins:execute_command",
 					"command": "summon cataclysm:void_howitzer"
@@ -37,16 +37,29 @@
 				"ticks": 6,
 				"action": {
 					"type": "origins:apply_effect",
-					"effect": {
-						"effect": "minecraft:resistance",
-						"duration": 20,
-						"amplifier": 6
-					}
+					"effects": [
+						{
+							"effect": "minecraft:resistance",
+							"duration": 60,
+							"is_ambient": false,
+							"show_particles": false,
+							"show_icon": false,
+							"amplifier": 6
+						},
+						{
+							"effect": "minecraft:slow_falling",
+							"duration": 60,
+							"is_ambient": false,
+							"show_particles": false,
+							"show_icon": false,
+							"amplifier": 255
+						}
+					]
 				}
 			}
 		]
     },
-	"cooldown": 60,
+	"cooldown": 30,
 	"hud_render": {
 		"should_render": true,
 		"sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",

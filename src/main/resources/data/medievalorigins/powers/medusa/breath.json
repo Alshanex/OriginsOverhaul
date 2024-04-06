@@ -6,7 +6,7 @@
 		"actions": [
 			{
 				"type": "origins:execute_command",
-				"command": "cast @p poison_breath 10"
+				"command": "cast @p poison_splash 16"
 			},
 			{
 				"type": "origins:delay",
@@ -18,18 +18,18 @@
 			},
 			{
 				"type": "origins:delay",
-				"ticks": 100,
+				"ticks": 4,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power grant @p medievalorigins:medusa/root"
+					"command": "power grant @p medievalorigins:medusa/acid_orb"
 				}
 			},
 			{
 				"type": "origins:delay",
-				"ticks": 102,
+				"ticks": 6,
 				"action": {
 					"type": "origins:trigger_cooldown",
-					"power": "medievalorigins:medusa/root"
+					"power": "medievalorigins:medusa/acid_orb"
 				}
 			}
 		]
