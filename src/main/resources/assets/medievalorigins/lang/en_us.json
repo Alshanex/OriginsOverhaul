@@ -433,6 +433,9 @@
   "power.medievalorigins.moon_elf/reset_combo.name": "Tactical Retreat",
   "power.medievalorigins.moon_elf/reset_combo.description": "You can reset your combo at any step pressing Sprint keybind.",
 
+  "power.medievalorigins.moon_elf/dark_power.name": "Embrace the Darkness",
+  "power.medievalorigins.moon_elf/dark_power.description": "Moon Elves get stronger in the dark, so they get bonus attack damage and lifesteal when they are in the dark.",
+
   "power.medievalorigins.ogre/gargantuan.name": "Gargantuan",
   "power.medievalorigins.ogre/gargantuan.description": "Ogres are massive, and can't fit through doors or even in many small structures.  ",
 

@@ -76,10 +76,10 @@ public class WaterCutRenderer extends EntityRenderer<WaterCutProjectile>{
         VertexConsumer consumer = bufferSource.getBuffer(RenderType.entityCutoutNoCull(getTextureLocation(entity,offset)));
         float halfWidth = width * .5f;
         //old color: 125, 0, 10
-        consumer.vertex(poseMatrix, -halfWidth, -.1f, -halfWidth).color(100, 150, 255, 255).uv(0f, 1f).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(light).normal(normalMatrix, 0f, 1f, 0f).endVertex();
-        consumer.vertex(poseMatrix, halfWidth, -.1f, -halfWidth).color(100, 150, 255, 255).uv(1f, 1f).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(light).normal(normalMatrix, 0f, 1f, 0f).endVertex();
-        consumer.vertex(poseMatrix, halfWidth, -.1f, halfWidth).color(100, 150, 255, 255).uv(1f, 0f).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(light).normal(normalMatrix, 0f, 1f, 0f).endVertex();
-        consumer.vertex(poseMatrix, -halfWidth, -.1f, halfWidth).color(100, 150, 255, 255).uv(0f, 0f).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(light).normal(normalMatrix, 0f, 1f, 0f).endVertex();
+        consumer.vertex(poseMatrix, -halfWidth, -.1f, -halfWidth).color(0, 0, 150, 255).uv(0f, 1f).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(light).normal(normalMatrix, 0f, 1f, 0f).endVertex();
+        consumer.vertex(poseMatrix, halfWidth, -.1f, -halfWidth).color(0, 0, 150, 255).uv(1f, 1f).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(light).normal(normalMatrix, 0f, 1f, 0f).endVertex();
+        consumer.vertex(poseMatrix, halfWidth, -.1f, halfWidth).color(0, 0, 150, 255).uv(1f, 0f).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(light).normal(normalMatrix, 0f, 1f, 0f).endVertex();
+        consumer.vertex(poseMatrix, -halfWidth, -.1f, halfWidth).color(0, 0, 150, 255).uv(0f, 0f).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(light).normal(normalMatrix, 0f, 1f, 0f).endVertex();
     }
 
     @Override

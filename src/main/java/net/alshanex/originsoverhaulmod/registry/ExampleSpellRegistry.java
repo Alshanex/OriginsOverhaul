@@ -2,10 +2,7 @@ package net.alshanex.originsoverhaulmod.registry;
 
 import io.redspace.ironsspellbooks.IronsSpellbooks;
 import io.redspace.ironsspellbooks.api.spells.AbstractSpell;
-import net.alshanex.originsoverhaulmod.spells.EnderStomp;
-import net.alshanex.originsoverhaulmod.spells.Petrify;
-import net.alshanex.originsoverhaulmod.spells.WaterCut;
-import net.alshanex.originsoverhaulmod.spells.WaterSlash;
+import net.alshanex.originsoverhaulmod.spells.*;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
@@ -26,4 +23,5 @@ public class ExampleSpellRegistry {
     public static final RegistryObject<AbstractSpell> WATER_CUT = registerSpell(new WaterCut());
     public static final RegistryObject<AbstractSpell> ENDER_STOMP = registerSpell(new EnderStomp());
     public static final RegistryObject<AbstractSpell> PETRIFY = registerSpell(new Petrify());
+    public static final RegistryObject<AbstractSpell> AERIAL_DASH = registerSpell(new AerialDash());
 }

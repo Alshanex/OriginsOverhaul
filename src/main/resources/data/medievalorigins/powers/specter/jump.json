@@ -48,10 +48,26 @@
 					"type": "origins:add_velocity",
 					"y": 3
 				}
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 2,
+				"action": {
+					"type": "origins:execute_command",
+					"command": "power remove @p medievalorigins:specter/jump"
+				}
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 4,
+				"action": {
+					"type": "origins:execute_command",
+					"command": "power grant @p medievalorigins:specter/dash"
+				}
 			}
 		]
     },
-	"cooldown": 80,
+	"cooldown": 60,
 	"hud_render": {
 		"should_render": true,
 		"sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",

@@ -1,0 +1,24 @@
+{
+	"loading_priority":1,
+	"type": "origins:action_over_time",
+	"entity_action": {
+		"type": "origins:attribute",
+		"modifiers": [
+			{
+				"attribute": "minecraft:generic.attack_damage",
+				"operation": "MULTIPLY_BASE",
+				"value": 0.15
+			},
+			{
+				"attribute": "attributeslib:life_steal",
+				"operation": "MULTIPLY_BASE",
+				"value": 0.15
+			}
+		]
+	},
+	"interval": 20,
+	"condition": {
+		"type": "origins:exposed_to_sun",
+		"inverted": true
+	}
+}
