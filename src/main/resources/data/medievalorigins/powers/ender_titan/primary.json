@@ -47,6 +47,10 @@
 			"miss_action": {
 				"type": "origins:execute_command",
 				"command": "cast @p teleport 3"
+			},
+			"hit_action": {
+				"type": "origins:execute_command",
+				"command": "playsound minecraft:entity.enderman.teleport player @a ~ ~ ~ 0.6 0.5"
 			}
 		}
     },

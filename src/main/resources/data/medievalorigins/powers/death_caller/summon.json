@@ -3,12 +3,6 @@
 	"type": "origins:active_self",
     "entity_action": {
 		"type": "origins:if_else",
-		"condition": {
-			"type": "origins:resource",
-			"resource": "medievalorigins:death_caller/resource",
-			"comparison": "<",
-			"compare_to": 40
-		},
 		"if_action": {
 			"type": "origins:and",
 			"actions": [
@@ -19,7 +13,7 @@
 					},
 					"if_action": {
 						"type": "origins:execute_command",
-						"command": "cast @p raise_dead 4"
+						"command": "cast @p raise_dead 6"
 					},
 					"else_action": {
 						"type": "origins:execute_command",

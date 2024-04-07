@@ -2,7 +2,7 @@
     "type": "origins:active_self",
     "cooldown": 1,
     "key": {
-        "key": "key.origins.secondary_active",
+        "key": "key.origins.primary_active",
         "continuous": false
     },
     "entity_action": {
@@ -10,7 +10,7 @@
         "actions": [
             {
                 "type": "origins:execute_command",
-                "command": "cast @p water_cut 5"
+                "command": "cast @p water_cut 10"
             },
             {
                 "type": "origins:delay",

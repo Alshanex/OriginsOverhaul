@@ -2,8 +2,7 @@
         "loading_priority": 12,
   "unchoosable": true,
 	"powers": [
-      "medievalorigins:revenant/unwitherable",
-      "medievalorigins:revenant/disturbed",
+      "medievalorigins:death_caller/unwitherable",
       "medievalorigins:revenant/evocation_magic",
       "medievalorigins:revenant/undeadge",
       "medievalorigins:death_caller/buff",

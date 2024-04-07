@@ -10,22 +10,23 @@
         },
         {    
             "type": "origins:apply_effect",
-			"effects": [{
+			"effects": [
+				{
 				"effect": "minecraft:strength",
 				"is_ambient": true,
 				"show_particles": false,
 				"show_icon": false,
 				"amplifier": 4,
 				"duration": 400
-			},
-			{
-				"effect": "minecraft:instant_damage",
-				"is_ambient": true,
-				"show_particles": false,
-				"show_icon": false,
-				"amplifier": 0,
-				"duration": 12
-			}
+				},
+				{
+					"effect": "minecraft:instant_damage",
+					"is_ambient": true,
+					"show_particles": false,
+					"show_icon": false,
+					"amplifier": 0,
+					"duration": 12
+				}
 			]
         }
     	]
