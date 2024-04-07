@@ -6,7 +6,7 @@
 		"actions": [
 			{
 				"type": "origins:execute_command",
-				"command": "cast @p ascension 3"
+				"command": "cast @p ascension 10"
 			},
 			{
 				"type": "origins:delay",

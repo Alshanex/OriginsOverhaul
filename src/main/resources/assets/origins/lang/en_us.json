@@ -183,7 +183,7 @@
   "power.origins.lay_eggs.description": "Whenever you wake up in the morning, you will lay an egg.",
 
   "power.origins.phantomize.name": "Phantom Form",
-  "power.origins.phantomize.description": "You can switch between human and phantom form at will, but only while you are saturated enough to sprint.",
+  "power.origins.phantomize.description": "You can switch between human and phantom form at will, but only while you have enough phantom stack charges. You can have up to 60 charges, they recharge over time and get removed while in phantom form.",
 
   "power.origins.like_air.name": "Like Air",
   "power.origins.like_air.description": "Modifiers to your walking speed also apply while you're airborne.",

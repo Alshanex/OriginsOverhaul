@@ -21,9 +21,10 @@
           "power": "origins:phantomize"
         },
         {
-          "type": "apoli:food_level",
+          "type": "origins:resource",
+          "resource": "origins:phantom_stacks",
           "comparison": ">",
-          "compare_to": 10
+          "compare_to": 50
         }
       ]
     }
@@ -48,14 +49,16 @@
           "power": "origins:phantomize"
         },
         {
-          "type": "apoli:food_level",
+          "type": "origins:resource",
+          "resource": "origins:phantom_stacks",
           "comparison": "<=",
-          "compare_to": 10
+          "compare_to": 50
         },
         {
-          "type": "apoli:food_level",
+          "type": "origins:resource",
+          "resource": "origins:phantom_stacks",
           "comparison": ">",
-          "compare_to": 8
+          "compare_to": 20
         }
       ]
     }
@@ -80,9 +83,10 @@
           "power": "origins:phantomize"
         },
         {
-          "type": "apoli:food_level",
+          "type": "origins:resource",
+          "resource": "origins:phantom_stacks",
           "comparison": "<=",
-          "compare_to": 8
+          "compare_to": 20
         }
       ]
     }

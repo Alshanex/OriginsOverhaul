@@ -6,8 +6,9 @@
   },
   "retain_state": false,
   "condition": {
-    "type": "apoli:food_level",
+    "type": "origins:resource",
+    "resource": "origins:phantom_stacks",
     "comparison": ">",
-    "compare_to": 6
+    "compare_to": 0
   }
 }

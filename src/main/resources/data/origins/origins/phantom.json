@@ -12,7 +12,10 @@
 		"origins:phantomize_overlay",
 		"origins:phantom_evo",
 		"origins:phantom_evolution",
-		"origins:reset_cds_phantom"
+		"origins:reset_cds_phantom",
+		"origins:check_speed_phantom",
+		"origins:charges_phantom",
+		"origins:phantom_stacks"
 	],
 	"icon": {
 		"item": "minecraft:phantom_membrane"

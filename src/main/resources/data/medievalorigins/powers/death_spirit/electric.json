@@ -6,7 +6,7 @@
 		"actions": [
 			{
 				"type": "origins:execute_command",
-				"command": "cast @p chain_lightning 10"
+				"command": "cast @p chain_lightning 20"
 			},
 			{
 				"type": "origins:delay",

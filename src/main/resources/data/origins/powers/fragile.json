@@ -1,9 +1,11 @@
 {
+  "loading_priority":1,
+  "hidden": true,
   "type": "apoli:attribute",
   "modifier": {
     "attribute": "minecraft:generic.max_health",
     "name": "Fragile health reduction",
     "operation": "addition",
-    "value": -6.0
+    "value": 4.0
   }
 }

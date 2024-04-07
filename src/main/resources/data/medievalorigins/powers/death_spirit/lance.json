@@ -13,7 +13,7 @@
 				"ticks": 2,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "cast @p lightning_lance 10"
+					"command": "cast @p lightning_lance 20"
 				}
 			},
 			{

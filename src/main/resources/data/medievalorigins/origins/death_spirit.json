@@ -13,6 +13,9 @@
 		"medievalorigins:death_spirit/electric",
 		"medievalorigins:death_spirit/charges",
 		"medievalorigins:death_spirit/reset_cds",
+		"medievalorigins:death_spirit/check_speed",
+		"medievalorigins:death_spirit/magic_resistance",
+		"medievalorigins:death_spirit/physical_resistance",
 		"origins:evo_stats"
 	],
 	"icon": {
