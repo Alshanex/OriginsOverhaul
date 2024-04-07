@@ -23,34 +23,10 @@
 					"type": "origins:execute_command",
 					"command": "power remove @p origins:no_cast_time"
 				}
-			},
-			{
-				"type": "origins:delay",
-				"ticks": 6,
-				"action": {
-					"type": "origins:execute_command",
-					"command": "power remove @p medievalorigins:specter/gust"
-				}
-			},
-			{
-				"type": "origins:delay",
-				"ticks": 8,
-				"action": {
-					"type": "origins:execute_command",
-					"command": "power grant @p medievalorigins:specter/jump"
-				}
-			},
-			{
-				"type": "origins:delay",
-				"ticks": 10,
-				"action": {
-					"type": "origins:trigger_cooldown",
-					"power": "medievalorigins:specter/jump"
-				}
 			}
 		]
     },
-	"cooldown": 1,
+	"cooldown": 30,
 	"hud_render": {
 		"should_render": false
 	},

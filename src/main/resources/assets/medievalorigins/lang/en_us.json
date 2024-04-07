@@ -665,10 +665,19 @@
   "power.medievalorigins.revenant/revenant_evo.description": "Find the Summoning Tome to evolve. This book is currently in the king of death spellbooks' collection.",
 
   "power.medievalorigins.specter/jump.name": "Into the air!",
-  "power.medievalorigins.specter/jump.description": "2 steps combo, launch enemies into the air and destroy them there, triggered with Primary Ability key. The combo uses evocation magic damage. Short range combo with very high movility.",
+  "power.medievalorigins.specter/jump.description": "Launch enemies and yourself into the air, triggered with Secondary Ability key. The combo uses evocation magic damage. Short range combo with very high movility.",
 
-  "power.medievalorigins.specter/dash.name": "Dash",
-  "power.medievalorigins.specter/dash.description": "Simple dash that boosts your flying speed, triggered with Secondary Ability key.",
+  "power.medievalorigins.specter/gust.name": "Tornado",
+  "power.medievalorigins.specter/gust.description": "Make a small gust that knocks your enemies away, triggered with Primary Ability key.",
+
+  "power.medievalorigins.specter/hybrid_double_jump.name": "Cloud Walking",
+  "power.medievalorigins.specter/hybrid_double_jump.description": "You can move freely in the air, you can press the jump key twice to do a double jump, but you can also hold shift to change the double jump into a vertical dash.",
+
+  "power.medievalorigins.specter/momentum.name": "Swiftness",
+  "power.medievalorigins.specter/momentum.description": "Your natural aerial-like body lets you accumulate speed as long as you keep sprinting, allowing you to deal more damage the faster you are.",
+
+  "power.medievalorigins.specter/fall_immune.name": "Landing Expert",
+  "power.medievalorigins.specter/fall_immune.description": "You mastered the art of landing, becoming immune to fall damage.",
 
   "power.medievalorigins.sea_serpent/blink.name": "Snake-like body",
   "power.medievalorigins.sea_serpent/blink.description": "When out of water, you push yourself into the air hitting the ground with your tail. When in water, you can move freely with swift movements. Triggered with Secondary Ability key.",

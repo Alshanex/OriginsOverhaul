@@ -6,7 +6,11 @@
 		"origins:aerial_combatant",
 		"origins:dodge_chance",
 		"medievalorigins:specter/jump",
-		"medievalorigins:specter/dash",
+		"medievalorigins:specter/gust",
+		"medievalorigins:specter/momentum",
+		"medievalorigins:specter/hybrid_double_jump",
+		"medievalorigins:specter/damage_per_speed",
+		"medievalorigins:specter/fall_immune",
 		"medievalorigins:specter/reset_cds",
 		"origins:evo_stats"
 	],
