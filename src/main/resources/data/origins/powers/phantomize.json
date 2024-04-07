@@ -1,4 +1,5 @@
 {
+  "loading_priority":1,
   "type": "origins:toggle",
   "key": {
     "key": "key.origins.primary_active",
@@ -9,6 +10,6 @@
     "type": "origins:resource",
     "resource": "origins:phantom_stacks",
     "comparison": ">",
-    "compare_to": 5
+    "compare_to": 0
   }
 }

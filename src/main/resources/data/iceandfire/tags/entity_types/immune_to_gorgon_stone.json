@@ -1,0 +1,15 @@
+{
+  "values": [
+    "#forge:bosses",
+    "minecraft:warden",
+    "#alexcaves:resists_totem_of_possession",
+    "#alexscaves:resists_tremorsaurus_roar",
+    "alexsmobs:void_worm",
+    "#blue_skies:bosses",
+    "#c:bosses",
+    "iceandfire:ice_dragon",
+    "iceandfire:fire_dragon",
+    "iceandfire:lightning_dragon",
+    "#twilightforest:bosses"
+  ]
+}

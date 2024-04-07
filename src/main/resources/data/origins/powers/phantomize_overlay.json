@@ -1,4 +1,5 @@
 {
+  "loading_priority":1,
   "type": "apoli:multiple",
   "hidden": true,
   "green": {
@@ -18,7 +19,7 @@
       "conditions": [
         {
           "type": "apoli:power_active",
-          "power": "origins:phantomize"
+          "power": "*:phantomize"
         },
         {
           "type": "origins:resource",
@@ -46,7 +47,7 @@
       "conditions": [
         {
           "type": "apoli:power_active",
-          "power": "origins:phantomize"
+          "power": "*:phantomize"
         },
         {
           "type": "origins:resource",
@@ -80,7 +81,7 @@
       "conditions": [
         {
           "type": "apoli:power_active",
-          "power": "origins:phantomize"
+          "power": "*:phantomize"
         },
         {
           "type": "origins:resource",

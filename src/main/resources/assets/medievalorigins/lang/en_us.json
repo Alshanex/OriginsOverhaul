@@ -192,7 +192,7 @@
   "power.medievalorigins.incubus/fire_magic.name": "Hell's Power",
   "power.medievalorigins.incubus/fire_magic.description": "Your managed to learn how to control the Nether's wild fire, making your fire spells very powerful.",
 
-  "power.medievalorigins.incubus/reset_combo.name": "Reset Combo",
+  "power.medievalorigins.incubus/reset_combo.name": "Tactical Retreat",
   "power.medievalorigins.incubus/reset_combo.description": "You can reset your combo at any step pressing Sprint keybind.",
 
   "power.medievalorigins.dwarf/darkness_dweller.name": "Darkness Dweller",
@@ -262,14 +262,14 @@
   "power.medievalorigins.wood_elf/hunter.name": "Sniper",
   "power.medievalorigins.wood_elf/hunter.description": "Your incredible dexterity with ranged weapons allow you to deal devastating amounts of damage with your shots.",
 
-  "power.medievalorigins.wood_elf/magic_arrow.name": "Combo",
+  "power.medievalorigins.wood_elf/magic_arrow.name": "Forest Hunter",
   "power.medievalorigins.wood_elf/magic_arrow.description": "Wood Elves have a 3 step combo, triggered with Primary Ability key. Combo uses ender and evocation spell damage, and the combo offers long range magic damage with some movility.",
 
   "power.medievalorigins.wood_elf/root.name": "Rooted",
   "power.medievalorigins.wood_elf/root.description": "Wood Elves use elven magic to summon roots from the ground that makes their target unable to move for a short period of time.",
 
-  "power.medievalorigins.wood_elf/reset_combo.name": "Reset Combo",
-  "power.medievalorigins.wood_elf/reset_combo.description": "To reset the combo at any step press Sprint keybind.",
+  "power.medievalorigins.wood_elf/reset_combo.name": "Tactical Retreat",
+  "power.medievalorigins.wood_elf/reset_combo.description": "Reset the combo at any step with Sprint keybind.",
 
   "power.medievalorigins.fae/allure.name": "Allure",
   "power.medievalorigins.fae/allure.description": "Fae are naturally alluring. Unfortunately, this means that mobs will pursue them from much further away than they would other creatures.",
@@ -391,10 +391,10 @@
   "power.medievalorigins.high_elf/starfall.name": "Starfall",
   "power.medievalorigins.high_elf/starfall.description": "Jump into the air and cast your most powerful spell, the starfall. Deals ender magic damage and is triggered with Secondary Ability key.",
 
-  "power.medievalorigins.high_elf/electrocute.name": "Combo",
+  "power.medievalorigins.high_elf/electrocute.name": "Master of the Elements",
   "power.medievalorigins.high_elf/electrocute.description": "3 steps combo, dealing ice and electric magic damage mid-long range with good movility. Triggered with Primary Ability key.",
 
-  "power.medievalorigins.high_elf/reset_combo.name": "Reset Combo",
+  "power.medievalorigins.high_elf/reset_combo.name": "Tactical Retreat",
   "power.medievalorigins.high_elf/reset_combo.description": "You can reset your combo at any step pressing Sprint keybind.",
 
   "power.medievalorigins.moon_elf/crazed.name": "Foreign World",
@@ -430,7 +430,7 @@
   "power.medievalorigins.moon_elf/first_dash.name": "Backstab",
   "power.medievalorigins.moon_elf/first_dash.description": "You sneak to the enemy's back, becoming invisible and making your next attack deal a critical hit, then you will retreat back and send a powerful blood slash to the enemy. Triggered with the Primary Ability key.",
 
-  "power.medievalorigins.moon_elf/reset_combo.name": "Reset Combo",
+  "power.medievalorigins.moon_elf/reset_combo.name": "Tactical Retreat",
   "power.medievalorigins.moon_elf/reset_combo.description": "You can reset your combo at any step pressing Sprint keybind.",
 
   "power.medievalorigins.ogre/gargantuan.name": "Gargantuan",
@@ -463,7 +463,7 @@
   "power.medievalorigins.ogre/earthquake.name": "Stomp",
   "power.medievalorigins.ogre/earthquake.description": "Ogres natural strength allows them to make a powerful stomp that damages all the entities around them and slows them down.",
 
-  "power.medievalorigins.ogre/combo.name": "Combo",
+  "power.medievalorigins.ogre/combo.name": "Infuriated",
   "power.medievalorigins.ogre/combo.description": "Upon pressing your Primary Ability key, you activate a 3 steps combo, dealing short range physical damage.",
 
   "power.medievalorigins.ogre/damage_resource.name": "Consecutive Hits",
@@ -682,7 +682,7 @@
   "power.medievalorigins.sea_serpent/blink.name": "Snake-like body",
   "power.medievalorigins.sea_serpent/blink.description": "When out of water, you push yourself into the air hitting the ground with your tail. When in water, you can move freely with swift movements. Triggered with Secondary Ability key.",
 
-  "power.medievalorigins.sea_serpent/secondary.name": "Combo",
+  "power.medievalorigins.sea_serpent/secondary.name": "Blessing of the Sea",
   "power.medievalorigins.sea_serpent/secondary.description": "Simple 2 steps combo, pushing enemy into air and then throw powerful slash. The combo uses ice magic damage, and is mid-long range. Triggered with Primary Ability key.",
 
   "power.medievalorigins.sea_serpent/buff.name": "Recover strength",
@@ -691,26 +691,32 @@
   "power.medievalorigins.sea_serpent/sea_heart.name": "Shedding",
   "power.medievalorigins.sea_serpent/sea_heart.description": "Every 5 minutes, you shed your skin, which reacts with the air forming a heart of the sea, along with the rest of the skin that didn't convert. Upon right clicking a heart of the sea, a storm will be summoned, helping you survive better on land.",
 
-  "power.medievalorigins.pest_doctor/acid_orb.name": "Combo",
+  "power.medievalorigins.pest_doctor/acid_orb.name": "Spreading Toxicity",
   "power.medievalorigins.pest_doctor/acid_orb.description": "4 steps combo combining blood magic with nature (poison) magic, with short-mid range high magic damage. Triggered with Primary Ability key.",
 
   "power.medievalorigins.pest_doctor/secondary.name": "Poison Charged",
   "power.medievalorigins.pest_doctor/secondary.description": "When you charge up enough poison stacks, you can trigger a powerfull poison attack with your Secondary Ability key.",
 
-  "power.medievalorigins.pest_doctor/reset_combo.name": "Reset Combo",
+  "power.medievalorigins.pest_doctor/reset_combo.name": "Tactical Retreat",
   "power.medievalorigins.pest_doctor/reset_combo.description": "You can reset your combo at any step with your Sprint keybind.",
 
   "power.medievalorigins.medusa/root.name": "Petrifying Gaze",
-  "power.medievalorigins.medusa/root.description": "You can petrify any entity that dares to look directly into your eyes.",
+  "power.medievalorigins.medusa/root.description": "You can paralyze any entity that dares to look directly into your eyes.",
 
-  "power.medievalorigins.medusa/lethal.name": "Lethal",
-  "power.medievalorigins.medusa/lethal.description": "Your snake-like body allows you to always do increased damage to poisoned entities.",
+  "power.medievalorigins.medusa/petrify.name": "Stoned",
+  "power.medievalorigins.medusa/petrify.description": "You can press Primary Ability key to unleash Medusa's most famous power, turning people to stone! It won't work into bosses so don't try it.",
+
+  "power.medievalorigins.medusa/unpetrify.name": "Lethal",
+  "power.medievalorigins.medusa/unpetrify.description": "You deal increased damage to paralyzed entities.",
+
+  "power.medievalorigins.medusa/aoe_fangs.name": "Snake Charmer",
+  "power.medievalorigins.medusa/aoe_fangs.description": "Upon pressing your Secondary Ability key you will petrify enemies around you, making them get attacked by your snake friends shortly after.",
 
   "power.medievalorigins.medusa/secondary.name": "Expanding Poison",
   "power.medievalorigins.medusa/secondary.description": "Upon pressing your Secondary Ability key, you spread poison everywhere around you.",
 
-  "power.medievalorigins.medusa/reset_combo.name": "Reset Combo",
-  "power.medievalorigins.medusa/reset_combo.description": "You can reset your combo at any step pressing your Sprint keybind.",
+  "power.medievalorigins.medusa/change_mode.name": "Two-faced",
+  "power.medievalorigins.medusa/change_mode.description": "You can swap between your human form and your snake form by pressing your Sprint keybind.",
 
   "power.medievalorigins.death_caller/buff.name": "Blood Ritual",
   "power.medievalorigins.death_caller/buff.description": "Upon pressing your Sprint keybind, you perform an ancient ritual to buff yourself and all your summons.",
@@ -784,13 +790,13 @@
   "power.medievalorigins.ender_titan/ability_change.name": "Regression",
   "power.medievalorigins.ender_titan/ability_change.description": "You can travel back to the position you were at 10 seconds ago. You can change mode pressing Sprint keybind.",
 
-  "power.medievalorigins.ice_titan/primary.name": "Combo",
+  "power.medievalorigins.ice_titan/primary.name": "Ruler of the Ice Throne",
   "power.medievalorigins.ice_titan/primary.description": "9 steps buildup combo, mid-long range ice magic damage. Triggered with Primary Ability key.",
 
   "power.medievalorigins.ice_titan/secondary.name": "Frigid Pulse",
   "power.medievalorigins.ice_titan/secondary.description": "With your Secondary Ability key you releas a freezing pulse.",
 
-  "power.medievalorigins.ice_titan/reset_combo.name": "Reset Combo",
+  "power.medievalorigins.ice_titan/reset_combo.name": "Tactical Retreat",
   "power.medievalorigins.ice_titan/reset_combo.description": "You can reset your combo at any step pressing Sprint keybind.",
 
 
