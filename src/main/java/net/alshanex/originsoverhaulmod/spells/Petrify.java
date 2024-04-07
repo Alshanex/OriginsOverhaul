@@ -28,6 +28,8 @@ import net.minecraft.world.phys.AABB;
 import javax.annotation.Nullable;
 import java.util.List;
 import java.util.Optional;
+
+@AutoSpellConfig
 public class Petrify extends AbstractSpell{
     private final ResourceLocation spellId = new ResourceLocation(IronsSpellbooks.MODID, "petrify");
     private final DefaultConfig defaultConfig = new DefaultConfig()
@@ -148,9 +150,5 @@ public class Petrify extends AbstractSpell{
 
     private float getDamage(int spellLevel, LivingEntity caster) {
         return getSpellPower(spellLevel, caster) * 1.5f;
-    }
-
-    private int getFreezeTime(int spellLevel, LivingEntity caster) {
-        return (int) (getSpellPower(spellLevel, caster) * 15);
     }
 }

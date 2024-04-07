@@ -1,15 +1,149 @@
 {
+  "replace": false,
   "values": [
-    "#forge:bosses",
-    "minecraft:warden",
-    "#alexcaves:resists_totem_of_possession",
-    "#alexscaves:resists_tremorsaurus_roar",
-    "alexsmobs:void_worm",
-    "#blue_skies:bosses",
-    "#c:bosses",
-    "iceandfire:ice_dragon",
-    "iceandfire:fire_dragon",
-    "iceandfire:lightning_dragon",
-    "#twilightforest:bosses"
+      {
+        "required": false,
+        "id": "minecraft:armor_stand"
+      },
+      {
+        "required": false,
+        "id": "alexscaves:hullbreaker"
+      },
+      {
+        "required": false,
+        "id": "alexscaves:forsaken"
+      },
+      {
+        "required": false,
+        "id": "alexscaves:atlatitan"
+      },
+      {
+        "required": false,
+        "id": "alexscaves:tremorzilla"
+      },
+      {
+        "required": false,
+        "id": "alexscaves:tremorsaurus"
+      },
+      {
+        "required": false,
+        "id": "alexscaves:tremorsaurus"
+      },
+    {
+      "required": false,
+      "id": "alexscaves:luxtructosaurus"
+    },
+    {
+      "required": false,
+      "id": "alexsmobs:void_worm"
+    },
+    {
+      "required": false,
+      "id": "alexsmobs:void_worm_splitter"
+    },
+    {
+      "required": false,
+      "id": "blue_skies:summoner"
+    },
+    {
+      "required": false,
+      "id": "blue_skies:alchemist"
+    },
+    {
+      "required": false,
+      "id": "blue_skies:starlit_crusher"
+    },
+    {
+      "required": false,
+      "id": "blue_skies:arachnarch"
+    },
+    {
+      "required": false,
+      "id": "bosses_of_mass_destruction:lich"
+    },
+    {
+      "required": false,
+      "id": "bosses_of_mass_destruction:obsidilith"
+    },
+    {
+      "required": false,
+      "id": "bosses_of_mass_destruction:gauntlet"
+    },
+    {
+      "required": false,
+      "id": "bosses_of_mass_destruction:void_blossom"
+    },
+    {
+      "required": false,
+      "id": "iceandfire:ice_dragon"
+    },
+    {
+      "required": false,
+      "id": "iceandfire:fire_dragon"
+    },
+    {
+      "required": false,
+      "id": "iceandfire:lightning_dragon"
+    },
+    {
+      "required": false,
+      "id": "twilightforest:naga"
+    },
+    {
+      "required": false,
+      "id": "twilightforest:lich"
+    },
+    {
+      "required": false,
+      "id": "twilightforest:minoshroom"
+    },
+    {
+      "required": false,
+      "id": "twilightforest:hydra"
+    },
+    {
+      "required": false,
+      "id": "twilightforest:knight_phantom"
+    },
+    {
+      "required": false,
+      "id": "twilightforest:ur_ghast"
+    },
+    {
+      "required": false,
+      "id": "twilightforest:alpha_yeti"
+    },
+    {
+      "required": false,
+      "id": "twilightforest:snow_queen"
+    },
+    {
+      "required": false,
+      "id": "twilightforest:plateau_boss"
+    },
+    {
+      "required": false,
+      "id": "cataclysm:ignis"
+    },
+    {
+      "required": false,
+      "id": "cataclysm:netherite_monstrosity"
+    },
+    {
+      "required": false,
+      "id": "cataclysm:ender_guardian"
+    },
+    {
+      "required": false,
+      "id": "cataclysm:the_harbinger"
+    },
+    {
+      "required": false,
+      "id": "cataclysm:the_leviathan"
+    },
+    {
+      "required": false,
+      "id": "cataclysm:ancient_remnant"
+    }
   ]
 }

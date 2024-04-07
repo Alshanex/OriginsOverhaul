@@ -26,6 +26,8 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 import java.util.Optional;
+
+@AutoSpellConfig
 public class EnderStomp extends AbstractSpell{
 
     private final ResourceLocation spellId = new ResourceLocation(IronsSpellbooks.MODID, "ender_stomp");
