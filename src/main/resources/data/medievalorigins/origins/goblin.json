@@ -9,10 +9,9 @@
                 "medievalorigins:goblin/cunning",
                 "medievalorigins:goblin/nippy",
                 "medievalorigins:goblin/stunted",
-                "medievalorigins:goblin/goblin_evo",
                 "medievalorigins:goblin/lethal",
-		"medievalorigins:goblin/frail",
       "medievalorigins:goblin/reset_cds",
+      "medievalorigins:goblin/goblin_evo",
       "origins:goblin_evolution"
 	],
         "icon": {

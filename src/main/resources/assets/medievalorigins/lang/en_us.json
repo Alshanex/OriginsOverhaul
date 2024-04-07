@@ -298,8 +298,8 @@
   "power.medievalorigins.goblin/frail.name": "Frail",
   "power.medievalorigins.goblin/frail.description": "Due to their small stature, goblins' have less health and are more prone to damage.",
 
-  "power.medievalorigins.goblin/greedy.name": "Greedy",
-  "power.medievalorigins.goblin/greedy.description": "Goblins have a special relationship with treasure - they gain extra bonuses when using or wearing golden gear.",
+  "power.medievalorigins.goblin/greedy.name": "Lucky",
+  "power.medievalorigins.goblin/greedy.description": "Goblins are naturally lucky, so they get extra bonuses.",
 
   "power.medievalorigins.goblin/durability.name": "Careful Hoarder",
   "power.medievalorigins.goblin/durability.description": "Gold in a goblin's hands lasts for much longer than most others who are careless with it.",
@@ -311,7 +311,7 @@
   "power.medievalorigins.goblin/stunted.description": "Goblins are two thirds the height of a human.",
 
   "power.medievalorigins.goblin/lethal.name": "Lucky Strike",
-  "power.medievalorigins.goblin/lethal.description": "Your confidence in your luck makes you attempt very risky attacks, and sometimes they surprisingly work dealing lethal amounts of damage to your opponent.",
+  "power.medievalorigins.goblin/lethal.description": "Your confidence in your luck makes you attempt very risky attacks, and sometimes they surprisingly work dealing more critical hits with more critical damage to your opponent.",
 
   "power.medievalorigins.goblin/haste.name": "Ancient Ritual",
   "power.medievalorigins.goblin/haste.description": "Goblins know how to perform ancient rituals that raises their fighting spirit, gaining a buff for a small period of time.",
@@ -443,13 +443,13 @@
   "power.medievalorigins.ogre/ravenous.description": "Ogres are almost never full; they need to eat near constantly to stay satisfied.'",
 
   "power.medievalorigins.ogre/ravager.name": "Ravager",
-  "power.medievalorigins.ogre/ravager.description": "Axes feel right in an Ogre's hand; this comfort allows them to swing with much more force.",
+  "power.medievalorigins.ogre/ravager.description": "All kind of weapons feel right in an Ogre's hand; this comfort allows them to deal more damage with them.",
 
   "power.medievalorigins.ogre/bloodlust.name": "Bloodlust",
   "power.medievalorigins.ogre/bloodlust.description": "Ogres are known to unpredictably fly into a blinding rage, where they can stomp through a horde of foes quickly but can barely make out what's happening around them. ",
 
-  "power.medievalorigins.ogre/sluggish.name": "Sluggish",
-  "power.medievalorigins.ogre/sluggish.description": "Likely as an adaptation to conserve some of their energy despite their massive size, ogres are quite slow.",
+  "power.medievalorigins.ogre/sluggish.name": "Long Steps",
+  "power.medievalorigins.ogre/sluggish.description": "As a result of the absurd amount of food Ogres eat and how big they are, Ogres are quite fast.",
 
   "power.medievalorigins.ogre/stocky.name": "Stocky",
   "power.medievalorigins.ogre/stocky.description": "Ogres are beefy and resilient. Their thick skin and dense bones make them able to tank many more hits before needing to recover.",
@@ -468,6 +468,9 @@
 
   "power.medievalorigins.ogre/damage_resource.name": "Consecutive Hits",
   "power.medievalorigins.ogre/damage_resource.description": "For each hit ogres make, they get more and more infuriated. For each hit you make, your hits bar will increase, allowing you to deal more damage when specific amounts of charges are reached, but they reset if you don't hit an enemy for 5 seconds.",
+
+  "power.medievalorigins.ogre/secondary.name": "Slam",
+  "power.medievalorigins.ogre/secondary.description": "You slam the ground with your powerful legs, dealing damage to your enemies. Triggered with Secondary Ability key.",
 
   "power.medievalorigins.pixie/curse_of_flight.name": "Curse of Flight",
   "power.medievalorigins.pixie/curse_of_flight.description": "The very wings which allows pixies to fly also prevent them from flying using any other wings, or wearing any chestplates more substantial than leather.",

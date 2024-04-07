@@ -47,7 +47,7 @@
 			},
 			{
 				"type": "origins:delay",
-				"ticks": 20,
+				"ticks": 10,
 				"action": {
 					"type": "origins:actor_action",
 					"action": {
@@ -58,7 +58,7 @@
 			},
 			{
 				"type": "origins:delay",
-				"ticks": 22,
+				"ticks": 12,
 				"action": {
 					"type": "origins:actor_action",
 					"action": {
