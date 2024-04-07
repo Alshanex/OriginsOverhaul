@@ -15,7 +15,8 @@
 		"origins:reset_cds_phantom",
 		"origins:check_speed_phantom",
 		"origins:charges_phantom",
-		"origins:phantom_stacks"
+		"origins:phantom_stacks",
+		"origins:stack_down_phantom"
 	],
 	"icon": {
 		"item": "minecraft:phantom_membrane"

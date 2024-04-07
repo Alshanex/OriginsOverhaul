@@ -13,7 +13,15 @@
 				"ticks": 2,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "cast @p gust 5"
+					"command": "cast @p gust 6"
+				}
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 18,
+				"action": {
+					"type": "origins:execute_command",
+					"command": "cast @p firecracker 20"
 				}
 			},
 			{

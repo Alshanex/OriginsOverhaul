@@ -6,7 +6,7 @@
     "resource": {
         "type": "origins:resource",
         "min": 100,
-        "max": 500,
+        "max": 300,
         "hud_render": {
             "should_render": true,
             "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",

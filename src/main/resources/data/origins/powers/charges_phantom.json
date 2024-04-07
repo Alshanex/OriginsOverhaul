@@ -6,7 +6,7 @@
 		"type": "origins:if_else",
 		"condition": {
 			"type": "origins:resource",
-			"resource": "medievalorigins:death_spirit/phantom_stacks",
+			"resource": "origins:phantom_stacks",
 			"comparison": "<",
 			"compare_to": 60
 		},
@@ -16,7 +16,7 @@
 				"operation": "add_base_early",
 				"value": 1
 			},
-			"resource": "medievalorigins:death_spirit/phantom_stacks"
+			"resource": "origins:phantom_stacks"
 		}
 	},
 	"interval": 50

@@ -22,7 +22,7 @@
         }
     	]
 	},
-	"cooldown": 900,
+	"cooldown": 500,
 	"key": {
 		"key": "key.origins.secondary_active",
 		"continuous": false

@@ -9,6 +9,6 @@
     "type": "origins:resource",
     "resource": "origins:phantom_stacks",
     "comparison": ">",
-    "compare_to": 0
+    "compare_to": 5
   }
 }
