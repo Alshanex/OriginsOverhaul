@@ -1,4 +1,5 @@
 {
+	"loading_priority": 1,
 	"type": "origins:multiple",
 	"raise_wall": {
 		"type": "origins:active_self",
