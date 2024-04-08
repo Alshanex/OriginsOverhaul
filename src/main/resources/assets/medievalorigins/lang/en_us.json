@@ -537,7 +537,7 @@
   "power.medievalorigins.plague_victim/fire_damage.description": "It is well known that the best method to exterminate a plague is burning it to ashes, so you should stay away from every source of fire you encounter.",
 
   "power.medievalorigins.plague_victim/blood_needles.name": "Bloody Needles",
-  "power.medievalorigins.plague_victim/blood_needles.description": "Plague Victims are able to manipulate surrounding  blood to make a couple of blood needles and launch them to their enemies.",
+  "power.medievalorigins.plague_victim/blood_needles.description": "Plague Victims are able to manipulate surrounding  blood to make a couple of blood needles and launch them to their enemies, being able to cast 3 blood needles in a row.",
 
   "power.medievalorigins.plague_victim/blood_ray.name": "Vampiric Ray",
   "power.medievalorigins.plague_victim/blood_ray.description": "Plague Victims can unleash a blood ray towards their enemies, leeching some of their life if they die.",
@@ -574,6 +574,9 @@
 
   "power.medievalorigins.siren/siren_evo.name": "Evolution",
   "power.medievalorigins.siren/siren_evo.description": "Find the Sea Essence to evolve. This item was guarded by an ancient civilization that lived underwater, but an ancient abyssal beast took control of the place.",
+
+  "power.medievalorigins.siren/scales.name": "Ocean's Wish",
+  "power.medievalorigins.siren/scales.description": "Every 5 minutes you get a gift from the Ocean to help you survive, which is a random serpent scale.",
 
   "power.medievalorigins.troll/apex_predator.name": "Apex Predator",
   "power.medievalorigins.troll/apex_predator.description": "Trolls cannot eat regular foodstuffs, and can only satiate their hunger by slaughtering other creautres.",
@@ -669,7 +672,7 @@
   "power.medievalorigins.revenant/revenant_evo.description": "Find the Summoning Tome to evolve. This book is currently in the king of death spellbooks' collection.",
 
   "power.medievalorigins.specter/jump.name": "Into the air!",
-  "power.medievalorigins.specter/jump.description": "Launch enemies and yourself into the air, triggered with Secondary Ability key. The combo uses evocation magic damage. Short range combo with very high movility.",
+  "power.medievalorigins.specter/jump.description": "Launch enemies and yourself into the air and then launch yourself forward in a powerful dash, triggered with Secondary Ability key.",
 
   "power.medievalorigins.specter/gust.name": "Tornado",
   "power.medievalorigins.specter/gust.description": "Make a small gust that knocks your enemies away, triggered with Primary Ability key.",
@@ -693,7 +696,7 @@
   "power.medievalorigins.sea_serpent/buff.description": "When water is present around you, you recover your original power, becoming stronger than before.",
 
   "power.medievalorigins.sea_serpent/sea_heart.name": "Shedding",
-  "power.medievalorigins.sea_serpent/sea_heart.description": "Every 5 minutes, you shed your skin, which reacts with the air forming a heart of the sea, along with the rest of the skin that didn't convert. Upon right clicking a heart of the sea, a storm will be summoned, helping you survive better on land.",
+  "power.medievalorigins.sea_serpent/sea_heart.description": "Every 5 minutes, you shed your skin, which you can then fuse with Middle Button click to form a heart of the sea, along with the rest of the skin that didn't convert. Upon right clicking a heart of the sea, a storm will be summoned, helping you survive better on land.",
 
   "power.medievalorigins.pest_doctor/acid_orb.name": "Spreading Toxicity",
   "power.medievalorigins.pest_doctor/acid_orb.description": "4 steps combo combining blood magic with nature (poison) magic, with short-mid range high magic damage. Triggered with Primary Ability key.",
@@ -720,10 +723,10 @@
   "power.medievalorigins.medusa/secondary.description": "Upon pressing your Secondary Ability key, you spread poison everywhere around you.",
 
   "power.medievalorigins.medusa/change_mode.name": "Two-faced",
-  "power.medievalorigins.medusa/change_mode.description": "You can swap between your human form and your snake form by pressing your Sprint keybind.",
+  "power.medievalorigins.medusa/change_mode.description": "You can swap between your human form and your snake form by pressing your Middle Click button.",
 
   "power.medievalorigins.death_caller/buff.name": "Blood Ritual",
-  "power.medievalorigins.death_caller/buff.description": "Upon pressing your Sprint keybind, you perform an ancient ritual to buff yourself and all your summons.",
+  "power.medievalorigins.death_caller/buff.description": "Upon pressing your Middle Click button, you perform an ancient ritual to buff yourself and all your summons.",
 
   "power.medievalorigins.death_caller/summon.name": "Summoning Ritual",
   "power.medievalorigins.death_caller/summon.description": "You can press Secondary Ability key to perform a summoning ritual that will bring you powerful allies. If you crouch you will summon undead creatures from the dephts of the earth, but if you don't crouch you will summon powerful vexes instead.",
@@ -738,7 +741,7 @@
   "power.medievalorigins.king_under_mountain/secondary.description": "Every short period of time, you will get a shield charge, which you can use to summon a powerful shield by pressing your Secondary Ability key.",
 
   "power.medievalorigins.king_under_mountain/buff.name": "War Scream",
-  "power.medievalorigins.king_under_mountain/buff.description": "Upon pressing your Sprint keybind, you will perform a war scream that will empower yourself and your close allies.",
+  "power.medievalorigins.king_under_mountain/buff.description": "Upon pressing your Middle Click button, you will perform a war scream that will empower yourself and your close allies.",
 
   "power.medievalorigins.king_under_mountain/primary.name": "Stomp",
   "power.medievalorigins.king_under_mountain/primary.description": "You can make a powerful stomp to stun and launch your enemies into the air, which then you can follow up with a smash to finish off your enemies. Triggered with Primary Ability key.",
@@ -753,7 +756,7 @@
   "power.medievalorigins.bastet/dash.description": "Good side: Heal and buff yourself with your holy magic powers.\nEvil side: Make a swift dash to get behind your enemies without them even noticing.",
 
   "power.medievalorigins.death_spirit/buff.name": "Thunder Blessing",
-  "power.medievalorigins.death_spirit/buff.description": "Upon pressing Sprint keybind, you will get the thunder blessing, empowering you and allowing you to glide.",
+  "power.medievalorigins.death_spirit/buff.description": "Upon pressing Middle Click button, you will get the thunder blessing, empowering you and allowing you to glide.",
 
   "power.medievalorigins.death_spirit/phantomize.name": "Phantomize",
   "power.medievalorigins.death_spirit/phantomize.description": "You can use all your Phantom Stacks you get over time to phase through enemies and blocks, also getting a speed boost while phantomized. Triggered with your Primary Ability key.",
@@ -786,13 +789,13 @@
   "power.medievalorigins.elf/elfwood_evo.description": "Find a Forest Essence to evolve into a Wood Elf.\nFind a Moon Shard to evolve into a Moon Elf.\nFind a Wisdom Shard to evolve into a High Elf.\nYou might need to explore the Blue Skies dimension in order to find them.",
 
   "power.medievalorigins.ender_titan/primary.name": "Teleportation",
-  "power.medievalorigins.ender_titan/primary.description": "If you have enough portals stacked (portals recharge over time), you will summon a first portal where you are looking and, shortly after, a second portal connected to the first where you are looking. If not enough portal stacks, you will teleport normally. Triggered with Secondary Ability key.",
+  "power.medievalorigins.ender_titan/primary.description": "If you have enough portals stacked (portals recharge over time), you will summon a first portal where you are looking and, shortly after, a second portal connected to the first where you are looking. If not enough portal stacks, you will teleport normally. If you aim at an entity or block, you will be teleported to that exact position. Triggered with Secondary Ability key.",
 
   "power.medievalorigins.ender_titan/secondary.name": "Void Power",
   "power.medievalorigins.ender_titan/secondary.description": "You first summon a void vortex that attracts nearby enemies and explode them, then you summon ender powered spikes at your surroundings. Triggered with Primary Ability key.",
 
   "power.medievalorigins.ender_titan/ability_change.name": "Regression",
-  "power.medievalorigins.ender_titan/ability_change.description": "You can travel back to the position you were at 10 seconds ago. You can change mode pressing Sprint keybind.",
+  "power.medievalorigins.ender_titan/ability_change.description": "You can travel back to the position you were at 10 seconds ago. Triggered pressing Middle Click button.",
 
   "power.medievalorigins.ice_titan/primary.name": "Ruler of the Ice Throne",
   "power.medievalorigins.ice_titan/primary.description": "9 steps buildup combo, mid-long range ice magic damage. Triggered with Primary Ability key.",

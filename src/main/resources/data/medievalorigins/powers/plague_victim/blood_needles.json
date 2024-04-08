@@ -22,10 +22,21 @@
 				"action": {
 					"type": "origins:if_else",
 					"condition": {
-						"type": "origins:resource",
-						"resource": "medievalorigins:plague_victim/resource",
-						"comparison": "==",
-						"compare_to": 1
+						"type": "origins:or",
+						"conditions": [
+							{
+								"type": "origins:resource",
+								"resource": "medievalorigins:plague_victim/resource",
+								"comparison": "==",
+								"compare_to": 1
+							},
+							{
+								"type": "origins:resource",
+								"resource": "medievalorigins:plague_victim/resource",
+								"comparison": "==",
+								"compare_to": 2
+							}
+						]
 					},
 					"if_action": {
 						"type": "origins:change_resource",

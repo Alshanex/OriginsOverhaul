@@ -7,12 +7,12 @@
 			{
 				"attribute": "minecraft:generic.attack_damage",
 				"operation": "MULTIPLY_BASE",
-				"value": 0.15
+				"value": 0.5
 			},
 			{
 				"attribute": "attributeslib:life_steal",
 				"operation": "MULTIPLY_BASE",
-				"value": 0.15
+				"value": 0.1
 			}
 		]
 	},

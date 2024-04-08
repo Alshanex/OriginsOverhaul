@@ -20,7 +20,7 @@
 			"command": "playsound minecraft:entity.enderman.teleport player @a ~ ~ ~ 0.6 0.5"
 		}
     },
-	"cooldown": 160,
+	"cooldown": 120,
 	"hud_render": {
 		"should_render": true,
 		"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",

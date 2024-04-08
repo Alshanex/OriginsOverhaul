@@ -115,7 +115,7 @@
   "power.origins.scare_creepers.description": "Creepers are scared of you and will only explode if you attack them first.",
 
   "power.origins.launch_into_air.name": "Gift of the Winds",
-  "power.origins.launch_into_air.description": "Every 30 seconds, you are able to launch about 20 blocks up into the air.",
+  "power.origins.launch_into_air.description": "Every 15 seconds, you are able to launch about 20 blocks up into the air.",
 
   "power.origins.elytra.name": "Winged",
   "power.origins.elytra.description": "You have Elytra wings without needing to equip any.",
@@ -148,7 +148,7 @@
   "power.origins.phantom_evo.description": "Find the Spectral Essence to evolve. It is said that a powerful creature that lives in the End dimension uses it as it's core, allowing it to fly freely in that dimension.",
 
   "power.origins.throw_ender_pearl.name": "Teleportation",
-  "power.origins.throw_ender_pearl.description": "You use your innate enderman abilities to teleport wherever you looking at.",
+  "power.origins.throw_ender_pearl.description": "You use your innate enderman abilities to teleport wherever you looking at. If you aim at an entity or block, you will be teleported to that exact position.",
 
   "power.origins.pumpkin_hate.name": "Scared of Gourds",
   "power.origins.pumpkin_hate.description": "You are afraid of pumpkins. For a good reason.",
@@ -229,7 +229,7 @@
   "power.origins.water_weakened.description": "You have always been scared of water, so any contact with it will make you feel very weak.",
 
   "power.origins.ascension.name": "Thunderscales",
-  "power.origins.ascension.description": "You unleash all the elictriciy stored in your scales, dealing lightning damage to all entities near you and pushing you in the air.",
+  "power.origins.ascension.description": "You unleash all the elictriciy stored in your scales, dealing lightning damage to all entities near you.",
 
   "power.origins.blaze_breath.name": "Blaze Breath",
   "power.origins.blaze_breath.description": "You spit out all your inner fire for a couple of seconds, dealing fire damage to the entity you aiming at.",

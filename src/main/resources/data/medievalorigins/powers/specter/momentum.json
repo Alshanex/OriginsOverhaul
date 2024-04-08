@@ -38,7 +38,7 @@
                 {
                     "type": "origins:change_resource",
                     "resource": "*:*_resource",
-                    "change": 4
+                    "change": 2
                 }
             ]
         },
@@ -60,7 +60,7 @@
                 {
                     "type": "origins:change_resource",
                     "resource": "*:*_resource",
-                    "change": -6
+                    "change": -3
                 }
             ]
         },

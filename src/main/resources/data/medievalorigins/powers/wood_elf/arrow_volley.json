@@ -6,7 +6,7 @@
 		"actions": [
 			{
 				"type": "origins:execute_command",
-				"command": "cast @p arrow_volley 5"
+				"command": "cast @p arrow_volley 20"
 			},
 			{
 				"type": "origins:add_velocity",
@@ -14,7 +14,7 @@
 			},
 			{
 				"type": "origins:delay",
-				"ticks": 80,
+				"ticks": 120,
 				"action": {
 					"type": "origins:execute_command",
 					"command": "power remove @p origins:fall_immunity"

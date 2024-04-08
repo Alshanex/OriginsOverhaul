@@ -5,7 +5,7 @@
 		"type": "origins:execute_command",
 		"command": "cast @p poison_breath 3"
 	},
-	"cooldown": 600,
+	"cooldown": 200,
 	"key": {
 		"key": "key.origins.secondary_active"
 	},

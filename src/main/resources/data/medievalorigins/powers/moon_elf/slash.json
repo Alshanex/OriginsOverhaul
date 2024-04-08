@@ -9,11 +9,19 @@
 					"type": "origins:add_velocity",
 					"space": "local_horizontal_normalized",
 					"client": false,
-					"z": -3
+					"z": -2
 				},
 				{
 					"type": "origins:delay",
 					"ticks": 14,
+					"action": {
+						"type": "origins:execute_command",
+						"command": "cast @p blood_slash 5"
+					}
+				},
+				{
+					"type": "origins:delay",
+					"ticks": 24,
 					"action": {
 						"type": "origins:execute_command",
 						"command": "cast @p blood_slash 5"

@@ -6,11 +6,19 @@
 		"actions": [
 			{
 				"type": "origins:execute_command",
-				"command": "cast @p ascension 10"
+				"command": "cast @p shockwave 10"
 			},
 			{
 				"type": "origins:delay",
-				"ticks": 2,
+				"ticks": 10,
+				"action": {
+					"type": "origins:execute_command",
+					"command": "cast @p ascension 10"
+				}
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 12,
 				"action": {
 					"type": "origins:execute_command",
 					"command": "power remove @p medievalorigins:death_spirit/jump"
@@ -18,7 +26,7 @@
 			},
 			{
 				"type": "origins:delay",
-				"ticks": 2,
+				"ticks": 14,
 				"action": {
 					"type": "origins:execute_command",
 					"command": "power grant @p medievalorigins:death_spirit/lance"

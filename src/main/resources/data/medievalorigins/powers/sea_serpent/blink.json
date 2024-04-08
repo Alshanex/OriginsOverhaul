@@ -88,8 +88,25 @@
                 ]
             },
             "else_action": {
-                "type": "origins:add_velocity",
-                "y": 1
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:add_velocity",
+                        "y": 1
+                    },
+                    {
+                        "type": "origins:execute_command",
+                        "command": "power grant @p origins:fall_immunity"
+                    },
+                    {
+                        "type": "origins:delay",
+                        "ticks": 80,
+                        "action": {
+                            "type": "origins:execute_command",
+                            "command": "power remove @p origins:fall_immunity"
+                        }
+                    }
+                ]
             }
         }
     },

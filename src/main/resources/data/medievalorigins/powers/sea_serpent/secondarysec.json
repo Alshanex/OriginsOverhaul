@@ -13,27 +13,30 @@
                 "command": "cast @p water_cut 10"
             },
             {
-                "type": "origins:delay",
-                "ticks": 2,
-                "action": {
-                    "type": "origins:execute_command",
-                    "command": "power remove @p medievalorigins:sea_serpent/secondarysec"
-                }
+                "type": "origins:modify_resource",
+                "modifier": {
+                    "operation": "add_base_early",
+                    "value": 1
+                },
+                "resource": "medievalorigins:sea_serpent/slashes"
             },
             {
                 "type": "origins:delay",
                 "ticks": 4,
                 "action": {
-                    "type": "origins:execute_command",
-                    "command": "power grant @p medievalorigins:sea_serpent/secondary"
-                }
-            },
-            {
-                "type": "origins:delay",
-                "ticks": 6,
-                "action": {
-                    "type": "origins:trigger_cooldown",
-                    "power": "medievalorigins:sea_serpent/secondary"
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "medievalorigins:sea_serpent/slashes",
+                        "comparison": "==",
+                        "compare_to": 1
+                    },
+                    "if_action": {
+                        "type": "origins:change_resource",
+                        "resource": "medievalorigins:sea_serpent/secondarysec",
+                        "operation": "set",
+                        "change": 0
+                    }
                 }
             }
         ]

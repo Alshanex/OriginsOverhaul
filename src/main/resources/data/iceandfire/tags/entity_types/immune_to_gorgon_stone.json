@@ -25,10 +25,6 @@
         "required": false,
         "id": "alexscaves:tremorsaurus"
       },
-      {
-        "required": false,
-        "id": "alexscaves:tremorsaurus"
-      },
     {
       "required": false,
       "id": "alexscaves:luxtructosaurus"
@@ -144,6 +140,46 @@
     {
       "required": false,
       "id": "cataclysm:ancient_remnant"
+    },
+    {
+      "required": false,
+      "id": "eeeabsmobs:nameless_guardian"
+    },
+    {
+      "required": false,
+      "id": "aether:sun_spirit"
+    },
+    {
+      "required": false,
+      "id": "aether:slider"
+    },
+    {
+      "required": false,
+      "id": "aether:valkyrie_queen"
+    },
+    {
+      "required": false,
+      "id": "graveyard:lich"
+    },
+    {
+      "required": false,
+      "id": "aquamirae:captain_cornelia"
+    },
+    {
+      "required": false,
+      "id": "conjurer_illager:conjurer"
+    },
+    {
+      "required": false,
+      "id": "irons_spellbooks:dead_king"
+    },
+    {
+      "required": false,
+      "id": "born_in_chaos_v1:sir_pumpkinhead"
+    },
+    {
+      "required": false,
+      "id": "born_in_chaos_v1:lord_pumpkinhead"
     }
   ]
 }

@@ -1,0 +1,66 @@
+{
+	"loading_priority":1,
+	"type": "origins:action_over_time",
+	"entity_action": {
+		"type": "origins:choice",
+		"actions": [
+			{
+				"type": "origins:give",
+				"stack": {
+					"item": "iceandfire:sea_serpent_scales_blue",
+					"amount": 1
+				},
+				"weight": 10
+			},
+			{
+				"type": "origins:give",
+				"stack": {
+					"item": "iceandfire:sea_serpent_scales_red",
+					"amount": 1
+				},
+				"weight": 10
+			},
+			{
+				"type": "origins:give",
+				"stack": {
+					"item": "iceandfire:sea_serpent_scales_bronze",
+					"amount": 1
+				},
+				"weight": 10
+			},
+			{
+				"type": "origins:give",
+				"stack": {
+					"item": "iceandfire:sea_serpent_scales_green",
+					"amount": 1
+				},
+				"weight": 10
+			},
+			{
+				"type": "origins:give",
+				"stack": {
+					"item": "iceandfire:sea_serpent_scales_purple",
+					"amount": 1
+				},
+				"weight": 10
+			},
+			{
+				"type": "origins:give",
+				"stack": {
+					"item": "iceandfire:sea_serpent_scales_teal",
+					"amount": 1
+				},
+				"weight": 10
+			},
+			{
+				"type": "origins:give",
+				"stack": {
+					"item": "iceandfire:sea_serpent_scales_deepblue",
+					"amount": 1
+				},
+				"weight": 10
+			}
+		]
+	},
+	"interval": 6000
+}

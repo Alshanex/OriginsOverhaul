@@ -17,7 +17,7 @@
 				"show_particles": false,
 				"show_icon": false,
 				"amplifier": 4,
-				"duration": 400
+				"duration": 260
 				},
 				{
 					"effect": "minecraft:instant_damage",
@@ -31,7 +31,7 @@
         }
     	]
 	},
-	"cooldown": 700,
+	"cooldown": 300,
 	"key": {
 		"key": "key.origins.secondary_active",
 		"continuous": false

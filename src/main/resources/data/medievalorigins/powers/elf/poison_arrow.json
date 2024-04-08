@@ -5,7 +5,7 @@
 		"type": "origins:execute_command",
 		"command": "cast @p poison_arrow 8"
     },
-	"cooldown": 360,
+	"cooldown": 160,
 	"hud_render": {
 		"should_render": true,
 		"sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",

@@ -1,13 +1,15 @@
 {
         "loading_priority": 12,
 	"powers": [
+      "medievalorigins:siren/seduce",
                 "medievalorigins:siren/siren_song",
                 "medievalorigins:siren/amphibious",
                 "medievalorigins:siren/holy_water",
                 "medievalorigins:siren/out_of_your_depth",
                 "medievalorigins:siren/water_vision",
                 "medievalorigins:siren/damage_underwater",
-                "medievalorigins:siren/seduce",
+      "medievalorigins:siren/resource",
+      "medievalorigins:siren/scales",
       "medievalorigins:siren/siren_evo",
       "origins:siren_evolution"
 	],
