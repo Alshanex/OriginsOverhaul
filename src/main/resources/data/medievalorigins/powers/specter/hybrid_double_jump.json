@@ -1,257 +1,261 @@
 {
-  "name": "Hybrid Double Jump",
-  "description": "You gain a double jump and dash at the same time!",
-
   "type": "origins:multiple",
-  "resource": {
-    "type": "origins:resource",
-    "min": 0,
-    "max": 1,
-    "hud_render": {
-      "should_render": false
-    },
-    "start_value": 1
-  },
-  "jumpcheckresource": {
-    "type": "origins:resource",
-    "min": 0,
-    "max": 1,
-    "start_value": 0
-  },
-  "jump": {
+  "active": {
     "type": "origins:active_self",
-    "hud_render": {
-      "should_render": false
-    },
+    "cooldown": 10,
     "key": {
-      "key": "key.jump"
+      "key": "key.jump",
+      "continuous": false
     },
-    "cooldown": 0,
+    "condition": {
+      "type": "origins:on_block",
+      "inverted": true
+    },
     "entity_action": {
       "type": "origins:and",
       "actions": [
         {
-          "type": "origins:add_velocity",
-          "y": 0.75,
-          "space": "world",
-          "set": true
+          "type": "origins:play_sound",
+          "sound": "minecraft:entity.player.attack.sweep"
         },
         {
-          "type": "origins:change_resource",
-          "resource": "*:*_resource",
-          "change": -1
-        },
-        {
-          "type": "origins:execute_command",
-          "command": "execute at @s run playsound minecraft:entity.ender_dragon.flap master @a[distance=..4] ~ ~ ~ 1 1.4",
-          "permission_level": 4
-        },
-        {
-          "type": "origins:execute_command",
-          "command": "execute at @s run particle minecraft:cloud ~ ~ ~ 0.3 0 0.3 0.1 15",
-          "permission_level": 4
-        }
-      ]
-    },
-    "condition": {
-      "type": "origins:and",
-      "conditions": [
-        {
-          "type": "origins:resource",
-          "resource": "*:*_resource",
-          "comparison": ">",
-          "compare_to": 0
-        },
-        {
-          "type":"origins:sneaking",
-          "inverted": true
-        },
-        {
-          "type": "origins:on_block",
-          "inverted": true
-        },
-        {
-          "type": "origins:resource",
-          "resource": "*:*_jumpcheckresource",
-          "comparison": ">=",
-          "compare_to": 1
-        },
-        {
-          "type": "origins:gamemode",
-          "gamemode": "creative",
-          "inverted": true
-        },
-        {
-          "type": "origins:gamemode",
-          "gamemode": "spectator",
-          "inverted": true
-        },
-        {
-          "type": "origins:in_block",
-          "block_condition": {
+          "type": "origins:if_else",
+          "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_w",
+            "comparison": ">",
+            "compare_to": 1
+          },
+          "if_action": {
             "type": "origins:and",
-            "conditions": [
+            "actions": [
               {
-                "type": "origins:block",
-                "block": "minecraft:water",
-                "inverted": true
+                "type": "origins:add_velocity",
+                "y": 0.5,
+                "client": false,
+                "set": true
               },
               {
-                "type": "origins:block",
-                "block": "minecraft:lava",
-                "inverted": true
+                "type": "origins:add_velocity",
+                "space": "local_horizontal_normalized",
+                "client": false,
+                "z": 0.5
+              }
+            ]
+          }
+        },
+        {
+          "type": "origins:if_else",
+          "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_a",
+            "comparison": ">",
+            "compare_to": 1
+          },
+          "if_action": {
+            "type": "origins:and",
+            "actions": [
+              {
+                "type": "origins:add_velocity",
+                "y": 0.5,
+                "client": false,
+                "set": true
+              },
+              {
+                "type": "origins:add_velocity",
+                "space": "local_horizontal_normalized",
+                "client": false,
+                "x": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "origins:if_else",
+          "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_s",
+            "comparison": ">",
+            "compare_to": 1
+          },
+          "if_action": {
+            "type": "origins:and",
+            "actions": [
+              {
+                "type": "origins:add_velocity",
+                "y": 0.5,
+                "client": false,
+                "set": true
+              },
+              {
+                "type": "origins:add_velocity",
+                "space": "local_horizontal_normalized",
+                "client": false,
+                "z": -1
+              }
+            ]
+          }
+        },
+        {
+          "type": "origins:if_else",
+          "condition": {
+            "type": "origins:resource",
+            "resource": "*:*_d",
+            "comparison": ">",
+            "compare_to": 1
+          },
+          "if_action": {
+            "type": "origins:and",
+            "actions": [
+              {
+                "type": "origins:add_velocity",
+                "y": 0.5,
+                "client": false,
+                "set": true
+              },
+              {
+                "type": "origins:add_velocity",
+                "space": "local_horizontal_normalized",
+                "client": false,
+                "x": -1
               }
             ]
           }
         }
+
       ]
     }
   },
-  "jumphorizontal": {
-    "type": "origins:active_self",
-    "hud_render": {
-      "should_render": false
-    },
-    "key": {
-      "key": "key.jump"
-    },
-    "cooldown": 0,
-    "entity_action": {
-      "type": "origins:and",
-      "actions": [
-        {
-          "type": "origins:add_velocity",
-          "z": 0.75, 
-          "space": "local_horizontal_normalized",
-          "set": true
-        },
-        {
-          "type": "origins:change_resource",
-          "resource": "*:*_resource",
-          "change": -1
-        },
-        {
-          "type": "origins:execute_command",
-          "command": "execute at @s run playsound minecraft:entity.ender_dragon.flap master @a[distance=..4] ~ ~ ~ 1 1.4",
-          "permission_level": 4
-        },
-        {
-          "type": "origins:execute_command",
-          "command": "execute at @s run particle minecraft:cloud ~ ~ ~ 0.1 0.5 0.1 0.1 15",
-          "permission_level": 4
-        }
-      ]
-    },
-    "condition": {
-      "type": "origins:and",
-      "conditions": [
-        {
-          "type": "origins:resource",
-          "resource": "*:*_resource",
-          "comparison": ">",
-          "compare_to": 0
-        },
-        {
-          "type":"origins:sneaking"
-        },
-        {
-          "type": "origins:on_block",
-          "inverted": true
-        },
-        {
-          "type": "origins:resource",
-          "resource": "*:*_jumpcheckresource",
-          "comparison": ">=",
-          "compare_to": 1
-        },
-        {
-          "type": "origins:gamemode",
-          "gamemode": "creative",
-          "inverted": true
-        },
-        {
-          "type": "origins:gamemode",
-          "gamemode": "spectator",
-          "inverted": true
-        },
-        {
-          "type": "origins:in_block",
-          "block_condition": {
-            "type": "origins:and",
-            "conditions": [
-              {
-                "type": "origins:block",
-                "block": "minecraft:water",
-                "inverted": true
-              },
-              {
-                "type": "origins:block",
-                "block": "minecraft:lava",
-                "inverted": true
-              }
-            ]
-          }
-        }
-      ]
-    }
+  "w": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 3
   },
-  "onlysecondjump": {
-    "type": "origins:active_self",
-    "hud_render": {
-      "should_render": false
-    },
-    "key": {
-      "key": "key.jump"
-    },
-    "cooldown": 0,
-    "entity_action": {
-      "type": "origins:and",
-      "actions": [
-        {
-          "type": "origins:change_resource",
-          "resource": "*:*_jumpcheckresource",
-          "change": 1
-        }  
-      ]
-    },
-    "condition": {
-      "type": "origins:and",
-      "conditions": [
-        {
-          "type": "origins:resource",
-          "resource": "*:*_jumpcheckresource",
-          "comparison": ">=",
-          "compare_to": 0
-        }
-      ]
-    }
+  "a": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 3
   },
-  "jump_regen": {
+  "s": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 3
+  },
+  "d": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 3
+  },
+  "wdecay": {
     "type": "origins:action_over_time",
     "interval": 1,
     "entity_action": {
-      "type": "origins:and",
-      "actions": [
-        {
-          "type": "origins:change_resource",
-          "resource": "*:*_resource",
-          "change": 1 
-        },
-        {
-          "type": "origins:change_resource",
-          "resource": "*:*_jumpcheckresource",
-          "change": 0,
-          "operation": "set"
-        }
-      ]
+      "type": "origins:change_resource",
+      "resource": "*:*_w",
+      "change": -1
     },
     "condition": {
-      "type": "origins:and",
-      "conditions": [
-        {
-          "type": "origins:on_block"
-        }
-      ]
+      "type": "origins:resource",
+      "resource": "*:*_w",
+      "comparison": ">",
+      "compare_to": 0
+    }
+  },
+  "adecay": {
+    "type": "origins:action_over_time",
+    "interval": 1,
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "*:*_a",
+      "change": -1
+    },
+    "condition": {
+      "type": "origins:resource",
+      "resource": "*:*_a",
+      "comparison": ">",
+      "compare_to": 0
+    }
+  },
+  "sdecay": {
+    "type": "origins:action_over_time",
+    "interval": 1,
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "*:*_s",
+      "change": -1
+    },
+    "condition": {
+      "type": "origins:resource",
+      "resource": "*:*_s",
+      "comparison": ">",
+      "compare_to": 0
+    }
+  },
+  "ddecay": {
+    "type": "origins:action_over_time",
+    "interval": 1,
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "*:*_d",
+      "change": -1
+    },
+    "condition": {
+      "type": "origins:resource",
+      "resource": "*:*_d",
+      "comparison": ">",
+      "compare_to": 0
+    }
+  },
+  "wkey": {
+    "type": "origins:active_self",
+    "cooldown": 1,
+    "key": {
+      "key": "key.forward",
+      "continuous": true
+    },
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "*:*_w",
+      "change": 2
+    }
+  },
+  "akey": {
+    "type": "origins:active_self",
+    "key": {
+      "key": "key.left",
+      "continuous": true
+    },
+    "cooldown": 1,
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "*:*_a",
+      "change": 2
+    }
+  },
+  "skey": {
+    "type": "origins:active_self",
+    "cooldown": 1,
+    "key": {
+      "key": "key.back",
+      "continuous": true
+    },
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "*:*_s",
+      "change": 2
+    }
+  },
+  "dkey": {
+    "type": "origins:active_self",
+    "cooldown": 1,
+    "key": {
+      "key": "key.right",
+      "continuous": true
+    },
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "*:*_d",
+      "change": 2
     }
   }
 }

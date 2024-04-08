@@ -674,7 +674,7 @@
   "power.medievalorigins.specter/gust.description": "Make a small gust that knocks your enemies away, triggered with Primary Ability key.",
 
   "power.medievalorigins.specter/hybrid_double_jump.name": "Cloud Walking",
-  "power.medievalorigins.specter/hybrid_double_jump.description": "You can move freely in the air, you can press the jump key twice to do a double jump, but you can also hold shift to change the double jump into a vertical dash.",
+  "power.medievalorigins.specter/hybrid_double_jump.description": "You can move freely in the air, being able to jump without a block underneath.",
 
   "power.medievalorigins.specter/momentum.name": "Swiftness",
   "power.medievalorigins.specter/momentum.description": "Your natural aerial-like body lets you accumulate speed as long as you keep sprinting, allowing you to deal more damage the faster you are.",

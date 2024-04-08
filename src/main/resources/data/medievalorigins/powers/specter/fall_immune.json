@@ -1,8 +1,20 @@
 {
 	"loading_priority":1,
-	"type": "origins:invulnerability",
-	"damage_condition": {
-		"type": "origins:name",
-		"name": "fall"
+	"type": "origins:multiple",
+
+	"fall": {
+		"type": "origins:invulnerability",
+		"damage_condition": {
+			"type": "origins:name",
+			"name": "fall"
+		}
+	},
+
+	"wall": {
+		"type": "origins:invulnerability",
+		"damage_condition": {
+			"type": "origins:name",
+			"name": "flyIntoWall"
+		}
 	}
 }
