@@ -34,12 +34,24 @@
 				{
 					"type": "apoli:execute_command",
 					"command": "effect give @s minecraft:slow_falling 1 1 true"
+				},
+				{
+					"type": "origins:apply_effect",
+					"effects": [
+						{
+							"effect": "irons_spellbooks:true_invisibility",
+							"duration": 40,
+							"is_ambient": false,
+							"show_particles": false,
+							"show_icon": false
+						}
+					]
 				}
 			]
 		},
-		"cooldown": 60,
+		"cooldown": 80,
 		"key": {
-			"key": "key.sprint",
+			"key": "key.pickItem",
 			"continuous": false
 		}
 	},

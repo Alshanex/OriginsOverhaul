@@ -33,29 +33,25 @@
 				}
 			},
 			{
-				"type": "origins:delay",
-				"ticks": 6,
-				"action": {
-					"type": "origins:apply_effect",
-					"effects": [
-						{
-							"effect": "minecraft:resistance",
-							"duration": 60,
-							"is_ambient": false,
-							"show_particles": false,
-							"show_icon": false,
-							"amplifier": 6
-						},
-						{
-							"effect": "minecraft:slow_falling",
-							"duration": 60,
-							"is_ambient": false,
-							"show_particles": false,
-							"show_icon": false,
-							"amplifier": 255
-						}
-					]
-				}
+				"type": "origins:apply_effect",
+				"effects": [
+					{
+						"effect": "minecraft:resistance",
+						"duration": 60,
+						"is_ambient": false,
+						"show_particles": false,
+						"show_icon": false,
+						"amplifier": 6
+					},
+					{
+						"effect": "minecraft:slow_falling",
+						"duration": 60,
+						"is_ambient": false,
+						"show_particles": false,
+						"show_icon": false,
+						"amplifier": 255
+					}
+				]
 			}
 		]
     },

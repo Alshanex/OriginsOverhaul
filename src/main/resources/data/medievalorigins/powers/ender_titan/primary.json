@@ -36,7 +36,7 @@
 		},
 		"else_action": {
 			"type": "origins:raycast",
-			"distance": 30,
+			"distance": 40,
 			"block": true,
 			"entity": true,
 			"shape_type": "visual",
@@ -46,7 +46,7 @@
 			"command_at_hit": "tp @s ~ ~ ~",
 			"miss_action": {
 				"type": "origins:execute_command",
-				"command": "cast @p teleport 3"
+				"command": "cast @p teleport 4"
 			},
 			"hit_action": {
 				"type": "origins:execute_command",
@@ -54,7 +54,7 @@
 			}
 		}
     },
-	"cooldown": 100,
+	"cooldown": 60,
 	"hud_render": {
 		"should_render": true,
 		"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
