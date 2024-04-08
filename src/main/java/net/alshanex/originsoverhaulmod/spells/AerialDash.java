@@ -10,12 +10,9 @@ import io.redspace.ironsspellbooks.capabilities.magic.ImpulseCastData;
 import io.redspace.ironsspellbooks.damage.SpellDamageSource;
 import io.redspace.ironsspellbooks.player.SpinAttackType;
 import io.redspace.ironsspellbooks.registries.MobEffectRegistry;
-import io.redspace.ironsspellbooks.util.ParticleHelper;
-import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.sounds.SoundEvent;
 import net.minecraft.util.Mth;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.Entity;
@@ -25,7 +22,7 @@ import net.minecraft.world.phys.Vec3;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
-import java.util.Optional;
+
 @AutoSpellConfig
 public class AerialDash extends AbstractSpell{
     private final ResourceLocation spellId = new ResourceLocation(IronsSpellbooks.MODID, "aerial_dash");
@@ -110,7 +107,7 @@ public class AerialDash extends AbstractSpell{
         ));
 
 
-        entity.addEffect(new MobEffectInstance(MobEffectRegistry.AIRBORNE.get(), 15, getDamage(spellLevel, entity), false, false, false));
+        entity.addEffect(new MobEffectInstance(MobEffectRegistry.BURNING_DASH.get(), 15, getDamage(spellLevel, entity), false, false, false));
         entity.invulnerableTime = 20;
         //startSpinAttack(entity, 10);
         playerMagicData.getSyncedData().setSpinAttackType(SpinAttackType.FIRE);
@@ -119,7 +116,7 @@ public class AerialDash extends AbstractSpell{
 
     @Override
     public SpellDamageSource getDamageSource(@Nullable Entity projectile, Entity attacker) {
-        return super.getDamageSource(projectile, attacker).setFireTime(4);
+        return super.getDamageSource(projectile, attacker);
     }
 
     private int getDamage(int spellLevel, LivingEntity caster) {

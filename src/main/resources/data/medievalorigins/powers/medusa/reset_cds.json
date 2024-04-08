@@ -19,5 +19,30 @@
 			}
 		]
 	},
+	"entity_action_respawned": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:execute_command",
+				"command": "power remove @p medievalorigins:medusa/lethal"
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "power remove @p medievalorigins:medusa/breath"
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "power remove @p medievalorigins:medusa/aoe_poison"
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "power remove @p medievalorigins:medusa/secondary"
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "power remove @p medievalorigins:medusa/acid_orb"
+			}
+		]
+	},
 	"execute_chosen_when_orb": true
 }

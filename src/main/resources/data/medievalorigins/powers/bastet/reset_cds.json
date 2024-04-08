@@ -19,5 +19,22 @@
 			}
 		]
 	},
+	"entity_action_respawned": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:execute_command",
+				"command": "power remove @p medievalorigins:bastet/dash"
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "power remove @p medievalorigins:bastet/slash"
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "power remove @p medievalorigins:bastet/evil"
+			}
+		]
+	},
 	"execute_chosen_when_orb": true
 }
