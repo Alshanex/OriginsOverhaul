@@ -6,7 +6,7 @@
 		"actions": [
 			{
 				"type": "origins:execute_command",
-				"command": "cast @p frostwave 5"
+				"command": "cast @s frostwave 5"
 			},
 			{
 				"type": "origins:delay",

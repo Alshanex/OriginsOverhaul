@@ -9,7 +9,7 @@
 			"actions": [
 				{
 					"type": "origins:execute_command",
-					"command": "cast @p electrocute 10"
+					"command": "cast @s electrocute 10"
 				},
 				{
 					"type": "origins:delay",
@@ -28,7 +28,7 @@
 					"ticks": 90,
 					"action": {
 						"type": "origins:execute_command",
-						"command": "power remove @p medievalorigins:high_elf/electrocute"
+						"command": "power remove @s medievalorigins:high_elf/electrocute"
 					}
 				},
 				{
@@ -36,7 +36,7 @@
 					"ticks": 92,
 					"action": {
 						"type": "origins:execute_command",
-						"command": "power grant @p medievalorigins:high_elf/ascension"
+						"command": "power grant @s medievalorigins:high_elf/ascension"
 					}
 				}
 			]

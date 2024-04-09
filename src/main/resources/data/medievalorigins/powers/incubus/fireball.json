@@ -6,7 +6,7 @@
 		"actions": [
 			{
 				"type": "origins:execute_command",
-				"command": "cast @p fireball 8"
+				"command": "cast @s fireball 8"
 			},
 			{
 				"type": "origins:add_velocity",
@@ -18,7 +18,7 @@
 				"ticks": 80,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power remove @p origins:fall_immunity"
+					"command": "power remove @s origins:fall_immunity"
 				}
 			},
 			{
@@ -26,7 +26,7 @@
 				"ticks": 6,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power remove @p origins:no_cast_time"
+					"command": "power remove @s origins:no_cast_time"
 				}
 			},
 			{
@@ -34,7 +34,7 @@
 				"ticks": 2,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power remove @p medievalorigins:incubus/fireball"
+					"command": "power remove @s medievalorigins:incubus/fireball"
 				}
 			},
 			{
@@ -42,7 +42,7 @@
 				"ticks": 4,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power grant @p medievalorigins:incubus/slash"
+					"command": "power grant @s medievalorigins:incubus/slash"
 				}
 			},
 			{

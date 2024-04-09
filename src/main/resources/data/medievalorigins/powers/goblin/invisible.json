@@ -6,7 +6,7 @@
     	"actions": [
         {
             "type": "origins:execute_command",
-    		"command": "cast @p invisibility 2"
+    		"command": "cast @s invisibility 2"
         },
         {    
             "type": "origins:apply_effect",

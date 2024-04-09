@@ -6,7 +6,7 @@
 		"actions": [
 			{
 				"type": "origins:execute_command",
-				"command": "cast @p firebolt 7"
+				"command": "cast @s firebolt 7"
 			},
 			{
 				"type": "origins:modify_resource",

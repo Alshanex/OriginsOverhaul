@@ -6,14 +6,14 @@
 		"actions": [
 			{
 				"type": "origins:execute_command",
-				"command": "power remove @p medievalorigins:high_elf/ascension"
+				"command": "power remove @s medievalorigins:high_elf/ascension"
 			},
 			{
 				"type": "origins:delay",
 				"ticks": 2,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power remove @p medievalorigins:high_elf/frostray"
+					"command": "power remove @s medievalorigins:high_elf/frostray"
 				}
 			},
 			{
@@ -21,7 +21,7 @@
 				"ticks": 4,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power grant @p medievalorigins:high_elf/electrocute"
+					"command": "power grant @s medievalorigins:high_elf/electrocute"
 				}
 			}
 		]

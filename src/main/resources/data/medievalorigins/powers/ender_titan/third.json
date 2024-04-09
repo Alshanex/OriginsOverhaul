@@ -14,14 +14,14 @@
 			},
 			{
 				"type": "origins:execute_command",
-				"command": "cast @p ender_stomp 10"
+				"command": "cast @s ender_stomp 10"
 			},
 			{
 				"type": "origins:delay",
 				"ticks": 2,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power remove @p medievalorigins:ender_titan/third"
+					"command": "power remove @s medievalorigins:ender_titan/third"
 				}
 			},
 			{
@@ -29,7 +29,7 @@
 				"ticks": 4,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power grant @p medievalorigins:ender_titan/secondary"
+					"command": "power grant @s medievalorigins:ender_titan/secondary"
 				}
 			},
 			{

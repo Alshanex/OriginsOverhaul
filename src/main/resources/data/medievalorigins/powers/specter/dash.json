@@ -6,14 +6,14 @@
 		"actions": [
 			{
 				"type": "origins:execute_command",
-				"command": "cast @p aerial_dash 10"
+				"command": "cast @s aerial_dash 10"
 			},
 			{
 				"type": "origins:delay",
 				"ticks": 2,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power remove @p medievalorigins:specter/dash"
+					"command": "power remove @s medievalorigins:specter/dash"
 				}
 			},
 			{
@@ -21,7 +21,7 @@
 				"ticks": 4,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power grant @p medievalorigins:specter/jump"
+					"command": "power grant @s medievalorigins:specter/jump"
 				}
 			},
 			{

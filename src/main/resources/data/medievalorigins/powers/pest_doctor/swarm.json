@@ -6,14 +6,14 @@
 		"actions": [
 			{
 				"type": "origins:execute_command",
-				"command": "power grant @p origins:no_cast_time"
+				"command": "power grant @s origins:no_cast_time"
 			},
 			{
 				"type": "origins:delay",
 				"ticks": 2,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "cast @p firefly_swarm 10"
+					"command": "cast @s firefly_swarm 10"
 				}
 			},
 			{
@@ -21,7 +21,7 @@
 				"ticks": 4,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power remove @p origins:no_cast_time"
+					"command": "power remove @s origins:no_cast_time"
 				}
 			},
 			{
@@ -29,7 +29,7 @@
 				"ticks": 6,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power remove @p medievalorigins:pest_doctor/swarm"
+					"command": "power remove @s medievalorigins:pest_doctor/swarm"
 				}
 			},
 			{
@@ -37,7 +37,7 @@
 				"ticks": 8,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power grant @p medievalorigins:pest_doctor/devour"
+					"command": "power grant @s medievalorigins:pest_doctor/devour"
 				}
 			},
 			{

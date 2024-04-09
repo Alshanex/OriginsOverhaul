@@ -13,7 +13,7 @@
 		"command_at_hit": "tp @s ~ ~ ~",
 		"miss_action": {
 			"type": "origins:execute_command",
-			"command": "cast @p teleport 3"
+			"command": "cast @s teleport 3"
 		},
 		"hit_action": {
 			"type": "origins:execute_command",

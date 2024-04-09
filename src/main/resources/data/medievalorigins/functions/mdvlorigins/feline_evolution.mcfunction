@@ -1,2 +1,2 @@
-power clear @p
-origin set @p origins:origin medievalorigins:bastet
+power clear @s
+origin set @s origins:origin medievalorigins:bastet

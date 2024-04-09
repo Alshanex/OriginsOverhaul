@@ -6,7 +6,7 @@
 		"actions": [
 			{
 				"type": "origins:execute_command",
-				"command": "cast @p arrow_volley 20"
+				"command": "cast @s arrow_volley 20"
 			},
 			{
 				"type": "origins:add_velocity",
@@ -17,7 +17,7 @@
 				"ticks": 120,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power remove @p origins:fall_immunity"
+					"command": "power remove @s origins:fall_immunity"
 				}
 			},
 			{
@@ -25,7 +25,7 @@
 				"ticks": 6,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power remove @p origins:no_cast_time"
+					"command": "power remove @s origins:no_cast_time"
 				}
 			},
 			{
@@ -33,7 +33,7 @@
 				"ticks": 2,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power remove @p medievalorigins:wood_elf/arrow_volley"
+					"command": "power remove @s medievalorigins:wood_elf/arrow_volley"
 				}
 			},
 			{
@@ -41,7 +41,7 @@
 				"ticks": 4,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power grant @p medievalorigins:wood_elf/magic_arrow"
+					"command": "power grant @s medievalorigins:wood_elf/magic_arrow"
 				}
 			},
 			{

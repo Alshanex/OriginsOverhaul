@@ -17,7 +17,7 @@
 				"ticks": 2,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power remove @p medievalorigins:ice_titan/primary"
+					"command": "power remove @s medievalorigins:ice_titan/primary"
 				}
 			},
 			{
@@ -25,7 +25,7 @@
 				"ticks": 50,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power grant @p medievalorigins:ice_titan/primary"
+					"command": "power grant @s medievalorigins:ice_titan/primary"
 				}
 			}
 		]

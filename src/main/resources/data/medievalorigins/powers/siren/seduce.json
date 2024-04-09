@@ -5,7 +5,7 @@
         "actions": [
             {
                 "type": "origins:execute_command",
-                "command": "cast @p water_cut 3"
+                "command": "cast @s water_cut 3"
             },
             {
                 "type": "origins:modify_resource",

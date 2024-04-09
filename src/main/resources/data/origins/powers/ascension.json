@@ -6,7 +6,7 @@
 		"actions": [
 			{
 				"type": "origins:execute_command",
-				"command": "cast @p shockwave 3"
+				"command": "cast @s shockwave 3"
 			},
 			{
 				"type": "origins:modify_resource",

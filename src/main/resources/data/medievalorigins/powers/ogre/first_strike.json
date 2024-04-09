@@ -15,7 +15,7 @@
 					"type": "origins:actor_action",
 					"action": {
 						"type": "origins:execute_command",
-						"command": "power grant @p medievalorigins:ogre/second_strike"
+						"command": "power grant @s medievalorigins:ogre/second_strike"
 					}
 				}
 			},
@@ -26,7 +26,7 @@
 					"type": "origins:actor_action",
 					"action": {
 						"type": "origins:execute_command",
-						"command": "power remove @p medievalorigins:ogre/first_strike"
+						"command": "power remove @s medievalorigins:ogre/first_strike"
 					}
 				}
 			},
@@ -52,7 +52,7 @@
 					"type": "origins:actor_action",
 					"action": {
 						"type": "origins:execute_command",
-						"command": "cast @p blood_step 2"
+						"command": "cast @s blood_step 2"
 					}
 				}
 			},

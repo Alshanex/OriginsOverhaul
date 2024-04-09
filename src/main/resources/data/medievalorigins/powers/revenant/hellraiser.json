@@ -8,7 +8,7 @@
 			"actions": [
 				{
 					"type": "origins:execute_command",
-					"command": "cast @p raise_dead 10"
+					"command": "cast @s raise_dead 10"
 				},
 				{
 					"type": "origins:apply_effect",

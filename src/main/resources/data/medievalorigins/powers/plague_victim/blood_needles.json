@@ -6,7 +6,7 @@
 		"actions": [
 			{
 				"type": "origins:execute_command",
-				"command": "cast @p blood_needles 3"
+				"command": "cast @s blood_needles 3"
 			},
 			{
 				"type": "origins:modify_resource",

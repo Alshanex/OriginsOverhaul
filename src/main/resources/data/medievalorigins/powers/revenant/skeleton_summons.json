@@ -56,7 +56,7 @@
 					"actions": [
 						{
 							"type": "origins:execute_command",
-							"command": "cast @p raise_dead 6"
+							"command": "cast @s raise_dead 6"
 						},
 						{
 							"type": "origins:modify_inventory",
@@ -78,7 +78,7 @@
 				},
 				"else_action": {
 					"type": "origins:execute_command",
-					"command": "cast @p raise_dead 1"
+					"command": "cast @s raise_dead 1"
 				}
 			}
 		]

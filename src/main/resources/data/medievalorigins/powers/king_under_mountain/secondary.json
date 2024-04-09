@@ -14,7 +14,7 @@
 			"actions": [
 				{
 					"type": "origins:execute_command",
-					"command": "cast @p shield 10"
+					"command": "cast @s shield 10"
 				},
 				{
 					"type": "origins:modify_resource",

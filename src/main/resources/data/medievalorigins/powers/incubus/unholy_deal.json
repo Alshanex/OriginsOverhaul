@@ -6,7 +6,7 @@
     	"actions": [
         {
             "type": "origins:execute_command",
-    		"command": "cast @p heat_surge 2"
+    		"command": "cast @s heat_surge 2"
         },
         {    
             "type": "origins:apply_effect",

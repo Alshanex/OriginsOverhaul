@@ -14,7 +14,7 @@
 			"actions": [
 				{
 					"type": "origins:execute_command",
-					"command": "cast @p portal 1"
+					"command": "cast @s portal 1"
 				},
 				{
 					"type": "origins:modify_resource",
@@ -29,7 +29,7 @@
 					"ticks": 60,
 					"action": {
 						"type": "origins:execute_command",
-						"command": "cast @p portal 1"
+						"command": "cast @s portal 1"
 					}
 				}
 			]
@@ -46,7 +46,7 @@
 			"command_at_hit": "tp @s ~ ~ ~",
 			"miss_action": {
 				"type": "origins:execute_command",
-				"command": "cast @p teleport 4"
+				"command": "cast @s teleport 4"
 			},
 			"hit_action": {
 				"type": "origins:execute_command",

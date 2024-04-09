@@ -6,7 +6,7 @@
 		"actions": [
 			{
 				"type": "origins:execute_command",
-				"command": "cast @p blood_slash 5"
+				"command": "cast @s blood_slash 5"
 			},
 			{
 				"type": "origins:modify_resource",

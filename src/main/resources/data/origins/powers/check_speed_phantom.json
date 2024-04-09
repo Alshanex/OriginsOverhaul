@@ -5,7 +5,7 @@
 		"type": "origins:action_over_time",
 		"entity_action": {
 			"type": "origins:execute_command",
-			"command": "power grant @p medievalorigins:death_spirit/speed"
+			"command": "power grant @s medievalorigins:death_spirit/speed"
 		},
 		"interval": 10,
 		"condition": {
@@ -28,7 +28,7 @@
 		"type": "origins:action_over_time",
 		"entity_action": {
 			"type": "origins:execute_command",
-			"command": "power remove @p medievalorigins:death_spirit/speed"
+			"command": "power remove @s medievalorigins:death_spirit/speed"
 		},
 		"interval": 10,
 		"condition": {

@@ -6,14 +6,14 @@
 		"actions": [
 			{
 				"type": "origins:execute_command",
-				"command": "cast @p gust 3"
+				"command": "cast @s gust 3"
 			},
 			{
 				"type": "origins:delay",
 				"ticks": 18,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "cast @p firecracker 8"
+					"command": "cast @s firecracker 8"
 				}
 			}
 		]

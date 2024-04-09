@@ -6,7 +6,7 @@
 		"actions": [
 			{
 				"type": "origins:execute_command",
-				"command": "cast @p guiding_bolt 10"
+				"command": "cast @s guiding_bolt 10"
 			},
 			{
 				"type": "origins:modify_resource",

@@ -85,7 +85,7 @@
 				"ticks": 2,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power remove @p medievalorigins:sea_serpent/get_heart"
+					"command": "power remove @s medievalorigins:sea_serpent/get_heart"
 				}
 			},
 			{
@@ -93,7 +93,7 @@
 				"ticks": 4,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power grant @p medievalorigins:sea_serpent/sea_heart"
+					"command": "power grant @s medievalorigins:sea_serpent/sea_heart"
 				}
 			}
 		]

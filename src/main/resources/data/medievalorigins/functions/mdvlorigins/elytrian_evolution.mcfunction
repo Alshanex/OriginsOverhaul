@@ -1,2 +1,2 @@
-power clear @p
-origin set @p origins:origin medievalorigins:specter
+power clear @s
+origin set @s origins:origin medievalorigins:specter

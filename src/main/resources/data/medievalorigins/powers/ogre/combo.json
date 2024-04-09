@@ -6,14 +6,14 @@
 		"actions": [
 			{
 				"type": "origins:execute_command",
-				"command": "cast @p heartstop 5"
+				"command": "cast @s heartstop 5"
 			},
 			{
 				"type": "origins:delay",
 				"ticks": 2,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power remove @p medievalorigins:ogre/first_strike"
+					"command": "power remove @s medievalorigins:ogre/first_strike"
 				}
 			},
 			{
@@ -21,7 +21,7 @@
 				"ticks": 4,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power remove @p origins:fall_immunity"
+					"command": "power remove @s origins:fall_immunity"
 				}
 			},
 			{
@@ -29,7 +29,7 @@
 				"ticks": 5,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power remove @p origins:no_cast_time"
+					"command": "power remove @s origins:no_cast_time"
 				}
 			},
 			{
@@ -37,7 +37,7 @@
 				"ticks": 6,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power grant @p medievalorigins:ogre/first_strike"
+					"command": "power grant @s medievalorigins:ogre/first_strike"
 				}
 			},
 			{
@@ -45,7 +45,7 @@
 				"ticks": 8,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power remove @p medievalorigins:ogre/second_strike"
+					"command": "power remove @s medievalorigins:ogre/second_strike"
 				}
 			},
 			{
@@ -53,7 +53,7 @@
 				"ticks": 10,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power remove @p medievalorigins:ogre/third_strike"
+					"command": "power remove @s medievalorigins:ogre/third_strike"
 				}
 			}
 		]

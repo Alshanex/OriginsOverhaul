@@ -1,2 +1,2 @@
-power clear @p
-origin set @p origins:origin medievalorigins:king_under_mountain
+power clear @s
+origin set @s origins:origin medievalorigins:king_under_mountain

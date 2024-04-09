@@ -6,7 +6,7 @@
 		"type": "origins:active_self",
 		"entity_action": {
 			"type": "origins:execute_command",
-			"command": "cast @p ray_of_frost 5"
+			"command": "cast @s ray_of_frost 5"
 		},
 		"cooldown": 1,
 		"key": {
@@ -25,7 +25,7 @@
 					"ticks": 100,
 					"action": {
 						"type": "origins:execute_command",
-						"command": "power remove @p medievalorigins:high_elf/frostray"
+						"command": "power remove @s medievalorigins:high_elf/frostray"
 					}
 				},
 				{
@@ -33,7 +33,7 @@
 					"ticks": 102,
 					"action": {
 						"type": "origins:execute_command",
-						"command": "power grant @p medievalorigins:high_elf/electrocute"
+						"command": "power grant @s medievalorigins:high_elf/electrocute"
 					}
 				}
 			]

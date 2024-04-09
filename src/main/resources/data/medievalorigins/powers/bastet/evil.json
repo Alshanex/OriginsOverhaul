@@ -8,7 +8,7 @@
 		"actions": [
 			{
 				"type": "origins:execute_command",
-				"command": "power remove @p medievalorigins:bastet/dash"
+				"command": "power remove @s medievalorigins:bastet/dash"
 			},
 			{
 				"type": "origins:modify_resource",
@@ -31,7 +31,7 @@
 				"ticks": 2,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power remove @p medievalorigins:bastet/slash"
+					"command": "power remove @s medievalorigins:bastet/slash"
 				}
 			},
 			{
@@ -39,7 +39,7 @@
 				"ticks": 4,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power remove @p medievalorigins:bastet/evil"
+					"command": "power remove @s medievalorigins:bastet/evil"
 				}
 			},
 			{
@@ -47,7 +47,7 @@
 				"ticks": 6,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power grant @p medievalorigins:bastet/heal"
+					"command": "power grant @s medievalorigins:bastet/heal"
 				}
 			},
 			{
@@ -55,7 +55,7 @@
 				"ticks": 8,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power grant @p medievalorigins:bastet/bolt"
+					"command": "power grant @s medievalorigins:bastet/bolt"
 				}
 			},
 			{
@@ -63,7 +63,7 @@
 				"ticks": 10,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power grant @p medievalorigins:bastet/good"
+					"command": "power grant @s medievalorigins:bastet/good"
 				}
 			}
 		]

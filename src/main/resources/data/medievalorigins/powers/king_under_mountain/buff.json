@@ -6,14 +6,14 @@
 		"actions": [
 			{
 				"type": "origins:execute_command",
-				"command": "power grant @p origins:no_cast_time"
+				"command": "power grant @s origins:no_cast_time"
 			},
 			{
 				"type": "origins:delay",
 				"ticks": 2,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "cast @p fortify 10"
+					"command": "cast @s fortify 10"
 				}
 			},
 			{
@@ -21,7 +21,7 @@
 				"ticks": 10,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "cast @p heal 10"
+					"command": "cast @s heal 10"
 				}
 			},
 			{
@@ -29,7 +29,7 @@
 				"ticks": 15,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "cast @p charge 3"
+					"command": "cast @s charge 3"
 				}
 			},
 			{
@@ -37,7 +37,7 @@
 				"ticks": 20,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power remove @p origins:no_cast_time"
+					"command": "power remove @s origins:no_cast_time"
 				}
 			}
 		]

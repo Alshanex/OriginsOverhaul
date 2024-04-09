@@ -20,7 +20,7 @@
 				"ticks": 2,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power grant @p origins:no_cast_time"
+					"command": "power grant @s origins:no_cast_time"
 				}
 			},
 			{
@@ -28,7 +28,7 @@
 				"ticks": 4,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "cast @p ice_block 5"
+					"command": "cast @s ice_block 5"
 				}
 			},
 			{
@@ -36,7 +36,7 @@
 				"ticks": 6,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power remove @p medievalorigins:ice_titan/primary"
+					"command": "power remove @s medievalorigins:ice_titan/primary"
 				}
 			},
 			{
@@ -44,7 +44,7 @@
 				"ticks": 20,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power remove @p origins:no_cast_time"
+					"command": "power remove @s origins:no_cast_time"
 				}
 			},
 			{
@@ -52,7 +52,7 @@
 				"ticks": 80,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power grant @p medievalorigins:ice_titan/primary"
+					"command": "power grant @s medievalorigins:ice_titan/primary"
 				}
 			}
 		]

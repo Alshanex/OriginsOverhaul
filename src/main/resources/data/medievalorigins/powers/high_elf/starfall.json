@@ -6,7 +6,7 @@
 		"actions": [
 			{
 				"type": "origins:execute_command",
-				"command": "power grant @p origins:fall_immunity"
+				"command": "power grant @s origins:fall_immunity"
 			},
 			{
 				"type": "origins:add_velocity",
@@ -29,7 +29,7 @@
 				"ticks": 22,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "cast @p starfall 30"
+					"command": "cast @s starfall 30"
 				}
 			},
 			{
@@ -37,7 +37,7 @@
 				"ticks": 600,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power remove @p origins:fall_immunity"
+					"command": "power remove @s origins:fall_immunity"
 				}
 			}
 		]

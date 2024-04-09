@@ -2,7 +2,7 @@
     "type": "origins:active_self",
     "entity_action": {
         "type": "origins:execute_command",
-        "command": "cast @p stomp 10"
+        "command": "cast @s stomp 10"
     },
     "hud_render": {
         "should_render": true,

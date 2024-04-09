@@ -8,11 +8,11 @@
 		},
 		"if_action": {
 			"type": "origins:execute_command",
-			"command": "cast @p raise_dead 6"
+			"command": "cast @s raise_dead 6"
 		},
 		"else_action": {
 			"type": "origins:execute_command",
-			"command": "cast @p summon_vex 4"
+			"command": "cast @s summon_vex 4"
 		}
     },
 	"cooldown": 660,

@@ -12,14 +12,14 @@
 			"actions": [
 				{
 					"type": "origins:execute_command",
-					"command": "power remove @p medievalorigins:medusa/petrify"
+					"command": "power remove @s medievalorigins:medusa/petrify"
 				},
 				{
 					"type": "origins:delay",
 					"ticks": 2,
 					"action": {
 						"type": "origins:execute_command",
-						"command": "power remove @p medievalorigins:medusa/unpetrify"
+						"command": "power remove @s medievalorigins:medusa/unpetrify"
 					}
 				},
 				{
@@ -27,7 +27,7 @@
 					"ticks": 3,
 					"action": {
 						"type": "origins:execute_command",
-						"command": "power remove @p medievalorigins:medusa/aoe_fangs"
+						"command": "power remove @s medievalorigins:medusa/aoe_fangs"
 					}
 				},
 				{
@@ -35,7 +35,7 @@
 					"ticks": 4,
 					"action": {
 						"type": "origins:execute_command",
-						"command": "power grant @p medievalorigins:medusa/acid_orb"
+						"command": "power grant @s medievalorigins:medusa/acid_orb"
 					}
 				},
 				{
@@ -43,7 +43,7 @@
 					"ticks": 6,
 					"action": {
 						"type": "origins:execute_command",
-						"command": "power grant @p medievalorigins:medusa/lethal"
+						"command": "power grant @s medievalorigins:medusa/lethal"
 					}
 				},
 				{
@@ -51,7 +51,7 @@
 					"ticks": 8,
 					"action": {
 						"type": "origins:execute_command",
-						"command": "power grant @p medievalorigins:medusa/aoe_poison"
+						"command": "power grant @s medievalorigins:medusa/aoe_poison"
 					}
 				},
 				{
@@ -59,7 +59,7 @@
 					"ticks": 10,
 					"action": {
 						"type": "origins:execute_command",
-						"command": "power grant @p medievalorigins:medusa/secondary"
+						"command": "power grant @s medievalorigins:medusa/secondary"
 					}
 				}
 			]
@@ -69,14 +69,14 @@
 			"actions": [
 				{
 					"type": "origins:execute_command",
-					"command": "power grant @p medievalorigins:medusa/petrify"
+					"command": "power grant @s medievalorigins:medusa/petrify"
 				},
 				{
 					"type": "origins:delay",
 					"ticks": 2,
 					"action": {
 						"type": "origins:execute_command",
-						"command": "power grant @p medievalorigins:medusa/unpetrify"
+						"command": "power grant @s medievalorigins:medusa/unpetrify"
 					}
 				},
 				{
@@ -84,7 +84,7 @@
 					"ticks": 3,
 					"action": {
 						"type": "origins:execute_command",
-						"command": "power grant @p medievalorigins:medusa/aoe_fangs"
+						"command": "power grant @s medievalorigins:medusa/aoe_fangs"
 					}
 				},
 				{
@@ -92,7 +92,7 @@
 					"ticks": 4,
 					"action": {
 						"type": "origins:execute_command",
-						"command": "power remove @p medievalorigins:medusa/acid_orb"
+						"command": "power remove @s medievalorigins:medusa/acid_orb"
 					}
 				},
 				{
@@ -100,7 +100,7 @@
 					"ticks": 6,
 					"action": {
 						"type": "origins:execute_command",
-						"command": "power remove @p medievalorigins:medusa/lethal"
+						"command": "power remove @s medievalorigins:medusa/lethal"
 					}
 				},
 				{
@@ -108,7 +108,7 @@
 					"ticks": 8,
 					"action": {
 						"type": "origins:execute_command",
-						"command": "power remove @p medievalorigins:medusa/aoe_poison"
+						"command": "power remove @s medievalorigins:medusa/aoe_poison"
 					}
 				},
 				{
@@ -116,7 +116,7 @@
 					"ticks": 10,
 					"action": {
 						"type": "origins:execute_command",
-						"command": "power remove @p medievalorigins:medusa/secondary"
+						"command": "power remove @s medievalorigins:medusa/secondary"
 					}
 				}
 			]

@@ -16,7 +16,7 @@
 					"ticks": 14,
 					"action": {
 						"type": "origins:execute_command",
-						"command": "cast @p blood_slash 5"
+						"command": "cast @s blood_slash 5"
 					}
 				},
 				{
@@ -24,7 +24,7 @@
 					"ticks": 24,
 					"action": {
 						"type": "origins:execute_command",
-						"command": "cast @p blood_slash 5"
+						"command": "cast @s blood_slash 5"
 					}
 				},
 				{
@@ -32,7 +32,7 @@
 					"ticks": 2,
 					"action": {
 						"type": "origins:execute_command",
-						"command": "power remove @p medievalorigins:moon_elf/slash"
+						"command": "power remove @s medievalorigins:moon_elf/slash"
 					}
 				},
 				{
@@ -40,7 +40,7 @@
 					"ticks": 3,
 					"action": {
 						"type": "origins:execute_command",
-						"command": "power remove @p medievalorigins:moon_elf/crit"
+						"command": "power remove @s medievalorigins:moon_elf/crit"
 					}
 				}
 			]

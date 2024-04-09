@@ -6,7 +6,7 @@
 		"actions": [
 			{
 				"type": "origins:execute_command",
-				"command": "cast @p fang_ward 6"
+				"command": "cast @s fang_ward 6"
 			},
 			{
 				"type": "origins:delay",
@@ -21,7 +21,7 @@
 				"ticks": 4,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power remove @p medievalorigins:wood_elf/jump"
+					"command": "power remove @s medievalorigins:wood_elf/jump"
 				}
 			},
 			{
@@ -29,7 +29,7 @@
 				"ticks": 6,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power grant @p medievalorigins:wood_elf/arrow_volley"
+					"command": "power grant @s medievalorigins:wood_elf/arrow_volley"
 				}
 			},
 			{
@@ -37,7 +37,7 @@
 				"ticks": 8,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power grant @p origins:fall_immunity"
+					"command": "power grant @s origins:fall_immunity"
 				}
 			},
 			{
@@ -45,7 +45,7 @@
 				"ticks": 120,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power remove @p origins:fall_immunity"
+					"command": "power remove @s origins:fall_immunity"
 				}
 			}
 		]

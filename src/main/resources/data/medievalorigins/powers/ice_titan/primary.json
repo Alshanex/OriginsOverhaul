@@ -19,7 +19,7 @@
 							"actions": [
 								{
 									"type": "origins:execute_command",
-									"command": "cast @p icicle 10"
+									"command": "cast @s icicle 10"
 								},
 								{
 									"type": "origins:modify_resource",
@@ -44,7 +44,7 @@
 							"actions": [
 								{
 									"type": "origins:execute_command",
-									"command": "cast @p ray_of_frost 5"
+									"command": "cast @s ray_of_frost 5"
 								},
 								{
 									"type": "origins:modify_resource",

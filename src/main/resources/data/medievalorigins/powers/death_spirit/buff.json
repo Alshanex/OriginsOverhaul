@@ -6,14 +6,14 @@
 		"actions": [
 			{
 				"type": "origins:execute_command",
-				"command": "power grant @p origins:no_cast_time"
+				"command": "power grant @s origins:no_cast_time"
 			},
 			{
 				"type": "origins:delay",
 				"ticks": 2,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "cast @p ascension 10"
+					"command": "cast @s ascension 10"
 				}
 			},
 			{
@@ -21,7 +21,7 @@
 				"ticks": 4,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "cast @p angel_wing 4"
+					"command": "cast @s angel_wing 4"
 				}
 			},
 			{
@@ -29,7 +29,7 @@
 				"ticks": 6,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "cast @p charge 3"
+					"command": "cast @s charge 3"
 				}
 			},
 			{
@@ -37,7 +37,7 @@
 				"ticks": 8,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power remove @p origins:no_cast_time"
+					"command": "power remove @s origins:no_cast_time"
 				}
 			}
 		]

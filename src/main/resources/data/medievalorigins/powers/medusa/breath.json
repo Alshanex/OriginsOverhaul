@@ -6,14 +6,14 @@
 		"actions": [
 			{
 				"type": "origins:execute_command",
-				"command": "cast @p poison_splash 16"
+				"command": "cast @s poison_splash 16"
 			},
 			{
 				"type": "origins:delay",
 				"ticks": 2,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power remove @p medievalorigins:medusa/breath"
+					"command": "power remove @s medievalorigins:medusa/breath"
 				}
 			},
 			{
@@ -21,7 +21,7 @@
 				"ticks": 4,
 				"action": {
 					"type": "origins:execute_command",
-					"command": "power grant @p medievalorigins:medusa/acid_orb"
+					"command": "power grant @s medievalorigins:medusa/acid_orb"
 				}
 			},
 			{
