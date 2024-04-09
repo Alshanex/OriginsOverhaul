@@ -6,7 +6,7 @@
 		"actions": [
 			{
 				"type": "origins:execute_command",
-				"command": "cast @s arrow_volley 20"
+				"command": "cast @s arrow_volley 8"
 			},
 			{
 				"type": "origins:add_velocity",
@@ -14,7 +14,7 @@
 			},
 			{
 				"type": "origins:delay",
-				"ticks": 120,
+				"ticks": 200,
 				"action": {
 					"type": "origins:execute_command",
 					"command": "power remove @s origins:fall_immunity"
@@ -42,6 +42,14 @@
 				"action": {
 					"type": "origins:execute_command",
 					"command": "power grant @s medievalorigins:wood_elf/magic_arrow"
+				}
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 8,
+				"action": {
+					"type": "origins:execute_command",
+					"command": "power grant @s origins:fall_immunity"
 				}
 			},
 			{

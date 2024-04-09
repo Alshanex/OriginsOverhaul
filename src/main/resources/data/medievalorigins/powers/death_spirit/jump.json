@@ -10,7 +10,7 @@
 			},
 			{
 				"type": "origins:delay",
-				"ticks": 10,
+				"ticks": 20,
 				"action": {
 					"type": "origins:execute_command",
 					"command": "cast @s ascension 10"
@@ -18,7 +18,7 @@
 			},
 			{
 				"type": "origins:delay",
-				"ticks": 12,
+				"ticks": 2,
 				"action": {
 					"type": "origins:execute_command",
 					"command": "power remove @s medievalorigins:death_spirit/jump"
@@ -26,7 +26,7 @@
 			},
 			{
 				"type": "origins:delay",
-				"ticks": 14,
+				"ticks": 22,
 				"action": {
 					"type": "origins:execute_command",
 					"command": "power grant @s medievalorigins:death_spirit/lance"

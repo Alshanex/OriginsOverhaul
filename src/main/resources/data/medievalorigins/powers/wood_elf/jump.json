@@ -42,7 +42,7 @@
 			},
 			{
 				"type": "origins:delay",
-				"ticks": 120,
+				"ticks": 200,
 				"action": {
 					"type": "origins:execute_command",
 					"command": "power remove @s origins:fall_immunity"

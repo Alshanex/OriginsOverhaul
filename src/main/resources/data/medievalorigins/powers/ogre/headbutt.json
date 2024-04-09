@@ -17,7 +17,7 @@
 			"actions": [
 			{
 				"type": "origins:add_velocity",
-				"z": 1,
+				"z": 3,
 				"space": "local"
 			},
 			{

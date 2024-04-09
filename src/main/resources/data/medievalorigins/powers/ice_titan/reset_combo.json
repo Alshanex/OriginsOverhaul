@@ -32,7 +32,7 @@
     },
 	"cooldown": 50,
 	"key": {
-		"key": "key.sprint",
+		"key": "key.pickItem",
 		"continuous": false
 	}
 }

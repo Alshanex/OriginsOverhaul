@@ -28,6 +28,6 @@
     },
 	"cooldown": 1,
 	"key": {
-		"key": "key.sprint"
+		"key": "key.pickItem"
 	}
 }

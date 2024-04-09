@@ -8,14 +8,17 @@
 		"shape_type": "visual",
 		"fluid_handling": "any",
 		"bientity_action": {
-			"type": "origins:target_action",
-			"action": {
-				"type": "origins:if_else",
+			"type": "origins:if_else",
+			"condition": {
+				"type": "origins:target_condition",
 				"condition": {
 					"type": "origins:entity_type",
 					"entity_type": "minecraft:player"
-				},
-				"if_action": {
+				}
+			},
+			"if_action": {
+				"type": "origins:target_action",
+				"action": {
 					"type": "origins:and",
 					"actions": [
 						{
@@ -63,8 +66,11 @@
 							]
 						}
 					]
-				},
-				"else_action": {
+				}
+			},
+			"else_action": {
+				"type": "origins:actor_action",
+				"action": {
 					"type": "origins:execute_command",
 					"command": "cast @s petrify"
 				}
@@ -77,7 +83,7 @@
 					"type": "origins:target_condition",
 					"condition": {
 						"type": "origins:in_tag",
-						"tag": "medievalorigins:bosses"
+						"tag": "iceandfire:immune_to_gorgon_stone"
 					},
 					"inverted": true
 				},

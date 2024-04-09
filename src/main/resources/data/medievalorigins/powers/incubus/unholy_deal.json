@@ -17,7 +17,7 @@
 				"show_particles": false,
 				"show_icon": false,
 				"amplifier": 4,
-				"duration": 260
+				"duration": 300
 				},
 				{
 					"effect": "minecraft:instant_damage",

@@ -1,0 +1,24 @@
+{
+	"type": "crafting_shaped",
+	"pattern": [
+		"###",
+		" X ",
+		"OOO"
+	],
+	"key": {
+		"#": {
+			"item": "minecraft:gold_block",
+			"data": 1
+		},
+		"X": {
+			"item": "minecraft:netherite_block"
+		},
+		"O": {
+			"item": "minecraft:gold_ingot",
+			"data": 4
+		}
+	},
+	"result": {
+    "item": "minecraft:knowledge_book"
+	}
+}

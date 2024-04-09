@@ -18,7 +18,7 @@
 			},
 			{
 				"type": "origins:delay",
-				"ticks": 18,
+				"ticks": 10,
 				"action": {
 					"type": "origins:execute_command",
 					"command": "cast @s firecracker 20"

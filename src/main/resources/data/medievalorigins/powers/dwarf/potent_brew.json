@@ -11,7 +11,7 @@
 			"duration": 200
 		}
 	},
-	"cooldown": 1600,
+	"cooldown": 400,
 	"key": {
 		"key": "key.origins.secondary_active",
 		"continuous": false

@@ -23,6 +23,22 @@
 					"type": "origins:execute_command",
 					"command": "power grant @s medievalorigins:moon_elf/crit"
 				}
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 6,
+				"action": {
+					"type": "origins:execute_command",
+					"command": "power grant @s medievalorigins:moon_elf/slashes"
+				}
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 8,
+				"action": {
+					"type": "origins:execute_command",
+					"command": "power remove @s medievalorigins:moon_elf/first_dash"
+				}
 			}
 		]
     },

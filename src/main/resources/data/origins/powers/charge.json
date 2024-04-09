@@ -5,7 +5,7 @@
         "type": "origins:execute_command",
     	"command": "cast @s charge 1"
     },
-	"cooldown": 1200,
+	"cooldown": 700,
 	"hud_render": {
 		"should_render": true,
 		"sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",

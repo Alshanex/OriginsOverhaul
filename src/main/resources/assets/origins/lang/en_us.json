@@ -1,5 +1,5 @@
 {
-  "loading_priority": 1,
+  "loading_priority": 10,
   "origin.origins.human.name": "Human",
   "origin.origins.human.description": "A regular human. Your ordinary Minecraft experience awaits.",
 

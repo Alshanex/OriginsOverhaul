@@ -1,5 +1,6 @@
 {
 	"type": "origins:action_on_hit",
+	"hidden": true,
 	"bientity_action": {
 		"type": "origins:actor_action",
 		"action": {
@@ -10,22 +11,6 @@
 					"space": "local_horizontal_normalized",
 					"client": false,
 					"z": -2
-				},
-				{
-					"type": "origins:delay",
-					"ticks": 14,
-					"action": {
-						"type": "origins:execute_command",
-						"command": "cast @s blood_slash 5"
-					}
-				},
-				{
-					"type": "origins:delay",
-					"ticks": 24,
-					"action": {
-						"type": "origins:execute_command",
-						"command": "cast @s blood_slash 5"
-					}
 				},
 				{
 					"type": "origins:delay",
