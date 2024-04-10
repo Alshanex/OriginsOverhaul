@@ -37,6 +37,18 @@
 				}
 			},
 			{
+				"type": "origins:apply_effect",
+				"effects": [
+					{
+						"effect": "minecraft:slow_falling",
+						"duration": 80,
+						"is_ambient": false,
+						"show_particles": false,
+						"show_icon": false
+					}
+				]
+			},
+			{
 				"type": "origins:delay",
 				"ticks": 4,
 				"action": {
