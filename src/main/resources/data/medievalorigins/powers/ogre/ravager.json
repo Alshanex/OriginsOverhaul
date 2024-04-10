@@ -1,4 +1,7 @@
 {
+	"loading_priority": 1,
+	"name": "Ravager",
+	"description": "All kind of weapons feel right in an Ogre's hand; this comfort allows them to deal more damage with them.",
 	"type": "origins:multiple",
 	"axe_boost": {
 		"type": "origins:attribute",

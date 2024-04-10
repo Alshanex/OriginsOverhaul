@@ -27,10 +27,18 @@
 						}
 					}
 				}
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 20,
+				"action": {
+					"type": "origins:execute_command",
+					"command": "cast @s cone_of_cold 8"
+				}
 			}
 		]
 	},
-	"cooldown": 60,
+	"cooldown": 160,
 	"key": {
 		"key": "key.origins.secondary_active"
 	},

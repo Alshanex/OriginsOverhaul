@@ -12,109 +12,24 @@
       <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
     </remote-repository>
     <remote-repository>
-      <option name="id" value="maven2" />
-      <option name="name" value="maven2" />
-      <option name="url" value="https://libraries.minecraft.net/" />
-    </remote-repository>
-    <remote-repository>
       <option name="id" value="MavenRepo" />
       <option name="name" value="MavenRepo" />
       <option name="url" value="https://repo.maven.apache.org/maven2/" />
     </remote-repository>
     <remote-repository>
-      <option name="id" value="ParchmentMC" />
-      <option name="name" value="ParchmentMC" />
-      <option name="url" value="https://maven.parchmentmc.org/" />
-    </remote-repository>
-    <remote-repository>
-      <option name="id" value="maven" />
-      <option name="name" value="maven" />
-      <option name="url" value="https://maven.minecraftforge.net/" />
-    </remote-repository>
-    <remote-repository>
-      <option name="id" value="maven6" />
-      <option name="name" value="maven6" />
-      <option name="url" value="https://maven.terraformersmc.com/" />
-    </remote-repository>
-    <remote-repository>
-      <option name="id" value="maven5" />
-      <option name="name" value="maven5" />
-      <option name="url" value="https://jitpack.io" />
-    </remote-repository>
-    <remote-repository>
-      <option name="id" value="maven7" />
-      <option name="name" value="maven7" />
-      <option name="url" value="https://api.modrinth.com/maven" />
+      <option name="id" value="Iron's Maven" />
+      <option name="name" value="Iron's Maven" />
+      <option name="url" value="https://code.redspace.io/releases" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="maven11" />
       <option name="name" value="maven11" />
-      <option name="url" value="https://libs.azuredoom.com:4443/mods" />
-    </remote-repository>
-    <remote-repository>
-      <option name="id" value="maven" />
-      <option name="name" value="maven" />
-      <option name="url" value="https://maven.jamieswhiteshirt.com/libs-release" />
-    </remote-repository>
-    <remote-repository>
-      <option name="id" value="maven3" />
-      <option name="name" value="maven3" />
-      <option name="url" value="https://maven.blamejared.com" />
-    </remote-repository>
-    <remote-repository>
-      <option name="id" value="maven2" />
-      <option name="name" value="maven2" />
-      <option name="url" value="https://maven.nucleoid.xyz/" />
+      <option name="url" value="https://libraries.minecraft.net/" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="maven10" />
       <option name="name" value="maven10" />
-      <option name="url" value="https://maven.kosmx.dev/" />
-    </remote-repository>
-    <remote-repository>
-      <option name="id" value="maven4" />
-      <option name="name" value="maven4" />
-      <option name="url" value="https://maven.willbl.dev/releases" />
-    </remote-repository>
-    <remote-repository>
-      <option name="id" value="maven8" />
-      <option name="name" value="maven8" />
-      <option name="url" value="https://maven.shedaniel.me" />
-    </remote-repository>
-    <remote-repository>
-      <option name="id" value="maven9" />
-      <option name="name" value="maven9" />
-      <option name="url" value="https://maven.bai.lol" />
-    </remote-repository>
-    <remote-repository>
-      <option name="id" value="maven2" />
-      <option name="name" value="maven2" />
-      <option name="url" value="https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/" />
-    </remote-repository>
-    <remote-repository>
-      <option name="id" value="maven3" />
-      <option name="name" value="maven3" />
-      <option name="url" value="https://maven.theillusivec4.top" />
-    </remote-repository>
-    <remote-repository>
-      <option name="id" value="Iron's Maven - Snapshots" />
-      <option name="name" value="Iron's Maven - Snapshots" />
-      <option name="url" value="https://code.redspace.io/snapshots" />
-    </remote-repository>
-    <remote-repository>
-      <option name="id" value="maven" />
-      <option name="name" value="maven" />
-      <option name="url" value="https://maven.enginehub.org/repo/" />
-    </remote-repository>
-    <remote-repository>
-      <option name="id" value="maven4" />
-      <option name="name" value="maven4" />
-      <option name="url" value="https://cursemaven.com" />
-    </remote-repository>
-    <remote-repository>
-      <option name="id" value="Iron's Maven - Release" />
-      <option name="name" value="Iron's Maven - Release" />
-      <option name="url" value="https://code.redspace.io/releases" />
+      <option name="url" value="https://maven.minecraftforge.net/" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="maven" />
@@ -122,14 +37,49 @@
       <option name="url" value="https://maven.saps.dev/minecraft" />
     </remote-repository>
     <remote-repository>
+      <option name="id" value="maven4" />
+      <option name="name" value="maven4" />
+      <option name="url" value="https://cursemaven.com" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="maven3" />
       <option name="name" value="maven3" />
       <option name="url" value="https://maven.architectury.dev" />
     </remote-repository>
     <remote-repository>
+      <option name="id" value="maven9" />
+      <option name="name" value="maven9" />
+      <option name="url" value="https://maven.kosmx.dev/" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="maven2" />
       <option name="name" value="maven2" />
       <option name="url" value="https://maven.saps.dev/releases" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven8" />
+      <option name="name" value="maven8" />
+      <option name="url" value="https://maven.blamejared.com" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven6" />
+      <option name="name" value="maven6" />
+      <option name="url" value="https://maven.enginehub.org/repo/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven7" />
+      <option name="name" value="maven7" />
+      <option name="url" value="https://maven.theillusivec4.top" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="GeckoLib" />
+      <option name="name" value="GeckoLib" />
+      <option name="url" value="https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="ParchmentMC" />
+      <option name="name" value="ParchmentMC" />
+      <option name="url" value="https://maven.parchmentmc.org/" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="maven5" />

@@ -74,7 +74,7 @@
   "origin.medievalorigins.ice_titan.name": "Ice Titan",
   "origin.medievalorigins.ice_titan.description": "After defeating the Alpha Yeti, you became the new Alpha Yeti, gaining new powers and abilities.",
 
-  "origin.medievalorigins.king_under_mountain.name": "King of Dwarves",
+  "origin.medievalorigins.king_under_mountain.name": "Dwarven Lord",
   "origin.medievalorigins.king_under_mountain.description": "In your battle with the Nether Gauntlet you found the long lost Dwarven Crown, which lets the dwarf that wears it rule among the rest of the dwarves.",
 
   "origin.medievalorigins.medusa.name": "Medusa",
@@ -534,7 +534,7 @@
   "power.medievalorigins.plague_victim/skin_and_bones.description": "This illness drains the spirit, resulting in reduced health.",
 
   "power.medievalorigins.plague_victim/blood_magic.name": "Forbidden Magic",
-  "power.medievalorigins.plague_victim/blood_magic.description": "Every living thing you encounter dies and only his blood is left, so you decided to walk the path of Blood Magic. Using this malevolous arts you can cast deadly blood spells and even use your enemies blood against them.",
+  "power.medievalorigins.plague_victim/blood_magic.description": "You decided to walk the path of Blood Magic. Using this malevolous arts you can cast deadly blood spells and even use your enemies blood against them.",
 
   "power.medievalorigins.plague_victim/fire_damage.name": "Purify the Plague",
   "power.medievalorigins.plague_victim/fire_damage.description": "It is well known that the best method to exterminate a plague is burning it to ashes, so you should stay away from every source of fire you encounter.",
@@ -684,7 +684,7 @@
   "power.medievalorigins.specter/hybrid_double_jump.description": "You can move freely in the air, being able to jump without a block underneath.",
 
   "power.medievalorigins.specter/momentum.name": "Swiftness",
-  "power.medievalorigins.specter/momentum.description": "Your natural aerial-like body lets you accumulate speed as long as you keep sprinting, allowing you to deal more damage the faster you are.",
+  "power.medievalorigins.specter/momentum.description": "Your natural aerial-like body lets you accumulate speed progressively as long as you keep sprinting, losing it if you stop sprinting. This also allows you to deal more damage the faster you are.",
 
   "power.medievalorigins.specter/fall_immune.name": "Landing Expert",
   "power.medievalorigins.specter/fall_immune.description": "You mastered the art of landing, becoming immune to fall damage.",
@@ -699,7 +699,7 @@
   "power.medievalorigins.sea_serpent/buff.description": "When water is present around you, you recover your original power, becoming stronger than before.",
 
   "power.medievalorigins.sea_serpent/sea_heart.name": "Shedding",
-  "power.medievalorigins.sea_serpent/sea_heart.description": "Every 5 minutes, you shed your skin, which you can then fuse with Middle Button click to form a heart of the sea, along with the rest of the skin that didn't convert. Upon right clicking a heart of the sea, a storm will be summoned, helping you survive better on land.",
+  "power.medievalorigins.sea_serpent/sea_heart.description": "Every 5 minutes, you shed your skin, which you can then fuse with Middle Button click to form a heart of the sea, along with the rest of the skin that didn't convert.\nUpon right clicking a heart of the sea, a storm will be summoned, helping you survive better on land.",
 
   "power.medievalorigins.pest_doctor/acid_orb.name": "Spreading Toxicity",
   "power.medievalorigins.pest_doctor/acid_orb.description": "4 steps combo combining blood magic with nature (poison) magic, with short-mid range high magic damage. Triggered with Primary Ability key.",
@@ -714,7 +714,7 @@
   "power.medievalorigins.medusa/root.description": "You can paralyze any entity that dares to look directly into your eyes.",
 
   "power.medievalorigins.medusa/petrify.name": "Stoned",
-  "power.medievalorigins.medusa/petrify.description": "You can press Primary Ability key to unleash Medusa's most famous power, turning people to stone! It won't work into bosses so don't try it.",
+  "power.medievalorigins.medusa/petrify.description": "You can press Primary Ability key to unleash Medusa's most famous power, turning people to stone! Doesn't work on bosses or players.",
 
   "power.medievalorigins.medusa/unpetrify.name": "Lethal",
   "power.medievalorigins.medusa/unpetrify.description": "You deal increased damage to paralyzed entities.",
@@ -726,7 +726,7 @@
   "power.medievalorigins.medusa/secondary.description": "Upon pressing your Secondary Ability key, you spread poison everywhere around you.",
 
   "power.medievalorigins.medusa/change_mode.name": "Two-faced",
-  "power.medievalorigins.medusa/change_mode.description": "You can swap between your human form and your snake form by pressing your Middle Click button.",
+  "power.medievalorigins.medusa/change_mode.description": "You have two forms, a human form and a snake form, each one having different abilities. You can swap between your human form and your snake form by pressing your Middle Click button.",
 
   "power.medievalorigins.death_caller/buff.name": "Blood Ritual",
   "power.medievalorigins.death_caller/buff.description": "Upon pressing your Middle Click button, you perform an ancient ritual to buff yourself and all your summons.",
@@ -792,7 +792,7 @@
   "power.medievalorigins.elf/elfwood_evo.description": "Find a Forest Essence to evolve into a Wood Elf.\nFind a Moon Shard to evolve into a Moon Elf.\nFind a Wisdom Shard to evolve into a High Elf.\nYou might need to explore the Blue Skies dimension in order to find them.",
 
   "power.medievalorigins.ender_titan/primary.name": "Teleportation",
-  "power.medievalorigins.ender_titan/primary.description": "If you have enough portals stacked (portals recharge over time), you will summon a first portal where you are looking and, shortly after, a second portal connected to the first where you are looking. If not enough portal stacks, you will teleport normally. If you aim at an entity or block, you will be teleported to that exact position. Triggered with Secondary Ability key.",
+  "power.medievalorigins.ender_titan/primary.description": "- If you have enough portals stacked (portals recharge over time), you will summon a first portal where you are looking and, shortly after, a second portal connected to the first where you are looking.\n- If not enough portal stacks, you will teleport normally. If you aim at an entity or block, you will be teleported to that exact position.\nTriggered with Secondary Ability key.",
 
   "power.medievalorigins.ender_titan/secondary.name": "Void Power",
   "power.medievalorigins.ender_titan/secondary.description": "You first summon a void vortex that attracts nearby enemies and explode them, then you summon ender powered spikes at your surroundings. Triggered with Primary Ability key.",

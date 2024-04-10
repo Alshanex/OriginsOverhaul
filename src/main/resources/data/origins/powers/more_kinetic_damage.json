@@ -1,4 +1,7 @@
 {
+  "loading_priority": 1,
+  "name": "Great Landing",
+  "description": "You take less damage from falling and flying into blocks.",
   "type": "origins:modify_damage_taken",
   "modifier": {
     "name": "More kinetic damage taken",

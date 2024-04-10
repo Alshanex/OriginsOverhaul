@@ -1,5 +1,7 @@
 {
 	"loading_priority": 1,
+	"name": "Revenance",
+	"description": "Revenants can reconstruct creatures of the night modified to do their own bidding, being able to summon an undead knight.",
 	"type": "origins:active_self",
 	"entity_action": {
 		"type": "origins:execute_command",

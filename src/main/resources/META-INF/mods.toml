@@ -91,7 +91,7 @@ description='''${mod_description}'''
     ordering="NONE"
     side="BOTH"
 [[dependencies.${mod_id}]]
-    modId="origins" #mandatory
+    modId="origins-forge" #mandatory
     mandatory=true #mandatory
     versionRange="[${origins_forge_version},)" #mandatory
     ordering="NONE"

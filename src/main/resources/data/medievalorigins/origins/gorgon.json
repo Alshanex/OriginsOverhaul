@@ -1,10 +1,10 @@
 {
-        "loading_priority": 12,
+        "loading_priority": 14,
 	"powers": [
-                "medievalorigins:gorgon/petrifying_gaze",
                 "medievalorigins:gorgon/revenge",
                 "medievalorigins:gorgon/to_stone",
                 "medievalorigins:gorgon/silver_aversion",
+      "medievalorigins:gorgon/petrifying_gaze",
                 "medievalorigins:gorgon/poison_breath",
                 "medievalorigins:gorgon/poison_blood",
                 "medievalorigins:gorgon/poison_immune",

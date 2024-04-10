@@ -1,7 +1,4 @@
 {
-    "name": "Momentum",
-    "description": "Speeeeeed go brrrrrrrrrrrr",
-
     "type": "origins:multiple",
     "resource": {
         "type": "origins:resource",

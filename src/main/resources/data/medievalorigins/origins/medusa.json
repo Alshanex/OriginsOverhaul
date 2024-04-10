@@ -1,5 +1,5 @@
 {
-        "loading_priority": 12,
+        "loading_priority": 14,
         "unchoosable": true,
         "powers": [
                 "medievalorigins:gorgon/poison_blood",
@@ -10,8 +10,8 @@
                 "medievalorigins:medusa/root",
                 "medievalorigins:medusa/petrify",
                 "medievalorigins:medusa/aoe_fangs",
-                "medievalorigins:medusa/unpetrify",
                 "medievalorigins:medusa/change_mode",
+                "medievalorigins:medusa/unpetrify",
                 "medievalorigins:medusa/reset_cds",
                 "origins:evo_stats"
 	    ],
