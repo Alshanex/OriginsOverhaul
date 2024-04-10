@@ -1,4 +1,5 @@
 {
+  "loading_priority": 10,
   "layer.origins-classes.class.name": "Class",
   "layer.origins-classes.class.missing_origin.name": "Missing",
   "layer.origins-classes.class.missing_origin.description": "You do not have a class.",
@@ -137,27 +138,27 @@
   "power.origins-classes.more_planks_from_logs.description": "You gain two more wooden planks from a single log when crafting.",
 
   "power.origins-classes.items/effecient_digger.name": "Effecient Digger",
-  "power.origins-classes.items/effecient_digger.description": "+10% Break Speed",
+  "power.origins-classes.items/effecient_digger.description": "+15% Break Speed",
 
   "power.origins-classes.items/sharp_blade.name": "Sharp Blade",
-  "power.origins-classes.items/sharp_blade.description": "+0.5 Attack Damage",
+  "power.origins-classes.items/sharp_blade.description": "+3 Attack Damage\n+0.2 Attack Speed\n+20% Critical Damage",
 
   "power.origins-classes.items/steady_shield.name": "Steady Shield",
-  "power.origins-classes.items/steady_shield.description": "+10% Knockback Resistance",
+  "power.origins-classes.items/steady_shield.description": "+10% Knockback Resistance\n+3 Armor",
 
   "power.origins-classes.items/strong_string.name": "Strong String",
-  "power.origins-classes.items/strong_string.description": "+2 Projectile Damage",
+  "power.origins-classes.items/strong_string.description": "+2 Projectile Damage\n+10% Arrow Velocity\n+20% Draw Speed",
 
   "power.origins-classes.items/tough_helmet.name": "Tough",
-  "power.origins-classes.items/tough_helmet.description": "+0.25 Armor Toughness",
+  "power.origins-classes.items/tough_helmet.description": "+1.5 Armor Toughness\n+3 Armor",
 
   "power.origins-classes.items/tough_chestplate.name": "Tough",
-  "power.origins-classes.items/tough_chestplate.description": "+0.25 Armor Toughness",
+  "power.origins-classes.items/tough_chestplate.description": "+1.5 Armor Toughness\n+3 Armor",
 
   "power.origins-classes.items/tough_leggings.name": "Tough",
-  "power.origins-classes.items/tough_leggings.description": "+0.25 Armor Toughness",
+  "power.origins-classes.items/tough_leggings.description": "+1.5 Armor Toughness\n+3 Armor",
 
   "power.origins-classes.items/tough_shoes.name": "Tough",
-  "power.origins-classes.items/tough_shoes.description": "+0.25 Armor Toughness"
+  "power.origins-classes.items/tough_shoes.description": "+1.5 Armor Toughness\n+3 Armor\n+10% Speed"
 
 }

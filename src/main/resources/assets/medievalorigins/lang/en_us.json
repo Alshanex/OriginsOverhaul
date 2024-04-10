@@ -202,6 +202,9 @@
   "power.medievalorigins.dwarf/dense.name": "Dense",
   "power.medievalorigins.dwarf/dense.description": "Dwarves are extremely heavy for their size; despite their best efforts, they sink rapidly in water.",
 
+  "power.medievalorigins.dwarf/quality_equipment.name": "Master Blacksmith",
+  "power.medievalorigins.dwarf/quality_equipment.description": "Dwarves are well known for being extraordinary blacksmiths, being able to craft more powerful gear and weapons.",
+
   "power.medievalorigins.dwarf/dwarven_tech.name": "Dwarven Tech",
   "power.medievalorigins.dwarf/dwarven_tech.description": "Dwarves are capable of mining stone without a pickaxe, and mine anything faster than others.",
 

@@ -22,6 +22,10 @@
 				"resource": "medievalorigins:king_under_mountain/buff",
 				"operation": "set",
 				"change": 0
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "origin set @s origins-classes:class origins-classes:blacksmith"
 			}
 		]
 	},

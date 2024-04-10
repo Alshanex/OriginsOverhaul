@@ -4,14 +4,15 @@
 	"powers": [
                 "medievalorigins:dwarf/miniature",
 		        "medievalorigins:dwarf/nocturnal_eyes",
+      "medievalorigins:king_under_mountain/primary",
+      "medievalorigins:king_under_mountain/secondary",
+      "medievalorigins:king_under_mountain/buff",
                 "medievalorigins:dwarf/damage_reduction",
                 "medievalorigins:dwarf/experience",
                 "medievalorigins:dwarf/pickaxeless_stone",
                 "medievalorigins:king_under_mountain/shields",
                 "medievalorigins:king_under_mountain/charges",
-      "medievalorigins:king_under_mountain/primary",
-      "medievalorigins:king_under_mountain/secondary",
-      "medievalorigins:king_under_mountain/buff",
+      "medievalorigins:dwarf/quality_equipment",
       "medievalorigins:king_under_mountain/reset_cds",
       "origins:evo_stats"
 	],

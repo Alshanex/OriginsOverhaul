@@ -126,7 +126,7 @@
 							"type": "origins:target_condition",
 							"condition": {
 								"type": "origins:in_tag",
-								"tag": "medievalorigins:bosses"
+								"tag": "iceandfire:immune_to_gorgon_stone"
 							},
 							"inverted": true
 						},

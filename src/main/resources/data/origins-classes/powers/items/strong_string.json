@@ -1,11 +1,37 @@
 {
-  "type": "apoli:modify_damage_dealt",
-  "damage_condition": {
-    "type": "apoli:projectile"
+  "loading_priority": 3,
+  "type": "origins:multiple",
+
+  "dmg": {
+    "type": "apoli:modify_damage_dealt",
+    "damage_condition": {
+      "type": "apoli:projectile"
+    },
+    "modifier": {
+      "name": "Blacksmith Range Weapon Bonus",
+      "value": 2,
+      "operation": "addition"
+    }
   },
-  "modifier": {
-    "name": "Blacksmith Range Weapon Bonus",
-    "value": 2,
-    "operation": "addition"
+
+  "atkspeed": {
+    "type": "apoli:attribute",
+    "modifier": {
+      "name": "Blacksmith Melee Weapon Bonus",
+      "attribute": "attributeslib:arrow_velocity",
+      "value": 0.1,
+      "operation": "addition"
+    }
+  },
+
+  "drawspeed": {
+    "type": "origins:attribute",
+    "modifiers": [
+      {
+        "attribute": "attributeslib:draw_speed",
+        "operation": "addition",
+        "value": 0.2
+      }
+    ]
   }
 }
