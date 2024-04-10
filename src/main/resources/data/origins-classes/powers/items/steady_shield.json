@@ -1,5 +1,7 @@
 {
   "loading_priority": 3,
+  "name": "Steady Shield",
+  "description": "+10% Knockback Resistance\n+3 Armor",
   "type": "origins:multiple",
 
   "though": {

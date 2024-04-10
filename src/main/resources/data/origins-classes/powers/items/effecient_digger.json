@@ -1,5 +1,7 @@
 {
   "loading_priority": 3,
+  "name": "Effecient Digger",
+  "description": "+15% Break Speed",
   "type": "origins:modify_break_speed",
   "modifier": {
     "name": "Blacksmith Digger Bonus",

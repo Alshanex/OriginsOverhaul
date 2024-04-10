@@ -1,5 +1,7 @@
 {
   "loading_priority": 3,
+  "name": "Tough",
+  "description": "+1.5 Armor Toughness\n+3 Armor",
   "type": "origins:multiple",
 
   "though": {

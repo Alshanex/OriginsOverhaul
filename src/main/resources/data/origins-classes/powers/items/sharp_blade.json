@@ -1,5 +1,7 @@
 {
   "loading_priority": 3,
+  "name": "Sharp Blade",
+  "description": "+3 Attack Damage\n+0.2 Attack Speed\n+20% Critical Damage",
   "type": "origins:multiple",
 
   "dmg": {

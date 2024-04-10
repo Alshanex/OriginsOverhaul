@@ -1,5 +1,7 @@
 {
   "loading_priority": 3,
+  "name": "Strong String",
+  "description": "+2 Projectile Damage\n+10% Arrow Velocity\n+20% Draw Speed",
   "type": "origins:multiple",
 
   "dmg": {
