@@ -25,7 +25,15 @@
 			},
 			{
 				"type": "origins:execute_command",
-				"command": "origin set @s origins-classes:class origins-classes:blacksmith"
+				"command": "origin set @s origins-classes:class origins-classes:archer"
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 10,
+				"action": {
+					"type": "origins:execute_command",
+					"command": "origin set @s origins-classes:class origins-classes:blacksmith"
+				}
 			}
 		]
 	},
