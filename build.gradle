@@ -160,9 +160,6 @@ repositories {
             includeGroup("com.eliotlash.mclib")
         }
     }
-    maven {
-        url = "https://maven.merchantpug.net"
-    }
     maven { url = "https://maven.enginehub.org/repo/" }
     maven { url = "https://maven.theillusivec4.top" }
     maven { url = "https://maven.blamejared.com" }
@@ -225,11 +222,6 @@ dependencies {
 
     // CURIOS *****************************************************************************************************
     runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:${curios_version}")
-
-    //ORIGINS ****************************************************************************
-    implementation fg.deobf("io.github.edwinmindcraft:calio-forge:${calio_forge_version}")
-    implementation fg.deobf("io.github.edwinmindcraft:apoli-forge:${apoli_forge_version}")
-    implementation fg.deobf("io.github.edwinmindcraft:origins-forge:${origins_forge_version}")
 
 }
 
