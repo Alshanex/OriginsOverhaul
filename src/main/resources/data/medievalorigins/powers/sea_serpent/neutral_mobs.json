@@ -26,15 +26,7 @@
 		"max": 150,
 		"min": 0,
 		"hud_render": {
-			"should_render": true,
-			"sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
-			"bar_index": 1,
-			"condition": {
-				"type": "origins:resource",
-				"resource": "*:*_cooldown",
-				"comparison": ">",
-				"compare_to": 0
-			}
+			"should_render": false
 		}
 	},
 	"break": {
