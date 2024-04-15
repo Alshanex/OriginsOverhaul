@@ -13,7 +13,8 @@
       "medievalorigins:siren/reset_cds",
       "medievalorigins:siren/scales",
       "medievalorigins:siren/siren_evo",
-      "origins:siren_evolution"
+      "origins:siren_evolution",
+      "origins:orb_fix"
 	],
         "icon": {
                 "item": "minecraft:ink_sac",

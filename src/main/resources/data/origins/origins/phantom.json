@@ -17,7 +17,8 @@
 		"origins:charges_phantom",
 		"origins:phantom_stacks",
 		"origins:stack_down_phantom",
-		"origins:shockwaves"
+		"origins:shockwaves",
+		"origins:orb_fix"
 	],
 	"icon": {
 		"item": "minecraft:phantom_membrane"

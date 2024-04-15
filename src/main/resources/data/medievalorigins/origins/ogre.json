@@ -22,7 +22,8 @@
                 "medievalorigins:ogre/combo_link",
                 "medievalorigins:ogre/hit_counter",
                 "medievalorigins:ogre/reset_cds",
-                "origins:evo_stats"
+                "origins:evo_stats",
+                "origins:orb_fix"
         ],
         "icon": {
                 "item": "minecraft:ink_sac",

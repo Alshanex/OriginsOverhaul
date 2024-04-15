@@ -11,7 +11,8 @@
                 "medievalorigins:moon_elf/stats",
                 "medievalorigins:moon_elf/towering",
                 "medievalorigins:moon_elf/reset_cds",
-                "origins:evo_stats"
+                "origins:evo_stats",
+                "origins:orb_fix"
         ],
         "icon": {
                 "item": "minecraft:ink_sac",

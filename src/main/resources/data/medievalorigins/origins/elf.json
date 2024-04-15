@@ -14,7 +14,8 @@
                 "medievalorigins:elf/elfhigh_evo",
           "origins:elfwood_evolution",
           "origins:elfmoon_evolution",
-          "origins:elfhigh_evolution"
+          "origins:elfhigh_evolution",
+          "origins:orb_fix"
         ],
             "icon": {
             "item": "minecraft:ink_sac",

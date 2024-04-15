@@ -10,7 +10,8 @@
                 "medievalorigins:high_elf/starfall",
                 "medievalorigins:high_elf/instant_cure",
       "medievalorigins:high_elf/reset_cds",
-      "origins:evo_stats"
+      "origins:evo_stats",
+      "origins:orb_fix"
 	],
         "icon": {
                 "item": "minecraft:ink_sac",

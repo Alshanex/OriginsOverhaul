@@ -14,7 +14,8 @@
                 "medievalorigins:king_under_mountain/charges",
       "medievalorigins:dwarf/quality_equipment",
       "medievalorigins:king_under_mountain/reset_cds",
-      "origins:evo_stats"
+      "origins:evo_stats",
+      "origins:orb_fix"
 	],
         "icon": {
                 "item": "minecraft:ink_sac",

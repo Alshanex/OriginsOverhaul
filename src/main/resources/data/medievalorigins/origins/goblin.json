@@ -12,7 +12,8 @@
                 "medievalorigins:goblin/lethal",
       "medievalorigins:goblin/reset_cds",
       "medievalorigins:goblin/goblin_evo",
-      "origins:goblin_evolution"
+      "origins:goblin_evolution",
+      "origins:orb_fix"
 	],
         "icon": {
                 "item": "minecraft:ink_sac",

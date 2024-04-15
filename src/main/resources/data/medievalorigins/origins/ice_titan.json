@@ -12,7 +12,8 @@
       "medievalorigins:ice_titan/secondary",
       "medievalorigins:ice_titan/reset_combo",
       "medievalorigins:ice_titan/reset_cds",
-      "origins:evo_stats"
+      "origins:evo_stats",
+      "origins:orb_fix"
     ],
         "icon": {
           "item": "minecraft:ink_sac",

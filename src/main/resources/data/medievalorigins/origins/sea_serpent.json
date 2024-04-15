@@ -15,7 +15,8 @@
       "medievalorigins:sea_serpent/slashes",
       "medievalorigins:sea_serpent/resource",
       "medievalorigins:sea_serpent/reset_cds",
-      "origins:evo_stats"
+      "origins:evo_stats",
+      "origins:orb_fix"
     ],
         "icon": {
                 "item": "minecraft:heart_of_the_sea"

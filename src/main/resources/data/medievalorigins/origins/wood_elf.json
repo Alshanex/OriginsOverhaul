@@ -13,7 +13,8 @@
                 "medievalorigins:wood_elf/graceful",
                 "medievalorigins:wood_elf/hunter",
           "medievalorigins:wood_elf/reset_cds",
-		        "origins:evo_stats"
+		        "origins:evo_stats",
+          "origins:orb_fix"
         ],
             "icon": {
             "item": "minecraft:ink_sac",

@@ -13,7 +13,8 @@
                 "medievalorigins:medusa/change_mode",
                 "medievalorigins:medusa/unpetrify",
                 "medievalorigins:medusa/reset_cds",
-                "origins:evo_stats"
+                "origins:evo_stats",
+                "origins:orb_fix"
 	    ],
         "icon": {
             "item": "minecraft:ink_sac",

@@ -12,7 +12,8 @@
       "medievalorigins:dwarf/quality_equipment",
       "medievalorigins:dwarf/dwarf_evo",
       "medievalorigins:dwarf/reset_cds",
-      "origins:dwarf_evolution"
+      "origins:dwarf_evolution",
+      "origins:orb_fix"
 	],
         "icon": {
                 "item": "minecraft:ink_sac",

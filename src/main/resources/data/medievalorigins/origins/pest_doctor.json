@@ -12,7 +12,8 @@
       "medievalorigins:pest_doctor/reset_combo",
       "medievalorigins:pest_doctor/reset_cds",
       "origins:venom_magic",
-      "origins:evo_stats"
+      "origins:evo_stats",
+      "origins:orb_fix"
     ],
         "icon": {
           "item": "minecraft:ink_sac",

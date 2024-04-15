@@ -11,7 +11,8 @@
 		"origins:damage_from_potions",
 		"origins:enderian_evo",
 		"origins:enderian_evolution",
-		"origins:reset_cds_enderian"
+		"origins:reset_cds_enderian",
+		"origins:orb_fix"
 	],
 	"icon": {
 		"item": "minecraft:ender_pearl"

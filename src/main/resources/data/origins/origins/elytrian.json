@@ -10,7 +10,8 @@
 		"origins:more_kinetic_damage",
 		"origins:elytrian_evo",
 		"origins:elytrian_evolution",
-		"origins:reset_cds_elytrian"
+		"origins:reset_cds_elytrian",
+		"origins:orb_fix"
 	],
 	"icon": {
 		"item": "minecraft:elytra"

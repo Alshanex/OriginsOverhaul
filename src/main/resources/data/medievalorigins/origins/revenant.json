@@ -11,7 +11,8 @@
                 "medievalorigins:revenant/evocation_magic",
                 "medievalorigins:revenant/unguarded",
             "medievalorigins:revenant/revenant_evo",
-            "origins:revenant_evolution"
+            "origins:revenant_evolution",
+            "origins:orb_fix"
 	],
         "icon": {
                 "item": "minecraft:ink_sac",

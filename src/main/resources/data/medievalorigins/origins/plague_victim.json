@@ -14,7 +14,8 @@
       "medievalorigins:plague_victim/resource",
       "medievalorigins:plague_victim/reset_cds",
       "medievalorigins:plague_victim/plague_evo",
-      "origins:plague_evolution"
+      "origins:plague_evolution",
+      "origins:orb_fix"
 	],
         "icon": {
 		"item": "minecraft:ink_sac",

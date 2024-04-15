@@ -13,7 +13,8 @@
 		"origins:cat_vision",
 		"origins:feline_evo",
 		"origins:feline_evolution",
-		"origins:reset_cds_feline"
+		"origins:reset_cds_feline",
+		"origins:orb_fix"
 	],
 	"icon": {
 		"item": "minecraft:orange_wool"
