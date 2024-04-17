@@ -14,7 +14,7 @@
     "origin": "medievalorigins:gorgon"
   },
   "target_condition": {
-    "type": "origins:entity_type",
-    "entity_type": "twilightforest:naga"
+    "type": "origins:in_tag",
+    "tag": "originsoverhaulmod:bosses"
   }
 }

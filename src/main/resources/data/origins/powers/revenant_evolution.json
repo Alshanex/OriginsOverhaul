@@ -14,7 +14,7 @@
     "origin": "medievalorigins:revenant"
   },
   "target_condition": {
-    "type": "origins:entity_type",
-    "entity_type": "irons_spellbooks:dead_king"
+    "type": "origins:in_tag",
+    "tag": "originsoverhaulmod:bosses"
   }
 }

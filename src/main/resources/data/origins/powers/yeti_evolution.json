@@ -14,7 +14,7 @@
     "origin": "medievalorigins:yeti"
   },
   "target_condition": {
-    "type": "origins:entity_type",
-    "entity_type": "twilightforest:alpha_yeti"
+    "type": "origins:in_tag",
+    "tag": "originsoverhaulmod:bosses"
   }
 }

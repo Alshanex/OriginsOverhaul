@@ -14,7 +14,7 @@
     "origin": "medievalorigins:elf"
   },
   "target_condition": {
-    "type": "origins:entity_type",
-    "entity_type": "blue_skies:alchemist"
+    "type": "origins:in_tag",
+    "tag": "originsoverhaulmod:bosses"
   }
 }

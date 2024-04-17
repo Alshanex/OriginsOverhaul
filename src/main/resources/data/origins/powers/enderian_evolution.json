@@ -14,7 +14,7 @@
     "origin": "origins:enderian"
   },
   "target_condition": {
-    "type": "origins:entity_type",
-    "entity_type": "cataclysm:ender_guardian"
+    "type": "origins:in_tag",
+    "tag": "originsoverhaulmod:bosses"
   }
 }

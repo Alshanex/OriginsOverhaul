@@ -133,19 +133,19 @@
   "power.origins.aerial_combatant.description": "You deal substantially more damage while in Elytra flight.",
 
   "power.origins.elytrian_evo.name": "Evolution",
-  "power.origins.elytrian_evo.description": "Find the Celestial Cloak to evolve. It is commonly guarded by a powerful undead boss that lives in cold biomes.",
+  "power.origins.elytrian_evo.description": "Find the Celestial Cloak to evolve, dropped from bosses.",
 
   "power.origins.enderian_evo.name": "Evolution",
-  "power.origins.enderian_evo.description": "Find the Void Gem to evolve. You probably should search for it in the End dimension, someone could be guarding one.",
+  "power.origins.enderian_evo.description": "Find the Void Gem to evolve, dropped from bosses.",
 
   "power.origins.feline_evo.name": "Evolution",
-  "power.origins.feline_evo.description": "Find the Ceremonial Staff to evolve. There should definetly be one in the desert, maybe guarded by some creature related to it.",
+  "power.origins.feline_evo.description": "Find the Ceremonial Staff to evolve, dropped from bosses.",
 
   "power.origins.imp_evo.name": "Evolution",
-  "power.origins.imp_evo.description": "Find the Fire Shard to evolve. You might need to fight the king of the Nether in order to get one.",
+  "power.origins.imp_evo.description": "Find the Fire Shard to evolve, dropped from bosses.",
 
   "power.origins.phantom_evo.name": "Evolution",
-  "power.origins.phantom_evo.description": "Find the Spectral Essence to evolve. It is said that a powerful creature that lives in the End dimension uses it as it's core, allowing it to fly freely in that dimension.",
+  "power.origins.phantom_evo.description": "Find the Spectral Essence to evolve, dropped from bosses.",
 
   "power.origins.throw_ender_pearl.name": "Teleportation",
   "power.origins.throw_ender_pearl.description": "You use your innate enderman abilities to teleport wherever you looking at. If you aim at an entity or block, you will be teleported to that exact position.",

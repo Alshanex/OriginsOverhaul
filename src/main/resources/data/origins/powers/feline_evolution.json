@@ -14,7 +14,7 @@
     "origin": "origins:feline"
   },
   "target_condition": {
-    "type": "origins:entity_type",
-    "entity_type": "cataclysm:ancient_remnant"
+    "type": "origins:in_tag",
+    "tag": "originsoverhaulmod:bosses"
   }
 }

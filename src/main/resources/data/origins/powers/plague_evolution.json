@@ -14,7 +14,7 @@
     "origin": "medievalorigins:plague_victim"
   },
   "target_condition": {
-    "type": "origins:entity_type",
-    "entity_type": "alexscaves:tremorzilla"
+    "type": "origins:in_tag",
+    "tag": "originsoverhaulmod:bosses"
   }
 }

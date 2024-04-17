@@ -14,7 +14,7 @@
     "origin": "medievalorigins:dwarf"
   },
   "target_condition": {
-    "type": "origins:entity_type",
-    "entity_type": "bosses_of_mass_destruction:gauntlet"
+    "type": "origins:in_tag",
+    "tag": "originsoverhaulmod:bosses"
   }
 }

@@ -14,7 +14,7 @@
     "origin": "medievalorigins:siren"
   },
   "target_condition": {
-    "type": "origins:entity_type",
-    "entity_type": "cataclysm:the_leviathan"
+    "type": "origins:in_tag",
+    "tag": "originsoverhaulmod:bosses"
   }
 }
