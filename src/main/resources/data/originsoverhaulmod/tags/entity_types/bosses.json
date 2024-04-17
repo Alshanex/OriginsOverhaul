@@ -5,14 +5,6 @@
       "required": false,
       "id": "minecraft:ender_dragon"
     },
-      {
-        "required": false,
-        "id": "alexscaves:tremorzilla"
-      },
-    {
-      "required": false,
-      "id": "alexsmobs:void_worm"
-    },
     {
       "required": false,
       "id": "blue_skies:summoner"
@@ -43,39 +35,11 @@
     },
     {
       "required": false,
-      "id": "twilightforest:naga"
-    },
-    {
-      "required": false,
-      "id": "twilightforest:lich"
-    },
-    {
-      "required": false,
-      "id": "twilightforest:ur_ghast"
-    },
-    {
-      "required": false,
-      "id": "twilightforest:alpha_yeti"
-    },
-    {
-      "required": false,
-      "id": "twilightforest:snow_queen"
-    },
-    {
-      "required": false,
-      "id": "twilightforest:plateau_boss"
-    },
-    {
-      "required": false,
       "id": "cataclysm:ignis"
     },
     {
       "required": false,
       "id": "cataclysm:netherite_monstrosity"
-    },
-    {
-      "required": false,
-      "id": "cataclysm:ender_guardian"
     },
     {
       "required": false,
@@ -92,14 +56,6 @@
     {
       "required": false,
       "id": "aether:sun_spirit"
-    },
-    {
-      "required": false,
-      "id": "aquamirae:captain_cornelia"
-    },
-    {
-      "required": false,
-      "id": "irons_spellbooks:dead_king"
     }
   ]
 }
