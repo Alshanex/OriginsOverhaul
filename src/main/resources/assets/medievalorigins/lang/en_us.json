@@ -230,7 +230,7 @@
   "power.medievalorigins.dwarf/shield.description": "Dwarves are able to use a spell that has been passed through incontable dwarven generations to create a protective shield for a short period of time.",
 
   "power.medievalorigins.dwarf/dwarf_evo.name": "Evolution",
-  "power.medievalorigins.dwarf/dwarf_evo.description": "Find the Dwarven Crown to evolve, dropped from bosses.",
+  "power.medievalorigins.dwarf/dwarf_evo.description": "Find the Dwarven Crown to evolve, obtained by defeating the Ender Dragon.\n(Some bosses from mods like Cataclysm or Bosses of Mass Destruction will also drop the item)",
 
 
   "power.medievalorigins.human/description.name": "Note",
@@ -324,7 +324,7 @@
   "power.medievalorigins.goblin/invisible.description": "You equip a strange looking ring that you encounterend in a lake some time ago. What do you think will happen?",
 
   "power.medievalorigins.goblin/goblin_evo.name": "Evolution",
-  "power.medievalorigins.goblin/goblin_evo.description": "Find the Mutation Potion to evolve, dropped from bosses.",
+  "power.medievalorigins.goblin/goblin_evo.description": "Find the Mutation Potion to evolve, obtained by defeating the Ender Dragon.\n(Some bosses from mods like Cataclysm or Bosses of Mass Destruction will also drop the item)",
 
   "power.medievalorigins.gorgon/hydrophobe.name": "Hydrophobe",
   "power.medievalorigins.gorgon/hydrophobe.description": "Gorgons can not tolerate the purity of water and take damage from it.",
@@ -357,7 +357,7 @@
   "power.medievalorigins.gorgon/poison_breath.description": "The snakes attached to your head throw a venomous and lethal breath to the target.",
 
   "power.medievalorigins.gorgon/gorgon_evo.name": "Evolution",
-  "power.medievalorigins.gorgon/gorgon_evo.description": "Find the Basilisk Fang to evolve, dropped from bosses.",
+  "power.medievalorigins.gorgon/gorgon_evo.description": "Find the Basilisk Fang to evolve, obtained by defeating the Ender Dragon.\n(Some bosses from mods like Cataclysm or Bosses of Mass Destruction will also drop the item)",
 
   "power.medievalorigins.high_elf/elegant.name": "Elegant",
   "power.medievalorigins.high_elf/elegant.description": "Due to their slender nature, High Elves can not wear armor heavier than iron (This can be prevented with an enchantment), and have less health.",
@@ -546,7 +546,7 @@
   "power.medievalorigins.plague_victim/blood_ray.description": "Plague Victims can unleash a blood ray towards their enemies, leeching some of their life if they die.",
 
   "power.medievalorigins.plague_victim/plague_evo.name": "Evolution",
-  "power.medievalorigins.plague_victim/plague_evo.description": "Find the Blood Serum to evolve, dropped from bosses.",
+  "power.medievalorigins.plague_victim/plague_evo.description": "Find the Blood Serum to evolve, obtained by defeating the Ender Dragon.\n(Some bosses from mods like Cataclysm or Bosses of Mass Destruction will also drop the item)",
 
   "power.medievalorigins.siren/amphibious.name": "Amphibious",
   "power.medievalorigins.siren/amphibious.description": "Sirens, being a subset of Mer, can survive in water, and swim with increased speed.",
@@ -576,7 +576,7 @@
   "power.medievalorigins.siren/damage_underwater.description": "You have always lived under the water, so when it touches your body you will deal more damage.",
 
   "power.medievalorigins.siren/siren_evo.name": "Evolution",
-  "power.medievalorigins.siren/siren_evo.description": "Find the Sea Essence to evolve, dropped from bosses.",
+  "power.medievalorigins.siren/siren_evo.description": "Find the Sea Essence to evolve, obtained by defeating the Ender Dragon.\n(Some bosses from mods like Cataclysm or Bosses of Mass Destruction will also drop the item)",
 
   "power.medievalorigins.siren/scales.name": "Ocean's Wish",
   "power.medievalorigins.siren/scales.description": "Every 5 minutes you get a gift from the Ocean to help you survive, which is a random serpent scale.",
@@ -639,7 +639,7 @@
   "power.medievalorigins.yeti/ice_block.description": "Yetis can summon big ice boulders that can be launched to their enemies.",
 
   "power.medievalorigins.yeti/yeti_evo.name": "Evolution",
-  "power.medievalorigins.yeti/yeti_evo.description": "Find the Cold Essence to evolve, dropped from bosses.",
+  "power.medievalorigins.yeti/yeti_evo.description": "Find the Cold Essence to evolve, obtained by defeating the Ender Dragon.\n(Some bosses from mods like Cataclysm or Bosses of Mass Destruction will also drop the item)",
 
   "power.medievalorigins.revenant/black_thumb.name": "Black Thumb",
   "power.medievalorigins.revenant/black_thumb.description": "A Revenant can not harvest any crops; they wilt at their deathly touch.",
@@ -672,7 +672,7 @@
   "power.medievalorigins.revenant/evocation_magic.description": "Your precise control of summoning magic allowed your summons to use all the power they had when they were alive.",
 
   "power.medievalorigins.revenant/revenant_evo.name": "Evolution",
-  "power.medievalorigins.revenant/revenant_evo.description": "Find the Summoning Tome to evolve, dropped from bosses.",
+  "power.medievalorigins.revenant/revenant_evo.description": "Find the Summoning Tome to evolve, obtained by defeating the Ender Dragon.\n(Some bosses from mods like Cataclysm or Bosses of Mass Destruction will also drop the item)",
 
   "power.medievalorigins.specter/jump.name": "Into the air!",
   "power.medievalorigins.specter/jump.description": "Launch enemies and yourself into the air and then launch yourself forward in a powerful dash, triggered with Secondary Ability key.",
@@ -789,7 +789,7 @@
   "power.medievalorigins.elf/swarm.description": "Elves can communicate with other animals in the woods, being able to command an insect swarm to hurt their enemies. Triggered with Secondary Ability key.",
 
   "power.medievalorigins.elf/elfwood_evo.name": "Evolution",
-  "power.medievalorigins.elf/elfwood_evo.description": "Find a Forest Essence to evolve into a Wood Elf.\nFind a Moon Shard to evolve into a Moon Elf.\nFind a Wisdom Shard to evolve into a High Elf.\nDropped from bosses.",
+  "power.medievalorigins.elf/elfwood_evo.description": "Find a Forest Essence to evolve into a Wood Elf.\nFind a Moon Shard to evolve into a Moon Elf.\nFind a Wisdom Shard to evolve into a High Elf.\nObtained by defeating the Ender Dragon.\n(Some bosses from mods like Cataclysm or Bosses of Mass Destruction will also drop the item)",
 
   "power.medievalorigins.ender_titan/primary.name": "Teleportation",
   "power.medievalorigins.ender_titan/primary.description": "- If you have enough portals stacked (portals recharge over time), you will summon a first portal where you are looking and, shortly after, a second portal connected to the first where you are looking.\n- If not enough portal stacks, you will teleport normally. If you aim at an entity or block, you will be teleported to that exact position.\nTriggered with Secondary Ability key.",
