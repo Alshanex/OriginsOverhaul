@@ -1,4 +1,6 @@
 {
+  "name": "Wood Elf Evolution",
+  "description": "Find a Forest Essence to evolve into a Wood Elf.\nObtained by defeating the Ender Dragon.\n(Some bosses from mods like Cataclysm or Bosses of Mass Destruction will also drop the item)",
   "type": "origins:active_self",
   "entity_action": {
     "type": "origins:and",

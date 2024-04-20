@@ -788,9 +788,6 @@
   "power.medievalorigins.elf/swarm.name": "Insect Swarm",
   "power.medievalorigins.elf/swarm.description": "Elves can communicate with other animals in the woods, being able to command an insect swarm to hurt their enemies. Triggered with Secondary Ability key.",
 
-  "power.medievalorigins.elf/elfwood_evo.name": "Evolution",
-  "power.medievalorigins.elf/elfwood_evo.description": "Find a Forest Essence to evolve into a Wood Elf.\nFind a Moon Shard to evolve into a Moon Elf.\nFind a Wisdom Shard to evolve into a High Elf.\nObtained by defeating the Ender Dragon.\n(Some bosses from mods like Cataclysm or Bosses of Mass Destruction will also drop the item)",
-
   "power.medievalorigins.ender_titan/primary.name": "Teleportation",
   "power.medievalorigins.ender_titan/primary.description": "- If you have enough portals stacked (portals recharge over time), you will summon a first portal where you are looking and, shortly after, a second portal connected to the first where you are looking.\n- If not enough portal stacks, you will teleport normally. If you aim at an entity or block, you will be teleported to that exact position.\nTriggered with Secondary Ability key.",
 

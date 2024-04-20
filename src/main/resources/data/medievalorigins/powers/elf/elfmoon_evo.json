@@ -1,5 +1,6 @@
 {
-  "hidden": true,
+  "name": "Moon Elf Evolution",
+  "description": "Find a Moon Shard to evolve into a Moon Elf.\nObtained by defeating the Ender Dragon.\n(Some bosses from mods like Cataclysm or Bosses of Mass Destruction will also drop the item)",
   "type": "origins:active_self",
   "entity_action": {
     "type": "origins:and",
