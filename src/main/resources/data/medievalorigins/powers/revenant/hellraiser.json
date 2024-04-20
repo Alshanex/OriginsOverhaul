@@ -9,11 +9,11 @@
 		"actions": [
 			{
 				"type": "origins:execute_command",
-				"command": "cast @s raise_dead 10"
+				"command": "cast @s raise_dead 5"
 			},
 			{
 				"type": "origins:damage",
-				"amount": 8,
+				"amount": 6,
 				"damage_type": "minecraft:on_fire"
 			},
 			{
