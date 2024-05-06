@@ -1,0 +1,19 @@
+{
+	"loading_priority":1,
+	"hidden": true,
+	"type": "origins:action_on_callback",
+	"entity_action_gained": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:execute_command",
+				"command": "learnSpell learn sculk_tentacles"
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "learnSpell learn eldritch_blast"
+			}
+		]
+	},
+	"execute_chosen_when_orb": true
+}

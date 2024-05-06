@@ -1,0 +1,164 @@
+{
+	"loading_priority":1,
+	"name": "Call of the Abyss",
+	"description": "With your Secondary Ability key you can call the forces of the abyss to take away your enemy.",
+	"type": "origins:active_self",
+	"entity_action": {
+		"type": "origins:raycast",
+		"distance": 15,
+		"block": false,
+		"entity": true,
+		"shape_type": "visual",
+		"fluid_handling": "any",
+		"hit_action": {
+			"type": "origins:execute_command",
+			"command": "cast @s sculk_tentacles 2"
+		},
+		"bientity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:target_action",
+					"action": {
+						"type": "origins:apply_effect",
+						"effects": [
+							{
+								"effect": "minecraft:slowness",
+								"duration": 80,
+								"amplifier": 9,
+								"is_ambient": false,
+								"show_particles": false,
+								"show_icon": false
+							}
+						]
+					}
+				},
+				{
+					"type": "origins:if_else",
+					"condition": {
+						"type": "origins:target_condition",
+						"condition": {
+							"type": "origins:and",
+							"conditions": [
+								{
+									"type": "origins:in_tag",
+									"tag": "iceandfire:immune_to_gorgon_stone",
+									"inverted": true
+								},
+								{
+									"type": "origins:health",
+									"comparison": "<",
+									"compare_to": 30
+								}
+							]
+						}
+					},
+					"if_action": {
+						"type": "origins:and",
+						"actions": [
+							{
+								"type": "origins:target_action",
+								"action": {
+									"type": "origins:apply_effect",
+									"effects": [
+										{
+											"effect": "minecraft:resistance",
+											"duration": 80,
+											"amplifier": 9,
+											"is_ambient": false,
+											"show_particles": false,
+											"show_icon": false
+										}
+									]
+								}
+							},
+							{
+								"type": "origins:actor_action",
+								"action": {
+									"type": "origins:and",
+									"actions": [
+										{
+											"type": "origins:delay",
+											"ticks": 80,
+											"action": {
+												"type": "origins:feed",
+												"food": 4,
+												"saturation": 2
+											}
+										},
+										{
+											"type": "origins:delay",
+											"ticks": 80,
+											"action": {
+												"type": "origins:heal",
+												"amount": 6
+											}
+										}
+									]
+								}
+							},
+							{
+								"type": "origins:target_action",
+								"action": {
+									"type": "origins:and",
+									"actions": [
+										{
+											"type": "origins:delay",
+											"ticks": 20,
+											"action": {
+												"type": "origins:execute_command",
+												"command": "tp @s ~ ~-1 ~"
+											}
+										},
+										{
+											"type": "origins:delay",
+											"ticks": 40,
+											"action": {
+												"type": "origins:execute_command",
+												"command": "tp @s ~ ~-1 ~"
+											}
+										},
+										{
+											"type": "origins:delay",
+											"ticks": 60,
+											"action": {
+												"type": "origins:execute_command",
+												"command": "tp @s ~ ~-1 ~"
+											}
+										},
+										{
+											"type": "origins:delay",
+											"ticks": 80,
+											"action": {
+												"type": "origins:execute_command",
+												"command": "tp @s ~ ~-1 ~"
+											}
+										},
+										{
+											"type": "origins:delay",
+											"ticks": 82,
+											"action": {
+												"type": "origins:execute_command",
+												"command": "kill @s"
+											}
+										}
+									]
+								}
+							}
+						]
+					}
+				}
+			]
+		}
+	},
+	"cooldown": 340,
+	"key": {
+		"key": "key.origins.secondary_active",
+		"continuous": false
+	},
+	"hud_render": {
+		"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+		"bar_index": 7,
+		"should_render": true
+	}
+}

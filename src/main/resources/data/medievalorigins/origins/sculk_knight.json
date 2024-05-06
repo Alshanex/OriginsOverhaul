@@ -1,0 +1,19 @@
+{
+        "loading_priority": 12,
+  "name": "Sculk Knight",
+  "description": "Born in the dephts of an Ancient City, you have innate magic powers that surpass human comprehension.",
+	"powers": [
+      "medievalorigins:sculk_knight/spell",
+      "medievalorigins:sculk_knight/blind",
+      "medievalorigins:sculk_knight/glow",
+      "medievalorigins:sculk_knight/noeat",
+      "medievalorigins:sculk_knight/blast",
+      "medievalorigins:sculk_knight/secondary",
+      "origins:orb_fix"
+    ],
+        "icon": {
+                "item": "minecraft:sculk_shrieker"
+        },
+	"impact": 0,
+    "order": 1
+}
