@@ -4,12 +4,11 @@
   "description": "Born in the dephts of an Ancient City, you have innate magic powers that surpass human comprehension.",
 	"powers": [
       "medievalorigins:sculk_knight/spell",
-      "medievalorigins:sculk_knight/blind",
       "medievalorigins:sculk_knight/stealth",
-      "medievalorigins:sculk_knight/glow",
       "medievalorigins:sculk_knight/noeat",
       "medievalorigins:sculk_knight/blast",
       "medievalorigins:sculk_knight/secondary",
+      "medievalorigins:sculk_knight/execute",
       "origins:orb_fix"
     ],
         "icon": {
