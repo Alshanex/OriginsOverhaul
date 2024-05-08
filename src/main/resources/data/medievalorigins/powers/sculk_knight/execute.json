@@ -1,7 +1,7 @@
 {
 	"loading_priority":1,
 	"name": "Devour",
-	"description": "With your Middle button key you can call the forces of the abyss to take away your weakened (under 20% health) enemy, granting you health and satisfying your hunger.",
+	"description": "With your Middle button key you can call the forces of the abyss to devour and digest your weakened (under 20% health) enemy, recovering your health and hunger.",
 	"type": "origins:active_self",
 	"entity_action": {
 		"type": "origins:raycast",
@@ -26,9 +26,19 @@
 									"inverted": true
 								},
 								{
-									"type": "origins:relative_health",
-									"comparison": "<=",
-									"compare_to": 0.25
+									"type": "origins:or",
+									"conditions": [
+										{
+											"type": "origins:relative_health",
+											"comparison": "<=",
+											"compare_to": 0.2
+										},
+										{
+											"type": "origins:health",
+											"comparison": "<",
+											"compare_to": 5
+										}
+									]
 								}
 							]
 						}
@@ -139,6 +149,22 @@
 										},
 										{
 											"type": "origins:delay",
+											"ticks": 10,
+											"action": {
+												"type": "origins:execute_command",
+												"command": "tp @s ~ ~-2 ~"
+											}
+										},
+										{
+											"type": "origins:delay",
+											"ticks": 227,
+											"action": {
+												"type": "origins:execute_command",
+												"command": "tp @s ~ ~2 ~"
+											}
+										},
+										{
+											"type": "origins:delay",
 											"ticks": 240,
 											"action": {
 												"type": "origins:execute_command",
@@ -154,7 +180,7 @@
 			]
 		}
 	},
-	"cooldown": 40,
+	"cooldown": 20,
 	"key": {
 		"key": "key.pickItem",
 		"continuous": false
