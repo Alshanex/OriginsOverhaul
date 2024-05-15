@@ -5,7 +5,7 @@
 	"type": "origins:active_self",
 	"entity_action": {
 		"type": "origins:execute_command",
-		"command": "cast @s sculk_tentacles 1"
+		"command": "cast @s sculk_tentacles 3"
 	},
 	"cooldown": 340,
 	"key": {

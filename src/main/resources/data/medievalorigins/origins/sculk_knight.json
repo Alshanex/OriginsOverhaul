@@ -1,6 +1,6 @@
 {
         "loading_priority": 12,
-  "name": "Sculk Knight",
+  "name": "Eldritch Ghoul",
   "description": "Born in the dephts of an Ancient City, you have innate magic powers that surpass human comprehension.",
 	"powers": [
       "medievalorigins:sculk_knight/spell",
@@ -9,6 +9,10 @@
       "medievalorigins:sculk_knight/blast",
       "medievalorigins:sculk_knight/secondary",
       "medievalorigins:sculk_knight/execute",
+      "medievalorigins:sculk_knight/resource",
+      "medievalorigins:sculk_knight/resource_primary",
+      "medievalorigins:sculk_knight/stage0",
+      "medievalorigins:sculk_knight/exchange",
       "origins:orb_fix"
     ],
         "icon": {

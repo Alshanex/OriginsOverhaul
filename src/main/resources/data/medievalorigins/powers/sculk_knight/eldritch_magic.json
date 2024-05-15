@@ -1,0 +1,24 @@
+{
+    "type": "origins:multiple",
+    "hidden": true,
+    "blood_power": {
+        "type": "origins:attribute",
+        "modifiers": [
+            {
+                "attribute": "irons_spellbooks:eldritch_spell_power",
+                "operation": "MULTIPLY_BASE",
+                "value": 0.25
+            }
+        ]
+    },
+    "blood_resist": {
+        "type": "origins:attribute",
+        "modifiers": [
+            {
+                "attribute": "irons_spellbooks:eldritch_magic_resist",
+                "operation": "MULTIPLY_BASE",
+                "value": 0.15
+            }
+        ]
+    }
+}

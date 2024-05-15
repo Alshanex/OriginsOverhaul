@@ -36,7 +36,7 @@
 										{
 											"type": "origins:health",
 											"comparison": "<",
-											"compare_to": 5
+											"compare_to": 6
 										}
 									]
 								}
@@ -117,6 +117,49 @@
 											}
 										}
 									]
+								}
+							},
+							{
+								"type": "origins:delay",
+								"ticks": 240,
+								"action": {
+									"type": "origins:if_else",
+									"condition": {
+										"type": "origins:and",
+										"conditions": [
+											{
+												"type": "origins:actor_condition",
+												"condition": {
+													"type": "origins:resource",
+													"resource": "medievalorigins:sculk_knight/resource",
+													"comparison": "<",
+													"compare_to": 50
+												}
+											},
+											{
+												"type": "origins:target_condition",
+												"condition": {
+													"type": "origins:entity_group",
+													"group": "undead"
+												}
+											}
+										]
+									},
+									"if_action": {
+										"type": "origins:actor_action",
+										"action": {
+											"type": "origins:chance",
+											"action": {
+												"type": "origins:modify_resource",
+												"modifier": {
+													"operation": "add_base_early",
+													"value": 1
+												},
+												"resource": "medievalorigins:sculk_knight/resource"
+											},
+											"chance": 0.3
+										}
+									}
 								}
 							},
 							{
