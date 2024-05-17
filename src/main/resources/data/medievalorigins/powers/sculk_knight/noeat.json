@@ -1,7 +1,7 @@
 {
 	"loading_priority":1,
-	"name": "Sculk Anatomy",
-	"description": "Sculk Knight anatomy prevents him from eating any regular food, they can only recover food by using Call of the Abyss in a already weakened (under 10% health) enemy.",
+	"name": "Eldritch Ghoul Anatomy",
+	"description": "Eldritch Ghoul anatomy prevents him from eating any regular food, they can only recover food by using Call of the Abyss in a already weakened enemy.",
 	"type": "origins:prevent_item_use",
 	"item_condition": {
 		"type": "origins:food"

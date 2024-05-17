@@ -1,10 +1,12 @@
 package net.alshanex.originsoverhaulmod.entity;
 
 import net.alshanex.originsoverhaulmod.OriginsOverhaulMod;
+import net.alshanex.originsoverhaulmod.entity.custom.FireFlower;
 import net.alshanex.originsoverhaulmod.entity.custom.WaterCutProjectile;
 import net.alshanex.originsoverhaulmod.entity.custom.WaterSlashEntity;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -23,6 +25,12 @@ public class ModEntities {
                     .sized(2f, .5f)
                     .clientTrackingRange(64)
                     .build("water_cut"));
+
+    public static final RegistryObject<EntityType<FireFlower>> FIRE_FLOWER =
+            ENTITY_TYPES.register("fire_flower", () -> EntityType.Builder.<FireFlower>of(FireFlower::new, MobCategory.MISC)
+                    .sized(2.5f, 5.5f)
+                    .clientTrackingRange(64)
+                    .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "fire_flower").toString()));
 
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);

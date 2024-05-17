@@ -1,7 +1,7 @@
 {
 	"loading_priority":1,
 	"name": "Corrupted Souls",
-	"description": "Each time you execute an undead mob, you will have a 30% chance to get a corrupted soul. When you get 50 souls, you will be able to right click in an Ancient City portal to exchange the souls for power (only avaliable 3 times).\n- 1st time: Secondary Ability level up, 25% bonus Eldritch spell power and 15% bonus Eldritch spell resistance.\n- 2nd time: Secondary Ability level up and bonus health, attack damage and armor.\n- 3rd time: Secondary Ability level up and First Ability level up.",
+	"description": "Each time you execute an undead mob, you will have a 50% chance to get a corrupted soul. When you get 50 souls, you will be able to right click in an Ancient City portal to exchange the souls for power (only avaliable 3 times).\n- 1st time: Secondary Ability level up, 25% bonus Eldritch spell power and 15% bonus Eldritch spell resistance.\n- 2nd time: Secondary Ability level up and bonus health, attack damage and armor.\n- 3rd time: Secondary Ability level up and First Ability level up.",
 	"type": "origins:action_on_callback",
 	"entity_action_gained": {
 		"type": "origins:and",

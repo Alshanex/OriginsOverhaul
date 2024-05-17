@@ -2,6 +2,7 @@ package net.alshanex.originsoverhaulmod.setup;
 
 import net.alshanex.originsoverhaulmod.OriginsOverhaulMod;
 import net.alshanex.originsoverhaulmod.entity.ModEntities;
+import net.alshanex.originsoverhaulmod.entity.custom.FireFlowerRenderer;
 import net.alshanex.originsoverhaulmod.entity.custom.WaterSlashRenderer;
 import net.alshanex.originsoverhaulmod.entity.custom.WaterCutRenderer;
 import net.minecraftforge.api.distmarker.Dist;
@@ -15,5 +16,6 @@ public class ClientSetup {
     public static void rendererRegister(EntityRenderersEvent.RegisterRenderers event) {
         event.registerEntityRenderer(ModEntities.WATER_SLASH_ENTITY.get(), WaterSlashRenderer::new);
         event.registerEntityRenderer(ModEntities.WATER_CUT_PROJECTILE.get(), WaterCutRenderer::new);
+        event.registerEntityRenderer(ModEntities.FIRE_FLOWER.get(), FireFlowerRenderer::new);
     }
 }

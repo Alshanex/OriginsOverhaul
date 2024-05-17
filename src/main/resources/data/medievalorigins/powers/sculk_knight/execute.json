@@ -1,7 +1,7 @@
 {
 	"loading_priority":1,
 	"name": "Devour",
-	"description": "With your Middle button key you can call the forces of the abyss to devour and digest your weakened (under 20% health) enemy, recovering your health and hunger.",
+	"description": "With your Middle button key you can call the forces of the abyss to devour and digest your weakened (under 20% health or under 6 health) enemy, recovering your health and hunger.",
 	"type": "origins:active_self",
 	"entity_action": {
 		"type": "origins:raycast",
@@ -104,8 +104,8 @@
 											"ticks": 240,
 											"action": {
 												"type": "origins:feed",
-												"food": 4,
-												"saturation": 2
+												"food": 10,
+												"saturation": 6
 											}
 										},
 										{
@@ -157,7 +157,7 @@
 												},
 												"resource": "medievalorigins:sculk_knight/resource"
 											},
-											"chance": 0.3
+											"chance": 0.5
 										}
 									}
 								}

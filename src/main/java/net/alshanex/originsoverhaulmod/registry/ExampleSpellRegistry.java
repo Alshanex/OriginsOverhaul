@@ -24,4 +24,5 @@ public class ExampleSpellRegistry {
     public static final RegistryObject<AbstractSpell> ENDER_STOMP = registerSpell(new EnderStomp());
     public static final RegistryObject<AbstractSpell> PETRIFY = registerSpell(new Petrify());
     public static final RegistryObject<AbstractSpell> AERIAL_DASH = registerSpell(new AerialDash());
+    public static final RegistryObject<AbstractSpell> FIRE_FLOWER = registerSpell(new FireFlowerSpell());
 }
