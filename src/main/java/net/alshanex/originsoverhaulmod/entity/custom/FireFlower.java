@@ -13,6 +13,7 @@ import io.redspace.ironsspellbooks.registries.SoundRegistry;
 import io.redspace.ironsspellbooks.util.ParticleHelper;
 import io.redspace.ironsspellbooks.api.util.Utils;
 import net.alshanex.originsoverhaulmod.registry.ExampleSpellRegistry;
+import net.minecraft.core.particles.BlockParticleOption;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.protocol.Packet;
@@ -20,12 +21,16 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.game.ClientboundAddEntityPacket;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.DamageTypeTags;
+import net.minecraft.util.Mth;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.RenderShape;
+import net.minecraft.world.level.block.state.BlockState;
 import software.bernie.geckolib.animatable.GeoEntity;
 import software.bernie.geckolib.core.animatable.GeoAnimatable;
 import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
@@ -82,12 +87,12 @@ public class FireFlower extends LivingEntity implements GeoEntity, AntiMagicSusc
                 this.discard();
             } else {
                 if (age < 280 && (age) % 20 == 0) {
-                    level().getEntitiesOfClass(LivingEntity.class, this.getBoundingBox().inflate(1.2)).forEach(this::dealDamage);
+                    level().getEntitiesOfClass(LivingEntity.class, this.getBoundingBox().inflate(4)).forEach(this::dealDamage);
                     float radius = 6;
                     MagicManager.spawnParticles(level(), new ShockwaveParticleOptions(SchoolRegistry.FIRE.get().getTargetingColor(), radius, true, "irons_spellbooks:fire"), this.getX(), this.getY(), this.getZ(), 1, 0, 0, 0, 0, true);
                 }
             }
-            if (age == 260 && Utils.random.nextFloat() < .3f)
+            if (age == 260)
                 playSound(SoundRegistry.VOID_TENTACLES_LEAVE.get(), 2, 1);
         }
         age++;
@@ -136,6 +141,7 @@ public class FireFlower extends LivingEntity implements GeoEntity, AntiMagicSusc
     public boolean dealDamage(LivingEntity target) {
         if (target != getOwner())
             if (DamageSources.applyDamage(target, damage, ExampleSpellRegistry.FIRE_FLOWER.get().getDamageSource(this, getOwner()))) {
+                target.setSecondsOnFire(3);
                 return true;
             }
         return false;
@@ -189,7 +195,7 @@ public class FireFlower extends LivingEntity implements GeoEntity, AntiMagicSusc
         //if (controller.getAnimationState() == AnimationState.Stopped) {
         //}
         //IronsSpellbooks.LOGGER.debug("TentacleAnimOffset: {}", controller.tickOffset);
-        if (age > 220 && Utils.random.nextFloat() < .04f) {
+        if (age > 245) {
             controller.setAnimation(ANIMATION_RETREAT);
         } else if (controller.getAnimationState() == AnimationController.State.STOPPED) {
             controller.setAnimation(ANIMATION_IDLE);
@@ -207,7 +213,7 @@ public class FireFlower extends LivingEntity implements GeoEntity, AntiMagicSusc
         //if (controller.getAnimationState() == AnimationState.Stopped) {
         //}
         //IronsSpellbooks.LOGGER.debug("TentacleAnimOffset: {}", controller.tickOffset);
-        if (age < 10) {
+        if (age < 20) {
             controller.setAnimation(ANIMATION_RISE);
             return PlayState.CONTINUE;
         } else
