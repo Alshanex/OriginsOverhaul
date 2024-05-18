@@ -12,6 +12,8 @@ import io.redspace.ironsspellbooks.util.ParticleHelper;
 import net.alshanex.originsoverhaulmod.entity.ModEntities;
 import io.redspace.ironsspellbooks.registries.SoundRegistry;
 import net.alshanex.originsoverhaulmod.registry.ExampleSpellRegistry;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.particles.BlockParticleOption;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.protocol.Packet;
@@ -69,6 +71,13 @@ public class FireFlower extends LivingEntity implements GeoEntity, AntiMagicSusc
     @Override
     public boolean isOnFire() {
         return false;
+    }
+
+    public int getSurface(int x, int y, int z) {
+        var pos = new BlockPos(x, y, z);
+        while (!level().isEmptyBlock(pos))
+            pos = pos.above();
+        return pos.getY();
     }
     @Override
     public void tick() {
