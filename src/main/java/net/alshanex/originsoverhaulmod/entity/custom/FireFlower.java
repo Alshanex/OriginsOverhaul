@@ -1,19 +1,17 @@
 package net.alshanex.originsoverhaulmod.entity.custom;
 
 import io.redspace.ironsspellbooks.api.registry.SchoolRegistry;
-import io.redspace.ironsspellbooks.api.registry.SpellRegistry;
+import io.redspace.ironsspellbooks.api.util.Utils;
 import io.redspace.ironsspellbooks.capabilities.magic.MagicManager;
 import io.redspace.ironsspellbooks.api.magic.MagicData;
 import io.redspace.ironsspellbooks.damage.DamageSources;
 import io.redspace.ironsspellbooks.entity.mobs.AntiMagicSusceptible;
+import io.redspace.ironsspellbooks.entity.spells.fireball.MagicFireball;
 import io.redspace.ironsspellbooks.particle.ShockwaveParticleOptions;
-import io.redspace.ironsspellbooks.registries.MobEffectRegistry;
+import io.redspace.ironsspellbooks.util.ParticleHelper;
 import net.alshanex.originsoverhaulmod.entity.ModEntities;
 import io.redspace.ironsspellbooks.registries.SoundRegistry;
-import io.redspace.ironsspellbooks.util.ParticleHelper;
-import io.redspace.ironsspellbooks.api.util.Utils;
 import net.alshanex.originsoverhaulmod.registry.ExampleSpellRegistry;
-import net.minecraft.core.particles.BlockParticleOption;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.protocol.Packet;
@@ -21,18 +19,13 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.game.ClientboundAddEntityPacket;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.DamageTypeTags;
-import net.minecraft.util.Mth;
-import net.minecraft.util.RandomSource;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.*;
+import net.minecraft.world.entity.ambient.Bat;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.RenderShape;
-import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.phys.Vec3;
 import software.bernie.geckolib.animatable.GeoEntity;
-import software.bernie.geckolib.core.animatable.GeoAnimatable;
 import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
 import software.bernie.geckolib.core.animation.AnimatableManager;
 import software.bernie.geckolib.core.animation.AnimationController;
@@ -77,7 +70,6 @@ public class FireFlower extends LivingEntity implements GeoEntity, AntiMagicSusc
     public boolean isOnFire() {
         return false;
     }
-
     @Override
     public void tick() {
         super.tick();

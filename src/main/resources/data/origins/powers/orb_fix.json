@@ -1,31 +1,15 @@
 {
-  "type": "origins:active_self",
+  "type": "origins:action_on_item_use",
   "hidden": true,
+  "trigger": "instant",
   "entity_action": {
-    "type": "origins:and",
-    "actions": [
-      {
-        "type": "origins:execute_command",
-        "command": "power clear @s"
-      }
-    ]
+    "type": "origins:execute_command",
+    "command": "power clear @s"
   },
-  "cooldown": 1,
-  "hud_render": {
-    "should_render": false
-  },
-  "key": {
-    "key": "key.use",
-    "continuous": true
-  },
-  "condition": {
-    "type": "origins:equipped_item",
-    "equipment_slot": "mainhand",
-    "item_condition": {
-      "type": "origins:ingredient",
-      "ingredient": {
-        "item": "origins:orb_of_origin"
-      }
+  "item_condition": {
+    "type": "origins:ingredient",
+    "ingredient": {
+      "item": "origins:orb_of_origin"
     }
   }
 }

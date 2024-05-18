@@ -28,7 +28,7 @@ public class ModEntities {
 
     public static final RegistryObject<EntityType<FireFlower>> FIRE_FLOWER =
             ENTITY_TYPES.register("fire_flower", () -> EntityType.Builder.<FireFlower>of(FireFlower::new, MobCategory.MISC)
-                    .sized(2.5f, 5.5f)
+                    .sized(1.5f, 1f)
                     .clientTrackingRange(64)
                     .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "fire_flower").toString()));
 
