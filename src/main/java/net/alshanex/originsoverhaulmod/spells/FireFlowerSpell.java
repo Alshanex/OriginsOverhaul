@@ -106,10 +106,8 @@ public class FireFlowerSpell extends AbstractSpell {
             HitResult raycast = Utils.raycastForEntity(level, entity, 32, true, .25f);
             if (raycast.getType() == HitResult.Type.ENTITY) {
                 spawn = ((EntityHitResult) raycast).getEntity().position();
-                if (((EntityHitResult) raycast).getEntity() instanceof LivingEntity livingEntity)
-                    target = livingEntity;
             } else {
-                spawn = raycast.getLocation().subtract(entity.getForward().normalize());
+                spawn = raycast.getLocation();
             }
         }
 

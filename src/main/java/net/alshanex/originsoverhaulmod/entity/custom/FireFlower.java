@@ -21,11 +21,15 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.game.ClientboundAddEntityPacket;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.DamageTypeTags;
+import net.minecraft.util.Mth;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ambient.Bat;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.RenderShape;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
 import software.bernie.geckolib.animatable.GeoEntity;
 import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
@@ -79,6 +83,19 @@ public class FireFlower extends LivingEntity implements GeoEntity, AntiMagicSusc
             pos = pos.above();
         return pos.getY();
     }
+
+    protected void clientDiggingParticles(LivingEntity livingEntity) {
+        RandomSource randomsource = livingEntity.getRandom();
+        BlockState blockstate = livingEntity.getBlockStateOn();
+        if (blockstate.getRenderShape() != RenderShape.INVISIBLE) {
+            for (int i = 0; i < 15; ++i) {
+                double d0 = livingEntity.getX() + (double) Mth.randomBetween(randomsource, -0.5F, 0.5F);
+                double d1 = livingEntity.getY();
+                double d2 = livingEntity.getZ() + (double) Mth.randomBetween(randomsource, -0.5F, 0.5F);
+                livingEntity.level().addParticle(new BlockParticleOption(ParticleTypes.BLOCK, blockstate), d0, d1, d2, 0.0D, 0.0D, 0.0D);
+            }
+        }
+    }
     @Override
     public void tick() {
         super.tick();
@@ -95,6 +112,10 @@ public class FireFlower extends LivingEntity implements GeoEntity, AntiMagicSusc
             }
             if (age == 260)
                 playSound(SoundRegistry.VOID_TENTACLES_LEAVE.get(), 2, 1);
+        } else {
+            if(age < 20 || age > 279){
+                clientDiggingParticles(this);
+            }
         }
         age++;
 
