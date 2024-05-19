@@ -16,6 +16,7 @@ import io.redspace.ironsspellbooks.registries.SoundRegistry;
 import io.redspace.ironsspellbooks.util.ParticleHelper;
 import net.alshanex.originsoverhaulmod.entity.custom.FireFlower;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.resources.ResourceLocation;
@@ -27,6 +28,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.gameevent.GameEvent;
+import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.Vec3;
@@ -106,6 +108,17 @@ public class FireFlowerSpell extends AbstractSpell {
             HitResult raycast = Utils.raycastForEntity(level, entity, 32, true, .25f);
             if (raycast.getType() == HitResult.Type.ENTITY) {
                 spawn = ((EntityHitResult) raycast).getEntity().position();
+            } else if (raycast.getType() == HitResult.Type.BLOCK) {
+                BlockHitResult blockHit = (BlockHitResult) raycast;
+                Vec3 hitLocation = blockHit.getLocation();
+                Direction hitDirection = blockHit.getDirection();
+
+                if (hitDirection == Direction.UP) {
+                    spawn = new Vec3(hitLocation.x(), hitLocation.y(), hitLocation.z());
+                } else {
+                    BlockPos blockPos = blockHit.getBlockPos();
+                    spawn = new Vec3(blockPos.getX()+0.5, blockPos.getY() + 1, blockPos.getZ()+0.5);
+                }
             } else {
                 spawn = raycast.getLocation();
             }
