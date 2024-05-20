@@ -7,15 +7,12 @@ import io.redspace.ironsspellbooks.api.registry.SchoolRegistry;
 import io.redspace.ironsspellbooks.api.spells.*;
 import io.redspace.ironsspellbooks.api.util.Utils;
 import io.redspace.ironsspellbooks.capabilities.magic.CastTargetingData;
-import io.redspace.ironsspellbooks.capabilities.magic.MagicManager;
-import io.redspace.ironsspellbooks.damage.DamageSources;
-import io.redspace.ironsspellbooks.particle.ShockwaveParticleOptions;
 import io.redspace.ironsspellbooks.registries.MobEffectRegistry;
 import io.redspace.ironsspellbooks.registries.SoundRegistry;
-import io.redspace.ironsspellbooks.util.ParticleHelper;
-import net.alshanex.originsoverhaulmod.entity.custom.FireFlower;
+import net.alshanex.originsoverhaulmod.entity.custom.ThunderFlower;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.resources.ResourceLocation;
@@ -31,10 +28,11 @@ import net.minecraft.world.phys.Vec3;
 
 import java.util.List;
 import java.util.Optional;
-
+import java.util.UUID;
 @AutoSpellConfig
-public class FireFlowerSpell extends AbstractSpell {
-    private final ResourceLocation spellId = new ResourceLocation(IronsSpellbooks.MODID, "fire_flower");
+public class ThunderFlowerSpell extends AbstractSpell{
+
+    private final ResourceLocation spellId = new ResourceLocation(IronsSpellbooks.MODID, "thunder_flower");
 
     @Override
     public List<MutableComponent> getUniqueInfo(int spellLevel, LivingEntity caster) {
@@ -50,7 +48,7 @@ public class FireFlowerSpell extends AbstractSpell {
             .setCooldownSeconds(30)
             .build();
 
-    public FireFlowerSpell() {
+    public ThunderFlowerSpell() {
         this.manaCostPerLevel = 50;
         this.baseSpellPower = 8;
         this.spellPowerPerLevel = 3;
@@ -120,27 +118,16 @@ public class FireFlowerSpell extends AbstractSpell {
             }
         }
 
-        FireFlower fireFlower = new FireFlower(level, entity, getDamage(spellLevel, entity));
-        fireFlower.moveTo(spawn);
-        fireFlower.setDamage(getDamage(spellLevel, entity));
-        level.addFreshEntity(fireFlower);
+        ThunderFlower thunderFlower = new ThunderFlower(level, entity, getDamage(spellLevel, entity));
+        thunderFlower.moveTo(spawn);
+        thunderFlower.setDamage(getDamage(spellLevel, entity));
+        level.addFreshEntity(thunderFlower);
+
 
         super.onCast(level, spellLevel, entity, castSource, playerMagicData);
     }
 
     private float getDamage(int spellLevel, LivingEntity entity) {
         return getSpellPower(spellLevel, entity);
-    }
-
-    public float getRadius(int spellLevel, LivingEntity caster) {
-        return 6 + spellLevel * .5f;
-    }
-
-    public int getRendAmplifier(int spellLevel, LivingEntity caster) {
-        return 2 + (int) (getEntityPowerMultiplier(caster) * spellLevel);
-    }
-
-    public int getDuration(int spellLevel, LivingEntity caster) {
-        return (int) (getSpellPower(spellLevel, caster) * 20);
     }
 }

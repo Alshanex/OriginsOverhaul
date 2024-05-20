@@ -1,15 +1,15 @@
 package net.alshanex.originsoverhaulmod.entity.custom;
 
-import io.redspace.ironsspellbooks.api.registry.SchoolRegistry;
+import io.redspace.ironsspellbooks.api.registry.SpellRegistry;
+import io.redspace.ironsspellbooks.api.util.Utils;
 import io.redspace.ironsspellbooks.capabilities.magic.MagicManager;
 import io.redspace.ironsspellbooks.api.magic.MagicData;
 import io.redspace.ironsspellbooks.damage.DamageSources;
 import io.redspace.ironsspellbooks.entity.mobs.AntiMagicSusceptible;
-import io.redspace.ironsspellbooks.particle.ShockwaveParticleOptions;
+import io.redspace.ironsspellbooks.entity.spells.LightningStrike;
+import io.redspace.ironsspellbooks.util.ParticleHelper;
 import net.alshanex.originsoverhaulmod.entity.ModEntities;
 import io.redspace.ironsspellbooks.registries.SoundRegistry;
-import net.alshanex.originsoverhaulmod.registry.ExampleSpellRegistry;
-import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.BlockParticleOption;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.nbt.CompoundTag;
@@ -21,6 +21,7 @@ import net.minecraft.tags.DamageTypeTags;
 import net.minecraft.util.Mth;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
@@ -37,9 +38,7 @@ import software.bernie.geckolib.util.GeckoLibUtil;
 import javax.annotation.Nullable;
 import java.util.Collections;
 import java.util.UUID;
-
-public class FireFlower extends LivingEntity implements GeoEntity, AntiMagicSusceptible {
-
+public class ThunderFlower extends LivingEntity implements GeoEntity, AntiMagicSusceptible{
     @Nullable
     private LivingEntity owner;
     @Nullable
@@ -47,13 +46,13 @@ public class FireFlower extends LivingEntity implements GeoEntity, AntiMagicSusc
     private float damage;
     private int age;
 
-    public FireFlower(EntityType<? extends FireFlower> pEntityType, Level pLevel) {
+    public ThunderFlower(EntityType<? extends ThunderFlower> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
 
     }
 
-    public FireFlower(Level level, LivingEntity owner, float damage) {
-        this(ModEntities.FIRE_FLOWER.get(), level);
+    public ThunderFlower(Level level, LivingEntity owner, float damage) {
+        this(ModEntities.THUNDER_FLOWER.get(), level);
         setOwner(owner);
         setDamage(damage);
     }
@@ -84,6 +83,17 @@ public class FireFlower extends LivingEntity implements GeoEntity, AntiMagicSusc
             }
         }
     }
+
+    private float horizontalDistanceSqr(LivingEntity livingEntity, LivingEntity entity2) {
+        var dx = livingEntity.getX() - entity2.getX();
+        var dz = livingEntity.getZ() - entity2.getZ();
+        return (float) (dx * dx + dz * dz);
+    }
+
+    public static float getDamageFromAmplifier(int effectAmplifier, @Nullable LivingEntity caster) {
+        var power = caster == null ? 1 : SpellRegistry.THUNDERSTORM_SPELL.get().getEntityPowerMultiplier(caster);
+        return (((effectAmplifier - 7) * power) + 7);
+    }
     @Override
     public void tick() {
         super.tick();
@@ -91,18 +101,34 @@ public class FireFlower extends LivingEntity implements GeoEntity, AntiMagicSusc
             if (age > 300) {
                 //IronsSpellbooks.LOGGER.debug("Discarding void Tentacle (age:{})", age);
                 this.discard();
-            } else {
-                if (age > 30 && age < 260 && age % 40 == 0) {
-                    level().getEntitiesOfClass(LivingEntity.class, this.getBoundingBox().inflate(4)).forEach(this::dealDamage);
-                    float radius = 6;
-                    MagicManager.spawnParticles(level(), new ShockwaveParticleOptions(SchoolRegistry.FIRE.get().getTargetingColor(), radius, true, "irons_spellbooks:fire"), this.getX(), this.getY(), this.getZ(), 1, 0, 0, 0, 0, true);
-                }
+            }
+            if(age > 30 && age < 260 && age % 40 == 0){
+                var radiusSqr = 400; //20
+                this.level().getEntitiesOfClass(LivingEntity.class, this.getBoundingBox().inflate(20, 12, 20),
+                                livingEntity -> livingEntity != this &&
+                                        horizontalDistanceSqr(livingEntity, this) < radiusSqr &&
+                                        livingEntity.isPickable() &&
+                                        !livingEntity.isSpectator() &&
+                                        livingEntity != this.owner &&
+                                        !DamageSources.isFriendlyFireBetween(livingEntity, this) &&
+                                        Utils.hasLineOfSight(this.level(), this, livingEntity, false)
+                        )
+                        .forEach(targetEntity -> {
+                            LightningStrike lightningStrike = new LightningStrike(this.level());
+                            lightningStrike.setOwner(this);
+                            lightningStrike.setDamage(getDamageFromAmplifier(10, this));
+                            lightningStrike.setPos(targetEntity.position());
+                            this.level().addFreshEntity(lightningStrike);
+                        });
             }
             if (age == 260)
                 playSound(SoundRegistry.VOID_TENTACLES_LEAVE.get(), 2, 1);
         } else {
-            if(age < 20 || age > 279){
+            if(age < 40 || age > 279){
                 clientDiggingParticles(this);
+            }
+            if(age > 40 && age < 260){
+                this.level().addParticle(ParticleHelper.ELECTRICITY, this.getX(), this.getY()+1.5, this.getZ(), 0.0D, 0.0D, 0.0D);
             }
         }
         age++;
@@ -146,15 +172,6 @@ public class FireFlower extends LivingEntity implements GeoEntity, AntiMagicSusc
     public void setOwner(@Nullable LivingEntity pOwner) {
         this.owner = pOwner;
         this.ownerUUID = pOwner == null ? null : pOwner.getUUID();
-    }
-
-    public boolean dealDamage(LivingEntity target) {
-        if (target != getOwner())
-            if (DamageSources.applyDamage(target, damage, ExampleSpellRegistry.FIRE_FLOWER.get().getDamageSource(this, getOwner()))) {
-                target.setSecondsOnFire(3);
-                return true;
-            }
-        return false;
     }
 
     public void readAdditionalSaveData(CompoundTag pCompound) {
@@ -223,7 +240,7 @@ public class FireFlower extends LivingEntity implements GeoEntity, AntiMagicSusc
         //if (controller.getAnimationState() == AnimationState.Stopped) {
         //}
         //IronsSpellbooks.LOGGER.debug("TentacleAnimOffset: {}", controller.tickOffset);
-        if (age < 20) {
+        if (age < 40) {
             controller.setAnimation(ANIMATION_RISE);
             return PlayState.CONTINUE;
         } else
@@ -233,12 +250,12 @@ public class FireFlower extends LivingEntity implements GeoEntity, AntiMagicSusc
     }
 
 
-    private final RawAnimation ANIMATION_RISE = RawAnimation.begin().thenPlay("animation.flor_animada.arise");
-    private final RawAnimation ANIMATION_RETREAT = RawAnimation.begin().thenPlay("animation.flor_animada.despawn");
-    private final RawAnimation ANIMATION_IDLE = RawAnimation.begin().thenLoop("animation.flor_fuego_anim.stand");
+    private final RawAnimation ANIMATION_RISE = RawAnimation.begin().thenPlay("animation.thunder_flower.rise");
+    private final RawAnimation ANIMATION_RETREAT = RawAnimation.begin().thenPlay("animation.thunder_flower.despawn");
+    private final RawAnimation ANIMATION_IDLE = RawAnimation.begin().thenLoop("animation.thunder_flower.stand");
 
-    private final AnimationController controller = new AnimationController(this, "fire_flower_controller", 20, this::animationPredicate);
-    private final AnimationController riseController = new AnimationController(this, "fire_flower_rise_controller", 0, this::risePredicate);
+    private final AnimationController controller = new AnimationController(this, "thunder_flower_controller", 20, this::animationPredicate);
+    private final AnimationController riseController = new AnimationController(this, "thunder_flower_rise_controller", 0, this::risePredicate);
 
 
     @Override

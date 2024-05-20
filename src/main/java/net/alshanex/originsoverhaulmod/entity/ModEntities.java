@@ -2,6 +2,7 @@ package net.alshanex.originsoverhaulmod.entity;
 
 import net.alshanex.originsoverhaulmod.OriginsOverhaulMod;
 import net.alshanex.originsoverhaulmod.entity.custom.FireFlower;
+import net.alshanex.originsoverhaulmod.entity.custom.ThunderFlower;
 import net.alshanex.originsoverhaulmod.entity.custom.WaterCutProjectile;
 import net.alshanex.originsoverhaulmod.entity.custom.WaterSlashEntity;
 import net.minecraft.resources.ResourceLocation;
@@ -32,6 +33,11 @@ public class ModEntities {
                     .clientTrackingRange(64)
                     .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "fire_flower").toString()));
 
+    public static final RegistryObject<EntityType<ThunderFlower>> THUNDER_FLOWER =
+            ENTITY_TYPES.register("thunder_flower", () -> EntityType.Builder.<ThunderFlower>of(ThunderFlower::new, MobCategory.MISC)
+                    .sized(1f, 2f)
+                    .clientTrackingRange(64)
+                    .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "thunder_flower").toString()));
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);
     }

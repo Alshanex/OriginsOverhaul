@@ -13,5 +13,6 @@ public class CommonSetup {
     @SubscribeEvent
     public static void onAttributeCreate(EntityAttributeCreationEvent event) {
         event.put(ModEntities.FIRE_FLOWER.get(), FireFlower.createLivingAttributes().build());
+        event.put(ModEntities.THUNDER_FLOWER.get(), FireFlower.createLivingAttributes().build());
     }
 }
