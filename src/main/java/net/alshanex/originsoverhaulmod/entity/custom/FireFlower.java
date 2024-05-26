@@ -149,7 +149,7 @@ public class FireFlower extends LivingEntity implements GeoEntity, AntiMagicSusc
     }
 
     public boolean dealDamage(LivingEntity target) {
-        if (target != getOwner())
+        if (target != getOwner() && !target.getTags().contains("spell_flowers"))
             if (DamageSources.applyDamage(target, damage, ExampleSpellRegistry.FIRE_FLOWER.get().getDamageSource(this, getOwner()))) {
                 target.setSecondsOnFire(3);
                 return true;

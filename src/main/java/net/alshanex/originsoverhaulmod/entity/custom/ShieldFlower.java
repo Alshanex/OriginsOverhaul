@@ -1,11 +1,13 @@
 package net.alshanex.originsoverhaulmod.entity.custom;
 
 import io.redspace.ironsspellbooks.api.registry.SchoolRegistry;
+import io.redspace.ironsspellbooks.api.util.Utils;
 import io.redspace.ironsspellbooks.capabilities.magic.MagicManager;
 import io.redspace.ironsspellbooks.api.magic.MagicData;
 import io.redspace.ironsspellbooks.damage.DamageSources;
 import io.redspace.ironsspellbooks.entity.mobs.AntiMagicSusceptible;
 import io.redspace.ironsspellbooks.particle.ShockwaveParticleOptions;
+import io.redspace.ironsspellbooks.util.ParticleHelper;
 import net.alshanex.originsoverhaulmod.entity.ModEntities;
 import io.redspace.ironsspellbooks.registries.SoundRegistry;
 import net.alshanex.originsoverhaulmod.registry.ExampleSpellRegistry;
@@ -116,6 +118,9 @@ public class ShieldFlower extends LivingEntity implements GeoEntity, AntiMagicSu
             if(age < 40 || age > 279){
                 clientDiggingParticles(this);
             }
+            if (age < 280)
+                if (Utils.random.nextFloat() < .15f)
+                    level().addParticle(ParticleHelper.ACID, getX() + Utils.getRandomScaled(.5f), getY() + Utils.getRandomScaled(.5f) + .2f, getZ() + Utils.getRandomScaled(.5f), Utils.getRandomScaled(2f), -random.nextFloat() * .5f, Utils.getRandomScaled(2f));
         }
         age++;
 

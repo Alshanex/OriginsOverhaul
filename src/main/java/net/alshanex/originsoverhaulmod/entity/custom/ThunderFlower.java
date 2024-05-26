@@ -110,6 +110,7 @@ public class ThunderFlower extends LivingEntity implements GeoEntity, AntiMagicS
                                         livingEntity.isPickable() &&
                                         !livingEntity.isSpectator() &&
                                         livingEntity != this.owner &&
+                                        !livingEntity.getTags().contains("spell_flowers") &&
                                         !DamageSources.isFriendlyFireBetween(livingEntity, this) &&
                                         Utils.hasLineOfSight(this.level(), this, livingEntity, false)
                         )

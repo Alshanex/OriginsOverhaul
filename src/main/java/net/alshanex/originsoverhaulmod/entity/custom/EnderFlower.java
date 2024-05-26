@@ -114,6 +114,7 @@ public class EnderFlower extends LivingEntity implements GeoEntity, AntiMagicSus
                                         livingEntity.isPickable() &&
                                         !livingEntity.isSpectator() &&
                                         livingEntity != this.owner &&
+                                        !livingEntity.getTags().contains("spell_flowers") &&
                                         !DamageSources.isFriendlyFireBetween(livingEntity, this) &&
                                         Utils.hasLineOfSight(this.level(), this, livingEntity, false)
                         )
