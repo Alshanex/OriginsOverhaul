@@ -1,11 +1,7 @@
 package net.alshanex.originsoverhaulmod.entity;
 
 import net.alshanex.originsoverhaulmod.OriginsOverhaulMod;
-import net.alshanex.originsoverhaulmod.entity.custom.FireFlower;
-import net.alshanex.originsoverhaulmod.entity.custom.EnderFlower;
-import net.alshanex.originsoverhaulmod.entity.custom.ThunderFlower;
-import net.alshanex.originsoverhaulmod.entity.custom.WaterCutProjectile;
-import net.alshanex.originsoverhaulmod.entity.custom.WaterSlashEntity;
+import net.alshanex.originsoverhaulmod.entity.custom.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Mob;
@@ -45,6 +41,12 @@ public class ModEntities {
                     .sized(1f, 1f)
                     .clientTrackingRange(64)
                     .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "ender_flower").toString()));
+
+    public static final RegistryObject<EntityType<ShieldFlower>> SHIELD_FLOWER =
+            ENTITY_TYPES.register("shield_flower", () -> EntityType.Builder.<ShieldFlower>of(ShieldFlower::new, MobCategory.MISC)
+                    .sized(1f, 4f)
+                    .clientTrackingRange(64)
+                    .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "shield_flower").toString()));
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);
     }

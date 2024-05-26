@@ -27,4 +27,5 @@ public class ExampleSpellRegistry {
     public static final RegistryObject<AbstractSpell> FIRE_FLOWER = registerSpell(new FireFlowerSpell());
     public static final RegistryObject<AbstractSpell> THUNDER_FLOWER = registerSpell(new ThunderFlowerSpell());
     public static final RegistryObject<AbstractSpell> ENDER_FLOWER = registerSpell(new EnderFlowerSpell());
+    public static final RegistryObject<AbstractSpell> SHIELD_FLOWER = registerSpell(new ShieldFlowerSpell());
 }
