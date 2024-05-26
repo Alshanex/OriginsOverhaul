@@ -11,6 +11,7 @@
 		"medievalorigins:specter/hybrid_double_jump",
 		"medievalorigins:specter/damage_per_speed",
 		"medievalorigins:specter/fall_immune",
+		"medievalorigins:specter/step_height",
 		"medievalorigins:specter/reset_cds",
 		"origins:evo_stats",
 		"origins:orb_fix"

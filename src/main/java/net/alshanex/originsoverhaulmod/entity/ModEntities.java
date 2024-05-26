@@ -2,6 +2,7 @@ package net.alshanex.originsoverhaulmod.entity;
 
 import net.alshanex.originsoverhaulmod.OriginsOverhaulMod;
 import net.alshanex.originsoverhaulmod.entity.custom.FireFlower;
+import net.alshanex.originsoverhaulmod.entity.custom.EnderFlower;
 import net.alshanex.originsoverhaulmod.entity.custom.ThunderFlower;
 import net.alshanex.originsoverhaulmod.entity.custom.WaterCutProjectile;
 import net.alshanex.originsoverhaulmod.entity.custom.WaterSlashEntity;
@@ -38,6 +39,12 @@ public class ModEntities {
                     .sized(1f, 2f)
                     .clientTrackingRange(64)
                     .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "thunder_flower").toString()));
+
+    public static final RegistryObject<EntityType<EnderFlower>> ENDER_FLOWER =
+            ENTITY_TYPES.register("ender_flower", () -> EntityType.Builder.<EnderFlower>of(EnderFlower::new, MobCategory.MISC)
+                    .sized(1f, 1f)
+                    .clientTrackingRange(64)
+                    .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "ender_flower").toString()));
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);
     }
