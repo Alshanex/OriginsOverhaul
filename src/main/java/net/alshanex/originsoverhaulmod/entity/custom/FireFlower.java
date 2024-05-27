@@ -1,6 +1,7 @@
 package net.alshanex.originsoverhaulmod.entity.custom;
 
 import io.redspace.ironsspellbooks.api.registry.SchoolRegistry;
+import io.redspace.ironsspellbooks.api.registry.SpellRegistry;
 import io.redspace.ironsspellbooks.capabilities.magic.MagicManager;
 import io.redspace.ironsspellbooks.api.magic.MagicData;
 import io.redspace.ironsspellbooks.damage.DamageSources;
@@ -150,7 +151,7 @@ public class FireFlower extends LivingEntity implements GeoEntity, AntiMagicSusc
 
     public boolean dealDamage(LivingEntity target) {
         if (target != getOwner() && !target.getTags().contains("spell_flowers"))
-            if (DamageSources.applyDamage(target, damage, ExampleSpellRegistry.FIRE_FLOWER.get().getDamageSource(this, getOwner()))) {
+            if (DamageSources.applyDamage(target, damage, SpellRegistry.HEAT_SURGE_SPELL.get().getDamageSource(this, getOwner()))) {
                 target.setSecondsOnFire(3);
                 return true;
             }
