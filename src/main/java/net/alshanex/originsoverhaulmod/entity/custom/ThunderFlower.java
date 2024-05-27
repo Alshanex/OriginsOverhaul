@@ -117,7 +117,7 @@ public class ThunderFlower extends LivingEntity implements GeoEntity, AntiMagicS
                         .forEach(targetEntity -> {
                             LightningStrike lightningStrike = new LightningStrike(this.level());
                             lightningStrike.setOwner(this);
-                            lightningStrike.setDamage(getDamageFromAmplifier(10, this));
+                            lightningStrike.setDamage(getDamageFromAmplifier(10, getOwner()));
                             lightningStrike.setPos(targetEntity.position());
                             this.level().addFreshEntity(lightningStrike);
                         });
