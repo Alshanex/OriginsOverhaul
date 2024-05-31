@@ -64,33 +64,8 @@
 							"power": "medievalorigins:sculk_knight/secondary"
 						},
 						"action": {
-							"type": "origins:and",
-							"actions": [
-								{
-									"type": "origins:delay",
-									"ticks": 2,
-									"action": {
-										"type": "origins:execute_command",
-										"command": "power remove @s medievalorigins:sculk_knight/secondary"
-									}
-								},
-								{
-									"type": "origins:delay",
-									"ticks": 4,
-									"action": {
-										"type": "origins:execute_command",
-										"command": "power grant @s medievalorigins:sculk_knight/secondary1"
-									}
-								},
-								{
-									"type": "origins:delay",
-									"ticks": 6,
-									"action": {
-										"type": "origins:execute_command",
-										"command": "power grant @s medievalorigins:sculk_knight/eldritch_magic"
-									}
-								}
-							]
+							"type": "origins:execute_command",
+							"command": "origin set @s origins:origin medievalorigins:sculk_knight_evo1"
 						}
 					},
 					{
@@ -99,33 +74,8 @@
 							"power": "medievalorigins:sculk_knight/secondary1"
 						},
 						"action": {
-							"type": "origins:and",
-							"actions": [
-								{
-									"type": "origins:delay",
-									"ticks": 2,
-									"action": {
-										"type": "origins:execute_command",
-										"command": "power remove @s medievalorigins:sculk_knight/secondary1"
-									}
-								},
-								{
-									"type": "origins:delay",
-									"ticks": 4,
-									"action": {
-										"type": "origins:execute_command",
-										"command": "power grant @s medievalorigins:sculk_knight/secondary2"
-									}
-								},
-								{
-									"type": "origins:delay",
-									"ticks": 6,
-									"action": {
-										"type": "origins:execute_command",
-										"command": "power grant @s origins:evo_stats"
-									}
-								}
-							]
+							"type": "origins:execute_command",
+							"command": "origin set @s origins:origin medievalorigins:sculk_knight_evo2"
 						}
 					},
 					{
@@ -134,57 +84,18 @@
 							"power": "medievalorigins:sculk_knight/secondary2"
 						},
 						"action": {
-							"type": "origins:and",
-							"actions": [
-								{
-									"type": "origins:delay",
-									"ticks": 2,
-									"action": {
-										"type": "origins:execute_command",
-										"command": "power remove @s medievalorigins:sculk_knight/secondary2"
-									}
-								},
-								{
-									"type": "origins:delay",
-									"ticks": 4,
-									"action": {
-										"type": "origins:execute_command",
-										"command": "power grant @s medievalorigins:sculk_knight/secondary3"
-									}
-								},
-								{
-									"type": "origins:delay",
-									"ticks": 6,
-									"action": {
-										"type": "origins:execute_command",
-										"command": "power remove @s medievalorigins:sculk_knight/blast"
-									}
-								},
-								{
-									"type": "origins:delay",
-									"ticks": 8,
-									"action": {
-										"type": "origins:execute_command",
-										"command": "power grant @s medievalorigins:sculk_knight/blast_evo"
-									}
-								},
-								{
-									"type": "origins:delay",
-									"ticks": 10,
-									"action": {
-										"type": "origins:execute_command",
-										"command": "power remove @s medievalorigins:sculk_knight/resource"
-									}
-								},
-								{
-									"type": "origins:delay",
-									"ticks": 12,
-									"action": {
-										"type": "origins:execute_command",
-										"command": "power remove @s medievalorigins:sculk_knight/exchange"
-									}
-								}
-							]
+							"type": "origins:execute_command",
+							"command": "origin set @s origins:origin medievalorigins:sculk_knight_evo3"
+						}
+					},
+					{
+						"condition": {
+							"type": "origins:power",
+							"power": "medievalorigins:sculk_knight/secondary3"
+						},
+						"action": {
+							"type": "origins:execute_command",
+							"command": "origin set @s origins:origin medievalorigins:sculk_knight_evo4"
 						}
 					}
 				]

@@ -1,6 +1,6 @@
 {
 	"loading_priority":1,
-	"name": "Call of the Abyss",
+	"name": "Call of the Abyss lvl 4",
 	"description": "With your Secondary Ability key you can summon a horde of tentacles to attack your enemies.",
 	"type": "origins:active_self",
 	"entity_action": {

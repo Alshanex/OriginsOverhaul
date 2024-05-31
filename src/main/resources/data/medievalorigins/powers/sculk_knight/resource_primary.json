@@ -3,5 +3,5 @@
 	"hidden": true,
 	"type": "origins:resource",
 	"min": 0,
-	"max": 2
+	"max": 1
 }
