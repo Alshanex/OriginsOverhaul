@@ -47,6 +47,11 @@ public class ModEntities {
                     .sized(1f, 4f)
                     .clientTrackingRange(64)
                     .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "shield_flower").toString()));
+    public static final RegistryObject<EntityType<Crown>> CROWN =
+            ENTITY_TYPES.register("crown", () -> EntityType.Builder.<Crown>of(Crown::new, MobCategory.MISC)
+                    .sized(1, 1)
+                    .clientTrackingRange(64)
+                    .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "crown").toString()));
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);
     }

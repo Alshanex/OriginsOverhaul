@@ -3,6 +3,7 @@ package net.alshanex.originsoverhaulmod;
 import com.mojang.logging.LogUtils;
 import net.alshanex.originsoverhaulmod.entity.ModEntities;
 import net.alshanex.originsoverhaulmod.item.ModItems;
+import net.alshanex.originsoverhaulmod.registry.EffectRegistry;
 import net.alshanex.originsoverhaulmod.registry.ExampleSpellRegistry;
 import net.alshanex.originsoverhaulmod.registry.SoundRegistry;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -39,6 +40,8 @@ public class OriginsOverhaulMod
         ModEntities.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
+
+        EffectRegistry.register(modEventBus);
 
         SoundRegistry.register(modEventBus);
 

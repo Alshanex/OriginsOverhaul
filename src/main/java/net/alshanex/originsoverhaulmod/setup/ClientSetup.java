@@ -2,6 +2,7 @@ package net.alshanex.originsoverhaulmod.setup;
 
 import net.alshanex.originsoverhaulmod.OriginsOverhaulMod;
 import net.alshanex.originsoverhaulmod.entity.ModEntities;
+import net.alshanex.originsoverhaulmod.entity.custom.CrownRenderer;
 import net.alshanex.originsoverhaulmod.entity.custom.FireFlowerRenderer;
 import net.alshanex.originsoverhaulmod.entity.custom.ThunderFlowerRenderer;
 import net.alshanex.originsoverhaulmod.entity.custom.EnderFlowerRenderer;
@@ -23,5 +24,6 @@ public class ClientSetup {
         event.registerEntityRenderer(ModEntities.THUNDER_FLOWER.get(), ThunderFlowerRenderer::new);
         event.registerEntityRenderer(ModEntities.ENDER_FLOWER.get(), EnderFlowerRenderer::new);
         event.registerEntityRenderer(ModEntities.SHIELD_FLOWER.get(), ShieldFlowerRenderer::new);
+        event.registerEntityRenderer(ModEntities.CROWN.get(), CrownRenderer::new);
     }
 }
