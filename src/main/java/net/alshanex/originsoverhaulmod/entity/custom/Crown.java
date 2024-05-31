@@ -172,6 +172,27 @@ public class Crown extends AbstractMagicProjectile implements GeoEntity{
                 } else {
                     level().getEntities(this, getBoundingBox().inflate(0.35)).forEach(this::doFallingDamage);
                 }
+                var radiusSqr = 400; //20
+                var target = (LivingEntity) this.getTarget();
+                if(target != null){
+                    target.level().getEntitiesOfClass(LivingEntity.class, target.getBoundingBox().inflate(20, 12, 20),
+                                    livingEntity -> livingEntity != target &&
+                                            horizontalDistanceSqr(livingEntity, target) < radiusSqr &&
+                                            livingEntity.isPickable() &&
+                                            !livingEntity.isSpectator() &&
+                                            !(livingEntity instanceof Player)&&
+                                            !DamageSources.isFriendlyFireBetween(livingEntity, target) &&
+                                            Utils.hasLineOfSight(target.level(), target, livingEntity, false)
+                            )
+                            .forEach(targetEntity -> {
+                                if (targetEntity instanceof Mob) {
+                                    Mob mobTarget = (Mob) targetEntity;
+                                    if(mobTarget.getTarget() == target){
+                                        mobTarget.setTarget(null);
+                                    }
+                                }
+                            });
+                }
             } else {
                 var radiusSqr = 400; //20
                 var target = (LivingEntity) this.getTarget();
@@ -200,7 +221,7 @@ public class Crown extends AbstractMagicProjectile implements GeoEntity{
                     if (diff.horizontalDistanceSqr() > 1) {
                         this.setDeltaMovement(getDeltaMovement().add(diff.multiply(1, 0, 1).normalize().scale(.025f)));
                     }
-                    if (this.getY() - target.getY() > 3.5) {
+                    if (this.getY() > (target.getY() + target.getBbHeight() + 1)) {
                         tooHigh = true;
                     }
                 } else {
