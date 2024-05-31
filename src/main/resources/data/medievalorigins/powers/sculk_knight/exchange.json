@@ -64,8 +64,21 @@
 							"power": "medievalorigins:sculk_knight/secondary"
 						},
 						"action": {
-							"type": "origins:execute_command",
-							"command": "origin set @s origins:origin medievalorigins:sculk_knight_evo1"
+							"type": "origins:and",
+							"actions": [
+								{
+									"type": "origins:execute_command",
+									"command": "power clear @s"
+								},
+								{
+									"type": "origins:delay",
+									"ticks": 2,
+									"action": {
+										"type": "origins:execute_command",
+										"command": "origin set @s origins:origin medievalorigins:sculk_knight_evo1"
+									}
+								}
+							]
 						}
 					},
 					{
@@ -74,8 +87,21 @@
 							"power": "medievalorigins:sculk_knight/secondary1"
 						},
 						"action": {
-							"type": "origins:execute_command",
-							"command": "origin set @s origins:origin medievalorigins:sculk_knight_evo2"
+							"type": "origins:and",
+							"actions": [
+								{
+									"type": "origins:execute_command",
+									"command": "power clear @s"
+								},
+								{
+									"type": "origins:delay",
+									"ticks": 2,
+									"action": {
+										"type": "origins:execute_command",
+										"command": "origin set @s origins:origin medievalorigins:sculk_knight_evo2"
+									}
+								}
+							]
 						}
 					},
 					{
@@ -84,8 +110,21 @@
 							"power": "medievalorigins:sculk_knight/secondary2"
 						},
 						"action": {
-							"type": "origins:execute_command",
-							"command": "origin set @s origins:origin medievalorigins:sculk_knight_evo3"
+							"type": "origins:and",
+							"actions": [
+								{
+									"type": "origins:execute_command",
+									"command": "power clear @s"
+								},
+								{
+									"type": "origins:delay",
+									"ticks": 2,
+									"action": {
+										"type": "origins:execute_command",
+										"command": "origin set @s origins:origin medievalorigins:sculk_knight_evo3"
+									}
+								}
+							]
 						}
 					},
 					{
@@ -94,8 +133,21 @@
 							"power": "medievalorigins:sculk_knight/secondary3"
 						},
 						"action": {
-							"type": "origins:execute_command",
-							"command": "origin set @s origins:origin medievalorigins:sculk_knight_evo4"
+							"type": "origins:and",
+							"actions": [
+								{
+									"type": "origins:execute_command",
+									"command": "power clear @s"
+								},
+								{
+									"type": "origins:delay",
+									"ticks": 2,
+									"action": {
+										"type": "origins:execute_command",
+										"command": "origin set @s origins:origin medievalorigins:sculk_knight_evo4"
+									}
+								}
+							]
 						}
 					}
 				]
