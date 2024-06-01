@@ -2,13 +2,7 @@ package net.alshanex.originsoverhaulmod.setup;
 
 import net.alshanex.originsoverhaulmod.OriginsOverhaulMod;
 import net.alshanex.originsoverhaulmod.entity.ModEntities;
-import net.alshanex.originsoverhaulmod.entity.custom.CrownRenderer;
-import net.alshanex.originsoverhaulmod.entity.custom.FireFlowerRenderer;
-import net.alshanex.originsoverhaulmod.entity.custom.ThunderFlowerRenderer;
-import net.alshanex.originsoverhaulmod.entity.custom.EnderFlowerRenderer;
-import net.alshanex.originsoverhaulmod.entity.custom.ShieldFlowerRenderer;
-import net.alshanex.originsoverhaulmod.entity.custom.WaterSlashRenderer;
-import net.alshanex.originsoverhaulmod.entity.custom.WaterCutRenderer;
+import net.alshanex.originsoverhaulmod.entity.custom.*;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -25,5 +19,7 @@ public class ClientSetup {
         event.registerEntityRenderer(ModEntities.ENDER_FLOWER.get(), EnderFlowerRenderer::new);
         event.registerEntityRenderer(ModEntities.SHIELD_FLOWER.get(), ShieldFlowerRenderer::new);
         event.registerEntityRenderer(ModEntities.CROWN.get(), CrownRenderer::new);
+        event.registerEntityRenderer(ModEntities.BALANZA.get(), BalanzaRenderer::new);
+        event.registerEntityRenderer(ModEntities.BALANZA_BUENA.get(), BalanzaBuenaRenderer::new);
     }
 }

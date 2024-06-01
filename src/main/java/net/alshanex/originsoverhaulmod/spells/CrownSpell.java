@@ -101,7 +101,7 @@ public class CrownSpell extends AbstractSpell{
                 IronsSpellbooks.LOGGER.debug("RootSpell.onCast.1 targetEntity:{}", target);
             }
 
-            if (target != null && !target.getType().is(ModTags.CANT_ROOT)) {
+            if (target != null) {
                 if (Log.SPELL_DEBUG) {
                     IronsSpellbooks.LOGGER.debug("RootSpell.onCast.2 targetEntity:{}", target);
                 }

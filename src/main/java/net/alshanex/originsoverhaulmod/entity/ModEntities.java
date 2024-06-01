@@ -52,6 +52,16 @@ public class ModEntities {
                     .sized(1, 1)
                     .clientTrackingRange(64)
                     .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "crown").toString()));
+    public static final RegistryObject<EntityType<Balanza>> BALANZA =
+            ENTITY_TYPES.register("balanza_mala", () -> EntityType.Builder.<Balanza>of(Balanza::new, MobCategory.MISC)
+                    .sized(1f, 1f)
+                    .clientTrackingRange(64)
+                    .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "balanza_mala").toString()));
+    public static final RegistryObject<EntityType<BalanzaBuena>> BALANZA_BUENA =
+            ENTITY_TYPES.register("balanza_buena", () -> EntityType.Builder.<BalanzaBuena>of(BalanzaBuena::new, MobCategory.MISC)
+                    .sized(1f, 1f)
+                    .clientTrackingRange(64)
+                    .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "balanza_buena").toString()));
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);
     }
