@@ -18,5 +18,6 @@ public class CommonSetup {
         event.put(ModEntities.SHIELD_FLOWER.get(), ShieldFlower.createLivingAttributes().build());
         event.put(ModEntities.BALANZA.get(), Balanza.createLivingAttributes().build());
         event.put(ModEntities.BALANZA_BUENA.get(), BalanzaBuena.createLivingAttributes().build());
+        event.put(ModEntities.MUMMY.get(), Mummy.bakeAttributes().build());
     }
 }
