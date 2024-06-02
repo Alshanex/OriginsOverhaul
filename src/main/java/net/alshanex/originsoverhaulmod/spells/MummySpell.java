@@ -148,8 +148,7 @@ public class MummySpell extends AbstractSpell{
                     mummy.yBodyRot = pointedEntity.getYRot();
                     if (!level.isClientSide) {
                         level.addFreshEntity(mummy);
-                    }
-                    if(level.isClientSide){
+                    }else {
                         AAALevel.addParticle(level,false,SANDSTORM.clone().position(pointedEntity.getX(), pointedEntity.getY(), pointedEntity.getZ()));
                     }
                 }
