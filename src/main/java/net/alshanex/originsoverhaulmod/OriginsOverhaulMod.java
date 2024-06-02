@@ -1,14 +1,19 @@
 package net.alshanex.originsoverhaulmod;
 
 import com.mojang.logging.LogUtils;
+import dev.architectury.registry.ReloadListenerRegistry;
+import mod.chloeprime.aaaparticles.client.loader.EffekAssetLoader;
 import net.alshanex.originsoverhaulmod.entity.ModEntities;
 import net.alshanex.originsoverhaulmod.item.ModItems;
 import net.alshanex.originsoverhaulmod.registry.EffectRegistry;
 import net.alshanex.originsoverhaulmod.registry.ExampleSpellRegistry;
 import net.alshanex.originsoverhaulmod.registry.SoundRegistry;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.packs.PackType;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -93,7 +98,7 @@ public class OriginsOverhaulMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-
+            ReloadListenerRegistry.register(PackType.CLIENT_RESOURCES, new EffekAssetLoader(), new ResourceLocation(MOD_ID, "effeks"));
         }
     }
 }

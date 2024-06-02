@@ -22,12 +22,12 @@ import org.jetbrains.annotations.NotNull;
 
 public class Mummy extends LivingEntity implements IBlacklistedFromStatues {
 
-    private static final EntityDataAccessor<String> TRAPPED_ENTITY_TYPE = SynchedEntityData.defineId(EntityStoneStatue.class, EntityDataSerializers.STRING);
-    private static final EntityDataAccessor<CompoundTag> TRAPPED_ENTITY_DATA = SynchedEntityData.defineId(EntityStoneStatue.class, EntityDataSerializers.COMPOUND_TAG);
-    private static final EntityDataAccessor<Float> TRAPPED_ENTITY_WIDTH = SynchedEntityData.defineId(EntityStoneStatue.class, EntityDataSerializers.FLOAT);
-    private static final EntityDataAccessor<Float> TRAPPED_ENTITY_HEIGHT = SynchedEntityData.defineId(EntityStoneStatue.class, EntityDataSerializers.FLOAT);
-    private static final EntityDataAccessor<Float> TRAPPED_ENTITY_SCALE = SynchedEntityData.defineId(EntityStoneStatue.class, EntityDataSerializers.FLOAT);
-    private static final EntityDataAccessor<Integer> CRACK_AMOUNT = SynchedEntityData.defineId(EntityStoneStatue.class, EntityDataSerializers.INT);
+    private static final EntityDataAccessor<String> TRAPPED_ENTITY_TYPE = SynchedEntityData.defineId(Mummy.class, EntityDataSerializers.STRING);
+    private static final EntityDataAccessor<CompoundTag> TRAPPED_ENTITY_DATA = SynchedEntityData.defineId(Mummy.class, EntityDataSerializers.COMPOUND_TAG);
+    private static final EntityDataAccessor<Float> TRAPPED_ENTITY_WIDTH = SynchedEntityData.defineId(Mummy.class, EntityDataSerializers.FLOAT);
+    private static final EntityDataAccessor<Float> TRAPPED_ENTITY_HEIGHT = SynchedEntityData.defineId(Mummy.class, EntityDataSerializers.FLOAT);
+    private static final EntityDataAccessor<Float> TRAPPED_ENTITY_SCALE = SynchedEntityData.defineId(Mummy.class, EntityDataSerializers.FLOAT);
+    private static final EntityDataAccessor<Integer> CRACK_AMOUNT = SynchedEntityData.defineId(Mummy.class, EntityDataSerializers.INT);
     private EntityDimensions stoneStatueSize = EntityDimensions.fixed(0.5F, 0.5F);
     public Mummy(EntityType<? extends LivingEntity> t, Level worldIn) {
         super(t, worldIn);

@@ -166,6 +166,9 @@ repositories {
             includeGroup("com.eliotlash.mclib")
         }
     }
+    maven {
+        url = "https://api.modrinth.com/maven"
+    }
     maven { url = "https://maven.enginehub.org/repo/" }
     maven { url = "https://maven.theillusivec4.top" }
     maven { url = "https://maven.blamejared.com" }
@@ -228,6 +231,9 @@ dependencies {
 
     // CURIOS *****************************************************************************************************
     runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:${curios_version}")
+
+    implementation fg.deobf("dev.architectury:architectury-forge:${architectury_api_version}")
+    implementation fg.deobf("maven.modrinth:aaa-particles:${aaa_particles_forge_version}")
 
 }
 

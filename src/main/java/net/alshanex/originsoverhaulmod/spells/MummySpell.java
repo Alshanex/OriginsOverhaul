@@ -10,6 +10,9 @@ import io.redspace.ironsspellbooks.api.magic.MagicData;
 import io.redspace.ironsspellbooks.api.registry.SchoolRegistry;
 import io.redspace.ironsspellbooks.api.spells.*;
 import io.redspace.ironsspellbooks.api.util.Utils;
+import mod.chloeprime.aaaparticles.api.common.AAALevel;
+import mod.chloeprime.aaaparticles.api.common.ParticleEmitterInfo;
+import net.alshanex.originsoverhaulmod.OriginsOverhaulMod;
 import net.alshanex.originsoverhaulmod.entity.custom.Mummy;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
@@ -81,6 +84,7 @@ public class MummySpell extends AbstractSpell{
         return Optional.empty();
     }
 
+    private static final ParticleEmitterInfo SANDSTORM = new ParticleEmitterInfo(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "HolySandstorm"));
     @Override
     public void onCast(Level level, int spellLevel, LivingEntity entity, CastSource castSource, MagicData playerMagicData) {
 
@@ -144,6 +148,8 @@ public class MummySpell extends AbstractSpell{
                     mummy.yBodyRot = pointedEntity.getYRot();
                     if (!level.isClientSide) {
                         level.addFreshEntity(mummy);
+                    } else {
+                        AAALevel.addParticle(level,SANDSTORM.clone().position(pointedEntity.getX(), pointedEntity.getY(), pointedEntity.getZ()));
                     }
                 }
             }
