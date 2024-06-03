@@ -67,6 +67,11 @@ public class ModEntities {
             ENTITY_TYPES.register("mummy", () -> EntityType.Builder.of(Mummy::new, MobCategory.CREATURE)
                     .sized(0.5f, 0.5f)
                     .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "mummy").toString()));
+    public static final RegistryObject<EntityType<Caja>> CAJA =
+            ENTITY_TYPES.register("caja", () -> EntityType.Builder.<Caja>of(Caja::new, MobCategory.MISC)
+                    .sized(1.5f, 3f)
+                    .clientTrackingRange(64)
+                    .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "caja").toString()));
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);
     }

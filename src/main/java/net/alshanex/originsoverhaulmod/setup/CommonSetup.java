@@ -19,5 +19,6 @@ public class CommonSetup {
         event.put(ModEntities.BALANZA.get(), Balanza.createLivingAttributes().build());
         event.put(ModEntities.BALANZA_BUENA.get(), BalanzaBuena.createLivingAttributes().build());
         event.put(ModEntities.MUMMY.get(), Mummy.bakeAttributes().build());
+        event.put(ModEntities.CAJA.get(), Caja.createLivingAttributes().build());
     }
 }

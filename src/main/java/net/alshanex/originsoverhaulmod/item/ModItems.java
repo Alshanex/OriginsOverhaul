@@ -1,6 +1,7 @@
 package net.alshanex.originsoverhaulmod.item;
 
 import net.alshanex.originsoverhaulmod.OriginsOverhaulMod;
+import net.alshanex.originsoverhaulmod.item.custom.EgypthianStaffItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -41,6 +42,8 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> REVENANTEVO = ITEMS.register("revenantevo",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> EGYPTHIAN_STAFF = ITEMS.register("egypthian_staff",
+            () -> new EgypthianStaffItem(new Item.Properties().durability(1000)));
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }

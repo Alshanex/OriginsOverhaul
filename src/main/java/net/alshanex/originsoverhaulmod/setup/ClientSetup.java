@@ -22,5 +22,6 @@ public class ClientSetup {
         event.registerEntityRenderer(ModEntities.BALANZA.get(), BalanzaRenderer::new);
         event.registerEntityRenderer(ModEntities.BALANZA_BUENA.get(), BalanzaBuenaRenderer::new);
         event.registerEntityRenderer(ModEntities.MUMMY.get(), MummyRenderer::new);
+        event.registerEntityRenderer(ModEntities.CAJA.get(), CajaRenderer::new);
     }
 }

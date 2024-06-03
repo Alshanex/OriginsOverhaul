@@ -223,4 +223,14 @@ public class Mummy extends LivingEntity implements IBlacklistedFromStatues {
     public boolean canBeTurnedToStone() {
         return false;
     }
+
+    @Override
+    public boolean isPushable() {
+        return false;
+    }
+
+    @Override
+    public boolean isAttackable() {
+        return false;
+    }
 }
