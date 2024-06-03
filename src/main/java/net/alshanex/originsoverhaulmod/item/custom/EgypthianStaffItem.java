@@ -7,21 +7,26 @@ import com.github.alexthe666.iceandfire.entity.util.IBlacklistedFromStatues;
 import io.redspace.ironsspellbooks.config.ServerConfigs;
 import net.alshanex.originsoverhaulmod.entity.custom.Mummy;
 import net.minecraft.client.renderer.EffectInstance;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tiers;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.phys.Vec3;
 
 import javax.annotation.Nullable;
+import java.util.Collection;
+import java.util.Objects;
 
 public class EgypthianStaffItem extends SwordItem {
     public EgypthianStaffItem(Properties pProperties) {
-        super(Tiers.NETHERITE, 6, -1F, new Properties());
+        super(Tiers.NETHERITE, 5, -1.9F, new Properties());
     }
 
     @Override
@@ -35,8 +40,8 @@ public class EgypthianStaffItem extends SwordItem {
                     var random = Math.random();
                     if(random >= 0.5){
                         Level nivel = entity.level();
-                        ((LivingEntity) entity).addEffect(new MobEffectInstance(MobEffects.INVISIBILITY,60,2));
-                        entity.kill();
+
+                        entity.remove(Entity.RemovalReason.KILLED);
 
                         Mummy mummy = Mummy.buildMummyEntity((LivingEntity) entity);
                         mummy.absMoveTo(entity.getX(), entity.getY(), entity.getZ(), entity.getYRot(), entity.getXRot());
