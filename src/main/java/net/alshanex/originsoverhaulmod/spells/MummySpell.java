@@ -33,7 +33,7 @@ public class MummySpell extends AbstractSpell{
             .setMinRarity(SpellRarity.LEGENDARY)
             .setSchoolResource(SchoolRegistry.HOLY_RESOURCE)
             .setMaxLevel(1)
-            .setCooldownSeconds(30)
+            .setCooldownSeconds(50)
             .build();
 
     public MummySpell() {
@@ -41,7 +41,7 @@ public class MummySpell extends AbstractSpell{
         this.baseSpellPower = 8;
         this.spellPowerPerLevel = 1;
         this.castTime = 40;
-        this.baseManaCost = 70;
+        this.baseManaCost = 100;
     }
 
     @Override

@@ -42,8 +42,7 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> REVENANTEVO = ITEMS.register("revenantevo",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> EGYPTHIAN_STAFF = ITEMS.register("egypthian_staff",
-            () -> new EgypthianStaffItem(new Item.Properties().durability(1000)));
+    public static final RegistryObject<Item> EGYPTHIAN_STAFF = ITEMS.register("egypthian_staff", EgypthianStaffItem::new);
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }

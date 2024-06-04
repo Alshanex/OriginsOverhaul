@@ -148,10 +148,10 @@ public class Caja extends LivingEntity implements GeoEntity {
                                 owner.heal(owner.getMaxHealth()*0.05f);
 
                                 if(age > 60){
-                                    if(age-40 < 60){
+                                    if(age-20 < 60){
                                         age = 60;
                                     } else {
-                                        age-=40;
+                                        age-=20;
                                     }
                                 }
                             }
