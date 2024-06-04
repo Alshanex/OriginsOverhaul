@@ -73,24 +73,15 @@ public class MummySpell extends AbstractSpell{
     @Override
     public void onCast(Level level, int spellLevel, LivingEntity entity, CastSource castSource, MagicData playerMagicData) {
 
-        Vec3 playerPos = entity.position();
         Vec3 direccionAdd = entity.position().add(entity.getLookAngle().scale(4));
         Vec3 entityPos = new Vec3(direccionAdd.x, entity.getY(), direccionAdd.z);
 
-        Caja caja = new Caja(level, entity);
+        Caja caja = new Caja(level, entity, getDamage(spellLevel, entity));
 
         caja.moveTo(entityPos);
 
-        double dx = playerPos.x - entityPos.x;
-        double dy = playerPos.y - entityPos.y;
-        double dz = playerPos.z - entityPos.z;
-
-        double horizontalDistance = Math.sqrt(dx * dx + dz * dz);
-        float yaw = (float)(Math.atan2(dz, dx) * (180.0 / Math.PI)) - 90.0F;
-        float pitch = (float)(-(Math.atan2(dy, horizontalDistance) * (180.0 / Math.PI)));
-
-        caja.setYRot(yaw);
-        caja.setXRot(pitch);
+        caja.setYRot(entity.getYRot());
+        caja.setXRot(entity.getXRot());
 
         level.addFreshEntity(caja);
 

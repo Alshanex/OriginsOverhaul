@@ -13,6 +13,7 @@ import mod.chloeprime.aaaparticles.api.common.AAALevel;
 import mod.chloeprime.aaaparticles.api.common.ParticleEmitterInfo;
 import net.alshanex.originsoverhaulmod.OriginsOverhaulMod;
 import net.alshanex.originsoverhaulmod.entity.ModEntities;
+import net.alshanex.originsoverhaulmod.registry.ExampleSpellRegistry;
 import net.minecraft.client.renderer.EffectInstance;
 import net.minecraft.core.particles.BlockParticleOption;
 import net.minecraft.core.particles.ParticleTypes;
@@ -54,6 +55,7 @@ public class Caja extends LivingEntity implements GeoEntity {
     private LivingEntity owner;
     @Nullable
     private UUID ownerUUID;
+    private float damage;
     private int age;
 
     public Caja(EntityType<? extends Caja> pEntityType, Level pLevel) {
@@ -61,9 +63,14 @@ public class Caja extends LivingEntity implements GeoEntity {
 
     }
 
-    public Caja(Level level, LivingEntity owner) {
+    public Caja(Level level, LivingEntity owner, float damage) {
         this(ModEntities.CAJA.get(), level);
         setOwner(owner);
+        setDamage(damage);
+    }
+
+    public void setDamage(float damage) {
+        this.damage = damage;
     }
 
     @Override
@@ -100,40 +107,74 @@ public class Caja extends LivingEntity implements GeoEntity {
     public void tick() {
         super.tick();
         if (!level().isClientSide) {
-            if (age > 320) {
+            if (age > 520) {
                 this.discard();
             }
-            if (age >= 60 && age < 220 && age%30 == 0){
-                LivingEntity owner = getOwner();
-                owner.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE,40,1));
-                var radiusSqr = 400; //20
+            if (age >= 60 && age < 420 && age%10 == 0){
+                var radiusSqr = 600; //30
                 this.level().getEntitiesOfClass(Mummy.class, this.getBoundingBox().inflate(20, 12, 20),
                                 mummyEntity -> horizontalDistanceSqr(mummyEntity, this) < radiusSqr)
                         .forEach(targetEntity -> {
-                            AAALevel.addParticle(this.level(),false,SANDSTORM.clone().position(targetEntity.getX(), targetEntity.getY(), targetEntity.getZ()));
-                        });
-            }
-            if(age == 210){
-                var radiusSqr = 400; //20
-                this.level().getEntitiesOfClass(Mummy.class, this.getBoundingBox().inflate(20, 12, 20),
-                                mummyEntity -> horizontalDistanceSqr(mummyEntity, this) < radiusSqr)
-                        .forEach(targetEntity -> {
-                            LivingEntity owner = getOwner();
-                            targetEntity.remove(Entity.RemovalReason.KILLED);
-                            if(owner instanceof Player){
-                                owner.heal(owner.getMaxHealth()*0.1f);
-                                ((Player) owner).getFoodData().eat(2,2);
+                            if(age%40 == 0){
+                                LivingEntity owner = getOwner();
+                                owner.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE,40,1));
+                                AAALevel.addParticle(this.level(),false,SANDSTORM.clone().position(targetEntity.getX(), targetEntity.getY(), targetEntity.getZ()));
+                                targetEntity.setSandstorm(true);
+                            }
+
+                            if(targetEntity.inSandstorm){
+                                var radiusSqrSec = 60; //3
+                                this.level().getEntitiesOfClass(LivingEntity.class, targetEntity.getBoundingBox().inflate(8, 20, 8),
+                                                livingEntity -> livingEntity != this &&
+                                                        !(livingEntity instanceof Mummy) &&
+                                                        horizontalDistanceSqr(livingEntity, this) < radiusSqrSec &&
+                                                        livingEntity.isPickable() &&
+                                                        !livingEntity.isSpectator() &&
+                                                        livingEntity != getOwner() &&
+                                                        !DamageSources.isFriendlyFireBetween(getOwner(), livingEntity)
+                                        )
+                                        .forEach(this::dealDamage);
                             }
                         });
             }
-            if (age == 270 || age == 0)
+            if(age >= 120 && age <= 420 && age%40==30){
+                var radiusSqr = 600; //30
+                this.level().getEntitiesOfClass(Mummy.class, this.getBoundingBox().inflate(20, 12, 20),
+                                mummyEntity -> horizontalDistanceSqr(mummyEntity, this) < radiusSqr)
+                        .forEach(targetEntity -> {
+                            if(targetEntity.inSandstorm){
+                                LivingEntity owner = getOwner();
+                                targetEntity.remove(Entity.RemovalReason.KILLED);
+                                owner.heal(owner.getMaxHealth()*0.05f);
+
+                                if(age > 60){
+                                    if(age-40 < 60){
+                                        age = 60;
+                                    } else {
+                                        age-=40;
+                                    }
+                                }
+                            }
+                        });
+            }
+            if (age == 470 || age == 0)
                 playSound(SoundRegistry.VOID_TENTACLES_LEAVE.get(), 2, 1);
         } else {
-            if(age < 30 || age > 269){
+            if(age < 30 || age > 469){
                 clientDiggingParticles(this);
             }
         }
         age++;
+    }
+
+    public boolean dealDamage(LivingEntity target) {
+        if (target != getOwner())
+            if (DamageSources.applyDamage(target, damage/3, ExampleSpellRegistry.MUMMY.get().getDamageSource(this, getOwner()))) {
+                target.addEffect(new MobEffectInstance(MobEffects.WEAKNESS,40,1));
+                target.addEffect(new MobEffectInstance(MobEffects.BLINDNESS,40,1));
+                return true;
+            }
+        return false;
     }
 
     @Override
@@ -215,7 +256,7 @@ public class Caja extends LivingEntity implements GeoEntity {
 
         var controller = event.getController();
 
-        if (age > 219) {
+        if (age > 419) {
             controller.setAnimation(ANIMATION_RETREAT);
         }  else if (controller.getAnimationState() == AnimationController.State.STOPPED) {
             controller.setAnimation(ANIMATION_IDLE);

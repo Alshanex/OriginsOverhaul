@@ -33,7 +33,7 @@ public class EgypthianStaffItem extends SwordItem {
     public boolean onLeftClickEntity(ItemStack stack, Player player, Entity entity) {
         if(entity instanceof LivingEntity){
             boolean apply = entity instanceof IBlacklistedFromStatues blacklisted && !blacklisted.canBeTurnedToStone() || entity.getType().is(IafEntityTags.IMMUNE_TO_GORGON_STONE) || entity instanceof EntityTroll || entity instanceof EntityHydra || entity instanceof Player;
-            if (!apply) {
+            if (!apply && entity.isPickable() && !((LivingEntity)entity).isDeadOrDying()) {
                 float currentHealth = ((LivingEntity) entity).getHealth();
                 float maxHealth = ((LivingEntity) entity).getMaxHealth();
                 if( currentHealth < maxHealth * 0.05f || currentHealth < 5f || this.getDamage() > currentHealth){

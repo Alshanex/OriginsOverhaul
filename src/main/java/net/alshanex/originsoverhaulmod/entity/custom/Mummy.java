@@ -29,6 +29,7 @@ public class Mummy extends LivingEntity implements IBlacklistedFromStatues {
     private static final EntityDataAccessor<Float> TRAPPED_ENTITY_SCALE = SynchedEntityData.defineId(Mummy.class, EntityDataSerializers.FLOAT);
     private static final EntityDataAccessor<Integer> CRACK_AMOUNT = SynchedEntityData.defineId(Mummy.class, EntityDataSerializers.INT);
     private EntityDimensions stoneStatueSize = EntityDimensions.fixed(0.5F, 0.5F);
+    public boolean inSandstorm;
     public Mummy(EntityType<? extends LivingEntity> t, Level worldIn) {
         super(t, worldIn);
     }
@@ -57,6 +58,7 @@ public class Mummy extends LivingEntity implements IBlacklistedFromStatues {
         mummy.setTrappedEntityWidth(parent.getBbWidth());
         mummy.setTrappedHeight(parent.getBbHeight());
         mummy.setTrappedScale(parent.getScale());
+        mummy.setSandstorm(false);
 
         return mummy;
     }
@@ -213,6 +215,9 @@ public class Mummy extends LivingEntity implements IBlacklistedFromStatues {
         this.entityData.set(CRACK_AMOUNT, crackAmount);
     }
 
+    public void setSandstorm(boolean isIn){
+        this.inSandstorm = isIn;
+    }
 
     @Override
     public boolean canBreatheUnderwater() {
