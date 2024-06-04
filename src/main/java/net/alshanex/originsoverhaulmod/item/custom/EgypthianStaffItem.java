@@ -32,7 +32,7 @@ import java.util.UUID;
 
 public class EgypthianStaffItem extends StaffItem implements IPresetSpellContainer, UniqueItem {
     public EgypthianStaffItem() {
-        super(ItemPropertiesHelper.equipment().stacksTo(1).rarity(Rarity.UNCOMMON), 7, -2,
+        super(ItemPropertiesHelper.equipment().stacksTo(1).rarity(Rarity.UNCOMMON), 7, -2.5,
                 Map.of(
                         AttributeRegistry.HOLY_SPELL_POWER.get(),
                         new AttributeModifier(UUID.fromString("667ad88f-901d-4691-b2a2-3664e42026d3"), "Weapon modifier", .15, AttributeModifier.Operation.MULTIPLY_BASE),

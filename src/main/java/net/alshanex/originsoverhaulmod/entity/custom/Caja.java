@@ -111,13 +111,13 @@ public class Caja extends LivingEntity implements GeoEntity {
                 this.discard();
             }
             if (age >= 60 && age < 420 && age%10 == 0){
+                LivingEntity owner = getOwner();
+                owner.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE,12,1));
                 var radiusSqr = 600; //30
                 this.level().getEntitiesOfClass(Mummy.class, this.getBoundingBox().inflate(20, 12, 20),
                                 mummyEntity -> horizontalDistanceSqr(mummyEntity, this) < radiusSqr)
                         .forEach(targetEntity -> {
                             if(age%40 == 0){
-                                LivingEntity owner = getOwner();
-                                owner.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE,40,1));
                                 AAALevel.addParticle(this.level(),false,SANDSTORM.clone().position(targetEntity.getX(), targetEntity.getY(), targetEntity.getZ()));
                                 targetEntity.setSandstorm(true);
                             }
