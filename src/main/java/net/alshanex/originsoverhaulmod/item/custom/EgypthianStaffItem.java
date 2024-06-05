@@ -59,7 +59,6 @@ public class EgypthianStaffItem extends StaffItem implements IPresetSpellContain
             spellContainer.save(itemStack);
         }
     }
-
     @Override
     public boolean onLeftClickEntity(ItemStack stack, Player player, Entity entity) {
         if(entity instanceof LivingEntity){
@@ -67,7 +66,7 @@ public class EgypthianStaffItem extends StaffItem implements IPresetSpellContain
             if (!apply && entity.isPickable() && !((LivingEntity)entity).isDeadOrDying()) {
                 float currentHealth = ((LivingEntity) entity).getHealth();
                 float maxHealth = ((LivingEntity) entity).getMaxHealth();
-                if( currentHealth < maxHealth * 0.1f || currentHealth < 5f){
+                if( currentHealth < maxHealth * 0.1f || currentHealth < 20){
                     var random = Math.random();
                     if(random >= 0.5){
                         Level nivel = entity.level();
