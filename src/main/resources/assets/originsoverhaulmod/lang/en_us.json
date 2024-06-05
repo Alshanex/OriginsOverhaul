@@ -14,5 +14,8 @@
   "item.originsoverhaulmod.gorgonevo": "Basilisk Fang",
   "item.originsoverhaulmod.dwarfevo": "Dwarven Crown",
   "item.originsoverhaulmod.revenantevo": "Summoning Tome",
-  "item.originsoverhaulmod.egypthian_staff": "Egypthian Staff"
+  "item.originsoverhaulmod.egypthian_staff": "Egypthian Staff",
+
+  "effect.originsoverhaulmod.mummy_effect": "Deadly Touch",
+  "effect.originsoverhaulmod.mummy_effect.description": "When the Holy Battlefield is active, Bastet has a 50% chance to mummify enemies when attacking them with his holy staff."
 }

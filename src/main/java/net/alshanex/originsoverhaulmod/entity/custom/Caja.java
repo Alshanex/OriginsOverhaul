@@ -13,6 +13,7 @@ import mod.chloeprime.aaaparticles.api.common.AAALevel;
 import mod.chloeprime.aaaparticles.api.common.ParticleEmitterInfo;
 import net.alshanex.originsoverhaulmod.OriginsOverhaulMod;
 import net.alshanex.originsoverhaulmod.entity.ModEntities;
+import net.alshanex.originsoverhaulmod.registry.EffectRegistry;
 import net.alshanex.originsoverhaulmod.registry.ExampleSpellRegistry;
 import net.minecraft.client.renderer.EffectInstance;
 import net.minecraft.core.particles.BlockParticleOption;
@@ -112,7 +113,8 @@ public class Caja extends LivingEntity implements GeoEntity {
             }
             if (age >= 60 && age < 420 && age%10 == 0){
                 LivingEntity owner = getOwner();
-                owner.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE,12,1));
+                owner.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE,15,1));
+                owner.addEffect(new MobEffectInstance(EffectRegistry.MUMMY_EFFECT.get(), 15, 1, false, false, true));
                 var radiusSqr = 600; //30
                 this.level().getEntitiesOfClass(Mummy.class, this.getBoundingBox().inflate(20, 12, 20),
                                 mummyEntity -> horizontalDistanceSqr(mummyEntity, this) < radiusSqr)

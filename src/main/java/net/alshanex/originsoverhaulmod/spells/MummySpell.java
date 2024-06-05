@@ -7,6 +7,7 @@ import io.redspace.ironsspellbooks.api.registry.SchoolRegistry;
 import io.redspace.ironsspellbooks.api.spells.*;
 import io.redspace.ironsspellbooks.api.util.Utils;
 import net.alshanex.originsoverhaulmod.entity.custom.Caja;
+import net.alshanex.originsoverhaulmod.item.ModItems;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
@@ -73,7 +74,7 @@ public class MummySpell extends AbstractSpell{
 
     @Override
     public CastResult canBeCastedBy(int spellLevel, CastSource castSource, MagicData playerMagicData, Player player) {
-        if (!(castSource == CastSource.SWORD)){
+        if (!(castSource == CastSource.SWORD && player.getMainHandItem().getItem() == ModItems.EGYPTHIAN_STAFF.get())){
             return new CastResult(CastResult.Type.FAILURE, Component.translatable("ui.irons_spellbooks.cast_error_scroll", getDisplayName(player)).withStyle(ChatFormatting.RED));
         } else {
             return super.canBeCastedBy(spellLevel, castSource, playerMagicData, player);
