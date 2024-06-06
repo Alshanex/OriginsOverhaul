@@ -38,6 +38,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.RenderShape;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.phys.Vec3;
 import software.bernie.geckolib.animatable.GeoEntity;
 import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
 import software.bernie.geckolib.core.animation.AnimatableManager;
@@ -111,10 +112,10 @@ public class Caja extends LivingEntity implements GeoEntity {
             if (age > 520) {
                 this.discard();
             }
-            if (age >= 60 && age < 420 && age%10 == 0){
+            if (age >= 60 && age < 400 && age%10 == 0){
                 LivingEntity owner = getOwner();
-                owner.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE,15,1));
-                owner.addEffect(new MobEffectInstance(EffectRegistry.MUMMY_EFFECT.get(), 15, 1, false, false, true));
+                owner.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE,45,1));
+                owner.addEffect(new MobEffectInstance(EffectRegistry.MUMMY_EFFECT.get(), 45, 1, false, false, true));
                 var radiusSqr = 600; //30
                 this.level().getEntitiesOfClass(Mummy.class, this.getBoundingBox().inflate(20, 12, 20),
                                 mummyEntity -> horizontalDistanceSqr(mummyEntity, this) < radiusSqr)
@@ -126,20 +127,27 @@ public class Caja extends LivingEntity implements GeoEntity {
 
                             if(targetEntity.inSandstorm){
                                 var radiusSqrSec = 60; //3
-                                this.level().getEntitiesOfClass(LivingEntity.class, targetEntity.getBoundingBox().inflate(8, 20, 8),
-                                                livingEntity -> livingEntity != this &&
+                                targetEntity.level().getEntitiesOfClass(LivingEntity.class, targetEntity.getBoundingBox().inflate(8, 20, 8),
+                                                livingEntity -> livingEntity != targetEntity &&
                                                         !(livingEntity instanceof Mummy) &&
-                                                        horizontalDistanceSqr(livingEntity, this) < radiusSqrSec &&
-                                                        livingEntity.isPickable() &&
-                                                        !livingEntity.isSpectator() &&
+                                                        !(livingEntity instanceof Caja) &&
                                                         livingEntity != getOwner() &&
-                                                        !DamageSources.isFriendlyFireBetween(getOwner(), livingEntity)
+                                                        horizontalDistanceSqr(livingEntity, targetEntity) < radiusSqrSec &&
+                                                        livingEntity.isPickable() &&
+                                                        !livingEntity.isSpectator()
                                         )
-                                        .forEach(this::dealDamage);
+                                        .forEach(target -> {
+                                            target.addEffect(new MobEffectInstance(MobEffects.WEAKNESS,20,1));
+                                            target.addEffect(new MobEffectInstance(MobEffects.BLINDNESS,20,1));
+                                            DamageSources.applyDamage(target, damage/3, ExampleSpellRegistry.MUMMY.get().getDamageSource(targetEntity, getOwner()));
+                                            Vec3 lookDirection = target.getLookAngle();
+                                            Vec3 knockbackDirection = new Vec3(-lookDirection.x, 0, -lookDirection.z).normalize();
+                                            target.setDeltaMovement(target.getDeltaMovement().add(knockbackDirection.scale(1)));
+                                        });
                             }
                         });
             }
-            if(age >= 120 && age <= 420 && age%40==30){
+            if(age >= 120 && age <= 430 && age%40==30){
                 var radiusSqr = 600; //30
                 this.level().getEntitiesOfClass(Mummy.class, this.getBoundingBox().inflate(20, 12, 20),
                                 mummyEntity -> horizontalDistanceSqr(mummyEntity, this) < radiusSqr)
@@ -167,16 +175,6 @@ public class Caja extends LivingEntity implements GeoEntity {
             }
         }
         age++;
-    }
-
-    public boolean dealDamage(LivingEntity target) {
-        if (target != getOwner())
-            if (DamageSources.applyDamage(target, damage/3, ExampleSpellRegistry.MUMMY.get().getDamageSource(this, getOwner()))) {
-                target.addEffect(new MobEffectInstance(MobEffects.WEAKNESS,40,1));
-                target.addEffect(new MobEffectInstance(MobEffects.BLINDNESS,40,1));
-                return true;
-            }
-        return false;
     }
 
     @Override

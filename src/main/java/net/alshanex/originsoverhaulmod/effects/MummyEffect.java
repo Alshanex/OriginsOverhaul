@@ -44,7 +44,7 @@ public class MummyEffect extends MagicMobEffect {
 
                         entity.remove(Entity.RemovalReason.KILLED);
 
-                        Mummy mummy = Mummy.buildMummyEntity(entity);
+                        Mummy mummy = Mummy.buildMummyEntity(entity, attacker);
                         mummy.absMoveTo(entity.getX(), entity.getY(), entity.getZ(), entity.getYRot(), entity.getXRot());
                         mummy.yBodyRot = entity.getYRot();
 
@@ -53,10 +53,5 @@ public class MummyEffect extends MagicMobEffect {
                 }
             }
         }
-    }
-
-    public static float getDamageModifier(int effectAmplifier, @Nullable LivingEntity caster) {
-        var power = caster == null ? 1 : SpellRegistry.ECHOING_STRIKES_SPELL.get().getEntityPowerMultiplier(caster);
-        return (((effectAmplifier - 4) * power) + 5) * .1f; // create echo of 10% damage per level of the effect
     }
 }

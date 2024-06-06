@@ -18,5 +18,4 @@ public class EffectRegistry {
     }
 
     public static final RegistryObject<MobEffect> MUMMY_EFFECT = MOB_EFFECT_DEFERRED_REGISTER.register("mummy_effect", () -> new MummyEffect(MobEffectCategory.BENEFICIAL, 0x9f0be3));
-
-}
+ }

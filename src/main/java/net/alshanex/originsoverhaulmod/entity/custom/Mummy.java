@@ -1,10 +1,10 @@
 package net.alshanex.originsoverhaulmod.entity.custom;
 
 import com.github.alexthe666.iceandfire.IceAndFire;
-import com.github.alexthe666.iceandfire.entity.EntityStoneStatue;
 import com.google.common.collect.ImmutableList;
 import net.alshanex.originsoverhaulmod.entity.ModEntities;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -19,6 +19,9 @@ import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.world.entity.*;
 import org.jetbrains.annotations.NotNull;
+
+import javax.annotation.Nullable;
+import java.util.UUID;
 
 public class Mummy extends LivingEntity implements IBlacklistedFromStatues {
 
@@ -43,7 +46,7 @@ public class Mummy extends LivingEntity implements IBlacklistedFromStatues {
                 //ATTACK
                 .add(Attributes.ATTACK_DAMAGE, 1.0D);
     }
-    public static Mummy buildMummyEntity(LivingEntity parent) {
+    public static Mummy buildMummyEntity(LivingEntity parent, LivingEntity player) {
         Mummy mummy = ModEntities.MUMMY.get().create(parent.level());
         CompoundTag entityTag = new CompoundTag();
         try {
