@@ -126,7 +126,7 @@ public class Caja extends LivingEntity implements GeoEntity {
                             }
 
                             if(targetEntity.inSandstorm){
-                                var radiusSqrSec = 60; //3
+                                var radiusSqrSec = 40; //2
                                 targetEntity.level().getEntitiesOfClass(LivingEntity.class, targetEntity.getBoundingBox().inflate(8, 20, 8),
                                                 livingEntity -> livingEntity != targetEntity &&
                                                         !(livingEntity instanceof Mummy) &&
