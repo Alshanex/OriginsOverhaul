@@ -72,6 +72,11 @@ public class ModEntities {
                     .sized(1.5f, 3f)
                     .clientTrackingRange(64)
                     .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "caja").toString()));
+    public static final RegistryObject<EntityType<Parasyte>> PARASYTE =
+            ENTITY_TYPES.register("parasyte", () -> EntityType.Builder.<Parasyte>of(Parasyte::new, MobCategory.MISC)
+                    .sized(1, 1)
+                    .clientTrackingRange(64)
+                    .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "parasyte").toString()));
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);
     }

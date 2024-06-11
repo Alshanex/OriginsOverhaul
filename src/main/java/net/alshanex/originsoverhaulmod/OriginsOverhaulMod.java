@@ -85,6 +85,7 @@ public class OriginsOverhaulMod
 
         if(event.getTabKey() == CreativeModeTabs.COMBAT){
             event.accept(ModItems.EGYPTHIAN_STAFF);
+            event.accept(ModItems.BESTIARY);
         }
     }
 
