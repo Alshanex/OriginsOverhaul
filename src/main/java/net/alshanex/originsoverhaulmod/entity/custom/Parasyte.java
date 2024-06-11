@@ -4,6 +4,7 @@ import io.redspace.ironsspellbooks.api.util.Utils;
 import io.redspace.ironsspellbooks.capabilities.magic.MagicManager;
 import io.redspace.ironsspellbooks.damage.DamageSources;
 import io.redspace.ironsspellbooks.entity.spells.AbstractMagicProjectile;
+import io.redspace.ironsspellbooks.registries.MobEffectRegistry;
 import io.redspace.ironsspellbooks.util.ParticleHelper;
 import net.alshanex.originsoverhaulmod.entity.ModEntities;
 import net.alshanex.originsoverhaulmod.registry.ExampleSpellRegistry;
@@ -12,6 +13,8 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.Projectile;
@@ -198,6 +201,11 @@ public class Parasyte extends AbstractMagicProjectile implements GeoEntity{
             } else {
                 if(!getOwner().isPassenger()){
                     getOwner().startRiding(getTarget());
+                }
+                if(getOwner() instanceof Player){
+                    Player owner = (Player)getOwner();
+                    owner.addEffect(new MobEffectInstance(MobEffectRegistry.TRUE_INVISIBILITY.get(),1,1));
+                    owner.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE,1,10));
                 }
                 var radiusSqr = 400; //20
                 var target = (LivingEntity) this.getTarget();

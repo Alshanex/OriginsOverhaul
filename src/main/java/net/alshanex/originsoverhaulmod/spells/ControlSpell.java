@@ -109,8 +109,6 @@ public class ControlSpell extends AbstractSpell{
                 level.addFreshEntity(parasyte);
 
                 entity.startRiding(target,true);
-                entity.addEffect(new MobEffectInstance(MobEffectRegistry.TRUE_INVISIBILITY.get(),getDurationTicks(spellLevel, entity) + 20,1));
-                entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE,getDurationTicks(spellLevel, entity) + 20,10));
             }
         }
         super.onCast(level, spellLevel, entity, castSource, playerMagicData);
