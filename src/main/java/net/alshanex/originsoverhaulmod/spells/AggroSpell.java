@@ -7,6 +7,7 @@ import io.redspace.ironsspellbooks.api.registry.SchoolRegistry;
 import io.redspace.ironsspellbooks.api.spells.*;
 import io.redspace.ironsspellbooks.api.util.Utils;
 import io.redspace.ironsspellbooks.capabilities.magic.CastTargetingData;
+import io.redspace.ironsspellbooks.registries.MobEffectRegistry;
 import net.alshanex.originsoverhaulmod.entity.custom.Parasyte;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
@@ -14,21 +15,27 @@ import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Mob;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.phys.EntityHitResult;
+import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.Vec3;
 
 import java.util.List;
 import java.util.Optional;
 
 @AutoSpellConfig
-public class ControlSpell extends AbstractSpell{
-    private final ResourceLocation spellId = new ResourceLocation(IronsSpellbooks.MODID, "control");
+public class AggroSpell extends AbstractSpell{
+    private final ResourceLocation spellId = new ResourceLocation(IronsSpellbooks.MODID, "aggro");
     private final DefaultConfig defaultConfig = new DefaultConfig()
             .setMinRarity(SpellRarity.LEGENDARY)
             .setSchoolResource(SchoolRegistry.BLOOD_RESOURCE)
             .setMaxLevel(1)
-            .setCooldownSeconds(45)
+            .setCooldownSeconds(3)
             .build();
 
     @Override
@@ -38,17 +45,17 @@ public class ControlSpell extends AbstractSpell{
         );
     }
 
-    public ControlSpell() {
-        this.manaCostPerLevel = 15;
+    public AggroSpell() {
+        this.manaCostPerLevel = 5;
         this.baseSpellPower = 6;
         this.spellPowerPerLevel = 1;
         this.castTime = 0;
-        this.baseManaCost = 25;
+        this.baseManaCost = 5;
     }
 
     @Override
     public CastType getCastType() {
-        return CastType.LONG;
+        return CastType.INSTANT;
     }
 
     @Override
@@ -73,7 +80,8 @@ public class ControlSpell extends AbstractSpell{
 
     @Override
     public boolean checkPreCastConditions(Level level, int spellLevel, LivingEntity entity, MagicData playerMagicData) {
-        return Utils.preCastTargetHelper(level, entity, playerMagicData, this, 32, .35f);
+        boolean riding = entity.isPassenger() && entity.hasEffect(MobEffectRegistry.TRUE_INVISIBILITY.get()) && entity.hasEffect(MobEffects.DAMAGE_RESISTANCE);
+        return Utils.preCastTargetHelper(level, entity, playerMagicData, this, 32, .35f) && riding;
     }
 
     @Override
@@ -82,37 +90,12 @@ public class ControlSpell extends AbstractSpell{
             LivingEntity target = castTargetingData.getTarget((ServerLevel) level);
 
             if (target != null) {
-
-                if(entity.isPassenger()){
-                    entity.stopRiding();
+                if(entity.getVehicle() instanceof Mob){
+                    ((Mob) entity.getVehicle()).setTarget(target);
                 }
-
-                Vec3 spawn = target.position();
-                Parasyte parasyte = new Parasyte(level, entity, target, entity.position());
-                parasyte.moveTo(raiseWithCollision(spawn, 1, level));
-                parasyte.setAirTime(getDurationTicks(spellLevel, entity));
-                parasyte.setDamage(getDamage(spellLevel, entity));
-                level.addFreshEntity(parasyte);
-
-                entity.startRiding(target,true);
             }
         }
         super.onCast(level, spellLevel, entity, castSource, playerMagicData);
-    }
-
-    public int getDurationTicks(int spellLevel, LivingEntity caster) {
-        return (int) ((20 + (2 * (spellLevel - 1) * getEntityPowerMultiplier(caster))) * 20);
-    }
-
-    private Vec3 raiseWithCollision(Vec3 start, int blocks, Level level) {
-        for (int i = 0; i < blocks; i++) {
-            Vec3 raised = start.add(0, 1, 0);
-            if (level.getBlockState(BlockPos.containing(raised)).isAir())
-                start = raised;
-            else
-                break;
-        }
-        return start;
     }
 
     private float getDamage(int spellLevel, LivingEntity caster) {

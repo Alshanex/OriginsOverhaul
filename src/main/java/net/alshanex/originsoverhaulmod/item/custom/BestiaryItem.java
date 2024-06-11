@@ -3,8 +3,10 @@ package net.alshanex.originsoverhaulmod.item.custom;
 import io.redspace.ironsspellbooks.api.registry.AttributeRegistry;
 import io.redspace.ironsspellbooks.api.spells.IPresetSpellContainer;
 import io.redspace.ironsspellbooks.api.spells.ISpellContainer;
+import io.redspace.ironsspellbooks.api.util.Utils;
 import io.redspace.ironsspellbooks.item.UniqueItem;
 import io.redspace.ironsspellbooks.item.weapons.StaffItem;
+import io.redspace.ironsspellbooks.registries.MobEffectRegistry;
 import io.redspace.ironsspellbooks.util.ItemPropertiesHelper;
 import io.redspace.ironsspellbooks.util.TooltipsUtils;
 import net.alshanex.originsoverhaulmod.entity.custom.Caja;
@@ -15,9 +17,12 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.monster.Zombie;
 import net.minecraft.world.entity.player.Player;
@@ -26,6 +31,8 @@ import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.phys.EntityHitResult;
+import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.jetbrains.annotations.Nullable;
@@ -61,8 +68,9 @@ public class BestiaryItem extends StaffItem implements IPresetSpellContainer, Un
         }
 
         if (!ISpellContainer.isSpellContainer(itemStack)) {
-            var spellContainer = ISpellContainer.create(1, true, false);
+            var spellContainer = ISpellContainer.create(2, true, false);
             spellContainer.addSpell(ExampleSpellRegistry.CONTROL.get(), 1, true, itemStack);
+            spellContainer.addSpell(ExampleSpellRegistry.AGGRO.get(), 1, true, itemStack);
             spellContainer.save(itemStack);
         }
     }

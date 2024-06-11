@@ -32,4 +32,5 @@ public class ExampleSpellRegistry {
     //public static final RegistryObject<AbstractSpell> OSIRIS_TRIAL = registerSpell(new OsirisSpell());
     public static final RegistryObject<AbstractSpell> MUMMY = registerSpell(new MummySpell());
     public static final RegistryObject<AbstractSpell> CONTROL = registerSpell(new ControlSpell());
+    public static final RegistryObject<AbstractSpell> AGGRO = registerSpell(new AggroSpell());
 }

@@ -177,53 +177,15 @@ public class Parasyte extends AbstractMagicProjectile implements GeoEntity{
                     getOwner().stopRiding();
                 }
                 getOwner().moveTo(this.startingPos);
-                var radiusSqr = 400; //20
-                var target = (LivingEntity) this.getTarget();
-                if(target != null){
-                    target.level().getEntitiesOfClass(LivingEntity.class, target.getBoundingBox().inflate(20, 12, 20),
-                                    livingEntity -> livingEntity != target &&
-                                            horizontalDistanceSqr(livingEntity, target) < radiusSqr &&
-                                            livingEntity.isPickable() &&
-                                            !livingEntity.isSpectator() &&
-                                            !(livingEntity instanceof Player)&&
-                                            !DamageSources.isFriendlyFireBetween(livingEntity, target) &&
-                                            Utils.hasLineOfSight(target.level(), target, livingEntity, false)
-                            )
-                            .forEach(targetEntity -> {
-                                if (targetEntity instanceof Mob) {
-                                    Mob mobTarget = (Mob) targetEntity;
-                                    if(mobTarget.getTarget() == target){
-                                        mobTarget.setTarget(null);
-                                    }
-                                }
-                            });
-                }
             } else {
                 if(!getOwner().isPassenger()){
                     getOwner().startRiding(getTarget());
                 }
                 if(getOwner() instanceof Player){
                     Player owner = (Player)getOwner();
-                    owner.addEffect(new MobEffectInstance(MobEffectRegistry.TRUE_INVISIBILITY.get(),1,1));
-                    owner.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE,1,10));
+                    owner.addEffect(new MobEffectInstance(MobEffectRegistry.TRUE_INVISIBILITY.get(),5,1));
+                    owner.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE,5,10));
                 }
-                var radiusSqr = 400; //20
-                var target = (LivingEntity) this.getTarget();
-                target.level().getEntitiesOfClass(LivingEntity.class, target.getBoundingBox().inflate(20, 12, 20),
-                                livingEntity -> livingEntity != target &&
-                                        horizontalDistanceSqr(livingEntity, target) < radiusSqr &&
-                                        livingEntity.isPickable() &&
-                                        !livingEntity.isSpectator() &&
-                                        !(livingEntity instanceof Player)&&
-                                        !DamageSources.isFriendlyFireBetween(livingEntity, target) &&
-                                        Utils.hasLineOfSight(target.level(), target, livingEntity, false)
-                        )
-                        .forEach(targetEntity -> {
-                            if (targetEntity instanceof Mob) { // Verifica si puede ser agresiva y atacar
-                                Mob mobTarget = (Mob) targetEntity;
-                                mobTarget.setTarget(target); // Configura a `entity` como objetivo de ataque
-                            }
-                        });
             }
             if (airTime-- > 0) {
                 boolean tooHigh = false;
