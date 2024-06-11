@@ -9,6 +9,7 @@ import io.redspace.ironsspellbooks.api.util.Utils;
 import io.redspace.ironsspellbooks.capabilities.magic.CastTargetingData;
 import io.redspace.ironsspellbooks.registries.MobEffectRegistry;
 import net.alshanex.originsoverhaulmod.entity.custom.Parasyte;
+import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
@@ -20,6 +21,7 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.phys.HitResult;
@@ -80,8 +82,16 @@ public class AggroSpell extends AbstractSpell{
 
     @Override
     public boolean checkPreCastConditions(Level level, int spellLevel, LivingEntity entity, MagicData playerMagicData) {
-        boolean riding = entity.isPassenger() && entity.hasEffect(MobEffectRegistry.TRUE_INVISIBILITY.get()) && entity.hasEffect(MobEffects.DAMAGE_RESISTANCE);
-        return Utils.preCastTargetHelper(level, entity, playerMagicData, this, 32, .35f) && riding;
+        return Utils.preCastTargetHelper(level, entity, playerMagicData, this, 32, .35f);
+    }
+
+    @Override
+    public CastResult canBeCastedBy(int spellLevel, CastSource castSource, MagicData playerMagicData, Player player) {
+        if (player.isPassenger() && player.hasEffect(MobEffectRegistry.TRUE_INVISIBILITY.get()) && player.hasEffect(MobEffects.DAMAGE_RESISTANCE) && player.getVehicle() instanceof Mob) {
+            return super.canBeCastedBy(spellLevel, castSource, playerMagicData, player);
+        } else {
+            return new CastResult(CastResult.Type.FAILURE, Component.translatable("ui.irons_spellbooks.cast_error_parasyte", getDisplayName(player)).withStyle(ChatFormatting.RED));
+        }
     }
 
     @Override
@@ -90,9 +100,7 @@ public class AggroSpell extends AbstractSpell{
             LivingEntity target = castTargetingData.getTarget((ServerLevel) level);
 
             if (target != null) {
-                if(entity.getVehicle() instanceof Mob){
-                    ((Mob) entity.getVehicle()).setTarget(target);
-                }
+                ((Mob) entity.getVehicle()).setTarget(target);
             }
         }
         super.onCast(level, spellLevel, entity, castSource, playerMagicData);

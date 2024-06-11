@@ -6,10 +6,14 @@ import io.redspace.ironsspellbooks.damage.DamageSources;
 import io.redspace.ironsspellbooks.entity.spells.AbstractMagicProjectile;
 import io.redspace.ironsspellbooks.registries.MobEffectRegistry;
 import io.redspace.ironsspellbooks.util.ParticleHelper;
+import mod.chloeprime.aaaparticles.api.common.AAALevel;
+import mod.chloeprime.aaaparticles.api.common.ParticleEmitterInfo;
+import net.alshanex.originsoverhaulmod.OriginsOverhaulMod;
 import net.alshanex.originsoverhaulmod.entity.ModEntities;
 import net.alshanex.originsoverhaulmod.registry.ExampleSpellRegistry;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
@@ -149,6 +153,8 @@ public class Parasyte extends AbstractMagicProjectile implements GeoEntity{
         return (float) (dx * dx + dz * dz);
     }
 
+    private static final ParticleEmitterInfo CIRCLE = new ParticleEmitterInfo(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "MagicArea"));
+
     @Override
     public void tick() {
         this.firstTick = false;
@@ -164,6 +170,9 @@ public class Parasyte extends AbstractMagicProjectile implements GeoEntity{
             if(this.getTarget() == null){
                 airTime = 0;
             }
+            if(airTime > 0 && airTime%40 == 0){
+                AAALevel.addParticle(this.level(),false,CIRCLE.clone().position(this.startingPos));
+            }
             if (airTime <= 0) {
                 //Falling
                 if (onGround()) {
@@ -177,6 +186,9 @@ public class Parasyte extends AbstractMagicProjectile implements GeoEntity{
                     getOwner().stopRiding();
                 }
                 getOwner().moveTo(this.startingPos);
+                if(getTarget() instanceof  Mob){
+                    ((Mob) getTarget()).setTarget(null);
+                }
             } else {
                 if(!getOwner().isPassenger()){
                     getOwner().startRiding(getTarget());
