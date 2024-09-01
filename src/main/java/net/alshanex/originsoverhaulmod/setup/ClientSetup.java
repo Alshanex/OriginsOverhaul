@@ -19,10 +19,5 @@ public class ClientSetup {
         event.registerEntityRenderer(ModEntities.ENDER_FLOWER.get(), EnderFlowerRenderer::new);
         event.registerEntityRenderer(ModEntities.SHIELD_FLOWER.get(), ShieldFlowerRenderer::new);
         event.registerEntityRenderer(ModEntities.CROWN.get(), CrownRenderer::new);
-        event.registerEntityRenderer(ModEntities.PARASYTE.get(), ParasyteRenderer::new);
-        event.registerEntityRenderer(ModEntities.BALANZA.get(), BalanzaRenderer::new);
-        event.registerEntityRenderer(ModEntities.BALANZA_BUENA.get(), BalanzaBuenaRenderer::new);
-        event.registerEntityRenderer(ModEntities.MUMMY.get(), MummyRenderer::new);
-        event.registerEntityRenderer(ModEntities.CAJA.get(), CajaRenderer::new);
     }
 }

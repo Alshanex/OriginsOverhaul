@@ -1,8 +1,6 @@
 package net.alshanex.originsoverhaulmod;
 
 import com.mojang.logging.LogUtils;
-import dev.architectury.registry.ReloadListenerRegistry;
-import mod.chloeprime.aaaparticles.client.loader.EffekAssetLoader;
 import net.alshanex.originsoverhaulmod.entity.ModEntities;
 import net.alshanex.originsoverhaulmod.item.ModItems;
 import net.alshanex.originsoverhaulmod.registry.EffectRegistry;
@@ -81,11 +79,6 @@ public class OriginsOverhaulMod
             event.accept(ModItems.DWARFEVO);
             event.accept(ModItems.REVENANTEVO);
         }
-
-        if(event.getTabKey() == CreativeModeTabs.COMBAT){
-            event.accept(ModItems.EGYPTHIAN_STAFF);
-            event.accept(ModItems.BESTIARY);
-        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
@@ -102,7 +95,7 @@ public class OriginsOverhaulMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-            ReloadListenerRegistry.register(PackType.CLIENT_RESOURCES, new EffekAssetLoader(), new ResourceLocation(MOD_ID, "effeks"));
+
         }
     }
 }

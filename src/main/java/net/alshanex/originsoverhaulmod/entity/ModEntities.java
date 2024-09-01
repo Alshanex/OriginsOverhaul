@@ -53,30 +53,6 @@ public class ModEntities {
                     .sized(1, 1)
                     .clientTrackingRange(64)
                     .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "crown").toString()));
-    public static final RegistryObject<EntityType<Balanza>> BALANZA =
-            ENTITY_TYPES.register("balanza_mala", () -> EntityType.Builder.<Balanza>of(Balanza::new, MobCategory.MISC)
-                    .sized(1f, 1f)
-                    .clientTrackingRange(64)
-                    .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "balanza_mala").toString()));
-    public static final RegistryObject<EntityType<BalanzaBuena>> BALANZA_BUENA =
-            ENTITY_TYPES.register("balanza_buena", () -> EntityType.Builder.<BalanzaBuena>of(BalanzaBuena::new, MobCategory.MISC)
-                    .sized(1f, 1f)
-                    .clientTrackingRange(64)
-                    .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "balanza_buena").toString()));
-    public static final RegistryObject<EntityType<Mummy>> MUMMY =
-            ENTITY_TYPES.register("mummy", () -> EntityType.Builder.of(Mummy::new, MobCategory.CREATURE)
-                    .sized(0.5f, 0.5f)
-                    .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "mummy").toString()));
-    public static final RegistryObject<EntityType<Caja>> CAJA =
-            ENTITY_TYPES.register("caja", () -> EntityType.Builder.<Caja>of(Caja::new, MobCategory.MISC)
-                    .sized(1.5f, 3f)
-                    .clientTrackingRange(64)
-                    .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "caja").toString()));
-    public static final RegistryObject<EntityType<Parasyte>> PARASYTE =
-            ENTITY_TYPES.register("parasyte", () -> EntityType.Builder.<Parasyte>of(Parasyte::new, MobCategory.MISC)
-                    .sized(1, 1)
-                    .clientTrackingRange(64)
-                    .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "parasyte").toString()));
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);
     }
