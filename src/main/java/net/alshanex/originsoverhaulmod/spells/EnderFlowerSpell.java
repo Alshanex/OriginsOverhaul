@@ -6,7 +6,7 @@ import io.redspace.ironsspellbooks.api.magic.MagicData;
 import io.redspace.ironsspellbooks.api.registry.SchoolRegistry;
 import io.redspace.ironsspellbooks.api.spells.*;
 import io.redspace.ironsspellbooks.api.util.Utils;
-import io.redspace.ironsspellbooks.capabilities.magic.CastTargetingData;
+import io.redspace.ironsspellbooks.capabilities.magic.TargetEntityCastData;
 import io.redspace.ironsspellbooks.registries.MobEffectRegistry;
 import io.redspace.ironsspellbooks.registries.SoundRegistry;
 import net.alshanex.originsoverhaulmod.entity.custom.EnderFlower;
@@ -94,7 +94,7 @@ public class EnderFlowerSpell extends AbstractSpell{
         Vec3 spawn = null;
         LivingEntity target = null;
 
-        if (playerMagicData.getAdditionalCastData() instanceof CastTargetingData castTargetingData) {
+        if (playerMagicData.getAdditionalCastData() instanceof TargetEntityCastData castTargetingData) {
             target = castTargetingData.getTarget((ServerLevel) level);
             if (target != null)
                 spawn = target.position();
