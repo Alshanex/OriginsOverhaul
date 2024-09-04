@@ -8,7 +8,7 @@
 				"type": "medievalorigins:cast_spell",
 				"spell": "blood_needles",
 				"power_level": 10,
-				"mana_cost": 20
+				"mana_cost": 15
 			},
 			{
 				"type": "origins:delay",

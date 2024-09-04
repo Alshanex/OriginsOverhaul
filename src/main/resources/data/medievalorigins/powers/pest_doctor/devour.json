@@ -9,7 +9,7 @@
 				"spell": "devour",
 				"power_level": 10,
 				"cast_time": 0,
-				"mana_cost": 15
+				"mana_cost": 10
 			},
 			{
 				"type": "origins:delay",
