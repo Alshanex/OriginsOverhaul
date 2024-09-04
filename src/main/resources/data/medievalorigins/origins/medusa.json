@@ -14,7 +14,8 @@
                 "medievalorigins:medusa/unpetrify",
                 "medievalorigins:medusa/reset_cds",
                 "origins:evo_stats",
-                "origins:orb_fix"
+                "origins:orb_fix",
+                "origins_env_deh:thirst_resistance"
 	    ],
         "icon": {
             "item": "minecraft:ink_sac",

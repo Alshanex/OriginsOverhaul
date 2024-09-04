@@ -12,6 +12,13 @@
                 "medievalorigins:incubus/lava_swim",
                 "medievalorigins:incubus/red",
                 "medievalorigins:incubus/fire_magic",
+          "origins_env_deh:heat_resistance",
+          "thermoo-patches:heat_immune",
+          "thermoo-patches:cold_vulnerability",
+          "origins_survive:lava_drinker",
+          "origins_survive:heat_resistance",
+          "origins_toughasnails:lava_drinker",
+          "origins_toughasnails:thermal_regulator",
           "medievalorigins:incubus/reset_cds",
           "origins:evo_stats",
           "origins:orb_fix"
