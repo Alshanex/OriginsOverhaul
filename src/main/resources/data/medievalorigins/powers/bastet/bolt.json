@@ -8,7 +8,7 @@
 				"type": "medievalorigins:cast_spell",
 				"spell": "guiding_bolt",
 				"power_level": 10,
-				"mana_cost": 15
+				"mana_cost": 10
 			},
 			{
 				"type": "origins:modify_resource",

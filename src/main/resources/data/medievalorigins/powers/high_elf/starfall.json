@@ -37,7 +37,7 @@
 					"type": "origins:apply_effect",
 					"effect": {
 						"effect": "minecraft:slow_falling",
-						"duration": 400,
+						"duration": 240,
 						"is_ambient": true,
 						"show_particles": false,
 						"show_icon": false

@@ -7,7 +7,7 @@
 			{
 				"type": "medievalorigins:cast_spell",
 				"spell": "shockwave",
-				"power_level": 3,
+				"power_level": 1,
 				"mana_cost": 15
 			},
 			{

@@ -8,6 +8,7 @@
 				"type": "medievalorigins:cast_spell",
 				"spell": "fang_ward",
 				"power_level": 6,
+				"cast_time": 0,
 				"mana_cost": 10
 			},
 			{

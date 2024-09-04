@@ -7,7 +7,7 @@
 		"type": "medievalorigins:cast_spell",
 		"spell": "heartstop",
 		"power_level": 1,
-		"mana_cost": 40
+		"mana_cost": 0
     },
 	"cooldown": 400,
 	"hud_render": {

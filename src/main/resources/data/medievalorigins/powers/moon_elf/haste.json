@@ -4,6 +4,13 @@
 	"entity_action": {
 		"type": "origins:and",
     	"actions": [
+			{
+				"type": "medievalorigins:cast_spell",
+				"spell": "charge",
+				"power_level": 3,
+				"cast_time": 0,
+				"mana_cost": 40
+			},
         {    
             "type": "origins:apply_effect",
 			"effects": [
@@ -22,13 +29,6 @@
 					"show_icon": false,
 					"amplifier": 2,
 					"duration": 900
-				},
-				{
-					"type": "medievalorigins:cast_spell",
-					"spell": "charge",
-					"power_level": 3,
-					"cast_time": 0,
-					"mana_cost": 40
 				}
 			]
         }
