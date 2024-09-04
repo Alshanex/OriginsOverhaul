@@ -31,5 +31,14 @@
 				"compare_to": 2.0
 			}
 		}
-	}
+	},
+	"freeze_immunity": {
+		"type": "origins:invulnerability",
+		"damage_condition": {
+			"type": "origins:type",
+			"damage_type": "minecraft:freeze"
+		}
+	},
+	"name": "Thick Fur",
+	"description": "The blessing of thick fur becomes a curse in deserts. Their movement is slowed and health reduced. Fur also makes you immune to freeze damage."
 }
