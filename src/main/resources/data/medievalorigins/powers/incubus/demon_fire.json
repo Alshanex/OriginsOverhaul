@@ -5,8 +5,10 @@
 		"type": "origins:and",
 		"actions": [
 			{
-				"type": "origins:execute_command",
-				"command": "cast @s burning_dash 5"
+				"type": "medievalorigins:cast_spell",
+				"spell": "burning_dash",
+				"power_level": 5,
+				"mana_cost": 10
 			},
 			{
 				"type": "origins:delay",

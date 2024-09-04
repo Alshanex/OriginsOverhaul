@@ -71,8 +71,10 @@
 			"else_action": {
 				"type": "origins:actor_action",
 				"action": {
-					"type": "origins:execute_command",
-					"command": "cast @s petrify"
+					"type": "medievalorigins:cast_spell",
+					"spell": "petrify",
+					"power_level": 1,
+					"mana_cost": 30
 				}
 			}
 		},

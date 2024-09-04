@@ -6,15 +6,21 @@
 		"type": "origins:and",
 		"actions": [
 			{
-				"type": "origins:execute_command",
-				"command": "cast @s blood_slash 5"
+				"type": "medievalorigins:cast_spell",
+				"spell": "blood_slash",
+				"power_level": 5,
+				"cast_time": 0,
+				"mana_cost": 15
 			},
 			{
 				"type": "origins:delay",
 				"ticks": 10,
 				"action": {
-					"type": "origins:execute_command",
-					"command": "cast @s blood_slash 5"
+					"type": "medievalorigins:cast_spell",
+					"spell": "blood_slash",
+					"power_level": 5,
+					"cast_time": 0,
+					"mana_cost": 15
 				}
 			},
 			{

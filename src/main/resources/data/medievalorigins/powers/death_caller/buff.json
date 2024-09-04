@@ -5,16 +5,11 @@
 		"type": "origins:and",
 		"actions": [
 			{
-				"type": "origins:execute_command",
-				"command": "power grant @s origins:no_cast_time"
-			},
-			{
-				"type": "origins:delay",
-				"ticks": 2,
-				"action": {
-					"type": "origins:execute_command",
-					"command": "cast @s fortify 10"
-				}
+				"type": "medievalorigins:cast_spell",
+				"spell": "fortify",
+				"power_level": 10,
+				"cast_time": 0,
+				"mana_cost": 30
 			},
 			{
 				"type": "origins:delay",
@@ -103,14 +98,6 @@
 							}
 						}
 					}
-				}
-			},
-			{
-				"type": "origins:delay",
-				"ticks": 10,
-				"action": {
-					"type": "origins:execute_command",
-					"command": "power remove @s origins:no_cast_time"
 				}
 			}
 		]

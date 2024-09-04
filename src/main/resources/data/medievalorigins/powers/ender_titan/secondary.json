@@ -26,6 +26,16 @@
 						"type": "origins:execute_command",
 						"command": "power grant @s medievalorigins:ender_titan/third"
 					}
+				},
+				{
+					"type": "origins:delay",
+					"ticks": 6,
+					"action": {
+						"type": "medievalorigins:cast_spell",
+						"spell": "echoing_strikes",
+						"power_level": 1,
+						"mana_cost": 20
+					}
 				}
 			]
 		},
@@ -58,13 +68,13 @@
 								"type": "origins:delay",
 								"ticks": 60,
 								"action": {
-									"type": "origins:execute_command",
-									"command": "summon cataclysm:dimensional_rift"
+									"type": "origins:spawn_entity",
+									"entity_type": "cataclysm:dimensional_rift"
 								}
 							},
 							{
-								"type": "origins:execute_command",
-								"command": "summon cataclysm:void_vortex"
+								"type": "origins:spawn_entity",
+								"entity_type": "cataclysm:void_vortex"
 							}
 						]
 					}

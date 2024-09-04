@@ -5,31 +5,19 @@
 		"type": "origins:and",
 		"actions": [
 			{
-				"type": "origins:execute_command",
-				"command": "power grant @s origins:no_cast_time"
+				"type": "medievalorigins:cast_spell",
+				"spell": "gust",
+				"power_level": 6,
+				"mana_cost": 15
 			},
 			{
 				"type": "origins:delay",
-				"ticks": 2,
+				"ticks": 8,
 				"action": {
-					"type": "origins:execute_command",
-					"command": "cast @s gust 6"
-				}
-			},
-			{
-				"type": "origins:delay",
-				"ticks": 10,
-				"action": {
-					"type": "origins:execute_command",
-					"command": "cast @s firecracker 20"
-				}
-			},
-			{
-				"type": "origins:delay",
-				"ticks": 4,
-				"action": {
-					"type": "origins:execute_command",
-					"command": "power remove @s origins:no_cast_time"
+					"type": "medievalorigins:cast_spell",
+					"spell": "firecracker",
+					"power_level": 20,
+					"mana_cost": 0
 				}
 			}
 		]

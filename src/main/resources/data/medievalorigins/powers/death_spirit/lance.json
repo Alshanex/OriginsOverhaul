@@ -5,20 +5,15 @@
 		"type": "origins:and",
 		"actions": [
 			{
-				"type": "origins:execute_command",
-				"command": "power grant @s origins:no_cast_time"
+				"type": "medievalorigins:cast_spell",
+				"spell": "lightning_lance",
+				"power_level": 20,
+				"cast_time": 0,
+				"mana_cost": 20
 			},
 			{
 				"type": "origins:delay",
 				"ticks": 2,
-				"action": {
-					"type": "origins:execute_command",
-					"command": "cast @s lightning_lance 20"
-				}
-			},
-			{
-				"type": "origins:delay",
-				"ticks": 4,
 				"action": {
 					"type": "origins:execute_command",
 					"command": "power remove @s medievalorigins:death_spirit/lance"
@@ -26,7 +21,7 @@
 			},
 			{
 				"type": "origins:delay",
-				"ticks": 6,
+				"ticks": 4,
 				"action": {
 					"type": "origins:execute_command",
 					"command": "power grant @s medievalorigins:death_spirit/electric"
@@ -34,18 +29,10 @@
 			},
 			{
 				"type": "origins:delay",
-				"ticks": 8,
+				"ticks": 6,
 				"action": {
 					"type": "origins:trigger_cooldown",
 					"power": "medievalorigins:death_spirit/electric"
-				}
-			},
-			{
-				"type": "origins:delay",
-				"ticks": 20,
-				"action": {
-					"type": "origins:execute_command",
-					"command": "power remove @s origins:no_cast_time"
 				}
 			}
 		]

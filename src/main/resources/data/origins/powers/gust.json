@@ -5,15 +5,19 @@
 		"type": "origins:and",
 		"actions": [
 			{
-				"type": "origins:execute_command",
-				"command": "cast @s gust 3"
+				"type": "medievalorigins:cast_spell",
+				"spell": "gust",
+				"power_level": 3,
+				"mana_cost": 25
 			},
 			{
 				"type": "origins:delay",
 				"ticks": 18,
 				"action": {
-					"type": "origins:execute_command",
-					"command": "cast @s firecracker 8"
+					"type": "medievalorigins:cast_spell",
+					"spell": "firecracker",
+					"power_level": 8,
+					"mana_cost": 0
 				}
 			}
 		]

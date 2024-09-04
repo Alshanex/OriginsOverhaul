@@ -5,8 +5,10 @@
 		"type": "origins:and",
 		"actions": [
 			{
-				"type": "origins:execute_command",
-				"command": "cast @s shockwave 3"
+				"type": "medievalorigins:cast_spell",
+				"spell": "shockwave",
+				"power_level": 3,
+				"mana_cost": 15
 			},
 			{
 				"type": "origins:modify_resource",

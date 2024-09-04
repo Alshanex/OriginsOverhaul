@@ -16,31 +16,20 @@
 					"type": "origins:and",
 					"actions": [
 						{
-							"type": "origins:execute_command",
-							"command": "power grant @s origins:no_cast_time"
+							"type": "medievalorigins:cast_spell",
+							"spell": "poison_splash",
+							"power_level": 16,
+							"cast_time": 0,
+							"mana_cost": 30
 						},
 						{
 							"type": "origins:delay",
-							"ticks": 2,
+							"ticks": 8,
 							"action": {
-								"type": "origins:execute_command",
-								"command": "cast @s poison_splash 16"
-							}
-						},
-						{
-							"type": "origins:delay",
-							"ticks": 4,
-							"action": {
-								"type": "origins:execute_command",
-								"command": "power remove @s origins:no_cast_time"
-							}
-						},
-						{
-							"type": "origins:delay",
-							"ticks": 10,
-							"action": {
-								"type": "origins:execute_command",
-								"command": "cast @s poison_breath 16"
+								"type": "medievalorigins:cast_spell",
+								"spell": "poison_breath",
+								"power_level": 16,
+								"mana_cost": 0
 							}
 						},
 						{

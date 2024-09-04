@@ -24,24 +24,30 @@
 				"type": "origins:delay",
 				"ticks": 2,
 				"action": {
-					"type": "origins:execute_command",
-					"command": "cast @s fang_ward 10"
+					"type": "medievalorigins:cast_spell",
+					"spell": "fang_ward",
+					"power_level": 10,
+					"mana_cost": 20
 				}
 			},
 			{
 				"type": "origins:delay",
 				"ticks": 42,
 				"action": {
-					"type": "origins:execute_command",
-					"command": "cast @s fang_ward 10"
+					"type": "medievalorigins:cast_spell",
+					"spell": "fang_ward",
+					"power_level": 10,
+					"mana_cost": 20
 				}
 			},
 			{
 				"type": "origins:delay",
 				"ticks": 82,
 				"action": {
-					"type": "origins:execute_command",
-					"command": "cast @s fang_ward 10"
+					"type": "medievalorigins:cast_spell",
+					"spell": "fang_ward",
+					"power_level": 10,
+					"mana_cost": 20
 				}
 			}
 		]

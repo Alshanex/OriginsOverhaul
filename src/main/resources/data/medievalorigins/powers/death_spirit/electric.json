@@ -5,8 +5,10 @@
 		"type": "origins:and",
 		"actions": [
 			{
-				"type": "origins:execute_command",
-				"command": "cast @s chain_lightning 20"
+				"type": "medievalorigins:cast_spell",
+				"spell": "chain_lightning",
+				"power_level": 20,
+				"mana_cost": 20
 			},
 			{
 				"type": "origins:delay",

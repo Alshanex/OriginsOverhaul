@@ -13,8 +13,10 @@
 			"type": "origins:and",
 			"actions": [
 				{
-					"type": "origins:execute_command",
-					"command": "cast @s portal 1"
+					"type": "medievalorigins:cast_spell",
+					"spell": "portal",
+					"power_level": 1,
+					"mana_cost": 10
 				},
 				{
 					"type": "origins:modify_resource",
@@ -28,8 +30,10 @@
 					"type": "origins:delay",
 					"ticks": 60,
 					"action": {
-						"type": "origins:execute_command",
-						"command": "cast @s portal 1"
+						"type": "medievalorigins:cast_spell",
+						"spell": "portal",
+						"power_level": 1,
+						"mana_cost": 10
 					}
 				}
 			]
@@ -45,8 +49,10 @@
 			"command_along_ray_only_on_hit": false,
 			"command_at_hit": "tp @s ~ ~ ~",
 			"miss_action": {
-				"type": "origins:execute_command",
-				"command": "cast @s teleport 4"
+				"type": "medievalorigins:cast_spell",
+				"spell": "teleport",
+				"power_level": 4,
+				"mana_cost": 10
 			},
 			"bientity_action": {
 				"type": "origins:actor_action",

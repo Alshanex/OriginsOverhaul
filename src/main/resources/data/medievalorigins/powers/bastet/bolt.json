@@ -5,8 +5,10 @@
 		"type": "origins:and",
 		"actions": [
 			{
-				"type": "origins:execute_command",
-				"command": "cast @s guiding_bolt 10"
+				"type": "medievalorigins:cast_spell",
+				"spell": "guiding_bolt",
+				"power_level": 10,
+				"mana_cost": 15
 			},
 			{
 				"type": "origins:modify_resource",

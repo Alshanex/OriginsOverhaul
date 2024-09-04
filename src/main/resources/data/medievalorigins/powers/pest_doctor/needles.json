@@ -5,8 +5,10 @@
 		"type": "origins:and",
 		"actions": [
 			{
-				"type": "origins:execute_command",
-				"command": "cast @s blood_needles 10"
+				"type": "medievalorigins:cast_spell",
+				"spell": "blood_needles",
+				"power_level": 10,
+				"mana_cost": 20
 			},
 			{
 				"type": "origins:delay",

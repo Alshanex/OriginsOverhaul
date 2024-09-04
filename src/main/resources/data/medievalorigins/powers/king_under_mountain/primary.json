@@ -5,28 +5,15 @@
 		"type": "origins:and",
 		"actions": [
 			{
-				"type": "origins:execute_command",
-				"command": "power grant @s origins:no_cast_time"
-			},
-			{
-				"type": "origins:delay",
-				"ticks": 2,
-				"action": {
-					"type": "origins:execute_command",
-					"command": "cast @s stomp 5"
-				}
+				"type": "medievalorigins:cast_spell",
+				"spell": "stomp",
+				"power_level": 5,
+				"cast_time": 0,
+				"mana_cost": 20
 			},
 			{
 				"type": "origins:delay",
 				"ticks": 4,
-				"action": {
-					"type": "origins:execute_command",
-					"command": "power remove @s origins:no_cast_time"
-				}
-			},
-			{
-				"type": "origins:delay",
-				"ticks": 6,
 				"action": {
 					"type": "origins:execute_command",
 					"command": "power remove @s medievalorigins:king_under_mountain/primary"
@@ -34,7 +21,7 @@
 			},
 			{
 				"type": "origins:delay",
-				"ticks": 8,
+				"ticks": 6,
 				"action": {
 					"type": "origins:execute_command",
 					"command": "power grant @s medievalorigins:king_under_mountain/secondprim"
@@ -42,7 +29,7 @@
 			},
 			{
 				"type": "origins:delay",
-				"ticks": 10,
+				"ticks": 2,
 				"action": {
 					"type": "origins:area_of_effect",
 					"radius": 10,

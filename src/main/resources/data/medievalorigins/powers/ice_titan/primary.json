@@ -18,8 +18,10 @@
 							"type": "origins:and",
 							"actions": [
 								{
-									"type": "origins:execute_command",
-									"command": "cast @s icicle 10"
+									"type": "medievalorigins:cast_spell",
+									"spell": "icicle",
+									"power_level": 10,
+									"mana_cost": 6
 								},
 								{
 									"type": "origins:modify_resource",
@@ -43,8 +45,10 @@
 							"type": "origins:and",
 							"actions": [
 								{
-									"type": "origins:execute_command",
-									"command": "cast @s ray_of_frost 5"
+									"type": "medievalorigins:cast_spell",
+									"spell": "ray_of_frost",
+									"power_level": 5,
+									"mana_cost": 12
 								},
 								{
 									"type": "origins:modify_resource",

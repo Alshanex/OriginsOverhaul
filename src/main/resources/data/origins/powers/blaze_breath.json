@@ -2,8 +2,10 @@
 	"loading_priority":1,
 	"type": "origins:active_self",
     "entity_action": {
-        "type": "origins:execute_command",
-    	"command": "cast @s blaze_storm 5"
+		"type": "medievalorigins:cast_spell",
+		"spell": "blaze_storm",
+		"power_level": 5,
+		"mana_cost": 30
     },
 	"cooldown": 200,
 	"hud_render": {

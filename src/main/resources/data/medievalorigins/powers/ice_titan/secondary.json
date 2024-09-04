@@ -5,8 +5,10 @@
 		"type": "origins:and",
 		"actions": [
 			{
-				"type": "origins:execute_command",
-				"command": "cast @s frostwave 5"
+				"type": "medievalorigins:cast_spell",
+				"spell": "frostwave",
+				"power_level": 5,
+				"mana_cost": 10
 			},
 			{
 				"type": "origins:delay",
@@ -32,8 +34,10 @@
 				"type": "origins:delay",
 				"ticks": 20,
 				"action": {
-					"type": "origins:execute_command",
-					"command": "cast @s cone_of_cold 8"
+					"type": "medievalorigins:cast_spell",
+					"spell": "cone_of_cold",
+					"power_level": 8,
+					"mana_cost": 20
 				}
 			}
 		]

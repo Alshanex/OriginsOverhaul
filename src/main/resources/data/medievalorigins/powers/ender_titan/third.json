@@ -8,13 +8,15 @@
 				"type": "origins:delay",
 				"ticks": 1,
 				"action": {
-					"type": "origins:execute_command",
-					"command": "summon cataclysm:void_howitzer"
+					"type": "origins:spawn_entity",
+					"entity_type": "cataclysm:void_howitzer"
 				}
 			},
 			{
-				"type": "origins:execute_command",
-				"command": "cast @s ender_stomp 10"
+				"type": "medievalorigins:cast_spell",
+				"spell": "ender_stomp",
+				"power_level": 10,
+				"mana_cost": 40
 			},
 			{
 				"type": "origins:delay",

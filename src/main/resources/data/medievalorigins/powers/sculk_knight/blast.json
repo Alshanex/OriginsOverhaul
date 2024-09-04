@@ -7,24 +7,11 @@
 		"type": "origins:and",
 		"actions": [
 			{
-				"type": "origins:execute_command",
-				"command": "power grant @s origins:no_cast_time"
-			},
-			{
-				"type": "origins:delay",
-				"ticks": 2,
-				"action": {
-					"type": "origins:execute_command",
-					"command": "cast @s eldritch_blast 2"
-				}
-			},
-			{
-				"type": "origins:delay",
-				"ticks": 4,
-				"action": {
-					"type": "origins:execute_command",
-					"command": "power remove @s origins:no_cast_time"
-				}
+				"type": "medievalorigins:cast_spell",
+				"spell": "eldritch_blast",
+				"power_level": 2,
+				"cast_time": 0,
+				"mana_cost": 15
 			}
 		]
     },

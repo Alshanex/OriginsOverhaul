@@ -5,8 +5,11 @@
 		"type": "origins:and",
 		"actions": [
 			{
-				"type": "origins:execute_command",
-				"command": "cast @s fireball 8"
+				"type": "medievalorigins:cast_spell",
+				"spell": "fireball",
+				"power_level": 8,
+				"cast_time": 0,
+				"mana_cost": 25
 			},
 			{
 				"type": "origins:add_velocity",
@@ -19,14 +22,6 @@
 				"action": {
 					"type": "origins:execute_command",
 					"command": "power remove @s origins:fall_immunity"
-				}
-			},
-			{
-				"type": "origins:delay",
-				"ticks": 6,
-				"action": {
-					"type": "origins:execute_command",
-					"command": "power remove @s origins:no_cast_time"
 				}
 			},
 			{
@@ -47,7 +42,7 @@
 			},
 			{
 				"type": "origins:delay",
-				"ticks": 10,
+				"ticks": 6,
 				"action": {
 					"type": "origins:trigger_cooldown",
 					"power": "medievalorigins:incubus/slash"

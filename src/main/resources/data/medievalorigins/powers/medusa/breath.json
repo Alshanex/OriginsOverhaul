@@ -5,8 +5,10 @@
 		"type": "origins:and",
 		"actions": [
 			{
-				"type": "origins:execute_command",
-				"command": "cast @s poison_splash 16"
+				"type": "medievalorigins:cast_spell",
+				"spell": "poison_splash",
+				"power_level": 16,
+				"mana_cost": 20
 			},
 			{
 				"type": "origins:delay",

@@ -5,8 +5,10 @@
 		"type": "origins:and",
 		"actions": [
 			{
-				"type": "origins:execute_command",
-				"command": "cast @s firebolt 7"
+				"type": "medievalorigins:cast_spell",
+				"spell": "firebolt",
+				"power_level": 7,
+				"mana_cost": 15
 			},
 			{
 				"type": "origins:modify_resource",

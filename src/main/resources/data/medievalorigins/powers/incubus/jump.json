@@ -5,20 +5,15 @@
 		"type": "origins:and",
 		"actions": [
 			{
-				"type": "origins:execute_command",
-				"command": "power grant @s origins:no_cast_time"
+				"type": "medievalorigins:cast_spell",
+				"spell": "heat_surge",
+				"power_level": 5,
+				"cast_time": 0,
+				"mana_cost": 10
 			},
 			{
 				"type": "origins:delay",
 				"ticks": 2,
-				"action": {
-					"type": "origins:execute_command",
-					"command": "cast @s heat_surge 5"
-				}
-			},
-			{
-				"type": "origins:delay",
-				"ticks": 4,
 				"action": {
 					"type": "origins:add_velocity",
 					"y": 1
@@ -26,7 +21,7 @@
 			},
 			{
 				"type": "origins:delay",
-				"ticks": 6,
+				"ticks": 4,
 				"action": {
 					"type": "origins:execute_command",
 					"command": "power remove @s medievalorigins:incubus/jump"
@@ -34,7 +29,7 @@
 			},
 			{
 				"type": "origins:delay",
-				"ticks": 8,
+				"ticks": 6,
 				"action": {
 					"type": "origins:execute_command",
 					"command": "power grant @s medievalorigins:incubus/demon_fire"
@@ -42,7 +37,7 @@
 			},
 			{
 				"type": "origins:delay",
-				"ticks": 10,
+				"ticks": 8,
 				"action": {
 					"type": "origins:execute_command",
 					"command": "power grant @s origins:fall_immunity"

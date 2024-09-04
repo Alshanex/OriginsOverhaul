@@ -2,14 +2,15 @@
 	"loading_priority": 1,
 	"name": "Reaper's Ward",
 	"description": "Exchange some of the revenant's life force to summon the dead souls of the battlefield.",
-	"type": "origins:multiple",
 	"type": "origins:active_self",
 	"entity_action": {
 		"type": "origins:and",
 		"actions": [
 			{
-				"type": "origins:execute_command",
-				"command": "cast @s raise_dead 5"
+				"type": "medievalorigins:cast_spell",
+				"spell": "raise_dead",
+				"power_level": 5,
+				"mana_cost": 50
 			},
 			{
 				"type": "origins:damage",

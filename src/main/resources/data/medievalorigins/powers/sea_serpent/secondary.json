@@ -9,8 +9,10 @@
         "type": "origins:and",
         "actions": [
             {
-                "type": "origins:execute_command",
-                "command": "cast @s water_slash 20"
+                "type": "medievalorigins:cast_spell",
+                "spell": "water_slash",
+                "power_level": 20,
+                "mana_cost": 20
             },
             {
                 "type": "origins:delay",

@@ -5,8 +5,10 @@
 		"type": "origins:and",
     	"actions": [
         {
-            "type": "origins:execute_command",
-    		"command": "cast @s invisibility 2"
+			"type": "medievalorigins:cast_spell",
+			"spell": "invisibility",
+			"power_level": 2,
+			"mana_cost": 40
         },
         {    
             "type": "origins:apply_effect",

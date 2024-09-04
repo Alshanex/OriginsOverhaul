@@ -5,8 +5,10 @@
 		"type": "origins:and",
     	"actions": [
         {
-            "type": "origins:execute_command",
-    		"command": "cast @s heat_surge 2"
+			"type": "medievalorigins:cast_spell",
+			"spell": "heat_surge",
+			"power_level": 2,
+			"mana_cost": 50
         },
         {    
             "type": "origins:apply_effect",

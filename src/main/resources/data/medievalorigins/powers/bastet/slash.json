@@ -5,8 +5,10 @@
 		"type": "origins:and",
 		"actions": [
 			{
-				"type": "origins:execute_command",
-				"command": "cast @s blood_slash 5"
+				"type": "medievalorigins:cast_spell",
+				"spell": "blood_slash",
+				"power_level": 5,
+				"mana_cost": 20
 			},
 			{
 				"type": "origins:modify_resource",

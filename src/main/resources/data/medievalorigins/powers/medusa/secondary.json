@@ -5,6 +5,12 @@
 		"type": "origins:and",
 		"actions": [
 			{
+				"type": "medievalorigins:cast_spell",
+				"spell": "spider_aspect",
+				"power_level": 1,
+				"mana_cost": 30
+			},
+			{
 				"type": "origins:delay",
 				"ticks": 2,
 				"action": {

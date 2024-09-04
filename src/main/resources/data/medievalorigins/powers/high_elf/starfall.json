@@ -5,10 +5,6 @@
 		"type": "origins:and",
 		"actions": [
 			{
-				"type": "origins:execute_command",
-				"command": "power grant @s origins:fall_immunity"
-			},
-			{
 				"type": "origins:add_velocity",
 				"y": 2
 			},
@@ -28,16 +24,24 @@
 				"type": "origins:delay",
 				"ticks": 22,
 				"action": {
-					"type": "origins:execute_command",
-					"command": "cast @s starfall 30"
+					"type": "medievalorigins:cast_spell",
+					"spell": "starfall",
+					"power_level": 30,
+					"mana_cost": 70
 				}
 			},
 			{
 				"type": "origins:delay",
-				"ticks": 600,
+				"ticks": 180,
 				"action": {
-					"type": "origins:execute_command",
-					"command": "power remove @s origins:fall_immunity"
+					"type": "origins:apply_effect",
+					"effect": {
+						"effect": "minecraft:slow_falling",
+						"duration": 400,
+						"is_ambient": true,
+						"show_particles": false,
+						"show_icon": false
+					}
 				}
 			}
 		]

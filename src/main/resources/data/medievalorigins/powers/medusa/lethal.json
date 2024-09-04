@@ -5,16 +5,22 @@
 	"starting": {
 		"type": "origins:action_on_callback",
 		"entity_action_added": {
-			"type": "origins:execute_command",
-			"command": "cast @s spider_aspect 10"
+			"type": "medievalorigins:cast_spell",
+			"spell": "spider_aspect",
+			"power_level": 10,
+			"cast_time": 0,
+			"mana_cost": 0
 		}
 	},
 
 	"refresh": {
 		"type": "origins:action_over_time",
 		"entity_action": {
-			"type": "origins:execute_command",
-			"command": "cast @s spider_aspect 10"
+			"type": "medievalorigins:cast_spell",
+			"spell": "spider_aspect",
+			"power_level": 10,
+			"cast_time": 0,
+			"mana_cost": 0
 		},
 		"interval": 1200
 	}

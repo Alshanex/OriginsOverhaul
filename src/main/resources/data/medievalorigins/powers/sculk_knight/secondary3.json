@@ -4,8 +4,10 @@
 	"description": "With your Secondary Ability key you can summon a horde of tentacles to attack your enemies.",
 	"type": "origins:active_self",
 	"entity_action": {
-		"type": "origins:execute_command",
-		"command": "cast @s sculk_tentacles 4"
+		"type": "medievalorigins:cast_spell",
+		"spell": "sculk_tentacles",
+		"power_level": 4,
+		"mana_cost": 20
 	},
 	"cooldown": 340,
 	"key": {

@@ -13,8 +13,10 @@
 			"type": "origins:and",
 			"actions": [
 				{
-					"type": "origins:execute_command",
-					"command": "cast @s shield 10"
+					"type": "medievalorigins:cast_spell",
+					"spell": "shield",
+					"power_level": 10,
+					"mana_cost": 20
 				},
 				{
 					"type": "origins:modify_resource",

@@ -7,12 +7,16 @@
 			"type": "origins:sneaking"
 		},
 		"if_action": {
-			"type": "origins:execute_command",
-			"command": "cast @s raise_dead 6"
+			"type": "medievalorigins:cast_spell",
+			"spell": "raise_dead",
+			"power_level": 6,
+			"mana_cost": 50
 		},
 		"else_action": {
-			"type": "origins:execute_command",
-			"command": "cast @s summon_vex 4"
+			"type": "medievalorigins:cast_spell",
+			"spell": "summon_vex",
+			"power_level": 4,
+			"mana_cost": 50
 		}
     },
 	"cooldown": 660,

@@ -7,8 +7,10 @@
         "type": "origins:and",
         "actions": [
             {
-                "type": "origins:execute_command",
-                "command": "cast @s water_cut 3"
+                "type": "medievalorigins:cast_spell",
+                "spell": "water_cut",
+                "power_level": 3,
+                "mana_cost": 20
             },
             {
                 "type": "origins:modify_resource",

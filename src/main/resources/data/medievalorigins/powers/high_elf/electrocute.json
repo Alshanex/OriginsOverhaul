@@ -8,8 +8,10 @@
 			"type": "origins:and",
 			"actions": [
 				{
-					"type": "origins:execute_command",
-					"command": "cast @s electrocute 10"
+					"type": "medievalorigins:cast_spell",
+					"spell": "electrocute",
+					"power_level": 10,
+					"mana_cost": 20
 				},
 				{
 					"type": "origins:delay",
