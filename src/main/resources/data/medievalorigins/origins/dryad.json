@@ -2,23 +2,27 @@
         "loading_priority": 12,
         "powers": [
                 "medievalorigins:fae/levitation",
-                "medievalorigins:fae/flowers",
+                "medievalorigins:dryad/flowers",
+                "medievalorigins:dryad/forest_guardian",
+                "medievalorigins:dryad/get_flowers/get_dandelion",
+                "medievalorigins:dryad/get_flowers/get_poppy",
+                "medievalorigins:dryad/get_flowers/get_orchid",
+                "medievalorigins:dryad/get_flowers/get_allium",
                 "medievalorigins:fae/magic_resistance",
                 "medievalorigins:fae/magic_damage_boost",
                 "medievalorigins:fae/allure",
                 "medievalorigins:fae/diminutive",
-                "medievalorigins:fae/iron_aversion",
                 "medievalorigins:fae/fire_damage",
                 "medievalorigins:fae/nature_magic",
-                "medievalorigins:fae/fae_evo",
-                "origins:fae_evolution",
+                "medievalorigins:dryad/reset_cds",
+                "origins:evo_stats",
                 "origins:orb_fix"
         ],
         "icon": {
                 "item": "minecraft:ink_sac",
-                "tag": "{CustomModelData:367}"
+                "tag": "{CustomModelData:357}"
         },
         "impact": 0,
         "order": 1,
-        "unchoosable": false
+        "unchoosable": true
 }

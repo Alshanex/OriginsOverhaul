@@ -1,0 +1,20 @@
+{
+  "type": "origins:self_action_on_kill",
+  "hidden": true,
+  "entity_action": {
+    "type": "origins:give",
+    "stack": {
+      "item": "originsoverhaulmod:elfwoodevo",
+      "amount": 1
+    }
+  },
+  "cooldown": 1,
+  "condition": {
+    "type": "origins:origin",
+    "origin": "medievalorigins:fae"
+  },
+  "target_condition": {
+    "type": "origins:in_tag",
+    "tag": "originsoverhaulmod:bosses"
+  }
+}
