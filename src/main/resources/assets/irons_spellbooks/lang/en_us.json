@@ -490,6 +490,7 @@
   "spell.irons_spellbooks.shockwave": "Shockwave",
   "spell.irons_spellbooks.crown": "Sculk Crown",
   "spell.irons_spellbooks.forest_guardian": "Guardian of the Forest",
+  "spell.irons_spellbooks.summon_watcher": "Robotic Friends",
 
   "spell.irons_spellbooks.none.guide": "Nothing to see here!",
   "spell.irons_spellbooks.mummy.guide": "Bring back from the dephts of the pyramids the sarcophagus of king Tutankamon, who will grant you his blessing and retrieve all the mummies from the battlefield in exchange of some health.",
@@ -593,6 +594,7 @@
   "spell.irons_spellbooks.shield_flower.guide": "Summon a circle of thorn vines around you, protecting you and damaging and poisoning enemies that touch them.",
   "spell.irons_spellbooks.thunder_flower.guide": "Summon a flower with lightning properties that attract thunder at your enemies for a short period of time.",
   "spell.irons_spellbooks.forest_guardian.guide": "Summon the wrath of the forest, punishing the evil that dares to approach.",
+  "spell.irons_spellbooks.summon_watcher.guide": "Summon friendly robots that will help you out in difficult situations.",
 
   "death.attack.blood_magic": "%1$s blood magic 1",
   "death.attack.blood_magic.item": "%1$s blood magic 2",

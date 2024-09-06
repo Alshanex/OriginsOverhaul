@@ -232,6 +232,10 @@ dependencies {
     // CURIOS *****************************************************************************************************
     runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:${curios_version}")
 
+    //CATACLYSM
+    implementation fg.deobf("curse.maven:cataclysm-551586:5474791")
+    implementation fg.deobf("curse.maven:cataclysm-1001614:5363774")
+
     //implementation fg.deobf("dev.architectury:architectury-forge:${architectury_api_version}")
     //implementation fg.deobf("maven.modrinth:aaa-particles:${aaa_particles_forge_version}")
 

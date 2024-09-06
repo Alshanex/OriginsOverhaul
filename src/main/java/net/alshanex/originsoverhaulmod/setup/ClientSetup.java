@@ -1,5 +1,6 @@
 package net.alshanex.originsoverhaulmod.setup;
 
+import com.github.L_Ender.cataclysm.client.render.entity.RendererThe_Watcher;
 import net.alshanex.originsoverhaulmod.OriginsOverhaulMod;
 import net.alshanex.originsoverhaulmod.entity.ModEntities;
 import net.alshanex.originsoverhaulmod.entity.custom.*;
@@ -19,5 +20,6 @@ public class ClientSetup {
         event.registerEntityRenderer(ModEntities.ENDER_FLOWER.get(), EnderFlowerRenderer::new);
         event.registerEntityRenderer(ModEntities.SHIELD_FLOWER.get(), ShieldFlowerRenderer::new);
         event.registerEntityRenderer(ModEntities.CROWN.get(), CrownRenderer::new);
+        event.registerEntityRenderer(ModEntities.FRIENDLY_WATCHER.get(), RendererThe_Watcher::new);
     }
 }
