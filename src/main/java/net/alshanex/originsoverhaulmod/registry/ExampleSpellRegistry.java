@@ -30,5 +30,5 @@ public class ExampleSpellRegistry {
     public static final RegistryObject<AbstractSpell> SHIELD_FLOWER = registerSpell(new ShieldFlowerSpell());
     public static final RegistryObject<AbstractSpell> CROWN = registerSpell(new CrownSpell());
     public static final RegistryObject<AbstractSpell> GUARDIAN = registerSpell(new ForestGuardianSpell());
-    public static final RegistryObject<AbstractSpell> WATCHER = registerSpell(new FriendWatcherSpell());
+    //public static final RegistryObject<AbstractSpell> WATCHER = registerSpell(new FriendWatcherSpell());
 }
