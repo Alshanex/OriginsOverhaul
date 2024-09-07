@@ -58,7 +58,7 @@ public class ModEntities {
             ENTITY_TYPES.register("friendly_watcher", () -> EntityType.Builder.<FriendlyWatcher>of(FriendlyWatcher::new, MobCategory.MONSTER)
                     .sized(1f, 1f)
                     .clientTrackingRange(64)
-                    .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "summoned_skeleton").toString()));
+                    .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "friendly_watcher").toString()));
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);
     }

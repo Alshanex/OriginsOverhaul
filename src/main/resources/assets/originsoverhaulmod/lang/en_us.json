@@ -13,5 +13,14 @@
   "item.originsoverhaulmod.phantomevo": "Spectral Essence",
   "item.originsoverhaulmod.gorgonevo": "Basilisk Fang",
   "item.originsoverhaulmod.dwarfevo": "Dwarven Crown",
-  "item.originsoverhaulmod.revenantevo": "Summoning Tome"
+  "item.originsoverhaulmod.revenantevo": "Summoning Tome",
+
+  "entity.originsoverhaulmod.water_slash": "Water Geyser",
+  "entity.originsoverhaulmod.water_cut": "Water Slash",
+  "entity.originsoverhaulmod.fire_flower": "Fire Flower",
+  "entity.originsoverhaulmod.thunder_flower": "Thunder Flower",
+  "entity.originsoverhaulmod.ender_flower": "Ender Flower",
+  "entity.originsoverhaulmod.shield_flower": "Vine",
+  "entity.originsoverhaulmod.crown": "Sculk Crown",
+  "entity.originsoverhaulmod.friendly_watcher": "Summoned Watcher"
 }

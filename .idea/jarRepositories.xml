@@ -101,5 +101,35 @@
       <option name="name" value="maven5" />
       <option name="url" value="https://api.modrinth.com/maven" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven13" />
+      <option name="name" value="maven13" />
+      <option name="url" value="https://nexus.resourcefulbees.com/repository/maven-public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven9" />
+      <option name="name" value="maven9" />
+      <option name="url" value="https://maven.ladysnake.org/releases" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="JitPack" />
+      <option name="name" value="JitPack" />
+      <option name="url" value="https://jitpack.io" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="Greenhouse" />
+      <option name="name" value="Greenhouse" />
+      <option name="url" value="https://maven.greenhouseteam.dev/releases/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven10" />
+      <option name="name" value="maven10" />
+      <option name="url" value="https://jm.gserv.me/repository/maven-public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven12" />
+      <option name="name" value="maven12" />
+      <option name="url" value="https://modmaven.dev" />
+    </remote-repository>
   </component>
 </project>
