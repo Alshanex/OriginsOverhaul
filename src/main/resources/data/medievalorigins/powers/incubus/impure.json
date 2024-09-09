@@ -1,7 +1,0 @@
-{
-	"type": "origins:effect_immunity",
-	"effects": [
-		"minecraft:instant_health",
-		"minecraft:regeneration"
-	]
-}
