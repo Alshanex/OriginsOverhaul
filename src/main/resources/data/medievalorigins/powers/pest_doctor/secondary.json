@@ -20,7 +20,7 @@
 							"spell": "poison_splash",
 							"power_level": 16,
 							"cast_time": 0,
-							"mana_cost": 30
+							"mana_cost": 10
 						},
 						{
 							"type": "origins:delay",
@@ -29,7 +29,7 @@
 								"type": "medievalorigins:cast_spell",
 								"spell": "poison_breath",
 								"power_level": 16,
-								"mana_cost": 0
+								"mana_cost": 20
 							}
 						},
 						{

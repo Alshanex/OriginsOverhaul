@@ -27,17 +27,19 @@
 					"type": "medievalorigins:cast_spell",
 					"spell": "starfall",
 					"power_level": 30,
-					"mana_cost": 70
+					"continuous_cost": true,
+					"cost_interval": 10,
+					"mana_cost": 20
 				}
 			},
 			{
 				"type": "origins:delay",
-				"ticks": 180,
+				"ticks": 21,
 				"action": {
 					"type": "origins:apply_effect",
 					"effect": {
 						"effect": "minecraft:slow_falling",
-						"duration": 240,
+						"duration": 420,
 						"is_ambient": true,
 						"show_particles": false,
 						"show_icon": false

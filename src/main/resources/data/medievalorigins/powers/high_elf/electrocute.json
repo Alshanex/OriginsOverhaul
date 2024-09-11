@@ -11,7 +11,9 @@
 					"type": "medievalorigins:cast_spell",
 					"spell": "electrocute",
 					"power_level": 10,
-					"mana_cost": 20
+					"continuous_cost": true,
+					"cost_interval": 10,
+					"mana_cost": 7
 				},
 				{
 					"type": "origins:delay",

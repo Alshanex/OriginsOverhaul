@@ -5,6 +5,8 @@
 		"type": "medievalorigins:cast_spell",
 		"spell": "forest_guardian",
 		"power_level": 3,
+		"continuous_cost": true,
+		"cost_interval": 10,
 		"mana_cost": 14
     },
 	"cooldown": 600,
