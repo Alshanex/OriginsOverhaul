@@ -1,6 +1,7 @@
 package net.alshanex.originsoverhaulmod.registry;
 
 import net.alshanex.originsoverhaulmod.OriginsOverhaulMod;
+import net.alshanex.originsoverhaulmod.effect.MonarchEffect;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
@@ -15,4 +16,6 @@ public class EffectRegistry {
     public static void register(IEventBus eventBus) {
         MOB_EFFECT_DEFERRED_REGISTER.register(eventBus);
     }
+
+    public static final RegistryObject<MobEffect> MONARCH = MOB_EFFECT_DEFERRED_REGISTER.register("monarch", () -> new MonarchEffect(MobEffectCategory.BENEFICIAL, 0x9f0be3));
  }
