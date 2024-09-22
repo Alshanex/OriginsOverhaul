@@ -78,6 +78,7 @@ public class OriginsOverhaulMod
             event.accept(ModItems.GORGONEVO);
             event.accept(ModItems.DWARFEVO);
             event.accept(ModItems.REVENANTEVO);
+            event.accept(ModItems.DREAD_GHOUL_SOUL);
         }
     }
 

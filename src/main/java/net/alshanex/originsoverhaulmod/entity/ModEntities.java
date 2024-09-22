@@ -2,10 +2,18 @@ package net.alshanex.originsoverhaulmod.entity;
 
 import net.alshanex.originsoverhaulmod.OriginsOverhaulMod;
 import net.alshanex.originsoverhaulmod.entity.custom.*;
+import net.alshanex.originsoverhaulmod.entity.custom.summons.common.*;
+import net.alshanex.originsoverhaulmod.entity.custom.summons.epic.CoralGolemSummon;
+import net.alshanex.originsoverhaulmod.entity.custom.summons.epic.CoralssusSummon;
+import net.alshanex.originsoverhaulmod.entity.custom.summons.epic.IgnitedBerserkerSummon;
+import net.alshanex.originsoverhaulmod.entity.custom.summons.epic.IgnitedRevenantSummon;
+import net.alshanex.originsoverhaulmod.entity.custom.summons.legendary.AmethystCrabSummon;
+import net.alshanex.originsoverhaulmod.entity.custom.summons.legendary.HydraSummon;
+import net.alshanex.originsoverhaulmod.entity.custom.summons.legendary.KobolediatorSummon;
+import net.alshanex.originsoverhaulmod.entity.custom.summons.legendary.WadjetSummon;
+import net.alshanex.originsoverhaulmod.entity.custom.summons.rare.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
-import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -59,6 +67,122 @@ public class ModEntities {
                     .sized(1f, 1f)
                     .clientTrackingRange(64)
                     .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "friendly_watcher").toString()));
+
+    public static final RegistryObject<EntityType<WitherSkeletonSummon>> SUMMONED_WITHER_SKELETON =
+            ENTITY_TYPES.register("summoned_wither_skeleton", () -> EntityType.Builder.<WitherSkeletonSummon>of(WitherSkeletonSummon::new, MobCategory.MONSTER)
+                    .sized(.6f, 1.8f)
+                    .clientTrackingRange(64)
+                    .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "summoned_wither_skeleton").toString()));
+
+    public static final RegistryObject<EntityType<VindicatorSummon>> SUMMONED_VINDICATOR =
+            ENTITY_TYPES.register("summoned_vindicator", () -> EntityType.Builder.<VindicatorSummon>of(VindicatorSummon::new, MobCategory.MONSTER)
+                    .sized(.6f, 1.8f)
+                    .clientTrackingRange(64)
+                    .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "summoned_vindicator").toString()));
+
+    public static final RegistryObject<EntityType<PillagerSummon>> SUMMONED_PILLAGER =
+            ENTITY_TYPES.register("summoned_pillager", () -> EntityType.Builder.<PillagerSummon>of(PillagerSummon::new, MobCategory.MONSTER)
+                    .sized(.6f, 1.8f)
+                    .clientTrackingRange(64)
+                    .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "summoned_pillager").toString()));
+
+    public static final RegistryObject<EntityType<HuskSummon>> SUMMONED_HUSK =
+            ENTITY_TYPES.register("summoned_husk", () -> EntityType.Builder.<HuskSummon>of(HuskSummon::new, MobCategory.MONSTER)
+                    .sized(.6f, 1.8f)
+                    .clientTrackingRange(64)
+                    .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "summoned_husk").toString()));
+
+    public static final RegistryObject<EntityType<DrownedSummon>> SUMMONED_DROWNED =
+            ENTITY_TYPES.register("summoned_drowned", () -> EntityType.Builder.<DrownedSummon>of(DrownedSummon::new, MobCategory.MONSTER)
+                    .sized(.6f, 1.8f)
+                    .clientTrackingRange(64)
+                    .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "summoned_drowned").toString()));
+
+    public static final RegistryObject<EntityType<EndermanSummon>> SUMMONED_ENDERMAN =
+            ENTITY_TYPES.register("summoned_enderman", () -> EntityType.Builder.<EndermanSummon>of(EndermanSummon::new, MobCategory.MONSTER)
+                    .sized(.6f, 3f)
+                    .clientTrackingRange(64)
+                    .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "summoned_enderman").toString()));
+
+    public static final RegistryObject<EntityType<KoboletonSummon>> SUMMONED_KOBOLETON =
+            ENTITY_TYPES.register("summoned_koboleton", () -> EntityType.Builder.<KoboletonSummon>of(KoboletonSummon::new, MobCategory.MONSTER)
+                    .sized(1f, 1.3f)
+                    .clientTrackingRange(64)
+                    .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "summoned_koboleton").toString()));
+
+    public static final RegistryObject<EntityType<DreadBeastSummon>> SUMMONED_DREAD_BEAST =
+            ENTITY_TYPES.register("summoned_dread_beast", () -> EntityType.Builder.<DreadBeastSummon>of(DreadBeastSummon::new, MobCategory.MONSTER)
+                    .sized(1f, 1f)
+                    .clientTrackingRange(64)
+                    .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "summoned_dread_beast").toString()));
+
+    public static final RegistryObject<EntityType<DreadGhoulSummon>> SUMMONED_DREAD_GHOUL =
+            ENTITY_TYPES.register("summoned_dread_ghoul", () -> EntityType.Builder.<DreadGhoulSummon>of(DreadGhoulSummon::new, MobCategory.MONSTER)
+                    .sized(.6f, 1.8f)
+                    .clientTrackingRange(64)
+                    .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "summoned_dread_ghoul").toString()));
+
+    public static final RegistryObject<EntityType<DreadKnightSummon>> SUMMONED_DREAD_KNIGHT =
+            ENTITY_TYPES.register("summoned_dread_knight", () -> EntityType.Builder.<DreadKnightSummon>of(DreadKnightSummon::new, MobCategory.MONSTER)
+                    .sized(.6f, 1.8f)
+                    .clientTrackingRange(64)
+                    .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "summoned_dread_knight").toString()));
+
+    public static final RegistryObject<EntityType<DreadThrallSummon>> SUMMONED_DREAD_THRALL =
+            ENTITY_TYPES.register("summoned_dread_thrall", () -> EntityType.Builder.<DreadThrallSummon>of(DreadThrallSummon::new, MobCategory.MONSTER)
+                    .sized(.6f, 1.8f)
+                    .clientTrackingRange(64)
+                    .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "summoned_dread_thrall").toString()));
+
+    public static final RegistryObject<EntityType<IgnitedRevenantSummon>> SUMMONED_IGNITED_REVENANT =
+            ENTITY_TYPES.register("summoned_ignited_revenant", () -> EntityType.Builder.<IgnitedRevenantSummon>of(IgnitedRevenantSummon::new, MobCategory.MONSTER)
+                    .sized(1f, 1.8f)
+                    .clientTrackingRange(64)
+                    .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "summoned_ignited_revenant").toString()));
+
+    public static final RegistryObject<EntityType<IgnitedBerserkerSummon>> SUMMONED_IGNITED_BERSERKER =
+            ENTITY_TYPES.register("summoned_ignited_berserker", () -> EntityType.Builder.<IgnitedBerserkerSummon>of(IgnitedBerserkerSummon::new, MobCategory.MONSTER)
+                    .sized(1f, 1.4f)
+                    .clientTrackingRange(64)
+                    .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "summoned_ignited_berserker").toString()));
+
+    public static final RegistryObject<EntityType<CoralssusSummon>> SUMMONED_CORALSSUS =
+            ENTITY_TYPES.register("summoned_coralssus", () -> EntityType.Builder.<CoralssusSummon>of(CoralssusSummon::new, MobCategory.MONSTER)
+                    .sized(3f, 3.3f)
+                    .clientTrackingRange(64)
+                    .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "summoned_coralssus").toString()));
+
+    public static final RegistryObject<EntityType<CoralGolemSummon>> SUMMONED_CORAL_GOLEM =
+            ENTITY_TYPES.register("summoned_coral_golem", () -> EntityType.Builder.<CoralGolemSummon>of(CoralGolemSummon::new, MobCategory.MONSTER)
+                    .sized(3f, 3.3f)
+                    .clientTrackingRange(64)
+                    .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "summoned_coral_golem").toString()));
+
+    public static final RegistryObject<EntityType<WadjetSummon>> SUMMONED_WADJET =
+            ENTITY_TYPES.register("summoned_wadjet", () -> EntityType.Builder.<WadjetSummon>of(WadjetSummon::new, MobCategory.MONSTER)
+                    .sized(2f, 4.4f)
+                    .clientTrackingRange(64)
+                    .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "summoned_wadjet").toString()));
+
+    public static final RegistryObject<EntityType<KobolediatorSummon>> SUMMONED_KOBOLEDIATOR =
+            ENTITY_TYPES.register("summoned_kobolediator", () -> EntityType.Builder.<KobolediatorSummon>of(KobolediatorSummon::new, MobCategory.MONSTER)
+                    .sized(3f, 4.4f)
+                    .clientTrackingRange(64)
+                    .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "summoned_kobolediator").toString()));
+
+    public static final RegistryObject<EntityType<AmethystCrabSummon>> SUMMONED_AMETHYST_CRAB =
+            ENTITY_TYPES.register("summoned_amethyst_crab", () -> EntityType.Builder.<AmethystCrabSummon>of(AmethystCrabSummon::new, MobCategory.MONSTER)
+                    .sized(5f, 2.7f)
+                    .clientTrackingRange(64)
+                    .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "summoned_amethyst_crab").toString()));
+
+    public static final RegistryObject<EntityType<HydraSummon>> SUMMONED_HYDRA =
+            ENTITY_TYPES.register("summoned_hydra", () -> EntityType.Builder.<HydraSummon>of(HydraSummon::new, MobCategory.MONSTER)
+                    .sized(2.8f, 3f)
+                    .clientTrackingRange(64)
+                    .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "summoned_hydra").toString()));
+
+
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);
     }

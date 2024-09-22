@@ -1,9 +1,12 @@
 package net.alshanex.originsoverhaulmod.setup;
 
-import com.github.L_Ender.cataclysm.client.render.entity.RendererThe_Watcher;
+import com.github.L_Ender.cataclysm.client.render.entity.*;
+import com.github.L_Ender.lionfishapi.client.model.render.RendererKobolediator;
+import com.github.alexthe666.iceandfire.client.render.entity.*;
 import net.alshanex.originsoverhaulmod.OriginsOverhaulMod;
 import net.alshanex.originsoverhaulmod.entity.ModEntities;
 import net.alshanex.originsoverhaulmod.entity.custom.*;
+import net.minecraft.client.renderer.entity.*;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -21,5 +24,24 @@ public class ClientSetup {
         event.registerEntityRenderer(ModEntities.SHIELD_FLOWER.get(), ShieldFlowerRenderer::new);
         event.registerEntityRenderer(ModEntities.CROWN.get(), CrownRenderer::new);
         event.registerEntityRenderer(ModEntities.FRIENDLY_WATCHER.get(), RendererThe_Watcher::new);
+        event.registerEntityRenderer(ModEntities.SUMMONED_DREAD_BEAST.get(), RenderDreadBeast::new);
+        event.registerEntityRenderer(ModEntities.SUMMONED_DREAD_THRALL.get(), RenderDreadThrall::new);
+        event.registerEntityRenderer(ModEntities.SUMMONED_DREAD_KNIGHT.get(), RenderDreadKnight::new);
+        event.registerEntityRenderer(ModEntities.SUMMONED_DREAD_GHOUL.get(), RenderDreadGhoul::new);
+        event.registerEntityRenderer(ModEntities.SUMMONED_DROWNED.get(), DrownedRenderer::new);
+        event.registerEntityRenderer(ModEntities.SUMMONED_ENDERMAN.get(), EndermanRenderer::new);
+        event.registerEntityRenderer(ModEntities.SUMMONED_HUSK.get(), HuskRenderer::new);
+        event.registerEntityRenderer(ModEntities.SUMMONED_KOBOLETON.get(), RendererKoboleton::new);
+        event.registerEntityRenderer(ModEntities.SUMMONED_PILLAGER.get(), PillagerRenderer::new);
+        event.registerEntityRenderer(ModEntities.SUMMONED_VINDICATOR.get(), VindicatorRenderer::new);
+        event.registerEntityRenderer(ModEntities.SUMMONED_WITHER_SKELETON.get(), WitherSkeletonRenderer::new);
+        event.registerEntityRenderer(ModEntities.SUMMONED_CORAL_GOLEM.get(), RendererCoral_Golem::new);
+        event.registerEntityRenderer(ModEntities.SUMMONED_CORALSSUS.get(), RendererCoralssus::new);
+        event.registerEntityRenderer(ModEntities.SUMMONED_IGNITED_BERSERKER.get(), RendererIgnited_Berserker::new);
+        event.registerEntityRenderer(ModEntities.SUMMONED_IGNITED_REVENANT.get(), RendererIgnited_Revenant::new);
+        event.registerEntityRenderer(ModEntities.SUMMONED_AMETHYST_CRAB.get(), RendererAmethyst_Crab::new);
+        event.registerEntityRenderer(ModEntities.SUMMONED_HYDRA.get(), RenderHydra::new);
+        event.registerEntityRenderer(ModEntities.SUMMONED_WADJET.get(), RendererWadjet::new);
+        event.registerEntityRenderer(ModEntities.SUMMONED_KOBOLEDIATOR.get(), RendererKobolediator::new);
     }
 }

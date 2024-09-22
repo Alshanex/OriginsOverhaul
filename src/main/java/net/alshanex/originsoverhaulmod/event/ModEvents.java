@@ -7,6 +7,8 @@ import io.redspace.ironsspellbooks.setup.Messages;
 import net.alshanex.originsoverhaulmod.OriginsOverhaulMod;
 import net.alshanex.originsoverhaulmod.registry.EffectRegistry;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
@@ -58,6 +60,10 @@ public class ModEvents {
                         Messages.sendToPlayer(new ClientboundSyncMana(magicData), summoner);
                         event.setCanceled(true);
                         event.getEntity().setHealth(event.getEntity().getMaxHealth());
+                        if(event.getSource().getEntity() instanceof LivingEntity){
+                            ((LivingEntity) event.getSource().getEntity()).addEffect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 100, 1));
+                            ((LivingEntity) event.getSource().getEntity()).addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 100, 1));
+                        }
                     }
                 }
             }
