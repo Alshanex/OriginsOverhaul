@@ -2,7 +2,7 @@ package net.alshanex.originsoverhaulmod.item;
 
 import io.redspace.ironsspellbooks.util.ItemPropertiesHelper;
 import net.alshanex.originsoverhaulmod.OriginsOverhaulMod;
-import net.alshanex.originsoverhaulmod.item.custom.DreadGhoulSoul;
+import net.alshanex.originsoverhaulmod.item.custom.*;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -44,49 +44,22 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> REVENANTEVO = ITEMS.register("revenantevo",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> AMETHYST_CRAB_SOUL = ITEMS.register("amethyst_crab_soul",
-            () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> CORAL_GOLEM_SOUL = ITEMS.register("coral_golem_soul",
-            () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> CORALSSUS_SOUL = ITEMS.register("coralssus_soul",
-            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> AMETHYST_CRAB_SOUL = ITEMS.register("amethyst_crab_soul", () -> new AmethystCrabSoul(ItemPropertiesHelper.equipment(1).rarity(Rarity.UNCOMMON)));
+    public static final RegistryObject<Item> CORAL_GOLEM_SOUL = ITEMS.register("coral_golem_soul", () -> new CoralGolemSoul(ItemPropertiesHelper.equipment(1).rarity(Rarity.EPIC)));
+    public static final RegistryObject<Item> CORALSSUS_SOUL = ITEMS.register("coralssus_soul", () -> new CoralssusSoul(ItemPropertiesHelper.equipment(1).rarity(Rarity.UNCOMMON)));
     public static final RegistryObject<Item> DREAD_GHOUL_SOUL = ITEMS.register("dread_ghoul_soul", () -> new DreadGhoulSoul(ItemPropertiesHelper.equipment(1).rarity(Rarity.COMMON)));
-    public static final RegistryObject<Item> DREAD_BEAST_SOUL = ITEMS.register("dread_beast_soul",
-            () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DREAD_KNIGHT_SOUL = ITEMS.register("dread_knight_soul",
-            () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DREAD_THRALL_SOUL = ITEMS.register("dread_thrall_soul",
-            () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DROWNED_SOUL = ITEMS.register("drowned_soul",
-            () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> ENDERMAN_SOUL = ITEMS.register("enderman_soul",
-            () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> HUSK_SOUL = ITEMS.register("husk_soul",
-            () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> HYDRA_SOUL = ITEMS.register("hydra_soul",
-            () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> IGNITED_BERSERKER_SOUL = ITEMS.register("ignited_berserker_soul",
-            () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> IGNITED_REVENANT_SOUL = ITEMS.register("ignited_revenant_soul",
-            () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> KOBOLEDIATOR_SOUL = ITEMS.register("kobolediator_soul",
-            () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> KOBOLETON_SOUL = ITEMS.register("koboleton_soul",
-            () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> PILLAGER_SOUL = ITEMS.register("pillager_soul",
-            () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> SKELETON_SOUL = ITEMS.register("skeleton_soul",
-            () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> VINDICATOR_SOUL = ITEMS.register("vindicator_soul",
-            () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> WADJET_SOUL = ITEMS.register("wadjet_soul",
-            () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> WITHER_SKELETON_SOUL = ITEMS.register("wither_skeleton_soul",
-            () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> ZOMBIE_SOUL = ITEMS.register("zombie_soul",
-            () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> VEX_SOUL = ITEMS.register("vex_soul",
-            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> DREAD_BEAST_SOUL = ITEMS.register("dread_beast_soul", () -> new DreadBeastSoul(ItemPropertiesHelper.equipment(1).rarity(Rarity.COMMON)));
+    public static final RegistryObject<Item> DREAD_KNIGHT_SOUL = ITEMS.register("dread_knight_soul", () -> new DreadKnightSoul(ItemPropertiesHelper.equipment(1).rarity(Rarity.RARE)));
+    public static final RegistryObject<Item> DREAD_THRALL_SOUL = ITEMS.register("dread_thrall_soul", () -> new DreadThrallSoul(ItemPropertiesHelper.equipment(1).rarity(Rarity.RARE)));
+    public static final RegistryObject<Item> HYDRA_SOUL = ITEMS.register("hydra_soul", () -> new HydraSoul(ItemPropertiesHelper.equipment(1).rarity(Rarity.UNCOMMON)));
+    public static final RegistryObject<Item> IGNITED_BERSERKER_SOUL = ITEMS.register("ignited_berserker_soul", () -> new IgnitedBerserkerSoul(ItemPropertiesHelper.equipment(1).rarity(Rarity.EPIC)));
+    public static final RegistryObject<Item> IGNITED_REVENANT_SOUL = ITEMS.register("ignited_revenant_soul", () -> new IgnitedRevenantSoul(ItemPropertiesHelper.equipment(1).rarity(Rarity.EPIC)));
+    public static final RegistryObject<Item> KOBOLEDIATOR_SOUL = ITEMS.register("kobolediator_soul", () -> new KobolediatorSoul(ItemPropertiesHelper.equipment(1).rarity(Rarity.UNCOMMON)));
+    public static final RegistryObject<Item> KOBOLETON_SOUL = ITEMS.register("koboleton_soul", () -> new KoboletonSoul(ItemPropertiesHelper.equipment(1).rarity(Rarity.COMMON)));
+    public static final RegistryObject<Item> SKELETON_SOUL = ITEMS.register("skeleton_soul", () -> new SkeletonSoul(ItemPropertiesHelper.equipment(1).rarity(Rarity.COMMON)));
+    public static final RegistryObject<Item> WADJET_SOUL = ITEMS.register("wadjet_soul", () -> new WadjetSoul(ItemPropertiesHelper.equipment(1).rarity(Rarity.UNCOMMON)));
+    public static final RegistryObject<Item> ZOMBIE_SOUL = ITEMS.register("zombie_soul", () -> new ZombieSoul(ItemPropertiesHelper.equipment(1).rarity(Rarity.COMMON)));
+    public static final RegistryObject<Item> VEX_SOUL = ITEMS.register("vex_soul", () -> new VexSoul(ItemPropertiesHelper.equipment(1).rarity(Rarity.RARE)));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

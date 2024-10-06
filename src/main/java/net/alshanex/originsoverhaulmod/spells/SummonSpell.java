@@ -42,7 +42,7 @@ public class SummonSpell extends AbstractSpell{
             .setMinRarity(SpellRarity.LEGENDARY)
             .setSchoolResource(SchoolRegistry.BLOOD_RESOURCE)
             .setMaxLevel(1)
-            .setCooldownSeconds(150)
+            .setCooldownSeconds(1)
             .build();
 
     @Override
@@ -104,6 +104,7 @@ public class SummonSpell extends AbstractSpell{
             summon.setOldPosAndRot();
             world.addFreshEntity(summon);
         }
+        entity.getMainHandItem().shrink(1);
 
         int effectAmplifier = spellLevel - 1;
         if (entity.hasEffect(MobEffectRegistry.RAISE_DEAD_TIMER.get()))

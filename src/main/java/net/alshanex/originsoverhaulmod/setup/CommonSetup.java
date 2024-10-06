@@ -30,12 +30,6 @@ public class CommonSetup {
         //event.put(ModEntities.FRIENDLY_WATCHER.get(),FriendlyWatcher.createMonsterAttributes().add(Attributes.FOLLOW_RANGE, 20.0).add(Attributes.MOVEMENT_SPEED, 0.2800000011920929).add(Attributes.ATTACK_DAMAGE, 5.0).add(Attributes.MAX_HEALTH, 25.0).add(Attributes.ARMOR, 5.0).add(Attributes.KNOCKBACK_RESISTANCE, 0.5).build());
         event.put(ModEntities.SUMMONED_DREAD_BEAST.get(), DreadBeastSummon.bakeAttributes().build());
         event.put(ModEntities.SUMMONED_DREAD_GHOUL.get(), DreadGhoulSummon.bakeAttributes().build());
-        event.put(ModEntities.SUMMONED_DROWNED.get(), DrownedSummon.createLivingAttributes().build());
-        event.put(ModEntities.SUMMONED_ENDERMAN.get(), EndermanSummon.createLivingAttributes().build());
-        event.put(ModEntities.SUMMONED_HUSK.get(), HuskSummon.createLivingAttributes().build());
-        event.put(ModEntities.SUMMONED_PILLAGER.get(), PillagerSummon.createLivingAttributes().build());
-        event.put(ModEntities.SUMMONED_VINDICATOR.get(), VindicatorSummon.createLivingAttributes().build());
-        event.put(ModEntities.SUMMONED_WITHER_SKELETON.get(), WitherSkeletonSummon.createLivingAttributes().build());
         event.put(ModEntities.SUMMONED_KOBOLETON.get(), KoboletonSummon.koboleton().build());
         event.put(ModEntities.SUMMONED_CORAL_GOLEM.get(), CoralGolemSummon.coralgolem().build());
         event.put(ModEntities.SUMMONED_CORALSSUS.get(), CoralssusSummon.coralssus().build());

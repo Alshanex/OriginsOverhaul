@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "originsoverhaulmod:item/epic_soul"
+    "layer0": "originsoverhaulmod:item/legendary_soul"
   }
 }

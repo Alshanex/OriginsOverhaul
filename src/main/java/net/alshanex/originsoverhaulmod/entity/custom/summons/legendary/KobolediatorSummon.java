@@ -1,6 +1,7 @@
 package net.alshanex.originsoverhaulmod.entity.custom.summons.legendary;
 
-import com.github.L_Ender.lionfishapi.server.entity.Kobolediator_Entity;
+
+import com.github.L_Ender.cataclysm.entity.InternalAnimationMonster.Kobolediator_Entity;
 import io.redspace.ironsspellbooks.api.registry.SpellRegistry;
 import io.redspace.ironsspellbooks.api.util.Utils;
 import io.redspace.ironsspellbooks.capabilities.magic.MagicManager;

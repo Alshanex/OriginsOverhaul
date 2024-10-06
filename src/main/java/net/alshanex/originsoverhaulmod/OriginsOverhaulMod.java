@@ -79,6 +79,21 @@ public class OriginsOverhaulMod
             event.accept(ModItems.DWARFEVO);
             event.accept(ModItems.REVENANTEVO);
             event.accept(ModItems.DREAD_GHOUL_SOUL);
+            event.accept(ModItems.DREAD_BEAST_SOUL);
+            event.accept(ModItems.CORAL_GOLEM_SOUL);
+            event.accept(ModItems.AMETHYST_CRAB_SOUL);
+            event.accept(ModItems.CORALSSUS_SOUL);
+            event.accept(ModItems.DREAD_KNIGHT_SOUL);
+            event.accept(ModItems.DREAD_THRALL_SOUL);
+            event.accept(ModItems.HYDRA_SOUL);
+            event.accept(ModItems.IGNITED_BERSERKER_SOUL);
+            event.accept(ModItems.IGNITED_REVENANT_SOUL);
+            event.accept(ModItems.KOBOLEDIATOR_SOUL);
+            event.accept(ModItems.KOBOLETON_SOUL);
+            event.accept(ModItems.SKELETON_SOUL);
+            event.accept(ModItems.VEX_SOUL);
+            event.accept(ModItems.WADJET_SOUL);
+            event.accept(ModItems.ZOMBIE_SOUL);
         }
     }
 

@@ -68,42 +68,6 @@ public class ModEntities {
                     .clientTrackingRange(64)
                     .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "friendly_watcher").toString()));
 
-    public static final RegistryObject<EntityType<WitherSkeletonSummon>> SUMMONED_WITHER_SKELETON =
-            ENTITY_TYPES.register("summoned_wither_skeleton", () -> EntityType.Builder.<WitherSkeletonSummon>of(WitherSkeletonSummon::new, MobCategory.MONSTER)
-                    .sized(.6f, 1.8f)
-                    .clientTrackingRange(64)
-                    .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "summoned_wither_skeleton").toString()));
-
-    public static final RegistryObject<EntityType<VindicatorSummon>> SUMMONED_VINDICATOR =
-            ENTITY_TYPES.register("summoned_vindicator", () -> EntityType.Builder.<VindicatorSummon>of(VindicatorSummon::new, MobCategory.MONSTER)
-                    .sized(.6f, 1.8f)
-                    .clientTrackingRange(64)
-                    .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "summoned_vindicator").toString()));
-
-    public static final RegistryObject<EntityType<PillagerSummon>> SUMMONED_PILLAGER =
-            ENTITY_TYPES.register("summoned_pillager", () -> EntityType.Builder.<PillagerSummon>of(PillagerSummon::new, MobCategory.MONSTER)
-                    .sized(.6f, 1.8f)
-                    .clientTrackingRange(64)
-                    .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "summoned_pillager").toString()));
-
-    public static final RegistryObject<EntityType<HuskSummon>> SUMMONED_HUSK =
-            ENTITY_TYPES.register("summoned_husk", () -> EntityType.Builder.<HuskSummon>of(HuskSummon::new, MobCategory.MONSTER)
-                    .sized(.6f, 1.8f)
-                    .clientTrackingRange(64)
-                    .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "summoned_husk").toString()));
-
-    public static final RegistryObject<EntityType<DrownedSummon>> SUMMONED_DROWNED =
-            ENTITY_TYPES.register("summoned_drowned", () -> EntityType.Builder.<DrownedSummon>of(DrownedSummon::new, MobCategory.MONSTER)
-                    .sized(.6f, 1.8f)
-                    .clientTrackingRange(64)
-                    .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "summoned_drowned").toString()));
-
-    public static final RegistryObject<EntityType<EndermanSummon>> SUMMONED_ENDERMAN =
-            ENTITY_TYPES.register("summoned_enderman", () -> EntityType.Builder.<EndermanSummon>of(EndermanSummon::new, MobCategory.MONSTER)
-                    .sized(.6f, 3f)
-                    .clientTrackingRange(64)
-                    .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "summoned_enderman").toString()));
-
     public static final RegistryObject<EntityType<KoboletonSummon>> SUMMONED_KOBOLETON =
             ENTITY_TYPES.register("summoned_koboleton", () -> EntityType.Builder.<KoboletonSummon>of(KoboletonSummon::new, MobCategory.MONSTER)
                     .sized(1f, 1.3f)
