@@ -52,7 +52,7 @@ public class ModEvents {
         public static void onLivingDeath(LivingDeathEvent event){
             if(event.getEntity() instanceof MagicSummon){
                 MagicSummon summon = (MagicSummon) event.getEntity();
-                if(summon.getSummoner() != null){
+                if(summon.getSummoner() != null && summon.getSummoner() instanceof ServerPlayer){
                     ServerPlayer summoner = (ServerPlayer) summon.getSummoner();
                     MagicData magicData = MagicData.getPlayerMagicData(summoner);
                     if(summoner.hasEffect(EffectRegistry.MONARCH.get()) && magicData.getMana() > 10){
