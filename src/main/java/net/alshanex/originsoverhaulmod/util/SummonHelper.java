@@ -26,6 +26,8 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
 
+import java.util.List;
+
 public class SummonHelper {
 
     public static boolean isSoulItem (ItemStack item){
@@ -115,19 +117,40 @@ public class SummonHelper {
 
     public static boolean isNecromancer(LivingEntity entity){
         IPowerContainer powerContainer = ApoliAPI.getPowerContainer(entity);
-        return powerContainer != null && powerContainer.hasPower(new ResourceLocation("revenant/can_summon_souls"));
+        return powerContainer != null && powerContainer.hasPower(new ResourceLocation("medievalorigins","revenant/can_summon_souls"));
     }
 
     public static long getCurrentSummons (LivingEntity entity){
-        var radiusSqr = 600; //30
-        return entity.level().getEntitiesOfClass(LivingEntity.class, entity.getBoundingBox().inflate(30, 20, 30),
+        var radiusSqr = 1000; //50
+        int summonsCount = 0;
+        List<LivingEntity> summons = entity.level().getEntitiesOfClass(LivingEntity.class, entity.getBoundingBox().inflate(50, 50, 50),
                         livingEntity -> livingEntity != entity &&
                                 horizontalDistanceSqr(livingEntity, entity) < radiusSqr &&
                                 livingEntity.isPickable() &&
                                 !livingEntity.isSpectator() &&
                                 livingEntity instanceof MagicSummon &&
                                 ((MagicSummon) livingEntity).getSummoner() == entity
-                ).stream().count();
+                );
+
+        for (LivingEntity summon : summons) {
+            if (summon instanceof CoralGolemSummon || summon instanceof IgnitedRevenantSummon
+                    || summon instanceof IgnitedBerserkerSummon) {
+                summonsCount += 4;
+            } else if (summon instanceof AmethystCrabSummon || summon instanceof WadjetSummon
+                        || summon instanceof KobolediatorSummon || summon instanceof HydraSummon
+                        || summon instanceof CoralssusSummon || summon instanceof AptgangrSummon
+                        || summon instanceof EnderGolemSummon) {
+                summonsCount += 10;
+            } else if (summon instanceof DreadKnightSummon || summon instanceof DreadThrallSummon
+                    || summon instanceof SummonedVex || summon instanceof EliteDraugrSummon
+                    || summon instanceof RoyalDraugrSummon) {
+                summonsCount += 2;
+            } else {
+                summonsCount += 1;
+            }
+        }
+
+        return summonsCount;
     }
 
     public static boolean canSummon(LivingEntity entity, ItemStack item){
