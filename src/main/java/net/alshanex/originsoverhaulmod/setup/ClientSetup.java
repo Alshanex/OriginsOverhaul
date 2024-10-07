@@ -3,6 +3,7 @@ package net.alshanex.originsoverhaulmod.setup;
 import com.github.L_Ender.cataclysm.client.render.entity.*;
 import com.github.L_Ender.lionfishapi.client.model.render.RendererKobolediator;
 import com.github.alexthe666.iceandfire.client.render.entity.*;
+import io.redspace.ironsspellbooks.entity.mobs.keeper.KeeperRenderer;
 import net.alshanex.originsoverhaulmod.OriginsOverhaulMod;
 import net.alshanex.originsoverhaulmod.entity.ModEntities;
 import net.alshanex.originsoverhaulmod.entity.custom.*;
@@ -37,5 +38,10 @@ public class ClientSetup {
         event.registerEntityRenderer(ModEntities.SUMMONED_HYDRA.get(), RenderHydra::new);
         event.registerEntityRenderer(ModEntities.SUMMONED_WADJET.get(), Wadjet_Renderer::new);
         event.registerEntityRenderer(ModEntities.SUMMONED_KOBOLEDIATOR.get(), Kobolediator_Renderer::new);
+        event.registerEntityRenderer(ModEntities.SUMMONED_DRAUGR.get(), Draugr_Renderer::new);
+        event.registerEntityRenderer(ModEntities.SUMMONED_ELITE_DRAUGR.get(), Elite_Draugr_Renderer::new);
+        event.registerEntityRenderer(ModEntities.SUMMONED_ROYAL_DRAUGR.get(), Royal_Draugr_Renderer::new);
+        event.registerEntityRenderer(ModEntities.SUMMONED_APTGANGR.get(), Aptrgangr_Renderer::new);
+        event.registerEntityRenderer(ModEntities.SUMMONED_ENDER_GOLEM.get(), Ender_Golem_Renderer::new);
     }
 }

@@ -3,14 +3,8 @@ package net.alshanex.originsoverhaulmod.entity;
 import net.alshanex.originsoverhaulmod.OriginsOverhaulMod;
 import net.alshanex.originsoverhaulmod.entity.custom.*;
 import net.alshanex.originsoverhaulmod.entity.custom.summons.common.*;
-import net.alshanex.originsoverhaulmod.entity.custom.summons.epic.CoralGolemSummon;
-import net.alshanex.originsoverhaulmod.entity.custom.summons.epic.CoralssusSummon;
-import net.alshanex.originsoverhaulmod.entity.custom.summons.epic.IgnitedBerserkerSummon;
-import net.alshanex.originsoverhaulmod.entity.custom.summons.epic.IgnitedRevenantSummon;
-import net.alshanex.originsoverhaulmod.entity.custom.summons.legendary.AmethystCrabSummon;
-import net.alshanex.originsoverhaulmod.entity.custom.summons.legendary.HydraSummon;
-import net.alshanex.originsoverhaulmod.entity.custom.summons.legendary.KobolediatorSummon;
-import net.alshanex.originsoverhaulmod.entity.custom.summons.legendary.WadjetSummon;
+import net.alshanex.originsoverhaulmod.entity.custom.summons.epic.*;
+import net.alshanex.originsoverhaulmod.entity.custom.summons.legendary.*;
 import net.alshanex.originsoverhaulmod.entity.custom.summons.rare.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
@@ -145,6 +139,36 @@ public class ModEntities {
                     .sized(2.8f, 3f)
                     .clientTrackingRange(64)
                     .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "summoned_hydra").toString()));
+
+    public static final RegistryObject<EntityType<DraugrSummon>> SUMMONED_DRAUGR =
+            ENTITY_TYPES.register("summoned_draugr", () -> EntityType.Builder.<DraugrSummon>of(DraugrSummon::new, MobCategory.MONSTER)
+                    .sized(.7f, 1.6f)
+                    .clientTrackingRange(64)
+                    .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "summoned_draugr").toString()));
+
+    public static final RegistryObject<EntityType<EliteDraugrSummon>> SUMMONED_ELITE_DRAUGR =
+            ENTITY_TYPES.register("summoned_elite_draugr", () -> EntityType.Builder.<EliteDraugrSummon>of(EliteDraugrSummon::new, MobCategory.MONSTER)
+                    .sized(.7f, 2.2f)
+                    .clientTrackingRange(64)
+                    .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "summoned_elite_draugr").toString()));
+
+    public static final RegistryObject<EntityType<RoyalDraugrSummon>> SUMMONED_ROYAL_DRAUGR =
+            ENTITY_TYPES.register("summoned_royal_draugr", () -> EntityType.Builder.<RoyalDraugrSummon>of(RoyalDraugrSummon::new, MobCategory.MONSTER)
+                    .sized(.7f, 1.6f)
+                    .clientTrackingRange(64)
+                    .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "summoned_royal_draugr").toString()));
+
+    public static final RegistryObject<EntityType<AptgangrSummon>> SUMMONED_APTGANGR =
+            ENTITY_TYPES.register("summoned_aptgangr", () -> EntityType.Builder.<AptgangrSummon>of(AptgangrSummon::new, MobCategory.MONSTER)
+                    .sized(2.2f, 3.2f)
+                    .clientTrackingRange(64)
+                    .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "summoned_aptgangr").toString()));
+
+    public static final RegistryObject<EntityType<EnderGolemSummon>> SUMMONED_ENDER_GOLEM =
+            ENTITY_TYPES.register("summoned_ender_golem", () -> EntityType.Builder.<EnderGolemSummon>of(EnderGolemSummon::new, MobCategory.MONSTER)
+                    .sized(2.2f, 3.2f)
+                    .clientTrackingRange(64)
+                    .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "summoned_ender_golem").toString()));
 
 
     public static void register(IEventBus eventBus) {

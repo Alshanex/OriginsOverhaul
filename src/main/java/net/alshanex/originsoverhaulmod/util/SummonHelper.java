@@ -5,14 +5,8 @@ import io.redspace.ironsspellbooks.entity.mobs.SummonedSkeleton;
 import io.redspace.ironsspellbooks.entity.mobs.SummonedVex;
 import io.redspace.ironsspellbooks.entity.mobs.SummonedZombie;
 import net.alshanex.originsoverhaulmod.entity.custom.summons.common.*;
-import net.alshanex.originsoverhaulmod.entity.custom.summons.epic.CoralGolemSummon;
-import net.alshanex.originsoverhaulmod.entity.custom.summons.epic.CoralssusSummon;
-import net.alshanex.originsoverhaulmod.entity.custom.summons.epic.IgnitedBerserkerSummon;
-import net.alshanex.originsoverhaulmod.entity.custom.summons.epic.IgnitedRevenantSummon;
-import net.alshanex.originsoverhaulmod.entity.custom.summons.legendary.AmethystCrabSummon;
-import net.alshanex.originsoverhaulmod.entity.custom.summons.legendary.HydraSummon;
-import net.alshanex.originsoverhaulmod.entity.custom.summons.legendary.KobolediatorSummon;
-import net.alshanex.originsoverhaulmod.entity.custom.summons.legendary.WadjetSummon;
+import net.alshanex.originsoverhaulmod.entity.custom.summons.epic.*;
+import net.alshanex.originsoverhaulmod.entity.custom.summons.legendary.*;
 import net.alshanex.originsoverhaulmod.entity.custom.summons.rare.*;
 import net.alshanex.originsoverhaulmod.item.ModItems;
 import net.minecraft.world.entity.LivingEntity;
@@ -30,7 +24,10 @@ public class SummonHelper {
                 || item.getItem() == ModItems.IGNITED_BERSERKER_SOUL.get() || item.getItem() == ModItems.IGNITED_REVENANT_SOUL.get()
                 || item.getItem() == ModItems.KOBOLEDIATOR_SOUL.get() || item.getItem() == ModItems.KOBOLETON_SOUL.get()
                 || item.getItem() == ModItems.SKELETON_SOUL.get() || item.getItem() == ModItems.WADJET_SOUL.get()
-                || item.getItem() == ModItems.ZOMBIE_SOUL.get() || item.getItem() == ModItems.VEX_SOUL.get()){
+                || item.getItem() == ModItems.ZOMBIE_SOUL.get() || item.getItem() == ModItems.VEX_SOUL.get()
+                || item.getItem() == ModItems.DRAUGR_SOUL.get() || item.getItem() == ModItems.ELITE_DRAUGR_SOUL.get()
+                || item.getItem() == ModItems.ROYAL_DRAUGR_SOUL.get() || item.getItem() == ModItems.APTGANGR_SOUL.get()
+                || item.getItem() == ModItems.ENDER_GOLEM_SOUL.get()){
             return true;
         } else { return false;}
     }
@@ -66,6 +63,16 @@ public class SummonHelper {
             return new KobolediatorSummon(world, summoner);
         } else if (item.getItem() == ModItems.WADJET_SOUL.get()){
             return new WadjetSummon(world, summoner);
+        } else if (item.getItem() == ModItems.DRAUGR_SOUL.get()){
+            return new DraugrSummon(world, summoner);
+        } else if (item.getItem() == ModItems.ELITE_DRAUGR_SOUL.get()){
+            return new EliteDraugrSummon(world, summoner);
+        } else if (item.getItem() == ModItems.ROYAL_DRAUGR_SOUL.get()){
+            return new RoyalDraugrSummon(world, summoner);
+        } else if (item.getItem() == ModItems.APTGANGR_SOUL.get()){
+            return new AptgangrSummon(world, summoner);
+        } else if (item.getItem() == ModItems.ENDER_GOLEM_SOUL.get()){
+            return new EnderGolemSummon(world, summoner);
         } else {
             return new SummonedSkeleton(world, summoner, true);
         }

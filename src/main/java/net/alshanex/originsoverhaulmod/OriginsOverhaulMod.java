@@ -94,6 +94,11 @@ public class OriginsOverhaulMod
             event.accept(ModItems.VEX_SOUL);
             event.accept(ModItems.WADJET_SOUL);
             event.accept(ModItems.ZOMBIE_SOUL);
+            event.accept(ModItems.DRAUGR_SOUL);
+            event.accept(ModItems.ELITE_DRAUGR_SOUL);
+            event.accept(ModItems.ROYAL_DRAUGR_SOUL);
+            event.accept(ModItems.APTGANGR_SOUL);
+            event.accept(ModItems.ENDER_GOLEM_SOUL);
         }
     }
 

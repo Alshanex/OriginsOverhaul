@@ -5,14 +5,8 @@ import net.alshanex.originsoverhaulmod.OriginsOverhaulMod;
 import net.alshanex.originsoverhaulmod.entity.ModEntities;
 import net.alshanex.originsoverhaulmod.entity.custom.*;
 import net.alshanex.originsoverhaulmod.entity.custom.summons.common.*;
-import net.alshanex.originsoverhaulmod.entity.custom.summons.epic.CoralGolemSummon;
-import net.alshanex.originsoverhaulmod.entity.custom.summons.epic.CoralssusSummon;
-import net.alshanex.originsoverhaulmod.entity.custom.summons.epic.IgnitedBerserkerSummon;
-import net.alshanex.originsoverhaulmod.entity.custom.summons.epic.IgnitedRevenantSummon;
-import net.alshanex.originsoverhaulmod.entity.custom.summons.legendary.AmethystCrabSummon;
-import net.alshanex.originsoverhaulmod.entity.custom.summons.legendary.HydraSummon;
-import net.alshanex.originsoverhaulmod.entity.custom.summons.legendary.KobolediatorSummon;
-import net.alshanex.originsoverhaulmod.entity.custom.summons.legendary.WadjetSummon;
+import net.alshanex.originsoverhaulmod.entity.custom.summons.epic.*;
+import net.alshanex.originsoverhaulmod.entity.custom.summons.legendary.*;
 import net.alshanex.originsoverhaulmod.entity.custom.summons.rare.*;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
@@ -41,6 +35,11 @@ public class CommonSetup {
         event.put(ModEntities.SUMMONED_WADJET.get(), WadjetSummon.wadjet().build());
         event.put(ModEntities.SUMMONED_DREAD_KNIGHT.get(), DreadKnightSummon.bakeAttributes().build());
         event.put(ModEntities.SUMMONED_DREAD_THRALL.get(), DreadThrallSummon.bakeAttributes().build());
+        event.put(ModEntities.SUMMONED_DRAUGR.get(), DraugrSummon.draugr().build());
+        event.put(ModEntities.SUMMONED_ELITE_DRAUGR.get(), EliteDraugrSummon.elite_draugr().build());
+        event.put(ModEntities.SUMMONED_ROYAL_DRAUGR.get(), RoyalDraugrSummon.royal_draugr().build());
+        event.put(ModEntities.SUMMONED_APTGANGR.get(), AptgangrSummon.aptrgangr().build());
+        event.put(ModEntities.SUMMONED_ENDER_GOLEM.get(), EnderGolemSummon.ender_golem().build());
 
 
 

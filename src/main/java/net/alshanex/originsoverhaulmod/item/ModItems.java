@@ -60,6 +60,11 @@ public class ModItems {
     public static final RegistryObject<Item> WADJET_SOUL = ITEMS.register("wadjet_soul", () -> new WadjetSoul(ItemPropertiesHelper.equipment(1).rarity(Rarity.UNCOMMON)));
     public static final RegistryObject<Item> ZOMBIE_SOUL = ITEMS.register("zombie_soul", () -> new ZombieSoul(ItemPropertiesHelper.equipment(1).rarity(Rarity.COMMON)));
     public static final RegistryObject<Item> VEX_SOUL = ITEMS.register("vex_soul", () -> new VexSoul(ItemPropertiesHelper.equipment(1).rarity(Rarity.RARE)));
+    public static final RegistryObject<Item> DRAUGR_SOUL = ITEMS.register("draugr_soul", () -> new DraugrSoul(ItemPropertiesHelper.equipment(1).rarity(Rarity.COMMON)));
+    public static final RegistryObject<Item> ELITE_DRAUGR_SOUL = ITEMS.register("elite_draugr_soul", () -> new EliteDraugrSoul(ItemPropertiesHelper.equipment(1).rarity(Rarity.RARE)));
+    public static final RegistryObject<Item> ROYAL_DRAUGR_SOUL = ITEMS.register("royal_draugr_soul", () -> new RoyalDraugrSoul(ItemPropertiesHelper.equipment(1).rarity(Rarity.RARE)));
+    public static final RegistryObject<Item> APTGANGR_SOUL = ITEMS.register("aptgangr_soul", () -> new AptgangrSoul(ItemPropertiesHelper.equipment(1).rarity(Rarity.UNCOMMON)));
+    public static final RegistryObject<Item> ENDER_GOLEM_SOUL = ITEMS.register("ender_golem_soul", () -> new EnderGolemSoul(ItemPropertiesHelper.equipment(1).rarity(Rarity.UNCOMMON)));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
