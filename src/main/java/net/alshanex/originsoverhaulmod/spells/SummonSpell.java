@@ -9,13 +9,16 @@ import io.redspace.ironsspellbooks.api.spells.*;
 import io.redspace.ironsspellbooks.api.util.Utils;
 import io.redspace.ironsspellbooks.entity.mobs.SummonedSkeleton;
 import io.redspace.ironsspellbooks.entity.mobs.SummonedZombie;
+import io.redspace.ironsspellbooks.network.ClientboundSyncMana;
 import io.redspace.ironsspellbooks.registries.MobEffectRegistry;
 import io.redspace.ironsspellbooks.registries.SoundRegistry;
+import io.redspace.ironsspellbooks.setup.Messages;
 import net.alshanex.originsoverhaulmod.util.SummonHelper;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.util.Mth;
 import net.minecraft.util.RandomSource;
@@ -86,7 +89,7 @@ public class SummonSpell extends AbstractSpell{
 
     @Override
     public boolean checkPreCastConditions(Level level, int spellLevel, LivingEntity entity, MagicData playerMagicData) {
-        return SummonHelper.isSoulItem(entity.getMainHandItem());
+        return SummonHelper.isSoulItem(entity.getMainHandItem()) && SummonHelper.canSummon(entity, entity.getMainHandItem());
     }
 
     @Override
@@ -105,6 +108,11 @@ public class SummonSpell extends AbstractSpell{
             world.addFreshEntity(summon);
         }
         entity.getMainHandItem().shrink(1);
+        if(entity instanceof ServerPlayer){
+            var newMana = Math.max(playerMagicData.getMana() - this.baseManaCost, 0);
+            playerMagicData.setMana(newMana);
+            Messages.sendToPlayer(new ClientboundSyncMana(playerMagicData), (ServerPlayer) entity);
+        }
 
         int effectAmplifier = spellLevel - 1;
         if (entity.hasEffect(MobEffectRegistry.RAISE_DEAD_TIMER.get()))
