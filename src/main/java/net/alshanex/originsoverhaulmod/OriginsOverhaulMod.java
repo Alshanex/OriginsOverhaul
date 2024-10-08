@@ -1,14 +1,12 @@
 package net.alshanex.originsoverhaulmod;
 
 import com.mojang.logging.LogUtils;
+import net.alshanex.originsoverhaulmod.effect.ModEffects;
 import net.alshanex.originsoverhaulmod.entity.ModEntities;
 import net.alshanex.originsoverhaulmod.item.ModItems;
 import net.alshanex.originsoverhaulmod.loot.ModLootModifiers;
-import net.alshanex.originsoverhaulmod.registry.EffectRegistry;
 import net.alshanex.originsoverhaulmod.registry.ExampleSpellRegistry;
 import net.alshanex.originsoverhaulmod.registry.SoundRegistry;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.server.packs.PackType;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -38,6 +36,8 @@ public class OriginsOverhaulMod
 
         ModItems.register(modEventBus);
 
+        ModEffects.register(modEventBus);
+
         ExampleSpellRegistry.register(modEventBus);
 
         ModEntities.register(modEventBus);
@@ -45,8 +45,6 @@ public class OriginsOverhaulMod
         modEventBus.addListener(this::commonSetup);
 
         ModLootModifiers.register(modEventBus);
-
-        EffectRegistry.register(modEventBus);
 
         SoundRegistry.register(modEventBus);
 

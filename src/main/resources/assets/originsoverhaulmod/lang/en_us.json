@@ -63,5 +63,7 @@
   "entity.originsoverhaulmod.summoned_dread_knight": "Summoned Dread Knight",
   "entity.originsoverhaulmod.summoned_dread_beast": "Summoned Dread Beast",
   "entity.originsoverhaulmod.summoned_dread_ghoul": "Summoned Dread Ghoul",
-  "entity.originsoverhaulmod.summoned_koboleton": "Summoned Koboleton"
+  "entity.originsoverhaulmod.summoned_koboleton": "Summoned Koboleton",
+
+  "effect.originsoverhaulmod.zone": "Monarch"
 }

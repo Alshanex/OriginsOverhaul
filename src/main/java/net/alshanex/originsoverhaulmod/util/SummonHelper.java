@@ -120,6 +120,11 @@ public class SummonHelper {
         return powerContainer != null && powerContainer.hasPower(new ResourceLocation("medievalorigins","revenant/can_summon_souls"));
     }
 
+    public static boolean isDeathCaller(LivingEntity entity){
+        IPowerContainer powerContainer = ApoliAPI.getPowerContainer(entity);
+        return powerContainer != null && powerContainer.hasPower(new ResourceLocation("medievalorigins","death_caller/reset_cds"));
+    }
+
     public static long getCurrentSummons (LivingEntity entity){
         var radiusSqr = 1000; //50
         int summonsCount = 0;

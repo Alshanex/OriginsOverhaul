@@ -492,6 +492,7 @@
   "spell.irons_spellbooks.crown": "Sculk Crown",
   "spell.irons_spellbooks.forest_guardian": "Guardian of the Forest",
   "spell.irons_spellbooks.summon_watcher": "Robotic Friends",
+  "spell.irons_spellbooks.zone_spell": "Monarch",
 
   "spell.irons_spellbooks.none.guide": "Nothing to see here!",
   "spell.irons_spellbooks.summon.guide": "Use the soul to summon the mob who once had that soul.",
@@ -596,6 +597,7 @@
   "spell.irons_spellbooks.thunder_flower.guide": "Summon a flower with lightning properties that attract thunder at your enemies for a short period of time.",
   "spell.irons_spellbooks.forest_guardian.guide": "Summon the wrath of the forest, punishing the evil that dares to approach.",
   "spell.irons_spellbooks.summon_watcher.guide": "Summon friendly robots that will help you out in difficult situations.",
+  "spell.irons_spellbooks.zone_spell.guide": "Convert the surrounding area in a place where your summons become the strongest beings for a short time.",
 
   "death.attack.blood_magic": "%1$s blood magic 1",
   "death.attack.blood_magic.item": "%1$s blood magic 2",

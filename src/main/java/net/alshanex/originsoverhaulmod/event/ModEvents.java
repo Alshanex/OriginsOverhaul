@@ -5,7 +5,7 @@ import io.redspace.ironsspellbooks.entity.mobs.MagicSummon;
 import io.redspace.ironsspellbooks.network.ClientboundSyncMana;
 import io.redspace.ironsspellbooks.setup.Messages;
 import net.alshanex.originsoverhaulmod.OriginsOverhaulMod;
-import net.alshanex.originsoverhaulmod.registry.EffectRegistry;
+import net.alshanex.originsoverhaulmod.effect.ModEffects;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -25,10 +25,10 @@ public class ModEvents {
         public static void onLivingHurt(LivingHurtEvent event) {
             if(event.getEntity() instanceof ServerPlayer){
                 ServerPlayer player = (ServerPlayer) event.getEntity();
-                if(player.hasEffect(EffectRegistry.MONARCH.get())){
+                if(player.hasEffect(ModEffects.MONARCH.get())){
 
                     List<LivingEntity> targetEntities = player.level().getEntitiesOfClass(LivingEntity.class,
-                            player.getBoundingBox().inflate(20, 12, 20),
+                            player.getBoundingBox().inflate(10, 10, 10),
                             livingEntity -> livingEntity != player && livingEntity instanceof MagicSummon &&
                                     ((MagicSummon) livingEntity).getSummoner() == player
                     );
@@ -55,7 +55,7 @@ public class ModEvents {
                 if(summon.getSummoner() != null && summon.getSummoner() instanceof ServerPlayer){
                     ServerPlayer summoner = (ServerPlayer) summon.getSummoner();
                     MagicData magicData = MagicData.getPlayerMagicData(summoner);
-                    if(summoner.hasEffect(EffectRegistry.MONARCH.get()) && magicData.getMana() > 10){
+                    if(summoner.hasEffect(ModEffects.MONARCH.get()) && magicData.getMana() > 10){
                         magicData.setMana(magicData.getMana() - 10);
                         Messages.sendToPlayer(new ClientboundSyncMana(magicData), summoner);
                         event.setCanceled(true);

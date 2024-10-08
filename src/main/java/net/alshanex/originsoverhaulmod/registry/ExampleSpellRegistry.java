@@ -31,5 +31,6 @@ public class ExampleSpellRegistry {
     public static final RegistryObject<AbstractSpell> CROWN = registerSpell(new CrownSpell());
     public static final RegistryObject<AbstractSpell> GUARDIAN = registerSpell(new ForestGuardianSpell());
     public static final RegistryObject<AbstractSpell> SUMMONING = registerSpell(new SummonSpell());
+    public static final RegistryObject<AbstractSpell> MONARCH = registerSpell(new ZoneSpell());
     //public static final RegistryObject<AbstractSpell> WATCHER = registerSpell(new FriendWatcherSpell());
 }
