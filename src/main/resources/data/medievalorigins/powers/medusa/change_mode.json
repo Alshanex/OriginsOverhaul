@@ -15,10 +15,6 @@
 					"command": "power remove @s medievalorigins:medusa/petrify"
 				},
 				{
-					"type": "origins:clear_effect",
-					"effect": "irons_spellbooks:spider_aspect"
-				},
-				{
 					"type": "origins:delay",
 					"ticks": 2,
 					"action": {
@@ -76,6 +72,10 @@
 					"command": "power grant @s medievalorigins:medusa/petrify"
 				},
 				{
+					"type": "origins:clear_effect",
+					"effect": "irons_spellbooks:spider_aspect"
+				},
+				{
 					"type": "origins:delay",
 					"ticks": 2,
 					"action": {
@@ -121,6 +121,14 @@
 					"action": {
 						"type": "origins:execute_command",
 						"command": "power remove @s medievalorigins:medusa/secondary"
+					}
+				},
+				{
+					"type": "origins:delay",
+					"ticks": 12,
+					"action": {
+						"type": "origins:execute_command",
+						"command": "power remove @s medievalorigins:medusa/breath"
 					}
 				}
 			]

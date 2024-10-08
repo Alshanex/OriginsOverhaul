@@ -77,8 +77,8 @@ public class SummonHelper {
     }
 
     public static boolean hasLegendarySummoned(LivingEntity entity){
-        var radiusSqr = 600; //30
-        return entity.level().getEntitiesOfClass(LivingEntity.class, entity.getBoundingBox().inflate(30, 20, 30),
+        var radiusSqr = 1000; //50
+        return entity.level().getEntitiesOfClass(LivingEntity.class, entity.getBoundingBox().inflate(50, 50, 50),
                         livingEntity -> livingEntity != entity &&
                                 horizontalDistanceSqr(livingEntity, entity) < radiusSqr &&
                                 livingEntity.isPickable() &&
@@ -97,8 +97,8 @@ public class SummonHelper {
     }
 
     public static boolean hasEpicsSummoned(LivingEntity entity){
-        var radiusSqr = 600; //30
-        long count = entity.level().getEntitiesOfClass(LivingEntity.class, entity.getBoundingBox().inflate(30, 20, 30),
+        var radiusSqr = 1000; //50
+        long count = entity.level().getEntitiesOfClass(LivingEntity.class, entity.getBoundingBox().inflate(50, 50, 50),
                         livingEntity -> livingEntity != entity &&
                                 horizontalDistanceSqr(livingEntity, entity) < radiusSqr &&
                                 livingEntity.isPickable() &&

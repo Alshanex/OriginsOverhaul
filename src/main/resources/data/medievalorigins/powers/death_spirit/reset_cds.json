@@ -2,6 +2,23 @@
 	"loading_priority":1,
 	"hidden": true,
 	"type": "origins:action_on_callback",
+	"entity_action_added": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:execute_command",
+				"command": "power remove @s medievalorigins:death_spirit/jump"
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 2,
+				"action": {
+					"type": "origins:execute_command",
+					"command": "power remove @s medievalorigins:death_spirit/lance"
+				}
+			}
+		]
+	},
 	"entity_action_gained": {
 		"type": "origins:and",
 		"actions": [
