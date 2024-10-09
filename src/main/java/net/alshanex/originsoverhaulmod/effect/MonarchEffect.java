@@ -2,9 +2,7 @@ package net.alshanex.originsoverhaulmod.effect;
 
 import com.github.L_Ender.cataclysm.init.ModParticle;
 import io.redspace.ironsspellbooks.api.registry.SchoolRegistry;
-import io.redspace.ironsspellbooks.api.util.Utils;
 import io.redspace.ironsspellbooks.capabilities.magic.MagicManager;
-import io.redspace.ironsspellbooks.damage.DamageSources;
 import io.redspace.ironsspellbooks.effect.MagicMobEffect;
 import io.redspace.ironsspellbooks.entity.mobs.MagicSummon;
 import io.redspace.ironsspellbooks.network.spell.ClientboundParticleShockwave;
@@ -64,17 +62,20 @@ public class MonarchEffect extends MagicMobEffect {
         var radius = 10;
 
         if(entity.level().isClientSide){
-            for (int i = 0; i < 30; i++) {
+            for (int i = 0; i < 100; i++) {
                 double randomDistance = radius * RANDOM.nextDouble();
                 double randomAngle = 2 * Math.PI * RANDOM.nextDouble();
+                double randomHeight = (RANDOM.nextDouble() * 2 - 1) * randomDistance;
 
                 double x = entity.getX() + randomDistance * Math.cos(randomAngle);
                 double z = entity.getZ() + randomDistance * Math.sin(randomAngle);
-                double y = entity.getY() + 0.3;
+                double y = entity.getY() + 0.3 + randomHeight;
 
                 entity.level().addParticle(ParticleTypes.SOUL, x, y, z, 0, 0, 0);
             }
+        } else {
+            MagicManager.spawnParticles(entity.level(), new BlastwaveParticleOptions(SchoolRegistry.ICE.get().getTargetingColor(), radius), entity.getX(), entity.getY() + .165f, entity.getZ(), 1, 0, 0, 0, 0, true);
+            Messages.sendToPlayersTrackingEntity(new ClientboundParticleShockwave(new Vec3(entity.getX(), entity.getY() + .165f, entity.getZ()), radius, ParticleTypes.SOUL), entity, true);
         }
     }
-
 }
