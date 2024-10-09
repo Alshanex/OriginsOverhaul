@@ -20,6 +20,8 @@ import net.minecraft.world.level.Level;
 
 import java.util.List;
 
+import static net.alshanex.originsoverhaulmod.Config.*;
+
 public class SummonHelper {
 
     public static boolean isSoulItem (ItemStack item){
@@ -70,7 +72,7 @@ public class SummonHelper {
 
     public static boolean hasLegendarySummoned(LivingEntity entity){
         var radiusSqr = 1000; //50
-        return entity.level().getEntitiesOfClass(LivingEntity.class, entity.getBoundingBox().inflate(50, 50, 50),
+        long count = entity.level().getEntitiesOfClass(LivingEntity.class, entity.getBoundingBox().inflate(50, 50, 50),
                         livingEntity -> livingEntity != entity &&
                                 horizontalDistanceSqr(livingEntity, entity) < radiusSqr &&
                                 livingEntity.isPickable() &&
@@ -79,13 +81,16 @@ public class SummonHelper {
                                 ((MagicSummon) livingEntity).getSummoner() == entity
                 )
                 .stream()
-                .anyMatch(targetEntity -> targetEntity instanceof AmethystCrabSummon ||
+                .filter(targetEntity -> targetEntity instanceof AmethystCrabSummon ||
                         targetEntity instanceof WadjetSummon ||
                         targetEntity instanceof KobolediatorSummon ||
                         targetEntity instanceof HydraSummon ||
                         targetEntity instanceof CoralssusSummon ||
                         targetEntity instanceof AptgangrSummon ||
-                        targetEntity instanceof EnderGolemSummon);
+                        targetEntity instanceof EnderGolemSummon)
+                .count();
+
+        return count == legendaryCap;
     }
 
     public static boolean hasEpicsSummoned(LivingEntity entity){
@@ -104,7 +109,7 @@ public class SummonHelper {
                         targetEntity instanceof IgnitedRevenantSummon)
                 .count();
 
-        return count == 2;
+        return count == epicCap;
     }
 
     public static boolean isNecromancer(LivingEntity entity){
@@ -132,16 +137,16 @@ public class SummonHelper {
         for (LivingEntity summon : summons) {
             if (summon instanceof CoralGolemSummon || summon instanceof IgnitedRevenantSummon
                     || summon instanceof IgnitedBerserkerSummon) {
-                summonsCount += 4;
+                summonsCount += epicValue;
             } else if (summon instanceof AmethystCrabSummon || summon instanceof WadjetSummon
                         || summon instanceof KobolediatorSummon || summon instanceof HydraSummon
                         || summon instanceof CoralssusSummon || summon instanceof AptgangrSummon
                         || summon instanceof EnderGolemSummon) {
-                summonsCount += 10;
+                summonsCount += legendaryValue;
             } else if (summon instanceof DreadKnightSummon || summon instanceof DreadThrallSummon
                     || summon instanceof SummonedVex || summon instanceof EliteDraugrSummon
                     || summon instanceof RoyalDraugrSummon) {
-                summonsCount += 2;
+                summonsCount += rareValue;
             } else {
                 summonsCount += 1;
             }
@@ -153,17 +158,17 @@ public class SummonHelper {
     public static boolean canSummon(LivingEntity entity, ItemStack item){
         if(isNecromancer(entity)){
             long currentSummons = getCurrentSummons(entity);
-            if(currentSummons < 15){
+            if(currentSummons < maxSummons){
                 if(isRareSoul(item)){
-                    if(currentSummons < 14){
+                    if(currentSummons < maxSummons - rareValue + 1){
                         return true;
                     } else { return false;}
                 } else if (isEpicSoul(item)){
-                    if(currentSummons < 12 && !hasEpicsSummoned(entity)){
+                    if(currentSummons < maxSummons - epicValue + 1 && !hasEpicsSummoned(entity)){
                         return true;
                     } else { return false;}
                 } else if (isLegendarySoul(item)){
-                    if(currentSummons < 6 && !hasLegendarySummoned(entity)){
+                    if(currentSummons < maxSummons - legendaryValue + 1 && !hasLegendarySummoned(entity)){
                         return true;
                     } else { return false;}
                 } else { return true;}

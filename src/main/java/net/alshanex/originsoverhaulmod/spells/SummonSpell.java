@@ -33,7 +33,7 @@ import java.util.Optional;
 
 @AutoSpellConfig
 public class SummonSpell extends AbstractSpell{
-    private final ResourceLocation spellId = new ResourceLocation(IronsSpellbooks.MODID, "summon");
+    private final ResourceLocation spellId = new ResourceLocation(IronsSpellbooks.MODID, "soul_summon");
 
     private final DefaultConfig defaultConfig = new DefaultConfig()
             .setMinRarity(SpellRarity.LEGENDARY)
@@ -41,11 +41,6 @@ public class SummonSpell extends AbstractSpell{
             .setMaxLevel(1)
             .setCooldownSeconds(1)
             .build();
-
-    @Override
-    public List<MutableComponent> getUniqueInfo(int spellLevel, LivingEntity caster) {
-        return List.of(Component.translatable("ui.irons_spellbooks.summon_count", spellLevel));
-    }
 
     public SummonSpell() {
         this.manaCostPerLevel = 10;

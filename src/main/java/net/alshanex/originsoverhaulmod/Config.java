@@ -19,45 +19,47 @@ public class Config
 {
     private static final ForgeConfigSpec.Builder BUILDER = new ForgeConfigSpec.Builder();
 
-    private static final ForgeConfigSpec.BooleanValue LOG_DIRT_BLOCK = BUILDER
-            .comment("Whether to log the dirt block on common setup")
-            .define("logDirtBlock", true);
+    private static final ForgeConfigSpec.IntValue EPIC_SUMMONS_CAP = BUILDER
+            .comment("Maximum number of active epic summons")
+            .defineInRange("epicCap", 2, 1, Integer.MAX_VALUE);
 
-    private static final ForgeConfigSpec.IntValue MAGIC_NUMBER = BUILDER
-            .comment("A magic number")
-            .defineInRange("magicNumber", 42, 0, Integer.MAX_VALUE);
+    private static final ForgeConfigSpec.IntValue LEGENDARY_SUMMONS_CAP = BUILDER
+            .comment("Maximum number of active legendary summons")
+            .defineInRange("legendaryCap", 1, 1, Integer.MAX_VALUE);
 
-    public static final ForgeConfigSpec.ConfigValue<String> MAGIC_NUMBER_INTRODUCTION = BUILDER
-            .comment("What you want the introduction message to be for the magic number")
-            .define("magicNumberIntroduction", "The magic number is... ");
+    private static final ForgeConfigSpec.IntValue LEGENDARY_SUMMON_VALUE = BUILDER
+            .comment("Value of legendary summons in common summons")
+            .defineInRange("legendaryValue", 10, 1, Integer.MAX_VALUE);
 
-    // a list of strings that are treated as resource locations for items
-    private static final ForgeConfigSpec.ConfigValue<List<? extends String>> ITEM_STRINGS = BUILDER
-            .comment("A list of items to log on common setup.")
-            .defineListAllowEmpty("items", List.of("minecraft:iron_ingot"), Config::validateItemName);
+    private static final ForgeConfigSpec.IntValue EPIC_SUMMON_VALUE = BUILDER
+            .comment("Value of epic summons in common summons")
+            .defineInRange("epicValue", 4, 1, Integer.MAX_VALUE);
+
+    private static final ForgeConfigSpec.IntValue RARE_SUMMON_VALUE = BUILDER
+            .comment("Value of rare summons in common summons")
+            .defineInRange("rareValue", 2, 1, Integer.MAX_VALUE);
+
+    private static final ForgeConfigSpec.IntValue MAX_SUMMONS = BUILDER
+            .comment("Maximum number of active summons")
+            .defineInRange("maxSummons", 15, 1, Integer.MAX_VALUE);
 
     static final ForgeConfigSpec SPEC = BUILDER.build();
 
-    public static boolean logDirtBlock;
-    public static int magicNumber;
-    public static String magicNumberIntroduction;
-    public static Set<Item> items;
-
-    private static boolean validateItemName(final Object obj)
-    {
-        return obj instanceof final String itemName && ForgeRegistries.ITEMS.containsKey(new ResourceLocation(itemName));
-    }
+    public static int epicCap;
+    public static int legendaryCap;
+    public static int legendaryValue;
+    public static int epicValue;
+    public static int rareValue;
+    public static int maxSummons;
 
     @SubscribeEvent
     static void onLoad(final ModConfigEvent event)
     {
-        logDirtBlock = LOG_DIRT_BLOCK.get();
-        magicNumber = MAGIC_NUMBER.get();
-        magicNumberIntroduction = MAGIC_NUMBER_INTRODUCTION.get();
-
-        // convert the list of strings into a set of items
-        items = ITEM_STRINGS.get().stream()
-                .map(itemName -> ForgeRegistries.ITEMS.getValue(new ResourceLocation(itemName)))
-                .collect(Collectors.toSet());
+        epicCap = EPIC_SUMMONS_CAP.get();
+        legendaryCap = LEGENDARY_SUMMONS_CAP.get();
+        legendaryValue = LEGENDARY_SUMMON_VALUE.get();
+        epicValue = EPIC_SUMMON_VALUE.get();
+        rareValue = RARE_SUMMON_VALUE.get();
+        maxSummons = MAX_SUMMONS.get();
     }
 }

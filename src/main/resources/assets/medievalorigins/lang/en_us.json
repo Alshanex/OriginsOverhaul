@@ -731,14 +731,11 @@
   "power.medievalorigins.medusa/change_mode.name": "Two-faced",
   "power.medievalorigins.medusa/change_mode.description": "You have two forms, a human form and a snake form, each one having different abilities. You can swap between your human form and your snake form by pressing your Middle Click button.",
 
-  "power.medievalorigins.death_caller/buff.name": "Blood Ritual",
-  "power.medievalorigins.death_caller/buff.description": "Upon pressing your Middle Click button, you perform an ancient ritual to buff yourself and all your summons.",
-
-  "power.medievalorigins.death_caller/explode.name": "Sacrifice",
+ "power.medievalorigins.death_caller/explode.name": "Sacrifice",
   "power.medievalorigins.death_caller/explode.description": "You can press Primary Ability key to make one of your summons explode in blood damaging all nearby enemies.",
 
   "power.medievalorigins.death_caller/zone.name": "Land of the death",
-  "power.medievalorigins.death_caller/zone.description": "Upon pressing your Secondary Ability key, you will create a deadly zone around you where your summons become stronger and immortal while you have enough mana. Inside the zone, the damage dealt to you will instead be shared between all your active summons.",
+  "power.medievalorigins.death_caller/zone.description": "Upon pressing your Secondary Ability key, you will create a deadly zone around you where your summons become stronger and immortal while you have enough mana. Inside the zone, the damage dealt to you will instead be shared between all your active summons. When a summon dies inside the zone, it will consume 10 mana to resurrect.",
 
   "power.medievalorigins.death_caller/unwitherable.name": "Necrotic Curse",
   "power.medievalorigins.death_caller/unwitherable.description": "Death Callers are immune to wither, and, like undead, they take extra damage from smite, receive inverted effects from harming and healing effects, and are immune to poison and regeneration effects.",
