@@ -8,7 +8,7 @@ import net.minecraft.world.item.ItemStack;
 
 public class KobolediatorSoul extends Item implements IPresetSpellContainer{
     public KobolediatorSoul(Properties pProperties) {
-        super(pProperties);
+        super(pProperties.stacksTo(16));
     }
 
     @Override

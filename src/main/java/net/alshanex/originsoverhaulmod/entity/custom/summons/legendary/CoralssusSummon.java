@@ -1,4 +1,4 @@
-package net.alshanex.originsoverhaulmod.entity.custom.summons.epic;
+package net.alshanex.originsoverhaulmod.entity.custom.summons.legendary;
 
 import com.github.L_Ender.cataclysm.entity.InternalAnimationMonster.Coralssus_Entity;
 import io.redspace.ironsspellbooks.api.registry.SpellRegistry;
@@ -17,7 +17,6 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.ai.goal.FloatGoal;
 import net.minecraft.world.entity.ai.goal.LookAtPlayerGoal;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;

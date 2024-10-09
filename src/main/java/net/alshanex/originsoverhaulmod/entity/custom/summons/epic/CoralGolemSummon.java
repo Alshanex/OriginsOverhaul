@@ -10,6 +10,7 @@ import io.redspace.ironsspellbooks.entity.mobs.goals.*;
 import io.redspace.ironsspellbooks.registries.MobEffectRegistry;
 import io.redspace.ironsspellbooks.util.OwnerHelper;
 import net.alshanex.originsoverhaulmod.entity.ModEntities;
+import net.alshanex.originsoverhaulmod.item.ModItems;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.tags.DamageTypeTags;
@@ -22,10 +23,13 @@ import net.minecraft.world.entity.ai.goal.FloatGoal;
 import net.minecraft.world.entity.ai.goal.LookAtPlayerGoal;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
 import javax.annotation.Nullable;
+import java.util.Random;
 import java.util.UUID;
 
 public class CoralGolemSummon extends Coral_Golem_Entity implements MagicSummon {
@@ -93,6 +97,15 @@ public class CoralGolemSummon extends Coral_Golem_Entity implements MagicSummon 
 
     @Override
     public void onRemovedFromWorld() {
+        Random random = new Random();
+
+        if (random.nextFloat() < 0.5) {
+            ItemStack soul = new ItemStack(ModItems.CORAL_GOLEM_SOUL.get(), 1);
+            Level level = this.level();
+            ItemEntity item = new ItemEntity(level, this.getX(), this.getY(), this.getZ(), soul);
+            level.addFreshEntity(item);
+        }
+
         //IronsSpellbooks.LOGGER.debug("Summoned Zombie: Removed from world, {}", this.getRemovalReason());
         this.onRemovedHelper(this, MobEffectRegistry.RAISE_DEAD_TIMER.get());
         super.onRemovedFromWorld();

@@ -8,7 +8,7 @@ import net.minecraft.world.item.ItemStack;
 
 public class VexSoul extends Item implements IPresetSpellContainer{
     public VexSoul(Properties pProperties) {
-        super(pProperties);
+        super(pProperties.stacksTo(16));
     }
 
     @Override

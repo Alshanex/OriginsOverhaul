@@ -1,14 +1,12 @@
 {
-	"loading_priority": 1,
-	"name": "Sacrifice",
-	"description": "You can press Primary Ability key to make one of your summons explode in blood damaging all nearby enemies.",
+	"loading_priority":1,
 	"type": "origins:active_self",
-	"entity_action": {
+    "entity_action": {
 		"type": "medievalorigins:cast_spell",
 		"spell": "sacrifice",
-		"power_level": 4,
+		"power_level": 8,
 		"mana_cost": 20
-	},
+    },
 	"cooldown": 100,
 	"hud_render": {
 		"should_render": true,

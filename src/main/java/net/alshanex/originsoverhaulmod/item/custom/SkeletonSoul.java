@@ -8,7 +8,7 @@ import net.minecraft.world.item.ItemStack;
 
 public class SkeletonSoul extends Item implements IPresetSpellContainer{
     public SkeletonSoul(Properties pProperties) {
-        super(pProperties);
+        super(pProperties.stacksTo(16));
     }
 
     @Override

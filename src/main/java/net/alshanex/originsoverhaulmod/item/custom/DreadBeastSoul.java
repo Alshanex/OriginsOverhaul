@@ -8,7 +8,7 @@ import net.minecraft.world.item.ItemStack;
 
 public class DreadBeastSoul extends Item implements IPresetSpellContainer{
     public DreadBeastSoul(Properties pProperties) {
-        super(pProperties);
+        super(pProperties.stacksTo(16));
     }
 
     @Override

@@ -8,7 +8,7 @@ import net.minecraft.world.item.ItemStack;
 
 public class HydraSoul extends Item implements IPresetSpellContainer{
     public HydraSoul(Properties pProperties) {
-        super(pProperties);
+        super(pProperties.stacksTo(16));
     }
 
     @Override

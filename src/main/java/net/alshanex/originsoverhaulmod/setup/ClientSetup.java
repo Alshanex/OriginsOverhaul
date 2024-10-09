@@ -24,7 +24,6 @@ public class ClientSetup {
         event.registerEntityRenderer(ModEntities.ENDER_FLOWER.get(), EnderFlowerRenderer::new);
         event.registerEntityRenderer(ModEntities.SHIELD_FLOWER.get(), ShieldFlowerRenderer::new);
         event.registerEntityRenderer(ModEntities.CROWN.get(), CrownRenderer::new);
-        //event.registerEntityRenderer(ModEntities.FRIENDLY_WATCHER.get(), RendererThe_Watcher::new);
         event.registerEntityRenderer(ModEntities.SUMMONED_DREAD_BEAST.get(), RenderDreadBeast::new);
         event.registerEntityRenderer(ModEntities.SUMMONED_DREAD_THRALL.get(), RenderDreadThrall::new);
         event.registerEntityRenderer(ModEntities.SUMMONED_DREAD_KNIGHT.get(), RenderDreadKnight::new);

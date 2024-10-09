@@ -56,12 +56,6 @@ public class ModEntities {
                     .clientTrackingRange(64)
                     .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "crown").toString()));
 
-    public static final RegistryObject<EntityType<FriendlyWatcher>> FRIENDLY_WATCHER =
-            ENTITY_TYPES.register("friendly_watcher", () -> EntityType.Builder.<FriendlyWatcher>of(FriendlyWatcher::new, MobCategory.MONSTER)
-                    .sized(1f, 1f)
-                    .clientTrackingRange(64)
-                    .build(new ResourceLocation(OriginsOverhaulMod.MOD_ID, "friendly_watcher").toString()));
-
     public static final RegistryObject<EntityType<KoboletonSummon>> SUMMONED_KOBOLETON =
             ENTITY_TYPES.register("summoned_koboleton", () -> EntityType.Builder.<KoboletonSummon>of(KoboletonSummon::new, MobCategory.MONSTER)
                     .sized(1f, 1.3f)

@@ -8,7 +8,7 @@ import net.minecraft.world.item.ItemStack;
 
 public class EnderGolemSoul extends Item implements IPresetSpellContainer{
     public EnderGolemSoul(Properties pProperties) {
-        super(pProperties);
+        super(pProperties.stacksTo(16));
     }
 
     @Override

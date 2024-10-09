@@ -8,7 +8,7 @@ import net.minecraft.world.item.ItemStack;
 
 public class AmethystCrabSoul extends Item implements IPresetSpellContainer{
     public AmethystCrabSoul(Properties pProperties) {
-        super(pProperties);
+        super(pProperties.stacksTo(16));
     }
 
     @Override

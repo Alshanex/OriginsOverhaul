@@ -8,7 +8,7 @@ import net.minecraft.world.item.ItemStack;
 
 public class AptgangrSoul extends Item implements IPresetSpellContainer{
     public AptgangrSoul(Properties pProperties) {
-        super(pProperties);
+        super(pProperties.stacksTo(16));
     }
 
     @Override

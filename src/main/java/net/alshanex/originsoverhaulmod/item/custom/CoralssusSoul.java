@@ -8,7 +8,7 @@ import net.minecraft.world.item.ItemStack;
 
 public class CoralssusSoul extends Item implements IPresetSpellContainer{
     public CoralssusSoul(Properties pProperties) {
-        super(pProperties);
+        super(pProperties.stacksTo(16));
     }
 
     @Override

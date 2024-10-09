@@ -8,7 +8,7 @@ import net.minecraft.world.item.ItemStack;
 
 public class ZombieSoul extends Item implements IPresetSpellContainer{
     public ZombieSoul(Properties pProperties) {
-        super(pProperties);
+        super(pProperties.stacksTo(16));
     }
 
     @Override

@@ -185,7 +185,7 @@ repositories {
 mixin {
     add sourceSets.main, "${mod_id}.refmap.json"
 
-    config "${mod_id}.mixins.json"
+    config "mixins.${mod_id}.json"
 
     debug.export = true
 }

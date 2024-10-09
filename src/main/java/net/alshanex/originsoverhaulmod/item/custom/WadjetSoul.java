@@ -8,7 +8,7 @@ import net.minecraft.world.item.ItemStack;
 
 public class WadjetSoul extends Item implements IPresetSpellContainer{
     public WadjetSoul(Properties pProperties) {
-        super(pProperties);
+        super(pProperties.stacksTo(16));
     }
 
     @Override
