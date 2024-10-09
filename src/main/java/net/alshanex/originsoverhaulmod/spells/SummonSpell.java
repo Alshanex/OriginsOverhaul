@@ -47,7 +47,7 @@ public class SummonSpell extends AbstractSpell{
         this.baseSpellPower = 10;
         this.spellPowerPerLevel = 3;
         this.castTime = 30;
-        this.baseManaCost = 10;
+        this.baseManaCost = 20;
 
     }
 
@@ -97,11 +97,6 @@ public class SummonSpell extends AbstractSpell{
             world.addFreshEntity(summon);
         }
         entity.getMainHandItem().shrink(1);
-        if(entity instanceof ServerPlayer){
-            var newMana = Math.max(playerMagicData.getMana() - this.baseManaCost, 0);
-            playerMagicData.setMana(newMana);
-            Messages.sendToPlayer(new ClientboundSyncMana(playerMagicData), (ServerPlayer) entity);
-        }
 
         int effectAmplifier = spellLevel - 1;
         if (entity.hasEffect(MobEffectRegistry.RAISE_DEAD_TIMER.get()))

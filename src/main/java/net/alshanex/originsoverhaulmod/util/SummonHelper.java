@@ -25,7 +25,7 @@ import static net.alshanex.originsoverhaulmod.Config.*;
 public class SummonHelper {
 
     public static boolean isSoulItem (ItemStack item){
-        if(item.getItem() == ModItems.AMETHYST_CRAB_SOUL.get() || item.getItem() == ModItems.CORAL_GOLEM_SOUL.get()
+        return item.getItem() == ModItems.AMETHYST_CRAB_SOUL.get() || item.getItem() == ModItems.CORAL_GOLEM_SOUL.get()
                 || item.getItem() == ModItems.CORALSSUS_SOUL.get() || item.getItem() == ModItems.DREAD_BEAST_SOUL.get()
                 || item.getItem() == ModItems.DREAD_GHOUL_SOUL.get() || item.getItem() == ModItems.DREAD_KNIGHT_SOUL.get()
                 || item.getItem() == ModItems.DREAD_THRALL_SOUL.get() || item.getItem() == ModItems.HYDRA_SOUL.get()
@@ -35,33 +35,25 @@ public class SummonHelper {
                 || item.getItem() == ModItems.ZOMBIE_SOUL.get() || item.getItem() == ModItems.VEX_SOUL.get()
                 || item.getItem() == ModItems.DRAUGR_SOUL.get() || item.getItem() == ModItems.ELITE_DRAUGR_SOUL.get()
                 || item.getItem() == ModItems.ROYAL_DRAUGR_SOUL.get() || item.getItem() == ModItems.APTGANGR_SOUL.get()
-                || item.getItem() == ModItems.ENDER_GOLEM_SOUL.get()){
-            return true;
-        } else { return false;}
+                || item.getItem() == ModItems.ENDER_GOLEM_SOUL.get();
     }
 
     public static boolean isLegendarySoul (ItemStack item){
-        if(item.getItem() == ModItems.AMETHYST_CRAB_SOUL.get() || item.getItem() == ModItems.CORALSSUS_SOUL.get()
+        return item.getItem() == ModItems.AMETHYST_CRAB_SOUL.get() || item.getItem() == ModItems.CORALSSUS_SOUL.get()
                 || item.getItem() == ModItems.HYDRA_SOUL.get() || item.getItem() == ModItems.KOBOLEDIATOR_SOUL.get()
                 || item.getItem() == ModItems.WADJET_SOUL.get() || item.getItem() == ModItems.APTGANGR_SOUL.get()
-                || item.getItem() == ModItems.ENDER_GOLEM_SOUL.get()){
-            return true;
-        } else { return false;}
+                || item.getItem() == ModItems.ENDER_GOLEM_SOUL.get();
     }
 
     public static boolean isEpicSoul (ItemStack item){
-        if(item.getItem() == ModItems.CORAL_GOLEM_SOUL.get()|| item.getItem() == ModItems.IGNITED_BERSERKER_SOUL.get()
-                || item.getItem() == ModItems.IGNITED_REVENANT_SOUL.get()){
-            return true;
-        } else { return false;}
+        return item.getItem() == ModItems.CORAL_GOLEM_SOUL.get() || item.getItem() == ModItems.IGNITED_BERSERKER_SOUL.get()
+                || item.getItem() == ModItems.IGNITED_REVENANT_SOUL.get();
     }
 
     public static boolean isRareSoul (ItemStack item){
-        if(item.getItem() == ModItems.DREAD_KNIGHT_SOUL.get()|| item.getItem() == ModItems.DREAD_THRALL_SOUL.get()
+        return item.getItem() == ModItems.DREAD_KNIGHT_SOUL.get() || item.getItem() == ModItems.DREAD_THRALL_SOUL.get()
                 || item.getItem() == ModItems.VEX_SOUL.get() || item.getItem() == ModItems.ELITE_DRAUGR_SOUL.get()
-                || item.getItem() == ModItems.ROYAL_DRAUGR_SOUL.get()){
-            return true;
-        } else { return false;}
+                || item.getItem() == ModItems.ROYAL_DRAUGR_SOUL.get();
     }
 
     private static float horizontalDistanceSqr(LivingEntity livingEntity, LivingEntity entity2) {
@@ -160,17 +152,11 @@ public class SummonHelper {
             long currentSummons = getCurrentSummons(entity);
             if(currentSummons < maxSummons){
                 if(isRareSoul(item)){
-                    if(currentSummons < maxSummons - rareValue + 1){
-                        return true;
-                    } else { return false;}
+                    return currentSummons < maxSummons - rareValue + 1;
                 } else if (isEpicSoul(item)){
-                    if(currentSummons < maxSummons - epicValue + 1 && !hasEpicsSummoned(entity)){
-                        return true;
-                    } else { return false;}
+                    return currentSummons < maxSummons - epicValue + 1 && !hasEpicsSummoned(entity);
                 } else if (isLegendarySoul(item)){
-                    if(currentSummons < maxSummons - legendaryValue + 1 && !hasLegendarySummoned(entity)){
-                        return true;
-                    } else { return false;}
+                    return currentSummons < maxSummons - legendaryValue + 1 && !hasLegendarySummoned(entity);
                 } else { return true;}
             } else { return false;}
         } else { return false;}
