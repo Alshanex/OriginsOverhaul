@@ -55,8 +55,8 @@ public class ModEvents {
                 if(summon.getSummoner() != null && summon.getSummoner() instanceof ServerPlayer){
                     ServerPlayer summoner = (ServerPlayer) summon.getSummoner();
                     MagicData magicData = MagicData.getPlayerMagicData(summoner);
-                    if(summoner.hasEffect(ModEffects.MONARCH.get()) && magicData.getMana() > 10){
-                        magicData.setMana(magicData.getMana() - 10);
+                    if(summoner.hasEffect(ModEffects.MONARCH.get()) && magicData.getMana() > 20){
+                        magicData.setMana(magicData.getMana() - 20);
                         Messages.sendToPlayer(new ClientboundSyncMana(magicData), summoner);
                         event.setCanceled(true);
                         event.getEntity().setHealth(event.getEntity().getMaxHealth());
