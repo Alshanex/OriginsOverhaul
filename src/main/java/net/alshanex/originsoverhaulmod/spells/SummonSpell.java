@@ -6,7 +6,9 @@ import io.redspace.ironsspellbooks.api.magic.MagicData;
 import io.redspace.ironsspellbooks.api.registry.SchoolRegistry;
 import io.redspace.ironsspellbooks.api.spells.*;
 import io.redspace.ironsspellbooks.api.util.Utils;
+import io.redspace.ironsspellbooks.network.ClientboundEquipmentChanged;
 import io.redspace.ironsspellbooks.network.ClientboundSyncMana;
+import io.redspace.ironsspellbooks.player.ClientMagicData;
 import io.redspace.ironsspellbooks.registries.MobEffectRegistry;
 import io.redspace.ironsspellbooks.registries.SoundRegistry;
 import io.redspace.ironsspellbooks.setup.Messages;
@@ -97,6 +99,9 @@ public class SummonSpell extends AbstractSpell{
             world.addFreshEntity(summon);
         }
         entity.getMainHandItem().shrink(1);
+        if(entity instanceof ServerPlayer){
+            Messages.sendToPlayer(new ClientboundEquipmentChanged(), (ServerPlayer) entity);
+        }
 
         int effectAmplifier = spellLevel - 1;
         if (entity.hasEffect(MobEffectRegistry.RAISE_DEAD_TIMER.get()))
